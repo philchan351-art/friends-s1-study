@@ -66,6 +66,19 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 </style>
 </head>
 <body>
+<div id="paygate" style="position:fixed;inset:0;z-index:99999;background:linear-gradient(135deg,#22313f,#4a6572);display:flex;align-items:center;justify-content:center;padding:20px">
+  <div style="background:#fff;border-radius:16px;max-width:420px;width:100%;padding:28px 24px;text-align:center;box-shadow:0 12px 40px rgba(0,0,0,.3)">
+    <div style="font-size:40px">🔒</div>
+    <h2 style="font-size:19px;margin:10px 0 6px;color:#22313f">本集为付费内容</h2>
+    <p style="font-size:13.5px;color:#5a6b7b;line-height:1.7;margin-bottom:14px">《老友记 S1 · 24 集全学习包》解锁全部 23 集<br>S1E01 永久免费试看 · 一次购买，本设备长期有效</p>
+    <a href="__BUY_URL__" target="_blank" style="display:block;background:#22313f;color:#fff;text-decoration:none;border-radius:10px;padding:11px;font-size:14.5px;font-weight:700;margin-bottom:12px">💰 前往购买（自动发卡 · 付款后秒收解锁密码）</a>
+    <input id="pg-pwd" type="password" placeholder="已有解锁密码？在此输入" style="width:100%;padding:11px 12px;border:1.5px solid #d7dee5;border-radius:10px;font-size:15px;margin-bottom:10px;outline:none" onkeydown="if(event.key==='Enter')pgCheck()">
+    <button onclick="pgCheck()" style="width:100%;background:#e67e22;color:#fff;border:none;border-radius:10px;padding:11px;font-size:15px;font-weight:700;cursor:pointer">解锁本集</button>
+    <div id="pg-err" style="display:none;color:#c0392b;font-size:12.5px;margin-top:8px">密码不正确，请核对后重试</div>
+    <a href="index.html" style="display:inline-block;margin-top:14px;color:#7a8794;font-size:12.5px">← 返回首页 · 免费试看 S1E01</a>
+  </div>
+</div>
+<script>(function(){var B='RkxKODg2UUs=';function b64(s){try{return btoa(s)}catch(e){return ''}}function unlock(){var g=document.getElementById('paygate');if(g&&g.parentNode)g.parentNode.removeChild(g);try{localStorage.setItem('flj_s1_ok','1')}catch(e){}}try{if(localStorage.getItem('flj_s1_ok')==='1'){unlock();return}}catch(e){}window.pgCheck=function(){var v=document.getElementById('pg-pwd').value;if(v&&b64(v)===B){unlock()}else{var e=document.getElementById('pg-err');e.style.display='block'}}})();</script>
 <header class="hero">
   <div class="hero-in">
     <h1>老友记 Friends · 第一季第 19 集（The One Where the Monkey Gets Away）</h1>
