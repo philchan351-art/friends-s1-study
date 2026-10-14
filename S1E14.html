@@ -32,7 +32,7 @@ nav.toc a:hover{text-decoration:underline}
 .line .zh{padding:10px 14px;background:#f6fafd;font-size:14.5px;color:#333}
 .line.stage{grid-template-columns:1fr;background:#f1f1ee;font-style:italic;color:#777;font-size:13px;padding:6px 14px}
 .spk{font-weight:700;margin-right:6px}
-.c-monica{color:#d35400}.c-ross{color:#2471a3}.c-rachel{color:#c2185b}.c-chandler{color:#7d3c98}.c-joey{color:#1e8449}.c-phoebe{color:#b7950b}.c-paul{#6e4a2e}.c-other{color:#888}
+.c-monica{color:#d35400}.c-ross{color:#2471a3}.c-rachel{color:#c2185b}.c-chandler{color:#7d3c98}.c-joey{color:#1e8449}.c-phoebe{color:#b7950b}.c-paul{color:#6e4a2e}.c-other{color:#888}
 .sp{background:#eef4ff;border:1px solid #bcd4f5;border-radius:50%;width:26px;height:26px;cursor:pointer;font-size:12px;margin-left:6px;vertical-align:middle;padding:0;display:inline-block}
 .sp:hover,.sp.speaking{background:var(--accent);color:#fff;border-color:var(--accent)}
 .note{background:#eef6ff;border:1px solid #cfe3f7;border-left:5px solid #3498db;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:14px}
@@ -44,6 +44,8 @@ nav.toc a:hover{text-decoration:underline}
 .culture h4{margin:0 0 6px;font-size:14px;color:#145a32}
 .phrasebox{background:#fdf6ee;border:1px solid #f2ddc0;border-left:5px solid #e67e22;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:14px}
 .phrasebox h4{margin:0 0 6px;font-size:14px;color:#9c4a0a}
+.intent{background:#F5F0FA;border:1px solid #e0d0ee;border-left:5px solid #7D3C98;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:14px}
+.intent h4{margin:0 0 6px;font-size:14px;color:#6C3483}
 .shadowbox{background:#fff;border:2px solid #8e44ad;border-radius:12px;padding:14px 18px;margin:26px 0}
 .shadowbox h2{margin-top:0;color:#6c3483;font-size:18px}
 .shadowbox ol{margin:8px 0 0;padding-left:22px}
@@ -59,7 +61,7 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
   .wrap{max-width:none;padding:0}
   header.hero{padding:16px 10px 12px}
   .scene{margin:14px 0}
-  .line,.note,.culture,.phrasebox,.shadowbox li{page-break-inside:avoid;break-inside:avoid}
+  .line,.note,.culture,.phrasebox,.intent,.shadowbox li{page-break-inside:avoid;break-inside:avoid}
   .scene h2{page-break-after:avoid;break-after:avoid}
   footer{page-break-before:avoid}
 }
@@ -85,7 +87,7 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
     <div class="sub">The One With the Candy Hearts · 情人节糖果：一场集体翻车的约会之夜</div>
     <div class="tags">
       <span>1994 年首播</span><span>美语中级偏上</span><span>左：英文原台词 / 右：中文对照</span>
-      <span>📌 重点单词（音标+意思）</span><span>💬 词组/俚语</span><span>🏛️ 文化解析</span><span>🔊 点按朗读</span>
+      <span>📌 重点单词（音标+意思）</span><span>💬 词组/俚语</span><span>🏛️ 文化解析</span><span>🔊 点按朗读</span><span>🎭 潜台词解析</span>
     </div>
   </div>
 </header>
@@ -101,7 +103,7 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="wrap">
 <div class="guide">
   <b>学习三步法（配合本集使用）</b><br>
-  ① <b>看懂</b>：逐句对照左右两栏，遇到 📌/💬/🏛️ 标注先读解析再往下走；<br>
+  ① <b>看懂</b>：逐句对照左右两栏，遇到 📌/💬/🏛️/🎭 标注先读解析再往下走（🎭 = 潜台词/意图解析——为什么这么说、笑点在哪）；<br>
   ② <b>听熟</b>：把速度调到 0.5×，点每句 🔊 听 2-3 遍，再切剧集原声听同一段，注意连读、吞音（如 <span class="ex">gonna / wanna / y'know / you're gonna</span>）；<br>
   ③ <b>说出</b>：翻到文末「🔁 跟读重点句」，跟着原声逐句模仿语调和节奏，一天 10 句，重复到脱口而出。
 </div>
@@ -145,6 +147,16 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="item"><b>contact</b> <span class="phon">/ˈkɑːntækt/</span> n. 接触、联系 <button class="sp" onclick="speak(this)" data-t="contact">🔊</button> — <span class="ex">Any contact?</span>＝有过任何接触吗？钱德勒式追问的开场句，一句话把场景推进笑点。</div>
 <div class="item"><b>suicide</b> <span class="phon">/ˈsuːɪsaɪd/</span> n. 自杀 <button class="sp" onclick="speak(this)" data-t="suicide">🔊</button> — 口语里 <span class="ex">it's suicide</span>＝"这简直是自寻死路"，形容一件事注定失败且后果很惨。</div>
 </div>
+
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>incoherent</b> <span class="phon">/ˌɪnkoʊˈhɪrənt/</span> adj. 语无伦次的、听不清的 <button class="sp" onclick="speak(this)" data-t="incoherent">🔊</button> — 舞台提示 <span class="ex">stutters something incoherent</span>（结结巴巴说了句语无伦次的话），写尽罗斯面对美女时的紧张。</div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Chandler: No, it's suicide. The man's got an egg.</b><br>①乔伊问"这招能成吗"，钱德勒先给一个斩钉截铁的"不能"，却不解释原因，只丢下"那哥们儿手里还攥着颗蛋呢"。潜台词：带着一颗鸡蛋去搭讪，本身就是最蠢的一件事。②笑点机制：先下结论、再补一个荒诞到根本不成理由的理由，是钱德勒式冷面拆台。③中文等价说法：类似"没戏——他手里还捏着个鸡蛋呢"那样一本正经地摇头。</div>
+</div>
+
 </section>
 
 <!-- ============ SCENE 2 ============ -->
@@ -182,6 +194,17 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 ② <b>为什么情人节这么"要命"</b>：本集后段消防员说"情人节是我们一年中最忙的一晚"（Valentine's is our busiest night of the year），这是编剧借消防员之口开的玩笑——暗示当晚"烧前男友东西、情绪失控"的求助特别多，属于戏剧夸张，不必当成统计数据。<br>
 ③ 本集中文译名"情人节糖果"（Candy Hearts）来自后半段贾妮丝送给钱德勒的那种印字小糖果，我们在场景 14 会专门讲。
 </div>
+
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>pathetic</b> <span class="phon">/pəˈθetɪk/</span> adj. 可怜的、凄惨的（贬义） <button class="sp" onclick="speak(this)" data-t="pathetic">🔊</button> — <span class="ex">a pathetic mess</span>＝"一个可怜的烂摊子"，乔伊用它形容对方的闺蜜，语气轻慢。</div>
+<div class="item"><b>crunch</b> <span class="phon">/krʌntʃ/</span> v. 发出嘎吱/碎裂声 <button class="sp" onclick="speak(this)" data-t="crunch">🔊</button> — 舞台提示 <span class="ex">Something crunches in Ross' pocket.</span>（口袋里传来碎裂声），暗示那颗蛋还没还回去。</div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Joey: She's needy, she's vulnerable. I'm thinkin', cha-ching!</b><br>①乔伊把约会对象的闺蜜形容成"渴望有人陪、很脆弱"，紧接着一句"钞票叮当响"——他嘴上在分析女方心理，脑子里算的却是"这种状态的女人好搞定、稳赚"。②笑点机制：把毫不浪漫的算计说得像在做买卖，needy/vulnerable 这类"体贴词"被反转成"可乘之机"。③中文等价说法：类似"她正好空虚寂寞——这波稳赚！"</div>
+</div>
+
 </section>
 <!-- ============ SCENE 3 ============ -->
 <section class="scene" id="s3">
@@ -202,6 +225,12 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 ② <b>Rob Roy（罗伯罗伊）</b>：以苏格兰威士忌为基酒的经典鸡尾酒，名字取自同名歌剧与苏格兰民间英雄，跟 Manhattan（曼哈顿）是"亲戚"（把波本换成苏格兰威士忌就是它）。钱德勒后面点它，是想装一副"我很懂酒"的样子。<br>
 ③ <b>Fresca（佛瑞斯加）</b>：可口可乐公司 1966 年推出的柚子味无糖汽水，是 90 年代美国常见的超市饮料（场景 10 里莫妮卡说"我只有牛至叶和一瓶 Fresca"，就是拿它替圣餐酒）。
 </div>
+
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Chandler: (angrily) Hey, it's Janice.</b><br>①钱德勒一直担心"不会这么巧"，结果贾妮丝一进门，他咬牙挤出一句"嘿，还真是贾妮丝"。表面是打招呼，真实情绪是"怕什么来什么"的崩溃与认命。②笑点机制：观众早知道她是那个被甩两次的贾妮丝，这句"平铺直叙的确认"把灾难感瞬间拉满。③中文等价说法："得，还真是她。"</div>
+</div>
+
 </section>
 
 <!-- ============ SCENE 4 ============ -->
@@ -217,6 +246,16 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <h4>💬 词组 / 俚语</h4>
 <div class="item"><b>make a break for it</b> ＝ 突然拔腿开溜、抓住机会逃跑（break for the door＝朝门口猛冲），是"逃跑/溜号"的地道说法。</div>
 </div>
+
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>urinal</b> <span class="phon">/ˈjʊrɪnl/</span> n. 小便池 <button class="sp" onclick="speak(this)" data-t="urinal">🔊</button> — 舞台提示 <span class="ex">at the urinal</span>＝（站在小便池前），给后面那句"我一紧张就尿不出来"做足现场感。</div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Joey: You're makin' me nervous, and I can't go when I'm nervous.</b><br>①钱德勒在洗手间大喊大叫要逃跑，乔伊的诉求却是"你别喊了，我一紧张就尿不出来"——他在意的是自己的小尴尬，完全不顾哥们儿正面临"和前女友同桌"的灾难。②笑点机制：把"安慰朋友"的场合，用一件极私密又极琐碎的事打岔，制造自私又好笑的落差。③中文等价说法："你别嚷了，你一嚷我就尿不出来。"</div>
+</div>
+
 </section>
 
 <!-- ============ SCENE 5 ============ -->
@@ -245,6 +284,27 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="item"><b>magnets</b> <span class="phon">/ˈmæɡnəts/</span> n. 磁铁、有吸引力的人/物 <button class="sp" onclick="speak(this)" data-t="magnets">🔊</button> — 莫妮卡自嘲"我们是不是自带吸渣体质"，菲比立刻接一个"那我肯定也是，所以我不敢戴电子表"（怕磁力把表弄坏）的怪逻辑。</div>
 <div class="item"><b>cleansing</b> <span class="phon">/ˈklenzɪŋ/</span> n./adj. 净化、清洗 <button class="sp" onclick="speak(this)" data-t="cleansing">🔊</button> — <span class="ex">a cleansing ritual</span>（净化仪式）是菲比"灵修人设"的标志性词汇。</div>
 </div>
+
+<div class="phrasebox">
+<h4>💬 词组 / 俚语</h4>
+<div class="item"><b>break the cycle</b> ＝ 打破（周而复始的）坏循环。<span class="ex">break the bad boyfriend cycle</span>＝打破"总遇到烂男友"的循环；更常见说法 <span class="ex">break the pattern / break the habit</span>（打破模式／改掉习惯）。</div>
+<div class="item"><b>voluntarily bald</b> ＝ 自愿剃光头（的）。voluntarily＝主动地、自愿地；瑞秋用它嘲讽"这女人是主动选择光头的"，言下之意"她的建议不靠谱"。</div>
+</div>
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>jerk</b> <span class="phon">/dʒɜːrk/</span> n.（口语）混蛋、讨厌的家伙 <button class="sp" onclick="speak(this)" data-t="jerk">🔊</button> — 复数是 jerks；美剧里形容"渣男/讨人嫌的男人"最常用的词之一。</div>
+</div>
+<div class="culture">
+<h4>🏛️ 文化解析：菲比的"灵修"人设与 90 年代美国 New Age 风潮</h4>
+① 菲比提到的 <b>cleansing ritual（净化仪式）</b>、鼠尾草、念咒、裸体围着篝火跳舞，都脱胎于 90 年代美国流行的 <b>New Age（新时代运动）</b>文化：把冥想、水晶、香薰、印第安/东方仪式混在一起，追求"净化身心"。菲比就是这种"半仙"人设的化身，她的建议永远荒诞却一本正经。<br>
+② 她引用的"朋友 Abby"是<b>自愿剃光头</b>的人——在美国语境里，剃光头常被视为"反主流、追求精神纯粹"的标志，所以瑞秋一句"voluntarily bald"就点破"连她的朋友都这么不靠谱"。<br>
+③ 这里的笑点逻辑是：<b>用一套煞有介事的仪式，去解决最世俗的"总遇渣男"问题</b>，认真与荒唐的反差就是喜剧。
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Phoebe: I know I am. That's why I can't wear a digital watch.</b><br>①莫妮卡自嘲"我们是不是自带吸渣体质（magnets）"，菲比抢着说"对，我就是"，还给出一个离谱证据——"所以我不能戴电子表"。她的真实意图是"我很特别，我确实有磁场"。②笑点机制：把 magnets 从"吸引渣男"偷换成物理上的"磁力"，再引出一个荒谬后果（磁力会弄坏电子表）。③中文等价说法："我就是啊——所以我才不敢戴电子表呢。"</div>
+</div>
+
 </section>
 
 <!-- ============ SCENE 6 ============ -->
@@ -297,6 +357,18 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 ② 贾妮丝说"你可以拿我的照片头做小木偶，用在你的残酷剧场里"，是在<b>阴阳怪气地嘲笑钱德勒的品味"高冷又怪"</b>——一个普通上班族哪来的残酷剧场？这句台词同时说明了贾妮丝的人设：说话夸张、爱引经据典地讽刺人。<br>
 ③ 对这种"引用真实文化概念来损人"的台词，学英语时要抓住结构：<span class="ex">make little puppets out of them</span>（用它们做小木偶）＋ <span class="ex">use them in your theater of cruelty</span>（用在你的残酷剧场里），重点在"把对方的怪癖夸张成一个高大上的词"。
 </div>
+
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>overpriced</b> <span class="phon">/ˌoʊvərˈpraɪst/</span> adj. 定价过高的 <button class="sp" onclick="speak(this)" data-t="overpriced">🔊</button> — <span class="ex">your most overpriced champagne</span>＝"你们这儿最贵的香槟"，钱德勒故意挑"最贵"，是在花乔伊的钱泄愤。</div>
+<div class="item"><b>crappy</b> <span class="phon">/ˈkræpi/</span> adj.（口语）糟糕的、烂的 <button class="sp" onclick="speak(this)" data-t="crappy">🔊</button> — <span class="ex">What a crappy night!</span>＝多糟心的一晚；比 bad 更口语、更带情绪。</div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Chandler: Tell me it's "you and me" we.</b><br>①乔伊说"我们可能要走了"，这里的 we 到底指谁？钱德勒立刻要求"你告诉我这个'我们'是你和我"。潜台词：他已被贾妮丝和洛琳这局折磨到崩溃，只求乔伊别把他一个人丢下。②笑点机制：抓住一个代词 we 做文章，把"逃跑"的恐慌全押在两个字母上。③中文等价说法："你跟我说清楚，这个'我们'是你和我是吧？"</div>
+<div class="item"><b>Joey: I'm not even sure what slathering is, but I definitely want to be a part of it.</b><br>①乔伊坦白"连 slather（涂抹）是啥意思都不知道"，却斩钉截铁"但我一定要参与"。真实意图：他根本不在乎对方是谁、要干嘛，只要有暧昧暗示就冲。②笑点机制：无知＋热情的组合，是乔伊的招牌喜剧配方。③中文等价说法："我连'涂满'是啥意思都没搞懂，但我肯定要掺一脚。"</div>
+</div>
+
 </section>
 <!-- ============ SCENE 7 ============ -->
 <section class="scene" id="s7">
@@ -332,6 +404,18 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line stage"><span>【莫妮卡拿着她的无绳电话出来。】</span></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Oh, hi, Ross. Yeah. There's someone I want you to say hi to. (to Chandler) He just happened to call. <button class="sp" onclick="speak(this)" data-t="Oh, hi, Ross. Yeah. There's someone I want you to say hi to. He just happened to call.">🔊</button></div><div class="zh">哦，嗨，罗斯。对。有个人我想让你跟她打个招呼。（对钱德勒）他刚好打电话来。</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Janice:</span>Hi, Ross. Yes, it's me. How did you know? <button class="sp" onclick="speak(this)" data-t="Hi, Ross. Yes, it's me. How did you know?">🔊</button></div><div class="zh">嗨，罗斯。对，是我。你怎么知道的？</div></div>
+
+<div class="culture">
+<h4>🏛️ 文化解析：无绳电话与"走廊大团圆"</h4>
+① 莫妮卡拿着 <b>cordless phone（无绳电话）</b>出来——这是 90 年代家庭标配的"高科技"，可以边走边打，不用再被电话线拴在墙边；剧里拿它当"走廊串场"的道具，才有"人还在楼道、电话已经接通罗斯"的连贯笑点。<br>
+② <b>a reunion in the hall（走廊里的重逢/同学会）</b>：贾妮丝把这场"前任突袭现场"比作同学会，是典型的"当事人觉得热闹、其他人觉得灾难"的反差幽默。<br>
+③ 这场戏是整集的"连锁反应"段落：把莫妮卡、瑞秋、乔伊依次叫出来看贾妮丝，再电话连线罗斯，用的是情景喜剧最经典的 <b>escalation（层层升级）</b>结构——人越聚越多，主角越尴尬。
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Chandler: Ok, well, this was very special.</b><br>①被莫妮卡、瑞秋、乔伊接连围观后，钱德勒用一句"好，这次见面真是很特别"收场。字面是客套告别，真实情绪是"社死到极点、只想赶紧结束"。②笑点机制：用极度克制、外交辞令式的措辞，反衬场面的荒唐。③中文等价说法："行吧，这一趟真是'难忘'。"</div>
+</div>
+
 </section>
 
 <!-- ============ SCENE 9 ============ -->
@@ -351,6 +435,23 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="phrasebox">
 <h4>💬 词组 / 俚语</h4>
 <div class="item"><b>put a label on it</b> ＝ 给（一段关系）贴标签、下定义（label＝标签；指把模糊关系说清楚，比如"你们到底算什么关系"）。罗斯半推半就用它回避"lovers"这个词，很典型的"嘴硬"。</div>
+</div>
+
+
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>jet lag</b> <span class="phon">/ˈdʒet læɡ/</span> n. 时差反应 <button class="sp" onclick="speak(this)" data-t="jet lag">🔊</button> — 长途飞行后身体"倒不过来"的困乏感。罗斯整段冷笑话都建立在这个词上。</div>
+<div class="item"><b>dog years</b> <span class="phon">/ˈdɔːɡ jɪrz/</span> n. 狗的"年岁"（民间换算：狗一年≈人七年） <button class="sp" onclick="speak(this)" data-t="dog years">🔊</button> — <span class="ex">seven dog years to one human year</span>＝狗七年等于人一年。罗斯套用这个换算，推出"狗坐飞机倒时差要倒掉一个半星期"，正是他约会冷场的开始。</div>
+</div>
+<div class="culture">
+<h4>🏛️ 文化解析：中餐厅、罗斯的"学术冷笑话"与 dog years</h4>
+① 场景设在 <b>Chinese restaurant（中餐厅）</b>，是 90 年代美国人对"中餐"的日常印象：圆桌、可以直接说"挪一挪拼桌"。罗斯把头埋到桌上的 <b>grill（烤盘）</b>，也是美式铁板/火锅桌的常见陈设。<br>
+② <b>dog years</b> 是西方流传甚广的"民间知识"：习惯按"1 狗年 = 7 人年"换算。罗斯想靠这个话题显得聪明有趣，结果把约会对象讲走——这是编剧给"学术男"罗斯的固定笑料（他总在错误的场合讲冷门知识）。<br>
+③ 由此还埋了本场景的连环垮：<b>前妻卡罗带着女伴出现 → 金发前妻怀孕 → 约会对象 Kristin 尴尬 → 罗斯硬要拼桌</b>，一路升级到集尾。
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Ross: If you wanna put a label on it.</b><br>①约会对象 Kristin 直说"你是说她们是情人"，罗斯不肯正面承认，回一句"你要非给贴个标签的话"。真实意图是回避"前妻是同性恋"这个事实，用"随便你怎么叫"糊弄过去。②笑点机制：用一句"学术中立"的话术（label＝贴标签）来逃避自己不想承认的事，是罗斯式的嘴硬。③中文等价说法："你要非得这么说，那也行。"</div>
 </div>
 
 </section>
@@ -379,6 +480,25 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="item"><b>sacramental</b> <span class="phon">/ˌsækrəˈmentl/</span> adj. 圣礼的、圣餐的 <button class="sp" onclick="speak(this)" data-t="sacramental">🔊</button> — <span class="ex">sacramental wine</span>（圣餐/圣礼用酒）本是教堂弥撒用的酒，菲比把宗教仪式混进"前男友净化仪式"里，荒唐感由此而来。</div>
 <div class="item"><b>bonfire</b> <span class="phon">/ˈbɑːnfaɪər/</span> n. 篝火、大篝火 <button class="sp" onclick="speak(this)" data-t="bonfire">🔊</button> — 本集造了个新说法 <span class="ex">boyfriend bonfire</span>（烧前男友东西的篝火），后面消防员口中会再出现一次。</div>
 </div>
+
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>sage</b> <span class="phon">/seɪdʒ/</span> n. 鼠尾草 <button class="sp" onclick="speak(this)" data-t="sage">🔊</button> — 一种香草，在"净化仪式"里常被点燃用来"驱除负能量"，是 New Age 的标志道具。</div>
+<div class="item"><b>oregano</b> <span class="phon">/əˈreɡənoʊ/</span> n. 牛至叶（做披萨/意面的香料） <button class="sp" onclick="speak(this)" data-t="oregano">🔊</button> — 莫妮卡拿它冒充鼠尾草，厨房调味料硬凑仪式用品，荒唐感全在这。</div>
+<div class="item"><b>righteous</b> <span class="phon">/ˈraɪtʃəs/</span> adj. 正直的、品行端正的 <button class="sp" onclick="speak(this)" data-t="righteous">🔊</button> — <span class="ex">the semen of a righteous man</span>（正直男人的精液），菲比一本正经地念仪式条目，观众却要笑场。</div>
+<div class="item"><b>grappa</b> <span class="phon">/ˈɡrɑːpə/</span> n. 格拉巴酒（意大利葡萄渣酿的烈酒） <button class="sp" onclick="speak(this)" data-t="grappa">🔊</button> — 度数极高的烈酒，所以莫妮卡才惊呼"那玩意儿不是几乎纯（酒精）吗"。</div>
+</div>
+<div class="culture">
+<h4>🏛️ 文化解析：前男友篝火与"净化仪式"的混搭</h4>
+① 三个女生烧掉前男友的遗物（信、平角裤、照片、酒）来"断舍离"，这场 <b>boyfriend bonfire</b> 把菲比的灵修话术和普通人的泄愤心理缝在一起：鼠尾草＋圣餐酒（sage branches and the sacramental wine）本是宗教/仪式用品，被莫妮卡用<b>牛至叶＋一瓶 Fresca 汽水</b>顶替，构成"一本正经地凑合"的笑点。<br>
+② <b>boxer shorts（平角裤）</b>是瑞秋保留的前任私物；更妙的是莫妮卡那张"裸照"——瑞秋一看"他穿着毛衣呢"，莫妮卡回一个"No."，暗示那<b>除了毛衣什么都没穿</b>，全靠观众自己脑补。<br>
+③ <b>grappa</b> 是高度烈酒，扔进火里会"轰"地窜起火焰——所以最后引来了消防员。整场戏是"仪式→失控→外援登场"的因果链。
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Rachel: Ok, Pheebs, you know what, if we had that, we wouldn't be doing the ritual in the first place.</b><br>①菲比要求"一个正直男人的精液"，瑞秋冷冷回击"我们要是有那玩意儿，压根就不会搞这场仪式了"。潜台词：这场净化仪式的起因正是"缺一个正经男人"，菲比的要求等于在伤口上撒盐。②笑点机制：用逻辑反杀对方的荒诞要求，点破"这群人单身的根本原因"。③中文等价说法："拜托，要是有那种男人，我们还用烧东西吗？"</div>
+</div>
+
 </section>
 <!-- ============ SCENE 11 ============ -->
 <section class="scene" id="s11">
@@ -398,6 +518,22 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="item"><b>dump</b> <span class="phon">/dʌmp/</span> v.（口语）甩掉、分手 <button class="sp" onclick="speak(this)" data-t="dump">🔊</button> — <span class="ex">dump sb</span>＝把某人甩了。本集高频词，钱德勒在五个月里甩了贾妮丝两次。</div>
 <div class="item"><b>toilet brush</b> <span class="phon">/ˈtɔɪlət brʌʃ/</span> n. 马桶刷 <button class="sp" onclick="speak(this)" data-t="toilet brush">🔊</button> — 钱德勒式自嘲："下辈子投胎做马桶刷，好歹干的活比我现在体面"（其实更惨，笑点就在这荒诞比较）。</div>
 </div>
+
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>matchmaker</b> <span class="phon">/ˈmætʃmeɪkər/</span> n. 媒人、牵线的人 <button class="sp" onclick="speak(this)" data-t="matchmaker">🔊</button> — 贾妮丝称乔伊为 <span class="ex">our little matchmaker</span>（我们的小媒人），反讽他把两人又凑到一起。</div>
+</div>
+<div class="culture">
+<h4>🏛️ 文化解析：跨年与情人节的"分手档期"梗</h4>
+① 乔伊吐槽"你在跨年那天才甩过她"，钱德勒在情人节又要甩第二次——这戳中了美国约会文化里的一个真实吐槽：<b>节假日是"分手重灾区"</b>（尤其情人节前夕和新年），因为节日把"我们到底是什么关系"逼到台面上。<br>
+② 钱德勒那句"下辈子我要投胎做马桶刷"，是典型的 <b>self-deprecating humor（自嘲式幽默）</b>：不直接说"我惨"，而是找一个更惨的物件来比较，荒诞感来自这种"故作平静的离谱"。<br>
+③ 贾妮丝的台词永远带她的招牌：甜腻的拖长音、夸张的亲昵（"我这就把你从上到下亲个遍"），剧本刻意把她写成"热情到让人窒息"的极端，钱德勒的抗拒才有喜剧张力。
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Chandler: Joey's not a friend. He's...a stupid man who left us his credit card. Another drink? Some dessert? A big screen TV?</b><br>①钱德勒刚被乔伊"抛弃"，于是取消其"朋友"资格，改称"一个把信用卡丢给我们的蠢货"——真实意图是：既然你跑了，那我就用你的钱出口气；接着连问"再来一杯？甜点？大屏电视？"，把损失感换算成消费清单。②笑点机制：用"花别人的钱"来报复，还把惩罚升级到电视机这种大件，远超餐厅语境。③中文等价说法："乔伊哪算朋友——他就是个把信用卡扔给我们的傻子。再来一杯？甜点？要不来台大彩电？"</div>
+</div>
+
 </section>
 
 <!-- ============ SCENE 12 ============ -->
@@ -417,6 +553,17 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <h4>📌 重点单词</h4>
 <div class="item"><b>scooch</b> <span class="phon">/skuːtʃ/</span> v.（口语）往旁边挪一挪、蹭一蹭 <button class="sp" onclick="speak(this)" data-t="scooch">🔊</button> — 美式口语的可爱说法，常见于让人挪座位：<span class="ex">scooch over/down</span>＝挤一挤、挪过去点。本场景罗斯一连用了四种形式（scooch / scooching / scooch down），把一个词玩成了笑点。</div>
 </div>
+
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>stranded</b> <span class="phon">/ˈstrændɪd/</span> adj. 被晾在原地、孤立无援的 <button class="sp" onclick="speak(this)" data-t="stranded">🔊</button> — 舞台提示 <span class="ex">Carol is left stranded</span>＝卡罗被单独晾在桌边；本义多指"船搁浅／人被困、滞留"。</div>
+<div class="item"><b>hysterically</b> <span class="phon">/hɪˈsterɪkli/</span> adv. 歇斯底里地、狂笑不止地 <button class="sp" onclick="speak(this)" data-t="hysterically">🔊</button> — <span class="ex">laugh hysterically</span>＝狂笑。罗斯压根没听懂笑点，只能"硬笑"掩饰尴尬，笑声越夸张越好笑。</div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Ross: Now that is funny. Hey, do you think...would it be too weird if I invited Carol over to join us?</b><br>①罗斯刚"补笑"完，立刻提出邀请前妻过来同桌，还用"会不会太奇怪"来试探约会对象。真实意图：他真正想陪的是卡罗，用"她一个人、又怀孕、又难过"当理由，给自己找台阶。②笑点机制：把一件明显灾难的事，包装成一个"出于同情"的合理请求。③中文等价说法："嘿，我要是叫卡罗过来一起坐，会不会有点怪？"</div>
+</div>
+
 </section>
 
 <!-- ============ SCENE 13 ============ -->
@@ -434,6 +581,22 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <h4>💬 词组 / 俚语</h4>
 <div class="item"><b>What do we got there?</b> ＝ 我们这儿有什么（情况）？（消防/警察到场时的口语问法，<span class="ex">What do we got</span>＝现场有什么，比 What is this 更"现场感"）。</div>
 </div>
+
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>charred</b> <span class="phon">/tʃɑːrd/</span> adj. 烧焦的 <button class="sp" onclick="speak(this)" data-t="charred">🔊</button> — <span class="ex">a half-charred picture</span>＝一张烧了一半的照片（char＝烧焦，charred 是分词形容词）。</div>
+</div>
+<div class="culture">
+<h4>🏛️ 文化解析：纽约消防员与"消防员身材/告白文化"</h4>
+① 剧里的消防员被写成<b>高大健壮、对"烧前男友东西"见怪不怪</b>的救火队，而且"情人节是一年中最忙的一晚"——这是编剧对<b>情人节情绪事故高发</b>的夸张调侃，不是统计数据。<br>
+② 后面女生们对消防员"来了兴趣"、Rachel 问"能开消防车来吗"，呼应了美国流行文化对 <b>firefighter（消防员）</b>的固定想象：勇敢、壮硕、绯闻不断（还有著名的"消防员日历"慈善写真梗）。<br>
+③ "You're our third call tonight"（你们是我今晚出的第三趟警）用一个数字把"垮掉的爱情"推到闹剧级别，是 sitcom 常用的"量化夸张"手法。
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Monica: You know, it's a really funny story how this happened.</b><br>①家里烧起火、消防员上门，莫妮卡开口就说"这事说来真是好笑"。真实意图是想用"好笑"给这场"火烧前男友"打圆场、蒙混过去。②笑点机制：越是无法解释的灾难，越要用"这故事可有趣了"当开场白，制造心虚与被拆穿的反差。③中文等价说法："这事说来可逗了。"（越这么说越可疑）</div>
+</div>
+
 </section>
 
 <!-- ============ SCENE 14 ============ -->
@@ -461,6 +624,17 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 ② <b>"Chan and Jan Forever"（钱与珍，永远）</b>：贾妮丝把"Chandler"缩成 "Chan"、"Janice"缩成 "Jan" 印在糖上，还专门定制——在真实世界里，这类糖果确实提供定制印字服务，所以这句台词成立。钱德勒念出这行字时一脸生无可恋，笑点在于"最不走心的糖果，被当成最深情的告白"。<br>
 ③ <b>贾妮丝的招牌</b>：她说英语时带标志性的鼻音、拖长音（"Oh… my… God"），以及用第三人称喊自己名字（"Janice, Janice"）。这两点是全剧对贾妮丝的固定人设，也是她被观众记住的原因。
 </div>
+
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>loaded</b> <span class="phon">/ˈloʊdɪd/</span> adj.（枪）上了膛的 <button class="sp" onclick="speak(this)" data-t="loaded">🔊</button> — 钱德勒收到礼物先问 <span class="ex">Is it loaded?</span>（上了膛吗），用"是不是凶器"的夸张反应，预告贾妮丝这份礼物"危险"。</div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Chandler: Is it loaded? Oh, little candy hearts.</b><br>①钱德勒见贾妮丝送礼，第一反应是"上了膛吗？"——他把这份心意当成潜在武器。真实情绪：他对复合的恐惧已夸张到"礼物＝暗器"的程度。②笑点机制：用一个刑侦式的反应，把最甜的糖果包装成"危险品"。③中文等价说法："这玩意儿上膛了吗？……哦，是小糖果。"</div>
+<div class="item"><b>Janice: No, it isn't, because you won't let that happen... You love me, Chandler Bing.</b><br>①钱德勒说"我们结束了"，贾妮丝却回"不，因为你不会让它结束——你爱我"。真实意图：她自信地"重新定义现实"，把对方的拒绝解释成"你舍不得"。②笑点机制：死缠烂打＋逻辑自洽，越笃定越让人窒息，还连名带姓点"Chandler Bing"加强语气。③中文等价说法："不会结束——因为你不舍得。你爱我，钱德勒·宾。"</div>
+</div>
+
 </section>
 <!-- ============ SCENE 15 ============ -->
 <section class="scene" id="s15">
@@ -492,6 +666,16 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="item"><b>get on with your life</b> ＝ 继续过自己的日子、翻篇向前看。<span class="ex">getting on with your life</span> 是安慰失恋者最常说的话，而罗斯在这里恰恰在抗拒它。</div>
 <div class="item"><b>stick a pin in it</b> ＝ 先把它"钉起来"、暂时搁置（不想现在处理的事先放着）。卡罗最后回敬："是时候把别针拔出来了"（time to take the pin out）＝该面对这件事了。这是本场景标题的由来。</div>
 </div>
+
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>wacky</b> <span class="phon">/ˈwæki/</span> adj. 古怪的、荒唐的 <button class="sp" onclick="speak(this)" data-t="wacky">🔊</button> — <span class="ex">here's a wacky thought</span>＝"我有个荒唐的念头"，罗斯自己都知道接下来的提议不靠谱，却还是要说。</div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Ross: I know what you're gonna say, you're a lesbian. But what do you say we just put that aside for now... Let's just stick a pin in it, ok?</b><br>①罗斯求复合不成，退而求其次："你是女同志这事咱先放一边、先拿别针钉住。"真实意图：他不是不懂卡罗的取向，而是不肯接受，试图把"性取向"这种根本问题当成"可以先搁置的小事"。②笑点机制：用"stick a pin in it（先钉起来/暂搁置）"这个办公式比喻，去处理最无法搁置的事实，荒诞且心酸。③中文等价说法："我知道你要说什么，你是女同志——可咱能不能先把这事放一放？"（卡罗随即回敬："该把别针拔出来了。"）</div>
+</div>
+
 </section>
 
 <!-- ============ SCENE 16 ============ -->
@@ -505,6 +689,26 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>See, there you go, the cleansing works! <button class="sp" onclick="speak(this)" data-t="See, there you go, the cleansing works!">🔊</button></div><div class="zh">你看，这不就来了嘛，净化仪式奏效了！</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>They're nice guys. <button class="sp" onclick="speak(this)" data-t="They're nice guys.">🔊</button></div><div class="zh">他们是好人。</div></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Oh, they're firemen guys. <button class="sp" onclick="speak(this)" data-t="Oh, they're firemen guys.">🔊</button></div><div class="zh">哦，他们是"消防员级别的男人"。</div></div>
+
+<div class="phrasebox">
+<h4>💬 词组 / 俚语（补充）</h4>
+<div class="item"><b>ring the bell</b> ＝ 按/拉响铃；<span class="ex">let you ring the bell</span>＝"让你拉警铃"。消防员把"拉消防车警铃"当成约会福利，幼稚又暧昧；更常见的同义说法是 <span class="ex">ring the doorbell</span>（按门铃）。</div>
+</div>
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>truck</b> <span class="phon">/trʌk/</span> n. 卡车；（这里指）消防车 <button class="sp" onclick="speak(this)" data-t="truck">🔊</button> — Rachel 问 <span class="ex">will you bring the truck?</span>（你们会开消防车来吗），把约会当成"能不能看到大玩具"，孩子气十足。</div>
+</div>
+<div class="culture">
+<h4>🏛️ 文化解析：片尾"消防员来接"与情景喜剧的收尾套路</h4>
+① 消防员说"午夜下班来 pick you up（开车接你们）"，Rachel 的兴奋点却是"开消防车来吗""能拉警铃吗"——把成人约会写成"参观消防车"的儿童式兴奋，既甜又好笑。<br>
+② 这是标准的 <b>sitcom 收尾结构</b>：把前一幕的"灾难"（烧火）转化为下一幕的"福利"（来了单身消防员），用"因祸得福"收住本集情绪；菲比趁机宣布"净化仪式奏效了"，把巧合说成自己仪式的功劳。<br>
+③ 片尾最后的反转（下个场景）才点出这几位"好人"其实都已婚——是全集最后一个 closing gag。
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Rachel: So, um, will you bring the truck?</b><br>①消防员约她们下班后见面，Rachel 不问去哪、不聊别的，只关心"你们会开消防车来吗"。潜台词：她对这场约会最期待的部分，是能坐消防车、能按警铃，像小孩看热闹。②笑点机制：把恋爱的暧昧，替换成"能玩大玩具"的幼稚兴奋。③中文等价说法："那……你们会开消防车来吗？"</div>
+</div>
+
 </section>
 
 <!-- ============ SCENE 17 ============ -->
@@ -514,6 +718,18 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-other">Fireman No. 1:</span>You guys tell them you were married? <button class="sp" onclick="speak(this)" data-t="You guys tell them you were married?">🔊</button></div><div class="zh">你们俩跟她们说了你们结过婚的事吗？</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Fireman No. 2:</span>No way! <button class="sp" onclick="speak(this)" data-t="No way!">🔊</button></div><div class="zh">才没有！</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Fireman No. 3:</span>Are you kidding? My girlfriend doesn't know, I'm not gonna tell them! <button class="sp" onclick="speak(this)" data-t="Are you kidding? My girlfriend doesn't know, I'm not gonna tell them!">🔊</button></div><div class="zh">开什么玩笑？连我女朋友都不知道，我才不会告诉她们呢！</div></div>
+
+<div class="culture">
+<h4>🏛️ 文化解析：全剧最后一笑——"他们其实都结婚了"</h4>
+① 片尾楼道里，消防员互相打趣"你们跟她们说你们结过婚了吗"，回答是"No way!""连我女朋友都不知道，我才不会说呢"——把前面那群"nice guys（好人）"瞬间还原成一群有家室还在泡妞的油腻男。<br>
+② 这是情景喜剧最典型的 <b>closing gag（收尾笑点）</b>：先给观众一个"皆大欢喜"的假象（女生们遇到好男人），再用最后 30 秒把它打碎，让全集收在一个"你怎么能这样"的苦笑上。<br>
+③ 结构上它呼应了本集主题——<b>情人节里人人都在表演"我很幸福"</b>：钱德勒演不在乎、消防员演单身、罗斯演找到了新对象，最后全被拆穿。
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Fireman No. 3: My girlfriend doesn't know, I'm not gonna tell them!</b><br>①女生们还沉浸在"遇到好男人"的甜蜜里，消防员却在背后盘算怎么瞒住女友和妻室。潜台词：这群"白马王子"根本不打算认真，之前所有的殷勤都是套路。②笑点机制：让观众比剧中人先知道真相，形成"你们被骗了"的优越感笑点（dramatic irony）。③中文等价说法："连我女朋友都不知道，我才不会告诉她们呢。"</div>
+</div>
+
 </section>
 
 <!-- ============ SHADOWING ============ -->

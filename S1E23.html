@@ -44,6 +44,8 @@ nav.toc a:hover{text-decoration:underline}
 .culture h4{margin:0 0 6px;font-size:14px;color:#145a32}
 .phrasebox{background:#fdf6ee;border:1px solid #f2ddc0;border-left:5px solid #e67e22;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:14px}
 .phrasebox h4{margin:0 0 6px;font-size:14px;color:#9c4a0a}
+.intent{background:#F5F0FA;border:1px solid #e0d0ee;border-left:4px solid #7D3C98;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:14px}
+.intent h4{margin:0 0 6px;font-size:14px;color:#6C3483}
 .shadowbox{background:#fff;border:2px solid #8e44ad;border-radius:12px;padding:14px 18px;margin:26px 0}
 .shadowbox h2{margin-top:0;color:#6c3483;font-size:18px}
 .shadowbox ol{margin:8px 0 0;padding-left:22px}
@@ -59,7 +61,7 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
   .wrap{max-width:none;padding:0}
   header.hero{padding:16px 10px 12px}
   .scene{margin:14px 0}
-  .line,.note,.culture,.phrasebox,.shadowbox li{page-break-inside:avoid;break-inside:avoid}
+  .line,.note,.culture,.phrasebox,.intent,.shadowbox li{page-break-inside:avoid;break-inside:avoid}
   .scene h2{page-break-after:avoid;break-after:avoid}
   footer{page-break-before:avoid}
 }
@@ -85,7 +87,7 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
     <div class="sub">The One With the Birth · 卡罗尔临产的这一天</div>
     <div class="tags">
       <span>1994 年首播</span><span>美语中级偏上</span><span>左：英文原台词 / 右：中文对照</span>
-      <span>📌 重点单词（音标+意思）</span><span>💬 词组/俚语</span><span>🏛️ 文化解析</span><span>🔊 点按朗读</span>
+      <span>📌 重点单词（音标+意思）</span><span>💬 词组/俚语</span><span>🏛️ 文化解析</span><span>🔊 点按朗读</span><span>🎭 潜台词解析</span>
     </div>
   </div>
 </header>
@@ -101,7 +103,7 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="wrap">
 <div class="guide">
   <b>学习三步法（配合本集使用）</b><br>
-  ① <b>看懂</b>：逐句对照左右两栏，遇到 📌/💬/🏛️ 标注先读解析再往下走；<br>
+  ① <b>看懂</b>：逐句对照左右两栏，遇到 📌/💬/🏛️/🎭 标注先读解析再往下走（🎭 = 潜台词/意图解析——为什么这么说、笑点在哪）；<br>
   ② <b>听熟</b>：把速度调到 0.5×，点每句 🔊 听 2-3 遍，再切剧集原声听同一段，注意连读、吞音（如 <span class="ex">gonna / wanna / y'know / waitin'</span>）；<br>
   ③ <b>说出</b>：翻到文末「🔁 跟读重点句」，跟着原声逐句模仿语调和节奏，一天 10 句，重复到脱口而出。
 </div>
@@ -110,7 +112,6 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
   <b>本集场景导航：</b>
   <a href="#s1">1 医院·等卡罗尔</a><a href="#s2">2 卡罗尔的病房</a><a href="#s3">3 待产室·乔伊看球</a><a href="#s4">4 待产室·菲比弹唱</a><a href="#s5">5 莉迪亚的病房</a><a href="#s6">6 病房·陪产争执</a><a href="#s7">7 莉迪亚·破水</a><a href="#s8">8 走廊·吵到被关</a><a href="#s9">9 杂物间·呼救</a><a href="#s10">10 卡罗尔房间·瑞秋与大夫</a><a href="#s11">11 莉迪亚·接生</a><a href="#s12">12 杂物间·吸尘器</a><a href="#s13">13 待产室·电话与恭喜</a><a href="#s14">14 待产室·喝咖啡</a><a href="#s15">15 房外走廊·孩子的父亲</a><a href="#s16">16 杂物间·刷卡</a><a href="#s17">17 卡罗尔房间·要生了</a><a href="#s18">18 杂物间·通风口</a><a href="#s19">19 卡罗尔房间·宝宝出世</a><a href="#s20">20 产房·取名字</a><a href="#s21">21 片尾·宾的世界</a>
 </nav>
-
 <!-- ============ SCENE 1 ============ -->
 <section class="scene" id="s1">
 <h2>场景 1 · 医院·等卡罗尔 <span class="no">全剧集开场</span></h2>
@@ -143,21 +144,32 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>(to Rachel) You see what I mean. <button class="sp" onclick="speak(this)" data-t="You see what I mean.">🔊</button></div><div class="zh">（对瑞秋）你看，我就说吧。</div></div>
 <div class="phrasebox">
 <h4>💬 词组 / 俚语</h4>
-<div class="item"><b>pick your moments</b>＝"挑对时机再说"。钱德勒戏谑地为刚才那种"没品位的玩笑"辩护：不是我嘴坏，是你没选对场合。</div>
+<div class="item"><b>where the hell...</b>＝"到底……"（hell 用来加强语气，表达恼火或难以置信）。<span class="ex">Where the hell have you been?</span>＝"你到底上哪儿去了？"</div>
+<div class="item"><b>pick your moments</b>＝"挑对时机再开口"。钱德勒替刚才那句没品位的玩笑开脱：不是话有问题，是你没挑对时候。</div>
+<div class="item"><b>stop for sth</b>＝"为……而中途停车、停留"。<span class="ex">you don't stop for Chunkys</span>＝"你可不会为了买糖半路停车"。</div>
 </div>
 <div class="note">
 <h4>📌 重点单词</h4>
-<div class="item"><b>water broke</b> <span class="phon">/ˈwɔːtər brəʊk/</span> 短语 羊水破了（临产信号） <button class="sp" onclick="speak(this)" data-t="water broke">🔊</button> — 搭配 <span class="ex">Her water broke at midnight.</span>（她半夜破了水。）</div>
-<div class="item"><b>contraction</b> <span class="phon">/kənˈtrækʃn/</span> n. （子宫）收缩、宫缩 <button class="sp" onclick="speak(this)" data-t="contraction">🔊</button> — 搭配 <span class="ex">contractions every four minutes</span>（每四分钟一次宫缩）。</div>
+<div class="item"><b>water broke</b> <span class="phon">/ˈwɔːtər broʊk/</span> 短语 羊水破了（临产的信号） <button class="sp" onclick="speak(this)" data-t="water broke">🔊</button> — <span class="ex">Her water broke at midnight.</span>（她半夜破了水。）</div>
+<div class="item"><b>mucus plug</b> <span class="phon">/ˈmjuːkəs plʌɡ/</span> n. 宫颈粘液栓（临产前会排出的粘液） <button class="sp" onclick="speak(this)" data-t="mucus plug">🔊</button></div>
+<div class="item"><b>contraction</b> <span class="phon">/kənˈtrækʃn/</span> n.（子宫）收缩、宫缩 <button class="sp" onclick="speak(this)" data-t="contraction">🔊</button> — <span class="ex">contractions every four minutes</span></div>
+<div class="item"><b>cigar</b> <span class="phon">/sɪˈɡɑːr/</span> n. 雪茄 <button class="sp" onclick="speak(this)" data-t="cigar">🔊</button> — <span class="ex">hand out cigars</span>＝分发雪茄（见下方文化解析）</div>
+<div class="item"><b>bumper sticker</b> <span class="phon">/ˈbʌmpər ˈstɪkər/</span> n.（汽车保险杠上的）贴纸标语 <button class="sp" onclick="speak(this)" data-t="bumper sticker">🔊</button></div>
+<div class="item"><b>stuffed animal</b> <span class="phon">/stʌft ˈænɪml/</span> n. 毛绒玩具 <button class="sp" onclick="speak(this)" data-t="stuffed animal">🔊</button></div>
 </div>
 <div class="culture">
-<h4>🏛️ 文化解析：发雪茄 + 五十年代电影 + "矮胖"糖</h4>
-<b>hand out cigars（发雪茄）</b>：20 世纪美国一直有的习俗——家里添了宝宝，爸爸就在医院候诊室、办公室里给众人分发雪茄以示庆祝（反过来说，朋友也知道该找谁讨雪茄了）。乔伊说"我就在待产室发雪茄"，正是模仿这套老派做法。<br>
-钱德勒接着补刀：<b>a movie from the 50's（五十年代的老电影）</b>——因为分雪茄、走廊上来回踱步的"准爸爸"，正是好莱坞黑白片里被反复演烂的固定桥段。<br>
-<b>Chunky</b> 是真实存在的美国糖果棒（巧克力夹葡萄干和花生，Nestlé 出品，广告词曾主打 "What a chunk of chocolate!"）。苏珊临产前想吃糖，罗斯气的是"都这时候了还惦记着买糖"。
+<h4>🏛️ 文化解析：发雪茄、五十年代老电影与「矮胖」糖</h4>
+<b>hand out cigars（发雪茄）</b>：20 世纪美国一直有的习俗——家里添了宝宝，爸爸就在候诊室、办公室里给人分发雪茄以示庆祝（反过来说，朋友也知道该找谁讨雪茄了）。乔伊说"我就在待产室发雪茄"，模仿的正是这套老派做法。<br>
+<b>a movie from the 50's（五十年代老电影）</b>：分雪茄、走廊上来回踱步的"准爸爸"，是好莱坞黑白片里被演烂的固定桥段，钱德勒一句就把乔伊的想象戳穿。<br>
+<b>Chunky</b> 是真实存在的美国糖果棒（巧克力夹葡萄干与花生，Nestlé 出品，广告词曾主打 "What a chunk of chocolate!"）。苏珊临产前还想吃糖，罗斯气的是"都这时候了还惦记着买糖"。<br>
+<b>bumper sticker</b>：美国车上常贴的标语贴纸；钱德勒说"我以前车上有那贴纸"，等于把罗斯那句"你可不会为了买糖半路停车"当成一条现成的车贴笑话。
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Chandler: You have to pick your moments.</b><br>①瑞秋讲了个"产房像计价器"的冷笑话被众人瞪，她不服气："钱德勒说这种话就行？"钱德勒回这一句，看似讲"幽默要讲时机"的道理，实则是拿"我讲就是幽默、你讲就是冒犯"的厚脸皮自我辩护。②笑点是"用最正经的口吻给出最双标的结论"。③中文≈"话本身没错，是你没挑对场合——而这门学问只有我懂。"</div>
+<div class="item"><b>Rachel: It's probably like two dollars for the first contraction, and then fifty cents for each additional contraction.</b><br>①大家都在紧张等产，瑞秋想用玩笑缓和气氛，把宫缩当成出租车计价——结果全场沉默。②笑点机制是"把产房当计程车"的错位比喻，外加她用一本正经的算术语气讲最荒诞的事；随后的"干嘛，钱德勒说就行？"才是真正的包袱。③中文≈"第一次宫缩大概两块，后头每加一次五毛。"</div>
 </div>
 </section>
-
 <!-- ============ SCENE 2 ============ -->
 <section class="scene" id="s2">
 <h2>场景 2 · 卡罗尔的病房 <span class="no">"石英表"之争</span></h2>
@@ -190,15 +202,27 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Oh, that's funny! <button class="sp" onclick="speak(this)" data-t="Oh, that's funny!">🔊</button></div><div class="zh">哦，真好笑！</div></div>
 <div class="phrasebox">
 <h4>💬 词组 / 俚语</h4>
-<div class="item"><b>let it go</b>＝"算了／别再计较了"。别人还揪着一件事不放时，用它劝对方放下。</div>
+<div class="item"><b>let it go</b>＝"算了，别再计较了"。别人还揪着一件事不放时，用它劝对方放下。</div>
+<div class="item"><b>How's ... doing?</b>＝"……过得怎么样？"口语问候；医生一进门就用它招呼这对"育儿搭档"。</div>
 </div>
 <div class="note">
 <h4>📌 重点单词</h4>
-<div class="item"><b>uterus</b> <span class="phon">/ˈjuːtərəs/</span> n. 子宫 <button class="sp" onclick="speak(this)" data-t="uterus">🔊</button> — 搭配 <span class="ex">a party in my uterus</span>（我子宫里的派对）。</div>
-<div class="item"><b>obstetrician</b> <span class="phon">/ˌɒbstəˈtrɪʃn/</span> n. 产科医生 <button class="sp" onclick="speak(this)" data-t="obstetrician">🔊</button> — 相关：<span class="ex">obstetrics</span>（产科学）。</div>
+<div class="item"><b>uterus</b> <span class="phon">/ˈjuːtərəs/</span> n. 子宫 <button class="sp" onclick="speak(this)" data-t="uterus">🔊</button> — <span class="ex">a party in my uterus</span></div>
+<div class="item"><b>obstetrician</b> <span class="phon">/ˌɑːbstəˈtrɪʃn/</span> n. 产科医生 <button class="sp" onclick="speak(this)" data-t="obstetrician">🔊</button> — 相关：<span class="ex">obstetrics</span>（产科学）</div>
+<div class="item"><b>quartz</b> <span class="phon">/kwɔːrts/</span> n. 石英（石英表 quartz watch） <button class="sp" onclick="speak(this)" data-t="quartz">🔊</button></div>
+<div class="item"><b>ice chips</b> <span class="phon">/aɪs tʃɪps/</span> n. 碎冰（产程中产妇通常被告知只能含碎冰） <button class="sp" onclick="speak(this)" data-t="ice chips">🔊</button></div>
+</div>
+<div class="culture">
+<h4>🏛️ 文化解析：陪产与「育儿搭档」</h4>
+本集是 90 年代美国家庭结构变化的一个缩影：医生管罗斯和苏珊叫 <span class="ex">parenting team</span>（育儿搭档），护士后来把两人分别称作 <span class="ex">ex-husband（前夫）</span>与 <span class="ex">lesbian life partner（女同志终身伴侣）</span>——卡罗尔离婚后与苏珊在一起，罗斯是孩子的生父、苏珊是她的伴侣，三人共同抚养这个孩子。<br>
+这也解释了本集反复出现的"谁是家长"之争：罗斯咬定自己才是父亲，苏珊则强调"我和你一样盼这一天"。剧集没有把它写成站队题，而是当成两个都真心爱孩子的人之间的日常摩擦来写。
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Ross: Quartz, ha. / Susan: Swiss quartz, ha, ha.</b><br>①两人为"宫缩到底是 55 秒还是 59 秒"较劲，罗斯抬手看表自夸"石英表"，苏珊立刻回"瑞士石英表"再压一头。②笑点机制是"用计时精度之争来演两个成年人争宠"——争的根本不是秒数，而是"谁更关心卡罗尔"。③中文≈"（哼）我这可是石英表。""（哼）瑞士石英的哦。"</div>
+<div class="item"><b>Rachel: I'm Carol's... ex-husband's... sister's roommate.</b><br>①瑞秋一进门见到帅哥医生就抢着自我介绍，关系链绕了一大圈才说清自己是谁。②笑点机制是"为了能多待在帅哥面前，把没关系硬说成有关系"，那串顿号递进本身就是喜剧节奏；医生立刻照仿一句"我是你室友的哥哥的前妻的产科医生"回敬。③中文≈"我是卡罗尔……前夫的……妹妹的室友。"</div>
 </div>
 </section>
-
 <!-- ============ SCENE 3 ============ -->
 <section class="scene" id="s3">
 <h2>场景 3 · 待产室·乔伊看球 <span class="no">尼克斯 vs 凯尔特人</span></h2>
@@ -219,13 +243,26 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-other">Lydia:</span>The Celtics. <button class="sp" onclick="speak(this)" data-t="The Celtics.">🔊</button></div><div class="zh">凯尔特人。</div></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>The Celtics? Ha. They couldn't hit a boat if...wait. They suck, alright? <button class="sp" onclick="speak(this)" data-t="The Celtics? Ha. They couldn't hit a boat if...wait. They suck, alright?">🔊</button></div><div class="zh">凯尔特人？哈。他们连船都投不中，要是……等等。他们就是烂，行了吧？</div></div>
 <div class="line stage"><span>（乔伊陪莉迪亚去病房。）</span></div>
+<div class="phrasebox">
+<h4>💬 词组 / 俚语</h4>
+<div class="item"><b>they suck</b>＝"他们烂透了"（suck 是口语里极常用的贬词，看球吐槽必备）。</div>
+<div class="item"><b>who do you like?</b>＝"你支持谁？（你粉哪一队？）"</div>
+</div>
+<div class="note">
+<h4>📌 重点单词</h4>
+<div class="item"><b>Knick</b> <span class="phon">/nɪk/</span> n.（口语）纽约尼克斯队球员/球迷（Knicks 的简写） <button class="sp" onclick="speak(this)" data-t="Knick">🔊</button></div>
+<div class="item"><b>rebuilding year</b> <span class="phon">/ˌriːˈbɪldɪŋ jɪr/</span> n.（球队）重建年 <button class="sp" onclick="speak(this)" data-t="rebuilding year">🔊</button> — 战绩差时的标准自我安慰（见下方文化解析）</div>
+</div>
 <div class="culture">
 <h4>🏛️ 文化解析：尼克斯 vs 凯尔特人，还有尤因</h4>
-本集反复出现的球赛不是随口编的——<b>New York Knicks（纽约尼克斯）</b>与 <b>Boston Celtics（波士顿凯尔特人）</b>是 NBA 两支老牌球队，也是长达数十年的宿敌 rivalry。剧集 1994 年播出时，尼克斯的中锋正是真实巨星 <b>Patrick Ewing（帕特里克·尤因）</b>，所以莉迪亚一句 "look at your man, Ewing" 是货真价实的球迷对话。<br>
-台词的笑点全在"球迷互怼话术"：<span class="ex">they suck</span>（他们烂）、<span class="ex">he couldn't hit water if he was standing on a boat</span>（夸张到离谱的损人比喻，意即"再容易的球他也投不进"）、以及后面的 <span class="ex">it's a rebuilding year</span>（"重建年"——球队战绩差时的标准自我安慰）。看懂这些，就明白乔伊和莉迪亚是"敌人见面却聊得来"。
+本集反复出现的球赛不是随口编的——<b>New York Knicks（纽约尼克斯）</b>与 <b>Boston Celtics（波士顿凯尔特人）</b>是 NBA 两支老牌球队，也是长达数十年的宿敌（rivalry）。1994 年剧集播出时，尼克斯的中锋正是真实巨星 <b>Patrick Ewing（帕特里克·尤因）</b>，所以莉迪亚一句 "look at your man, Ewing" 是货真价实的球迷对话。<br>
+笑点全在"球迷互怼话术"：<span class="ex">they suck</span>（他们烂透了）、<span class="ex">he couldn't hit water if he was standing on a boat</span>（夸张到离谱的损人比喻，意即"再容易的球他也投不进"）、<span class="ex">it's a rebuilding year</span>（"重建年"——球队战绩差时球迷的标准安慰，等于承认打得很烂）。看懂这些，就明白乔伊和莉迪亚是"对手球迷见面却聊得来"。
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Chandler: Mmmm. Not tonight, honey. I got an early day tomorrow.</b><br>①莫妮卡靠在钱德勒肩上说"我想要个孩子"，半睡半醒的钱德勒却把它当成"求欢"来拒绝——"今晚不行，亲爱的，明天要早起"。②笑点机制是"丈夫式条件反射的错频回应"，把一句承载人生渴望的话，接成一个最俗套的睡前敷衍。③中文≈"嗯……今晚不行宝贝，明儿还得早起呢。"</div>
 </div>
 </section>
-
 <!-- ============ SCENE 4 ============ -->
 <section class="scene" id="s4">
 <h2>场景 4 · 待产室·菲比弹唱 <span class="no">"四十岁那年"</span></h2>
@@ -263,15 +300,26 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line stage"><span>（他转过身，用眼神做出一副"我的天"的表情。）</span></div>
 <div class="phrasebox">
 <h4>💬 词组 / 俚语</h4>
-<div class="item"><b>what do you say (you and I)...?</b>＝"你觉得……怎么样？"用来提议。<span class="ex">what do you say you and I get together</span>＝"你说咱俩凑一块儿怎么样？"</div>
+<div class="item"><b>what do you say (you and I)...?</b>＝"你觉得（咱俩）……怎么样？"用来提议。</div>
+<div class="item"><b>no fair</b>＝"不公平！"（儿童口语，撒娇式抗议）。</div>
+<div class="item"><b>how come...?</b>＝"为什么……？"（＝why，更口语）。</div>
 </div>
 <div class="note">
 <h4>📌 重点单词</h4>
-<div class="item"><b>hypothetically</b> <span class="phon">/ˌhaɪpəˈθetɪkli/</span> adv. 假设地、纯属假设 <button class="sp" onclick="speak(this)" data-t="hypothetically">🔊</button> — 钱德勒越解释越糟，莫妮卡抓住这个词反问到底。</div>
-<div class="item"><b>unmarriable</b> <span class="phon">/ʌnˈmæriəbl/</span> adj. 无法（与之）结婚的、嫁不出去的 <button class="sp" onclick="speak(this)" data-t="unmarriable">🔊</button> — 由 marry 加 -able 再否定：<span class="ex">marriageable → unmarriable</span>。</div>
+<div class="item"><b>hypothetically</b> <span class="phon">/ˌhaɪpəˈθetɪkli/</span> adv. 假设地、纯属假设 <button class="sp" onclick="speak(this)" data-t="hypothetically">🔊</button> — 钱德勒越解释越糟，莫妮卡抓住这个词反问到底</div>
+<div class="item"><b>unmarriable</b> <span class="phon">/ʌnˈmæriəbl/</span> adj. 无法（与之）结婚的、"嫁不出去"的 <button class="sp" onclick="speak(this)" data-t="unmarriable">🔊</button> — marry → marriageable → unmarriable</div>
+<div class="item"><b>knapsack</b> <span class="phon">/ˈnæpsæk/</span> n.（帆布）背包、行囊 <button class="sp" onclick="speak(this)" data-t="knapsack">🔊</button></div>
+</div>
+<div class="culture">
+<h4>🏛️ 文化解析：菲比的「黑暗童谣」</h4>
+菲比自弹自唱这首"宝宝歌"——前半温柔（又小又胖、摸着柔软），后半急转直下（"很快他们长大就会恨你，你哭啊哭"）。这是菲比这个角色的招牌设定：<b>用最温暖的声音唱最丧的词</b>，把育儿的不堪包装成儿歌。罗斯递上一美元不是打赏，是"付钱让你别唱了"（<span class="ex">I'm paying you to stop</span>），正是全剧对菲比唱歌的固定反应。后面场景 12 她唱起"第二天人们发现了他们的尸体"，也是同一个套路。
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Chandler: Dear God! This parachute is a knapsack!</b><br>①莫妮卡一句"我身上是不是有什么根本性的'嫁不出去'问题？"把钱德勒逼到死角，他大喊"天哪！这降落伞原来是个背包！"然后从椅背向后翻倒逃走。②这是钱德勒的招牌"逃跑机制"——每当话题触及亲密关系，他就靠一句荒诞的胡说八道脱身；"跳伞变书包"这个意象后来成了粉丝梗。③中文≈"老天！这哪是降落伞，这是书包啊！"</div>
+<div class="item"><b>Rachel: Yeah, well, it's an important day. I wanna look nice.</b><br>①瑞秋特地回家换了一身正式连衣裙，被问起就说是"今天重要、想打扮漂亮点"。②潜台词：她其实是为了再见那位帅医生才郑重装扮的，"重要的一天"只是借口；她紧接着就问"弗朗兹布劳大夫来过吗？"彻底暴露了心思。③中文≈"嗯，今天挺重要的嘛，我想穿得好看点。"</div>
 </div>
 </section>
-
 <!-- ============ SCENE 5 ============ -->
 <section class="scene" id="s5">
 <h2>场景 5 · 莉迪亚的病房 <span class="no">乔伊接电话</span></h2>
@@ -295,10 +343,16 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-other">Lydia:</span>Isn't! <button class="sp" onclick="speak(this)" data-t="Isn't!">🔊</button></div><div class="zh">不是！</div></div>
 <div class="phrasebox">
 <h4>💬 词组 / 俚语</h4>
-<div class="item"><b>not much of a + 名词</b>＝"算不上是个……"<span class="ex">She's not much of a phone person.</span>＝"她算不上爱打电话的人。"</div>
+<div class="item"><b>not much of a + 名词</b>＝"算不上是个……"<span class="ex">She's not much of a phone person.</span>＝"她不太爱打电话。"</div>
+<div class="item"><b>what's the deal with...?</b>＝"……到底是怎么回事？"</div>
+<div class="item"><b>take care</b>＝"保重"（道别常用语）。</div>
+</div>
+<div class="note">
+<h4>📌 重点单词</h4>
+<div class="item"><b>jerk</b> <span class="phon">/dʒɜːrk/</span> n.（口语）混蛋、讨厌鬼 <button class="sp" onclick="speak(this)" data-t="jerk">🔊</button> — <span class="ex">the guy's a jerk</span></div>
+<div class="item"><b>fatherhood</b> <span class="phon">/ˈfɑːðərhʊd/</span> n. 为父之道、父亲身份 <button class="sp" onclick="speak(this)" data-t="fatherhood">🔊</button> — <span class="ex">your views on fatherhood</span></div>
 </div>
 </section>
-
 <!-- ============ SCENE 6 ============ -->
 <section class="scene" id="s6">
 <h2>场景 6 · 病房·陪产争执 <span class="no">为了"乔迪"</span></h2>
@@ -339,13 +393,23 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="phrasebox">
 <h4>💬 词组 / 俚语</h4>
 <div class="item"><b>Thanks a lot.</b>（反讽）＝"真是多谢你了。"字面感谢，语气一沉就是埋怨。</div>
+<div class="item"><b>He started it! / You started it.</b>＝"是他先挑起的／是你先挑起的"（小孩吵架式的互相甩锅）。</div>
 </div>
 <div class="note">
 <h4>📌 重点单词</h4>
-<div class="item"><b>fiasco</b> <span class="phon">/fiˈæskəʊ/</span> n. 惨败、一团糟的局面 <button class="sp" onclick="speak(this)" data-t="fiasco">🔊</button> — 罗斯用它形容"取名字那场乱仗"。</div>
+<div class="item"><b>fiasco</b> <span class="phon">/fiˈæskoʊ/</span> n. 惨败、一团糟的局面 <button class="sp" onclick="speak(this)" data-t="fiasco">🔊</button> — 罗斯用它形容"取名字那场乱仗"</div>
+<div class="item"><b>leg cramp</b> <span class="phon">/leɡ kræmp/</span> n. 腿部抽筋 <button class="sp" onclick="speak(this)" data-t="leg cramp">🔊</button></div>
+</div>
+<div class="culture">
+<h4>🏛️ 文化解析：拉梅兹呼吸法与「教练」</h4>
+罗斯和苏珊轮流喊 <span class="ex">Breathe.</span>（呼吸），罗斯还倒数秒数帮卡罗尔撑过宫缩——这是欧美产房常见的<b>分娩陪伴/呼吸法</b>（源于拉梅兹 Lamaze 法）：产妇的伴侣或"教练 coach"负责引导呼吸节奏、报时、加油。正因两人都要当这个"教练"，才会为"该谁揉腿"吵起来。<br>
+另外"取名字"这段也很真实：美国父母常在产前早早纠结孩子的名字，罗斯口中的 <b>Jordie / Jamie / Jessy / Cody / Dylan</b> 都是 90 年代流行的英文名，他抱怨"只是路过提过一嘴的 Jordie 怎么就成了定论"，正好戳中"名字决定权"的家庭拉锯。
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Ross: Hey, you get to sleep with her, I get the cramps.</b><br>①两人同时去帮卡罗尔揉腿，罗斯甩出这句"你能跟她睡觉，我只能替她揉抽筋"。②潜台词是罗斯对前妻与新伴侣关系的酸楚与不甘——他把自己摆成"被规则亏待的前夫"，用一句带刺的玩笑把被剥夺的亲密感摆上台面；正因这句，卡罗尔才把两人一起轰出去。③中文≈"你能跟她同床，我可就只能替她揉抽筋了。"</div>
 </div>
 </section>
-
 <!-- ============ SCENE 7 ============ -->
 <section class="scene" id="s7">
 <h2>场景 7 · 莉迪亚·破水 <span class="no">乔伊吓坏</span></h2>
@@ -357,8 +421,12 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-other">Nurse:</span>It's just her water breaking. Calm down, will you? <button class="sp" onclick="speak(this)" data-t="It's just her water breaking. Calm down, will you?">🔊</button></div><div class="zh">那只是她破水了。能不能冷静点？</div></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>(panicked) Water breaking, what do you mean? What's that, water breaking? <button class="sp" onclick="speak(this)" data-t="Water breaking, what do you mean? What's that, water breaking?">🔊</button></div><div class="zh">（惊慌失措）破水，你什么意思？破水是什么东西？</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Nurse:</span>(to Joey) Breathe, breathe, breathe. <button class="sp" onclick="speak(this)" data-t="Breathe, breathe, breathe.">🔊</button></div><div class="zh">（对乔伊）呼吸，呼吸，呼吸。</div></div>
+<div class="note">
+<h4>📌 重点单词</h4>
+<div class="item"><b>panicked</b> <span class="phon">/ˈpænɪkt/</span> adj. 惊慌失措的 <button class="sp" onclick="speak(this)" data-t="panicked">🔊</button> — <span class="ex">(panicked) Water breaking, what do you mean?</span></div>
+<div class="item"><b>explode</b> <span class="phon">/ɪkˈsploʊd/</span> v. 爆炸、爆开 <button class="sp" onclick="speak(this)" data-t="explode">🔊</button> — 乔伊夸张地把破水说成 <span class="ex">Something exploded!</span>（有什么东西爆了！）</div>
+</div>
 </section>
-
 <!-- ============ SCENE 8 ============ -->
 <section class="scene" id="s8">
 <h2>场景 8 · 走廊·吵到被关 <span class="no">菲比的"教训"</span></h2>
@@ -380,9 +448,18 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="phrasebox">
 <h4>💬 词组 / 俚语</h4>
 <div class="item"><b>that's it</b>＝"到此为止、够了！"用来叫停别人的行为。</div>
+<div class="item"><b>come along</b>＝"出现、到来"（<span class="ex">before you came along</span>＝在你出现之前）。</div>
+</div>
+<div class="note">
+<h4>📌 重点单词</h4>
+<div class="item"><b>threaten</b> <span class="phon">/ˈθretn/</span> v. 威胁；be threatened by＝因……而感到被威胁 <button class="sp" onclick="speak(this)" data-t="threatened">🔊</button></div>
+<div class="item"><b>ironic</b> <span class="phon">/aɪˈrɑːnɪk/</span> adj. 讽刺的、反讽的 <button class="sp" onclick="speak(this)" data-t="ironic">🔊</button> — 菲比刚把人锁进杂物间，还问 <span class="ex">who wants to hear something ironic?</span></div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Phoebe: ...your negative fighting noises are not the first thing they should be hearing. So just stop all the yelling, just stop it!</b><br>①一向古灵精怪的菲比突然沉下脸，把两人从走廊拽进杂物间，训了一通"这栋楼里正有孩子出生，他们听到的第一种声音不该是你们的吵架"。刚吼完，她的语气又软下来——"别逼我再这样说话，我不喜欢自己这样"。②这段的情绪潜台词是：菲比自己童年破碎，对"孩子出生时被爱包围"极敏感，才会破例动怒；更"反讽"的是她把两人关进杂物间，自己却被反锁在里面。③中文≈"这儿正有孩子来到世上，你们吵架的负能量，不该是他们听到的第一种声音。别吵了！"</div>
 </div>
 </section>
-
 <!-- ============ SCENE 9 ============ -->
 <section class="scene" id="s9">
 <h2>场景 9 · 杂物间·呼救 <span class="no">反讽登场</span></h2>
@@ -392,7 +469,6 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line stage"><span>（他向后走，像是要把门撞开，却一脚踩进桶里摔倒了。）</span></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Ow. <button class="sp" onclick="speak(this)" data-t="Ow.">🔊</button></div><div class="zh">哎哟。</div></div>
 </section>
-
 <!-- ============ SCENE 10 ============ -->
 <section class="scene" id="s10">
 <h2>场景 10 · 卡罗尔房间·瑞秋与大夫 <span class="no">巴黎的糕点店</span></h2>
@@ -406,23 +482,29 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-other">Dr. Franzblau:</span>It really was. There was this great little pastry shop right by my hotel. <button class="sp" onclick="speak(this)" data-t="It really was. There was this great little pastry shop right by my hotel.">🔊</button></div><div class="zh">真的很有意思。我住的酒店旁边就有一家很棒的小糕点店。</div></div>
 <div class="line stage"><span>（卡罗尔痛得坐了起来，瑞秋和弗朗兹布劳大夫若无其事地把她按回去。）</span></div>
 <div class="line"><div class="en"><span class="spk c-other">Dr. Franzblau:</span>There you go, dear. <button class="sp" onclick="speak(this)" data-t="There you go, dear.">🔊</button></div><div class="zh">好了，就这样，亲爱的。</div></div>
-<div class="note">
-<h4>📌 重点单词</h4>
-<div class="item"><b>pastry</b> <span class="phon">/ˈpeɪstri/</span> n. 酥皮糕点、甜点 <button class="sp" onclick="speak(this)" data-t="pastry">🔊</button> — <span class="ex">a pastry shop</span>＝一家糕点店。</div>
-</div>
 <div class="phrasebox">
 <h4>💬 词组 / 俚语</h4>
-<div class="item"><b>there you go</b>＝"这就对了／好了。"此处大夫一边把卡罗尔按回床上一边安抚。</div>
+<div class="item"><b>there you go</b>＝"这就对了／好了。"此处大夫一边把痛得坐起的卡罗尔按回床上，一边随口安抚。</div>
+</div>
+<div class="note">
+<h4>📌 重点单词</h4>
+<div class="item"><b>pastry</b> <span class="phon">/ˈpeɪstri/</span> n. 酥皮糕点、甜点 <button class="sp" onclick="speak(this)" data-t="pastry">🔊</button> — <span class="ex">a pastry shop</span>＝一家糕点店</div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Rachel: Ok, so anyway, you were telling me about Paris, it sounds fascinating.</b><br>①卡罗尔正痛得坐起来，瑞秋和医生却若无其事地把她按回床上，继续聊巴黎的糕点店。②笑点机制是"两条情绪线并置"——一边是产妇的剧痛，一边是瑞秋撩医生的标准约会寒暄，反差造成冷幽默；也是本集写瑞秋"对医生着迷"的又一处伏笔。③中文≈"对了，你刚在跟我讲巴黎，听起来真有意思。"</div>
 </div>
 </section>
-
 <!-- ============ SCENE 11 ============ -->
 <section class="scene" id="s11">
 <h2>场景 11 · 莉迪亚·接生 <span class="no">乔伊的啦啦队</span></h2>
 <div class="line stage"><span>【场景：莉迪亚的房间，乔伊在帮她接生。】</span></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Come on, Lydia, you can do it. Push! Push 'em out, push 'em out, harder, harder. Push 'em out, push 'em out, way out! Let's get that ball and really move, hey, hey, ho, ho. Let's— I was just—yeah, right. Push! Push! <button class="sp" onclick="speak(this)" data-t="Come on, Lydia, you can do it. Push! Push 'em out, push 'em out, harder, harder. Push 'em out, push 'em out, way out! Let's get that ball and really move, hey, hey, ho, ho. Push! Push!">🔊</button></div><div class="zh">加油，莉迪亚，你能行的。用力！把他推出来，推出来，再用点力，再用点力。推出来，推出来，推得远远的！让那球转起来，真动起来，嘿，嘿，嚯，嚯。我们——（注意到护士一脸古怪地看着他）我只是——对，好吧。用力！用力！</div></div>
+<div class="culture">
+<h4>🏛️ 文化解析：乔伊的「啦啦队口令」</h4>
+乔伊这段 <span class="ex">Push 'em out, push 'em out, way out!</span> 以及 <span class="ex">hey, hey, ho, ho</span>，喊的其实是美式<b>体育场啦啦队/助威口号</b>的节奏——他把"陪产加油"直接套成了球场助威，所以护士会用看怪人的眼神盯着他；而 "Let's get that ball and really move" 里的球（ball）更是牛头不对马嘴（新生儿又不是球）。这是乔伊"用最简单粗暴的运动脑应对一切场面"的典型笑点。
+</div>
 </section>
-
 <!-- ============ SCENE 12 ============ -->
 <section class="scene" id="s12">
 <h2>场景 12 · 杂物间·吸尘器 <span class="no">菲比的黑暗童谣</span></h2>
@@ -432,8 +514,15 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>(singing) They found their bodies the very next day, they found their bodies the very next... la la la la la la. <button class="sp" onclick="speak(this)" data-t="They found their bodies the very next day, they found their bodies the very next... la la la la la la.">🔊</button></div><div class="zh">（唱）第二天他们就找到了尸体，他们找到了尸体就在……啦啦啦啦啦啦。</div></div>
 <div class="line stage"><span>（她看到罗斯和苏珊盯着自己。）</span></div>
 <div class="line"><div class="en"><span class="spk c-other">Susan and Ross:</span>(even louder) Help! <button class="sp" onclick="speak(this)" data-t="Help!">🔊</button></div><div class="zh">（更大声）救命！</div></div>
+<div class="note">
+<h4>📌 重点单词</h4>
+<div class="item"><b>vacuum</b> <span class="phon">/ˈvækjuːm/</span> n. 吸尘器；v. 用吸尘器吸 <button class="sp" onclick="speak(this)" data-t="vacuum">🔊</button> — 苏珊吐槽 <span class="ex">suck the door open</span>＝（你想）把门吸开？（suck 双关：吸尘 / 烂）</div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Phoebe: (singing) They found their bodies the very next day...</b><br>①罗斯和苏珊在杂物间里大喊救命，菲比抱着吉他唱起"第二天人们发现了他们的尸体"，被两人瞪住才改成"啦啦啦"。②笑点机制是"菲比的黑暗歌词"再次抢戏——她唱歌从不看场合，歌词越丧越平静；那句被瞪到一半硬拗成 la la la，正是包袱落点。③中文≈"第二天，人们就发现了他们的尸体……啦啦啦啦啦啦。"</div>
+</div>
 </section>
-
 <!-- ============ SCENE 13 ============ -->
 <section class="scene" id="s13">
 <h2>场景 13 · 待产室·电话与恭喜 <span class="no">Mazel tov!</span></h2>
@@ -443,13 +532,21 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Where have you been? <button class="sp" onclick="speak(this)" data-t="Where have you been?">🔊</button></div><div class="zh">你上哪儿去了？</div></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Oh, just had a baby. <button class="sp" onclick="speak(this)" data-t="Oh, just had a baby.">🔊</button></div><div class="zh">哦，刚生了个孩子。</div></div>
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Mazel tov! <button class="sp" onclick="speak(this)" data-t="Mazel tov!">🔊</button></div><div class="zh">恭喜恭喜！</div></div>
+<div class="phrasebox">
+<h4>💬 词组 / 俚语</h4>
+<div class="item"><b>fly back</b>＝"坐飞机赶回来"。</div>
+<div class="item"><b>Would you stop?</b>＝"你能不能别说了？"（不耐烦地打断对方）。</div>
+</div>
 <div class="culture">
 <h4>🏛️ 文化解析：Mazel tov（意第绪语祝福）</h4>
-<b>Mazel tov</b>（也拼 <span class="ex">mazel tov / mazal tov</span>）来自意第绪语，源出希伯来语，意思是"恭喜、好运"，尤其用在婚礼、成人礼、生孩子等喜事场合。随犹太移民进入美国后，它早已被美国大众英语吸收，非犹太人日常也会脱口而出。<br>
-钱德勒听说乔伊"刚生了个孩子"，条件反射地送上一句 Mazel tov——既贴切（正是贺喜生子的场合），又用犹太式祝福给这句随口的恭喜添了地道的美式幽默色彩。
+<b>Mazel tov</b>（也拼 mazel tov / mazal tov）来自意第绪语，源出希伯来语，意思是"恭喜、好运"，尤其用在婚礼、成年礼、生孩子等喜事场合。随犹太移民进入美国后，它早已被美国大众英语吸收，非犹太人日常也会脱口而出。<br>
+钱德勒听说乔伊"刚生了个孩子"，条件反射地送上一句 Mazel tov——既贴合"贺喜生子"的场合，又用这声犹太式祝福给随口的恭喜添了一层地道的美式幽默。乔伊接电话报的"25 岁、演员、单身"，也是本集把他简单人设写满的一笔。
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Chandler: Mazel tov!</b><br>①乔伊随口说"哦，我刚生了个孩子"，钱德勒一秒不卡壳地回"恭喜恭喜！"②笑点是"死板地按字面恭维"——钱德勒当然知道乔伊没真生孩子，却偏用最正式的贺喜词接梗，冷面到底；这也是全剧处理荒诞消息的固定节奏。③中文≈"恭喜恭喜！"</div>
 </div>
 </section>
-
 <!-- ============ SCENE 14 ============ -->
 <section class="scene" id="s14">
 <h2>场景 14 · 待产室·喝咖啡 <span class="no">"你有交往对象吗？"</span></h2>
@@ -467,16 +564,25 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-other">Dr. Franzblau:</span>I'm gonna go check up on your friend. <button class="sp" onclick="speak(this)" data-t="I'm gonna go check up on your friend.">🔊</button></div><div class="zh">我去看看你的朋友。</div></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Ok. That's fine. <button class="sp" onclick="speak(this)" data-t="Ok. That's fine.">🔊</button></div><div class="zh">好，没问题。</div></div>
 <div class="line stage"><span>（摘下耳环。）</span></div>
-<div class="note">
-<h4>📌 重点单词</h4>
-<div class="item"><b>involved (with sb)</b> <span class="phon">/ɪnˈvɒlvd/</span> adj. 有交往对象的、在恋爱关系中的 <button class="sp" onclick="speak(this)" data-t="involved">🔊</button> — <span class="ex">Are you involved with anyone?</span>＝"你有对象吗？"比 <span class="ex">Do you have a boyfriend?</span> 更委婉。</div>
-</div>
 <div class="phrasebox">
 <h4>💬 词组 / 俚语</h4>
-<div class="item"><b>not at the moment</b>＝"目前没有"。比直接说 no 更留余地、更客气。</div>
+<div class="item"><b>not at the moment</b>＝"目前没有"。比直说 no 更留余地、更客气。</div>
+<div class="item"><b>gotcha</b>＝"懂了／明白了"（I got you 的口语缩读）。</div>
+</div>
+<div class="note">
+<h4>📌 重点单词</h4>
+<div class="item"><b>involved (with sb)</b> <span class="phon">/ɪnˈvɑːlvd/</span> adj. 有交往对象的、在恋爱关系中的 <button class="sp" onclick="speak(this)" data-t="involved">🔊</button> — <span class="ex">Are you currently involved with anyone?</span>＝"你现在有对象吗？"比 Do you have a boyfriend? 更委婉</div>
+</div>
+<div class="culture">
+<h4>🏛️ 文化解析：90 年代的约会开场白</h4>
+医生问瑞秋 <span class="ex">are you currently involved with anyone?</span>，瑞秋用 <span class="ex">I've heard that about cute doctors.</span>（关于帅哥医生的传闻我听多了）接话——这是典型的 90 年代美式约会初期试探性调情：先借工作话题开场，再用一个轻巧的恭维给对方台阶。<br>
+而医生绕来绕去想说的 <span class="ex">I try not to let my work affect my personal life</span>，最后靠"你是做什么的？"引出"我是服务员"，再类比"你也会有'再看一杯咖啡就想吐'的时候吧"——用职业共鸣来推进关系，是这段对话的机锋所在。
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Rachel: (anxiously) No, no, not at the moment, no, I'm not. Are you?</b><br>①医生问"你有交往对象吗"，瑞秋连说四个否，然后立刻反问"你呢？"②潜台词一目了然：她急着撇清单身、又急着确认对方单身，连珠炮式的否定暴露了她的紧张与期待。③中文≈"没有没有，目前没有，真没有……那你呢？"</div>
 </div>
 </section>
-
 <!-- ============ SCENE 15 ============ -->
 <section class="scene" id="s15">
 <h2>场景 15 · 房外走廊·孩子的父亲 <span class="no">乔伊门外偷听</span></h2>
@@ -492,10 +598,13 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line stage"><span>（乔伊关上门，把气球系在门把上，然后牵着一只吹起来的气球动物走开了。）</span></div>
 <div class="note">
 <h4>📌 重点单词</h4>
-<div class="item"><b>loaner</b> <span class="phon">/ˈləʊnər/</span> n. 借来的东西、（修车时给的）代用车 <button class="sp" onclick="speak(this)" data-t="loaner">🔊</button> — 莉迪亚是拿"孩子爸"现学现卖地开涮：这孩子是"借来的"。</div>
+<div class="item"><b>loaner</b> <span class="phon">/ˈloʊnər/</span> n. 借来的东西、（修车时商家）临时借给你的代用车 <button class="sp" onclick="speak(this)" data-t="loaner">🔊</button> — 莉迪亚拿"孩子爸"开涮：这孩子是"借来的"</div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Lydia: No, this is a loaner.</b><br>①孩子爸走进病房问"这就是她（我的孩子）？"，莉迪亚冷冷回一句"不，这是我借来的"。②潜台词是她对这个缺席男人的怨气——用一句反讽把"这跟你无关"说得又狠又不失体面；门外的乔伊听到这段，默默把气球系在门把上离开，成全了她的选择。③中文≈"不，这只是我借来充数的。"</div>
 </div>
 </section>
-
 <!-- ============ SCENE 16 ============ -->
 <section class="scene" id="s16">
 <h2>场景 16 · 杂物间·刷卡 <span class="no">"女同志爱人节"</span></h2>
@@ -508,14 +617,21 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>This is so great. <button class="sp" onclick="speak(this)" data-t="This is so great.">🔊</button></div><div class="zh">这真是太好了。</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>You wanna explain that? <button class="sp" onclick="speak(this)" data-t="You wanna explain that?">🔊</button></div><div class="zh">你要不要解释一下这句？</div></div>
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>I mean, well, 'cause when I was growing up, you know my dad left, and my mother died, and my stepfather went to jail, so I barely had enough pieces of parents to make one whole one. And here's this little baby who has like three whole parents who care about it so much that they're fighting over who gets to love it the most. And it's not even born yet. It's just, it's just the luckiest baby in the whole world. I'm sorry, you were fighting. <button class="sp" onclick="speak(this)" data-t="I mean, well, 'cause when I was growing up, you know my dad left, and my mother died, and my stepfather went to jail, so I barely had enough pieces of parents to make one whole one. And here's this little baby who has like three whole parents who care about it so much that they're fighting over who gets to love it the most. And it's not even born yet. It's just, it's just the luckiest baby in the whole world. I'm sorry, you were fighting.">🔊</button></div><div class="zh">我是说，嗯，因为在我长大的时候，你知道，我爸走了，我妈过世了，我继父进了监狱，所以我几乎凑不齐零件拼出一个完整的父母。可这里有个小宝宝，他有整整三个父母，那么爱他，爱到要争谁最爱他。而他甚至还没出生。他，他真的是全世界最幸运的宝宝。（停顿）抱歉，你们刚才在吵架。</div></div>
+<div class="note">
+<h4>📌 重点单词</h4>
+<div class="item"><b>closet</b> <span class="phon">/ˈklɑːzɪt/</span> n. 壁橱、（储物）间 <button class="sp" onclick="speak(this)" data-t="closet">🔊</button> — <span class="ex">stuck in a closet</span>＝被困在储物间里；broom closet＝杂物间</div>
+</div>
 <div class="culture">
-<h4>🏛️ 文化解析：母亲节 / 父亲节 / "女同志爱人节"</h4>
-<b>Mother's Day（母亲节，5 月第二个周日）</b>与 <b>Father's Day（父亲节，6 月第三个周日）</b>是美国两大法定民间节日，届时全国以贺卡、礼物向父母致意——贺卡行业每年因此大赚一笔。<br>
-苏珊的抱怨正是借用这套"节日逻辑"：国家承认母亲、承认父亲，却没有一个专为同性伴侣设立的日子，于她这个"孩子没有血缘名分的另一位妈妈"而言，身份的缺席被放大了。罗斯回敬的 <span class="ex">Every day is Lesbian Lover Day.</span> 是一句纯粹的抬杠式冷幽默。<br>
-（注：台词里的 Lesbian Lover 是剧本 1994 年的措辞；此处的重点在于理解"节日＝社会承认"这层语言与文化逻辑，并不涉及任何现实立场。）
+<h4>🏛️ 文化解析：母亲节 / 父亲节 / 「女同志爱人节」</h4>
+<b>Mother's Day（母亲节，5 月第二个周日）</b>与 <b>Father's Day（父亲节，6 月第三个周日）</b>是美国两大民间节日，届时全国以贺卡、礼物向父母致意。<br>
+苏珊的抱怨正是借"节日＝社会承认"这套逻辑：国家承认母亲、承认父亲，却没有一个专为同性伴侣设立的日子，于她这个"没有血缘名分的另一位妈妈"而言，身份的缺席被放大了。罗斯回敬的 <span class="ex">Every day is Lesbian Lover Day.</span> 纯粹是抬杠式冷幽默。<br>
+（注：台词里的 Lesbian Lover 是剧本 1994 年的措辞；重点在于理解"节日＝社会承认"这层语言与文化逻辑，不涉及任何现实立场。）
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Phoebe: ...he's just the luckiest baby in the whole world. I'm sorry, you were fighting.</b><br>①菲比插话"这太好了"，被罗斯要求解释后，讲了一段自己的身世：父亲离开、母亲过世、继父入狱，"我几乎凑不齐零件拼出一个完整的父母"，而眼前这个还没出生的宝宝却有整整三个父母抢着爱他。②这段的潜台词是全剧对菲比最温柔的一次注解——她用自己破碎的童年反衬这个孩子有多幸运；末尾那句"抱歉，你们继续吵"又把煽情瞬间拉回喜剧。③中文≈"他是全世界最幸运的宝宝。（停一下）抱歉，你们刚才在吵架。"</div>
 </div>
 </section>
-
 <!-- ============ SCENE 17 ============ -->
 <section class="scene" id="s17">
 <h2>场景 17 · 卡罗尔房间·要生了 <span class="no">"十厘米，开始"</span></h2>
@@ -536,10 +652,15 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-other">Carol:</span>Oh, god. <button class="sp" onclick="speak(this)" data-t="Oh, god.">🔊</button></div><div class="zh">哦，天哪。</div></div>
 <div class="note">
 <h4>📌 重点单词</h4>
-<div class="item"><b>centimeters</b> <span class="phon">/ˈsentɪmiːtərz/</span> n. 厘米 <button class="sp" onclick="speak(this)" data-t="centimeters">🔊</button> — 产科里"开几厘米"指宫颈口扩张程度，10 cm 即"开全"。</div>
+<div class="item"><b>centimeter</b> <span class="phon">/ˈsentɪmiːtər/</span> n. 厘米 <button class="sp" onclick="speak(this)" data-t="centimeters">🔊</button> — 产科里"开几厘米"指宫颈口扩张程度，10 cm 即"开全"</div>
+<div class="item"><b>station</b> <span class="phon">/ˈsteɪʃn/</span> n.（产科）胎方位、胎头位置 <button class="sp" onclick="speak(this)" data-t="station">🔊</button> — <span class="ex">the baby's at zero station</span>＝宝宝在零站位</div>
+<div class="item"><b>nipple</b> <span class="phon">/ˈnɪpl/</span> n. 乳头 <button class="sp" onclick="speak(this)" data-t="nipple">🔊</button> — 钱德勒问护士要 <span class="ex">a nipple</span>，指的是婴儿奶瓶的奶嘴</div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Chandler: Uh, that's great. Anybody seen a nipple?</b><br>①卡罗尔痛得一把揪住钱德勒的衬衫，众人把她手掰开后，钱德勒来一句"太好了"，接着环顾四周问"有人看见奶嘴／乳头吗？"②笑点机制是"用一句日常的护理询问，糊弄过刚才被揪住心口的惊魂"，也是钱德勒一贯的"用插科打诨化解尴尬"；护士随后的"出去！"是自然落点。③中文≈"呃，这下好多了。有人看见（奶瓶）奶嘴了吗？"</div>
 </div>
 </section>
-
 <!-- ============ SCENE 18 ============ -->
 <section class="scene" id="s18">
 <h2>场景 18 · 杂物间·通风口 <span class="no">"我是医院工人宾"</span></h2>
@@ -554,17 +675,20 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Phoebs, It's open! It's open! <button class="sp" onclick="speak(this)" data-t="Phoebs, It's open! It's open!">🔊</button></div><div class="zh">菲比，门开了！门开了！</div></div>
 <div class="line stage"><span>（罗斯和苏珊冲向产房，把菲比挂在通风口上不管了。）</span></div>
 <div class="line"><div class="en"><span class="spk c-other">Janitor:</span>(to Ross and Susan) Wait! You forgot your legs! <button class="sp" onclick="speak(this)" data-t="Wait! You forgot your legs!">🔊</button></div><div class="zh">（对罗斯和苏珊）等等！你们把腿落下了！</div></div>
-<div class="note">
-<h4>📌 重点单词</h4>
-<div class="item"><b>vent</b> <span class="phon">/vent/</span> n. 通风口、通风管道 <button class="sp" onclick="speak(this)" data-t="vent">🔊</button> — <span class="ex">air vent</span>＝通风口；<span class="ex">got the vent open</span>＝把通风口弄开了。</div>
-<div class="item"><b>janitor</b> <span class="phon">/ˈdʒænɪtər/</span> n.（楼宇）清洁工、勤杂工 <button class="sp" onclick="speak(this)" data-t="janitor">🔊</button> — 英式英语里多说 <span class="ex">caretaker</span>。</div>
-</div>
 <div class="phrasebox">
 <h4>💬 词组 / 俚语</h4>
 <div class="item"><b>to the rescue</b>＝"前来救场／救驾来啦"。<span class="ex">It's Ben... to the rescue!</span>＝"宾……来救你们啦！"常带一点夸张的英雄腔。</div>
 </div>
+<div class="note">
+<h4>📌 重点单词</h4>
+<div class="item"><b>vent</b> <span class="phon">/vent/</span> n. 通风口、通风管道 <button class="sp" onclick="speak(this)" data-t="vent">🔊</button> — <span class="ex">air vent</span>＝通风口；<span class="ex">got the vent open</span>＝把通风口弄开了</div>
+<div class="item"><b>janitor</b> <span class="phon">/ˈdʒænɪtər/</span> n.（楼宇）清洁工、勤杂工 <button class="sp" onclick="speak(this)" data-t="janitor">🔊</button> — 英式英语多说 caretaker</div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Phoebe: Hi, I'm Ben. I'm hospital worker Ben. It's Ben... to the rescue!</b><br>①菲比套上清洁工制服，照着名牌念出"嗨，我是宾，医院工人宾……宾前来救场！"，还在罗斯把她举进通风口时不断被叫做"宾"。②笑点机制是"临时身份＋押韵口号"的即兴英雄梦；更妙的是——"宾 Ben"后来正是罗斯儿子的名字（见场景 20），此处无意间埋下伏笔。③中文≈"嗨，我是宾。医院工人宾。宾……前来救场！"</div>
+</div>
 </section>
-
 <!-- ============ SCENE 19 ============ -->
 <section class="scene" id="s19">
 <h2>场景 19 · 卡罗尔房间·宝宝出世 <span class="no">产房高潮</span></h2>
@@ -593,16 +717,20 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>(from the air vent overhead) You guys, he's beautiful! <button class="sp" onclick="speak(this)" data-t="You guys, he's beautiful!">🔊</button></div><div class="zh">（从头顶的通风口传来）你们俩，他好漂亮！</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Oh, thanks, Pheebs! <button class="sp" onclick="speak(this)" data-t="Oh, thanks, Pheebs!">🔊</button></div><div class="zh">哦，谢谢，菲比！</div></div>
 <div class="line stage"><span>（他们抬头望向通风口，向菲比挥手。）</span></div>
-<div class="note">
-<h4>📌 重点单词</h4>
-<div class="item"><b>crowning</b> <span class="phon">/ˈkraʊnɪŋ/</span> v.（分娩）胎头着冠、头顶初现 <button class="sp" onclick="speak(this)" data-t="crowning">🔊</button> — 医生说 <span class="ex">he's crowning</span>＝"宝宝的头顶露出来了"，即马上要生出来。</div>
-</div>
 <div class="phrasebox">
 <h4>💬 词组 / 俚语</h4>
-<div class="item"><b>out you go</b>＝"请你们出去吧"。倒装结构，让指令听起来更干脆、半开玩笑。</div>
+<div class="item"><b>out you go</b>＝"请你们出去吧。"倒装结构，让指令听起来更干脆、半开玩笑。</div>
+</div>
+<div class="note">
+<h4>📌 重点单词</h4>
+<div class="item"><b>crowning</b> <span class="phon">/ˈkraʊnɪŋ/</span> v.（分娩）胎头着冠、头顶初现 <button class="sp" onclick="speak(this)" data-t="crowning">🔊</button> — 医生说 <span class="ex">he's crowning</span>＝"宝宝的头顶露出来了"</div>
+<div class="item"><b>Jell-o</b> <span class="phon">/ˈdʒeloʊ/</span> n.（品牌名）果冻（美国国民甜点；此处形容新生儿滑腻腻、颤巍巍的样子） <button class="sp" onclick="speak(this)" data-t="Jell-o">🔊</button></div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Ross: Kinda like my uncle Ed, covered in Jell-o.</b><br>①卡罗尔问"他长什么样？"，罗斯盯着新生儿说"有点像我的艾德叔叔，裹在果冻里"。②笑点机制是"用一个具体到离谱的亲戚来当参照物"，把新生儿湿漉漉、红通通、颤巍巍的模样形容得又损又准；罗斯式神比喻在此登峰造极。③中文≈"有点像我的艾德叔叔，还是裹在果冻里的那种。"</div>
 </div>
 </section>
-
 <!-- ============ SCENE 20 ============ -->
 <section class="scene" id="s20">
 <h2>场景 20 · 产房·取名字 <span class="no">就叫"宾"</span></h2>
@@ -632,8 +760,20 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <h4>💬 词组 / 俚语</h4>
 <div class="item"><b>cook it up</b>＝"（临时）编造出来、想出来"。<span class="ex">we just cooked it up</span>＝"我们刚现编的"，指宾这个名字。</div>
 </div>
+<div class="note">
+<h4>📌 重点单词</h4>
+<div class="item"><b>gum</b> <span class="phon">/ɡʌm/</span> n. 口香糖 <button class="sp" onclick="speak(this)" data-t="gum">🔊</button> — 莫妮卡哽咽着承诺 <span class="ex">I will always have gum.</span>（"我会一直给你备着口香糖"）</div>
+</div>
+<div class="culture">
+<h4>🏛️ 文化解析：「宾（Ben）」这个名字的彩蛋</h4>
+卡罗尔和苏珊一直定不下孩子的名字——罗斯嫌她们私自用 Jordie，她们又嫌 Jamie 是苏珊前任的名字，还夹着一场 Jessy / Cody / Dylan 的"取名乱仗"。最后是罗斯灵机一动："叫宾怎么样？"这个名字当场被采纳，孩子从此叫 <b>Ben</b>——他正是《老友记》后续贯穿全剧的角色（罗斯与卡罗尔的儿子）。<br>
+更有意思的是：本集开头菲比从清洁工名牌上读到的名字也是"Ben"，编剧等于让"Ben"先从医院的道具露脸、再落到孩子身上，是典型的情景喜剧彩蛋写法。莫妮卡抱着宾哽咽着说"我是你莫妮卡姑姑……我会一直有口香糖"，则是全剧第一次出现的"姑姑承诺"式温柔。
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Monica: Hi, Ben. Hi. I'm your Aunt Monica. Yes I am. I...I will always have gum.</b><br>①莫妮卡抱着小宾，哽咽着自我介绍"我是你莫妮卡姑姑"，憋了半天，最终能给出的承诺只是"我会一直有口香糖"。②潜台词是莫妮卡此刻"想当妈妈"的心被彻底点燃，却又辞不达意——千言万语落到一句最生活化、最好笑的保证上（她真的一直随身带口香糖）。既是笑点，也是全剧对莫妮卡"渴望家庭"最动人的一笔。③中文≈"嗨，宾。我是你莫妮卡姑姑。真的。我……我会一直给你备着口香糖。"</div>
+</div>
 </section>
-
 <!-- ============ SCENE 21 ============ -->
 <section class="scene" id="s21">
 <h2>场景 21 · 片尾·宾的世界 <span class="no">"我总会回来的"</span></h2>
@@ -657,10 +797,22 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line stage"><span>（画面渐渐变黑。）</span></div>
 <div class="phrasebox">
 <h4>💬 词组 / 俚语</h4>
-<div class="item"><b>steal third</b>＝棒球术语"盗三垒"。钱德勒打手势，是承诺将来教宾棒球的那套暗号，也是他的招牌式温柔。</div>
+<div class="item"><b>steal third</b>＝（棒球）盗三垒。钱德勒打手势，是承诺将来教宾棒球的那套暗号。</div>
+</div>
+<div class="note">
+<h4>📌 重点单词</h4>
+<div class="item"><b>steal</b> <span class="phon">/stiːl/</span> v.（棒球中）盗垒 <button class="sp" onclick="speak(this)" data-t="steal third">🔊</button> — <span class="ex">steal third</span>＝盗三垒；<span class="ex">steal a base</span>＝盗垒</div>
+</div>
+<div class="culture">
+<h4>🏛️ 文化解析：片尾「宾的视角」与棒球暗号</h4>
+最后一幕把镜头固定在婴儿的视点：大人一会儿走出画面、一会儿回来、一会儿凑近做鬼脸，全片以"宾能看见的世界"收尾（屏幕还会随他睁眼闭眼一黑一亮）。<br>
+罗斯那句"有时我不在你身边（走出画面）……但我总会回来（回到画面）"，是把"离婚父亲"的缺席焦虑，编成一段婴儿能听懂的保证；钱德勒接的 <span class="ex">I'll want you to steal third, and I'll go like this</span>（打棒球暗号手势）则是最典型的美式父子文化——用教打球来承诺长久的陪伴。剧集用这种温柔的方式，给"三人共养的宝宝"画上句号。
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Chandler: And sometimes, I'll want you to steal third, and I'll go like this.</b><br>①钱德勒最后一个入画，没说煽情的祝福，只打了一个棒球暗号手势，承诺"将来想让你盗三垒时我就这样比划"。②潜台词是他把自己也默默列进了这个孩子的将来——从"损嘴的朋友"到"愿意陪他长大的大人"；用一个外人听不懂的棒球手势表达爱，正是钱德勒式的别扭温柔。③中文≈"有时候我会想让你去盗三垒，那我就会像这样比划。"</div>
 </div>
 </section>
-
 <!-- ============ SHADOWING ============ -->
 <section class="shadowbox" id="shadow">
 <h2>🔁 跟读重点句（本集必练 15 句）</h2>

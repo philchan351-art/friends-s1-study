@@ -44,6 +44,9 @@ nav.toc a:hover{text-decoration:underline}
 .culture h4{margin:0 0 6px;font-size:14px;color:#145a32}
 .phrasebox{background:#fdf6ee;border:1px solid #f2ddc0;border-left:5px solid #e67e22;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:14px}
 .phrasebox h4{margin:0 0 6px;font-size:14px;color:#9c4a0a}
+.intent{background:#F5F0FA;border:1px solid #e0d0ee;border-left:4px solid #7D3C98;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:14px}
+.intent h4{margin:0 0 6px;font-size:14px;color:#6C3483}
+.intent .item{margin:5px 0}
 .shadowbox{background:#fff;border:2px solid #8e44ad;border-radius:12px;padding:14px 18px;margin:26px 0}
 .shadowbox h2{margin-top:0;color:#6c3483;font-size:18px}
 .shadowbox ol{margin:8px 0 0;padding-left:22px}
@@ -59,7 +62,7 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
   .wrap{max-width:none;padding:0}
   header.hero{padding:16px 10px 12px}
   .scene{margin:14px 0}
-  .line,.note,.culture,.phrasebox,.shadowbox li{page-break-inside:avoid;break-inside:avoid}
+  .line,.note,.culture,.phrasebox,.intent,.shadowbox li{page-break-inside:avoid;break-inside:avoid}
   .scene h2{page-break-after:avoid;break-after:avoid}
   footer{page-break-before:avoid}
 }
@@ -85,7 +88,7 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
     <div class="sub">The One With the Blackout · 停电的那一晚</div>
     <div class="tags">
       <span>1994 年首播</span><span>美语中级偏上</span><span>左：英文原台词 / 右：中文对照</span>
-      <span>📌 重点单词（音标+意思）</span><span>💬 词组/俚语</span><span>🏛️ 文化解析</span><span>🔊 点按朗读</span>
+      <span>📌 重点单词（音标+意思）</span><span>💬 词组/俚语</span><span>🏛️ 文化解析</span><span>🔊 点按朗读</span><span>🎭 潜台词解析</span>
     </div>
   </div>
 </header>
@@ -101,7 +104,7 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="wrap">
 <div class="guide">
   <b>学习三步法（配合本集使用）</b><br>
-  ① <b>看懂</b>：逐句对照左右两栏，遇到 📌/💬/🏛️ 标注先读解析再往下走；<br>
+  ① <b>看懂</b>：逐句对照左右两栏，遇到 📌/💬/🏛️/🎭 标注先读解析再往下走（🎭 = 潜台词/意图解析——为什么这么说、笑点在哪）；<br>
   ② <b>听熟</b>：把速度调到 0.5×，点每句 🔊 听 2-3 遍，再切剧集原声听同一段，注意连读、吞音（如 <span class="ex">gonna / wanna / y'know / kinda / 'cause</span>）；<br>
   ③ <b>说出</b>：翻到文末「🔁 跟读重点句」，跟着原声逐句模仿语调和节奏，一天 10 句，重复到脱口而出。
 </div>
@@ -119,6 +122,25 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line stage"><span>【众人鼓掌 applause。】</span></div>
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>Hi. Um, I want to start with a song thats about that moment when you suddenly realize what life is all about. OK, here we go. (plays a chord, then the lights go out) OK, thank you very much. <button class="sp" onclick="speak(this)" data-t="Hi. Um, I want to start with a song that's about that moment when you suddenly realize what life is all about. OK, here we go. OK, thank you very much.">🔊</button></div><div class="zh">嗨。嗯，我想先唱一首歌，唱的是你突然顿悟「人生到底是怎么回事」的那一刻。好，开始了。（她弹了一个和弦，随即灯全灭了。）好，非常感谢大家。</div></div>
 <div class="line stage"><span>【片头曲 Opening Credits。】</span></div>
+<div class="phrasebox">
+  <h4>💬 词组 / 俚语</h4>
+  <div class="item"><b>be proud to present</b> ＝「很荣幸为大家介绍/请出……」——报幕、颁奖、演出开场的主持套语。<span class="ex">Central Perk is proud to present…</span>＝「中央公园咖啡馆荣幸请出……」。</div>
+  <div class="item"><b>here we go</b> ＝「开始了／这就来」。正要动手做某事时说的口头禅，语气轻快，和 <span class="ex">here goes</span>（豁出去了）略有区别。</div>
+</div>
+<div class="note">
+  <h4>📌 重点单词</h4>
+  <div class="item"><b>chord</b> <span class="phon">/kɔːrd/</span> n. （音乐）和弦 <button class="sp" onclick="speak(this)" data-t="chord">🔊</button> — 名词；<span class="ex">play a chord</span>＝弹一个和弦。菲比刚弹出一个和弦就停电，是全剧开场的笑点。</div>
+  <div class="item"><b>all about</b> <span class="phon">/ɔːl əˈbaʊt/</span> phr. 「（人生的）全部意义、到底是怎么回事」 <button class="sp" onclick="speak(this)" data-t="what life is all about">🔊</button> — <span class="ex">what life is all about</span>＝人生的真谛，口语里也常反讽地指「这才叫生活」。</div>
+</div>
+<div class="culture">
+  <h4>🏛️ 文化解析：中央公园咖啡馆与「沙发剧」传统</h4>
+  <b>Central Perk</b> 是本剧虚构的曼哈顿咖啡馆，也是全剧最主要的场景（六个朋友固定的沙发角落）。它是 90 年代纽约独立咖啡馆的缩影：不是连锁快餐，而是沙发破旧、有人弹吉他献唱、可以坐一下午的「免费客厅」。<br>
+  剧作上，用「咖啡馆开放麦（open mic）+ 菲比的原创民谣」开场，是美国情景喜剧的传统手法：一上来就用一段荒诞小演出给观众立住最古怪的角色（Phoebe）——她唱得一本正经、内容却离谱，这个反差贯穿整部剧。
+</div>
+<div class="intent">
+  <h4>🎭 意图/潜台词</h4>
+  <div class="item"><b>Phoebe: …OK, here we go. (灯灭) OK, thank you very much.</b><br>①菲比刚宣布要唱一首「顿悟人生」的歌，刚弹一个和弦，全场停电——她却像演出圆满结束一样照常谢幕，完全无视眼前的灾难。②笑点机制是「一本正经的无厘头」：她的世界自有一套逻辑，外界的意外根本打断不了她。③中文那味儿：「好，那咱们开始——（黑灯）谢谢大家，谢谢。」</div>
+</div>
 </section>
 
 <!-- ============ SCENE 2 ============ -->
@@ -127,6 +149,14 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line stage"><span>【场景：银行自动取款机前厅。钱德勒在里面，灯突然熄灭，他意识到自己被锁在里面了。】</span></div>
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Oh, great. This is just... <button class="sp" onclick="speak(this)" data-t="Oh, great. This is just...">🔊</button></div><div class="zh">哦，太好了。这可真是……</div></div>
 <div class="line stage"><span>【钱德勒发现前厅里还和他关着一位美艳的模特，悄悄做了个压抑不住狂喜的手势。】</span></div>
+<div class="phrasebox">
+  <h4>💬 词组 / 俚语</h4>
+  <div class="item"><b>This is just great.</b> ＝（反语）「这下可好／真是太好了」。明明是糟透了的事，偏说 great，全靠语调和情境判断是反话。同类反语还有 <span class="ex">Oh, wonderful. / Perfect.</span>（都可能是「完蛋了」）。</div>
+</div>
+<div class="intent">
+  <h4>🎭 意图/潜台词</h4>
+  <div class="item"><b>Chandler: Oh, great. This is just…</b><br>①字面是「哦太好了」，实际是「完蛋了」——停电把他在银行里关住，他先甩了一句反语认命。②笑点在于话没说完就断了：因为他下一眼看见旁边关着的是个超模，情绪瞬间从「糟透了」翻成「太好了」，这句反语于是被硬生生拐回了正意。③中文：「哦，太好了。这叫什么事儿……（咦？）」</div>
+</div>
 </section>
 
 <!-- ============ SCENE 3 ============ -->
@@ -144,16 +174,27 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
   <h4>📌 重点单词</h4>
   <div class="item"><b>blackout</b> <span class="phon">/ˈblækaʊt/</span> n. （大面积）停电；停电的时段 <button class="sp" onclick="speak(this)" data-t="blackout">🔊</button> — 动词搭配 <span class="ex">the city is blacked out</span>＝「全城断电了」。注意区别 <span class="ex">power cut</span>（英式，多指小范围跳闸）。</div>
 </div>
+<div class="note">
+  <h4>📌 重点单词（补充）</h4>
+  <div class="item"><b>Manhattan</b> <span class="phon">/mænˈhætn/</span> 曼哈顿（纽约市中心区） <button class="sp" onclick="speak(this)" data-t="Manhattan">🔊</button></div>
+  <div class="item"><b>Brooklyn</b> <span class="phon">/ˈbrʊklɪn/</span> 布鲁克林（纽约市一区） <button class="sp" onclick="speak(this)" data-t="Brooklyn">🔊</button> · <b>Queens</b> <span class="phon">/kwiːnz/</span> 皇后区（纽约市一区） <button class="sp" onclick="speak(this)" data-t="Queens">🔊</button> — 纽约五大区中的三个，报停电范围时高频出现。</div>
+  <div class="item"><b>eligible</b> <span class="phon">/ˈelɪdʒəbl/</span> adj. 够格的、符合条件的 <button class="sp" onclick="speak(this)" data-t="eligible">🔊</button> — 婚恋语境里＝「单身、可追求的」，本句借它把「够格的男人」和「够格的劫匪」玩到一起。</div>
+</div>
 <div class="phrasebox">
   <h4>💬 词组 / 俚语</h4>
   <div class="item"><b>be blacked out</b> ＝ 被停电、一片漆黑。<span class="ex">The entire city is blacked out!</span>＝「整座城市都黑了！」被动语态，主语是「城市」，不是「人」。</div>
   <div class="item"><b>eligible looter</b> ＝「符合条件的趁火打劫者」。<b>eligible</b>＝「够格（被考虑）的」，在婚恋语境里就是「单身、可追求的」。莫妮卡把「单身可约的人」和「趁火打劫的贼」并在一起损，是全句笑点：<span class="ex">Power company guys? Eligible looters?</span>（电力工人？还是够格的劫匪？）</div>
   <div class="item"><b>check on (someone)</b> ＝ 去看看某人是否安好、确认状况。<span class="ex">check on my grandma</span>＝「看看我奶奶怎么样了」。区别于 <span class="ex">check out</span>（结账离开／看个仔细）。</div>
+  <div class="item"><b>Could we talk about this later?</b> ＝「这个能以后再说吗？」——礼貌打断、把话头按下去的高频句型，尤其适合应付长辈的唠叨。</div>
 </div>
 <div class="culture">
   <h4>🏛️ 文化解析：1994 年的纽约大停电</h4>
-  本集 1994 年 11 月首播，剧情设定在曼哈顿全城停电的一晚。纽约历史上确有几次著名的全城大停电——<b>1965 年</b>（波及美国东北部，传说当晚出现"停电婴儿潮"）和 <b>1977 年</b>（引发大规模打砸抢）。本集是编剧借"停电"这个真实存在的纽约都市记忆做背景：把六个朋友和一座城市同时关进黑暗里，让平时说不出口的话有了出口。<br>
-  一个语言细节：停电当晚美国人的真实反应是——想办法联系家人（<span class="ex">check on my grandma</span>）、点蜡烛、聚在一起讲故事。这也解释了为什么这一集里所有人都在打电话、点蜡烛、玩桌上游戏，这是停电夜的"标准行为清单"。
+  本集 1994 年 11 月首播，剧情设定在曼哈顿全城停电的一晚。纽约历史上确有几次著名的全城大停电——<b>1965 年</b>（波及美国东北部，传说当晚出现「停电婴儿潮」）和 <b>1977 年</b>（引发大规模打砸抢）。本集是编剧借「停电」这个真实存在的纽约都市记忆做背景：把六个朋友和一座城市同时关进黑暗里，让平时说不出口的话有了出口。<br>
+  一个语言细节：停电当晚美国人的真实反应是——想办法联系家人（<span class="ex">check on my grandma</span>）、点蜡烛、聚在一起讲故事。这也解释了为什么这一集里所有人都在打电话、点蜡烛、玩桌上游戏，这是停电夜的「标准行为清单」。
+</div>
+<div class="intent">
+  <h4>🎭 意图/潜台词</h4>
+  <div class="item"><b>Monica: Pants and a sweater? Why, mom? Who am I gonna meet in a blackout? Power company guys? Eligible looters?</b><br>①妈妈在电话里叮嘱她「停电也得穿得像样、说不定能碰上人」，莫妮卡用一连串夸张反问把这话怼回去——潜台词是「妈你别再急着把我推销出去了」。②笑点机制是「并列双杀」：她把「电力公司工人」（来修电的）和「eligible looters」（趁火打劫的贼）摆在一个句子里当候选对象，用荒诞类比嘲讽妈妈「是个男人就想让你见」。③中文：「穿长裤配毛衣？干嘛呀妈？停电夜我能遇到谁啊——修电的？还是够格来抢劫的？」</div>
 </div>
 </section>
 
@@ -172,18 +213,22 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="note">
   <h4>📌 重点单词</h4>
   <div class="item"><b>vestibule</b> <span class="phon">/ˈvestɪbjuːl/</span> n. 门厅、（内外门之间的）前室 <button class="sp" onclick="speak(this)" data-t="vestibule">🔊</button> — 银行 ATM 的玻璃隔间、公寓进门的小玄关都叫 vestibule。本集的核心笑点词，钱德勒纠结了一整集。</div>
-  <div class="item"><b>atrium</b> <span class="phon">/ˈeɪtriəm/</span> n. （建筑内的）中庭、天井 <button class="sp" onclick="speak(this)" data-t="atrium">🔊</button> — 复数 <span class="ex">atria / atriums</span>。高级酒店、商场里贯通多层、顶部采光的大堂空间。钱德勒觉得"前厅"不够气派，想脑补成"中庭"。</div>
+  <div class="item"><b>atrium</b> <span class="phon">/ˈeɪtriəm/</span> n. （建筑内的）中庭、天井 <button class="sp" onclick="speak(this)" data-t="atrium">🔊</button> — 复数 <span class="ex">atria / atriums</span>。高级酒店、商场里贯通多层、顶部采光的大堂空间。钱德勒觉得「前厅」不够气派，想脑补成「中庭」。</div>
 </div>
 <div class="phrasebox">
   <h4>💬 词组 / 俚语</h4>
   <div class="item"><b>be trapped in</b> ＝ 被困在……里。<span class="ex">I am trapped in an ATM vestibule with Jill Goodacre!</span> 注意介词搭配：被困在某个空间用 <b>in</b>，和某人一起被困也用 <b>with</b>。</div>
   <div class="item"><b>go with (something)</b> ＝ 采用、选择、就按……来。<span class="ex">I'm going with vestibule.</span>＝「那就按『前厅』这个说法。」用于做选择、采纳某个说法或方案时，超高频。</div>
-  <div class="item"><b>some guy</b> ＝「某个男的／一个路人甲」。吉儿随口说的 <span class="ex">some guy</span> 表示"一个根本不值得提的男人"，钱德勒却把这句当成自己"被点名"的台词，反复念叨——喜剧的节奏就藏在 <b>重复</b> 里。</div>
+  <div class="item"><b>some guy</b> ＝「某个男的／一个路人甲」。吉儿随口说的 <span class="ex">some guy</span> 表示「一个根本不值得提的男人」，钱德勒却把这句当成自己「被点名」的台词，反复念叨——喜剧的节奏就藏在 <b>重复</b> 里。</div>
 </div>
 <div class="culture">
-  <h4>🏛️ 文化解析：Victoria's Secret 与 1990 年代"超模"文化</h4>
-  吉儿·古达克（<b>Jill Goodacre</b>）在现实中确有其人，是 1980-90 年代<b>维多利亚的秘密（Victoria's Secret）</b>的签约模特。这家美国内衣品牌在 1990 年代靠电视广告和后来的"维密秀"（1995 年起）把"内衣模特"捧成了全美家喻户晓的明星脸——所以在剧里，钱德勒远远一眼就能认出"那是维密的模特"，是完全符合当时社会语境的。<br>
-  剧作功能：让钱德勒（全剧最会自我吐槽的角色）和一个"高不可攀的梦中情人"独处一室，全程靠内心独白出洋相——这是本集最受欢迎的支线，也是他"越紧张越说废话"人设的经典展示。
+  <h4>🏛️ 文化解析：Victoria's Secret 与 1990 年代「超模」文化</h4>
+  吉儿·古达克（<b>Jill Goodacre</b>）在现实中确有其人，是 1980-90 年代<b>维多利亚的秘密（Victoria's Secret）</b>的签约模特。这家美国内衣品牌在 1990 年代靠电视广告和后来的「维密秀」（1995 年起）把「内衣模特」捧成了全美家喻户晓的明星脸——所以在剧里，钱德勒远远一眼就能认出「那是维密的模特」，是完全符合当时社会语境的。<br>
+  剧作功能：让钱德勒（全剧最会自我吐槽的角色）和一个「高不可攀的梦中情人」独处一室，全程靠内心独白出洋相——这是本集最受欢迎的支线，也是他「越紧张越说废话」人设的经典展示。
+</div>
+<div class="intent">
+  <h4>🎭 意图/潜台词</h4>
+  <div class="item"><b>Chandler: Is it a vestibule? Maybe it's an atrium. Oh, yeah, that is the part to focus on, you idiot!</b><br>①他和超模独处一室，注意力却全跑到「这地方到底叫前厅还是中庭」这种无关紧要的建筑名词上。②笑点机制是「抓错重点 + 自我拆穿」：后半句是他自己的内心声音跳出来骂他——「对，这才是你该操心的重点，白痴」，用反讽点破他正在浪费千载难逢的机会。③中文：「这叫前厅？也许该叫中庭。——对，重点就是这个，你个白痴！」</div>
 </div>
 </section>
 
@@ -202,10 +247,21 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
   <div class="item"><b>menorah</b> <span class="phon">/məˈnɔːrə/</span> n. （犹太教）烛台 <button class="sp" onclick="speak(this)" data-t="menorah">🔊</button> — 特指光明节用的九枝烛台（Hanukkiah）：中间一支叫 shamash「仆人烛」，用来点亮其余八支。本集中乔伊捧的就是它。</div>
   <div class="item"><b>Chanukah / Hanukkah</b> <span class="phon">/ˈhɑːnəkə/</span> n. 光明节（犹太教冬季节日，为期八天） <button class="sp" onclick="speak(this)" data-t="Chanukah">🔊</button> — 同一个词的两种拼法：Chanukah 偏传统，Hanukkah 更常见。节日贺词 <span class="ex">Happy Chanukah!</span></div>
 </div>
+<div class="note">
+  <h4>📌 重点单词（补充）</h4>
+  <div class="item"><b>Rabbi</b> <span class="phon">/ˈræbaɪ/</span> n. 拉比（犹太教教士、精神导师） <button class="sp" onclick="speak(this)" data-t="Rabbi">🔊</button> — 罗斯把乔伊称为 <span class="ex">Rabbi Tribbiani</span>，是拿宗教头衔开玩笑。</div>
+  <div class="item"><b>officiate</b> <span class="phon">/əˈfɪʃieɪt/</span> v. 主持（仪式、典礼） <button class="sp" onclick="speak(this)" data-t="officiate">🔊</button> — 婚礼、葬礼、宗教仪式上由神职人员「主礼」的正式说法，用在这里格外庄重、也就格外好笑。</div>
+  <div class="item"><b>Jewish</b> <span class="phon">/ˈdʒuːɪʃ/</span> adj. 犹太人的、犹太教的 <button class="sp" onclick="speak(this)" data-t="Jewish">🔊</button></div>
+</div>
 <div class="culture">
   <h4>🏛️ 文化解析：光明节（Chanukah）与九枝烛台</h4>
-  <b>Chanukah（光明节）</b>是犹太教的重要冬季节日，连过八天，核心习俗是<b>每晚点燃一根烛台蜡烛</b>（第一晚一支，逐晚递增，第八晚全部点亮），纪念圣殿灯油"只够一天却烧了八天"的奇迹。所以乔伊捧出"一根根点着的烛台"并说 <span class="ex">Happy Chanukah</span>，是在用犹太传统给停电之夜凑出一屋子火光——正好取代了停电后没有的灯。<br>
-  台词笑点：Ross 用"拉比（Rabbi，犹太教教士）"称呼乔伊 <span class="ex">Rabbi Tribbiani</span>，因为崔比昂尼（Tribbiani）是乔伊的意大利姓，而乔伊本人是意大利裔天主教家庭——一个意裔小哥端来犹太烛台，这个"错配"就是笑点。这也是本剧一贯的写法：用朋友的族群/宗教差异做善意调侃。
+  <b>Chanukah（光明节）</b>是犹太教的重要冬季节日，连过八天，核心习俗是<b>每晚点燃一根烛台蜡烛</b>（第一晚一支，逐晚递增，第八晚全部点亮），纪念圣殿灯油「只够一天却烧了八天」的奇迹。所以乔伊捧出「一根根点着的烛台」并说 <span class="ex">Happy Chanukah</span>，是在用犹太传统给停电之夜凑出一屋子火光——正好取代了停电后没有的灯。<br>
+  台词笑点：Ross 用「拉比（Rabbi，犹太教教士）」称呼乔伊 <span class="ex">Rabbi Tribbiani</span>，因为崔比昂尼（Tribbiani）是乔伊的意大利姓，而乔伊本人是意大利裔天主教家庭——一个意裔小哥端来犹太烛台，这个「错配」就是笑点。这也是本剧一贯的写法：用朋友的族群/宗教差异做善意调侃。
+</div>
+<div class="intent">
+  <h4>🎭 意图/潜台词</h4>
+  <div class="item"><b>Ross: And officiating at tonight's blackout, is Rabbi Tribbiani.</b><br>①罗斯故意用「典礼主持人」的正式腔调侃乔伊——把一个意大利裔天主教小伙随手封为犹太教「拉比」。②笑点机制是「庄严措辞 + 荒诞搭配」：停电这种倒霉事被说成像宗教仪式，加上 Joe 的姓氏 Tribbiani 和 Rabbi 硬凑在一起，族群错配就是包袱。③中文：「今晚这场停电大典的主持人——崔比昂尼拉比，闪亮登场。」</div>
+  <div class="item"><b>Joey: …these are the only candles we have, so… Happy Chanukah, everyone.</b><br>①乔伊其实不是犹太人，只是把前室友留下的烛台拿来应急；他顺水推舟把停电夜说成光明节。②笑点在于「善意地胡乱挪用文化」：蜡烛是巧合凑的，节日是随口安的，全屋人还煞有介事地接受了。③中文：「……反正咱就剩这些蜡烛了，那就——祝大家光明节快乐吧。」</div>
 </div>
 </section>
 
@@ -222,8 +278,14 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Yeah, about 300 guys I went to high school with. Yeah, thanks. (takes phone) <button class="sp" onclick="speak(this)" data-t="Yeah, about 300 guys I went to high school with. Yeah, thanks.">🔊</button></div><div class="zh">想啊，大概三百个高中同学吧。嗯，谢了。（接过电话）</div></div>
 <div class="phrasebox">
   <h4>💬 词组 / 俚语</h4>
-  <div class="item"><b>make contact</b> ＝（与人）搭上话、建立联系。原义是无线电／军事里的"建立通讯"，口语中引申为"跟人眼神对接、开口说上话"。<span class="ex">Just make contact, smile!</span>＝「先跟人家搭上话啊，笑一个！」</div>
+  <div class="item"><b>make contact</b> ＝（与人）搭上话、建立联系。原义是无线电／军事里的「建立通讯」，口语中引申为「跟人眼神对接、开口说上话」。<span class="ex">Just make contact, smile!</span>＝「先跟人家搭上话啊，笑一个！」</div>
   <div class="item"><b>There you go!</b> ＝「这就对了嘛！」鼓励、肯定别人做得好时用，和 <span class="ex">There it is!</span> 近义，是本剧高频口头语。</div>
+  <div class="item"><b>go to high school with (someone)</b> ＝ 和某人念同一所高中。<span class="ex">300 guys I went to high school with</span>＝「我高中的三百个哥们」，此处是夸张，反衬他此刻其实无话可说。</div>
+  <div class="item"><b>You're definitely scaring here.</b> ＝「你这（样）绝对是在吓人了。」口语里省略宾语，<b>here</b> 用来指向当下这个举动，重音落在 scaring 上。</div>
+</div>
+<div class="intent">
+  <h4>🎭 意图/潜台词</h4>
+  <div class="item"><b>Chandler: Yeah, about 300 guys I went to high school with. Yeah, thanks.</b><br>①吉儿好心问他要不要打电话，他本可以真打给莫妮卡求救，却选择自嘲式地回答「我想打给我高中那三百个哥们」——潜台词是「我根本没别人可打」，用一堆无关人等掩饰自己的紧张。②笑点机制是「说了等于没说」：一个求救的机会，被他当成抖机灵的机会浪费掉。③中文：「想啊，也就三百来个高中同学吧。谢了哈。」</div>
 </div>
 </section>
 
@@ -245,12 +307,18 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Yeah, like that thought never entered my mind. <button class="sp" onclick="speak(this)" data-t="Yeah, like that thought never entered my mind.">🔊</button></div><div class="zh">是啊，好像我从来没动过这种念头似的。</div></div>
 <div class="note">
   <h4>📌 重点单词</h4>
-  <div class="item"><b>garbled</b> <span class="phon">/ˈɡɑːrbld/</span> adj. （话）含混不清的、乱码般的 <button class="sp" onclick="speak(this)" data-t="garbled">🔊</button> — 本集钱德勒怕被吉儿听见，故意把 <span class="ex">trapped / vestibule / with / Jill Goodacre</span> 里的元音全吞掉，说成"乱码"。名词/动词 <span class="ex">garble</span>。</div>
+  <div class="item"><b>garbled</b> <span class="phon">/ˈɡɑːrbld/</span> adj. （话）含混不清的、乱码般的 <button class="sp" onclick="speak(this)" data-t="garbled">🔊</button> — 本集钱德勒怕被吉儿听见，故意把 <span class="ex">trapped / vestibule / with / Jill Goodacre</span> 里的元音全吞掉，说成「乱码」。名词/动词 <span class="ex">garble</span>。</div>
+  <div class="item"><b>ATM</b> <span class="phon">/ˌeɪ tiː ˈem/</span> n. 自动取款机（automated teller machine 的缩写） <button class="sp" onclick="speak(this)" data-t="ATM">🔊</button> — 英语里通常逐个字母念 A-T-M。</div>
 </div>
 <div class="phrasebox">
   <h4>💬 词组 / 俚语</h4>
   <div class="item"><b>put (someone) on the phone</b> ＝ 叫某人来听电话。<span class="ex">Put Joey on the phone.</span> 同类表达：<span class="ex">Put him on.</span>（让他接）／<span class="ex">I'd like to speak to...</span>（我想找……）。</div>
-  <div class="item"><b>like that thought never entered my mind</b> ＝「好像我从没这么想过似的」。<b>like</b> 在口语里常作"仿佛、好像"引出一个反讽从句，配合上扬语调=吐槽对方"说废话"。</div>
+  <div class="item"><b>like that thought never entered my mind</b> ＝「好像我从没这么想过似的」。<b>like</b> 在口语里常作「仿佛、好像」引出一个反讽从句，配合上扬语调=吐槽对方「说废话」。</div>
+  <div class="item"><b>What's up man?</b> ＝「怎么了老兄？／最近咋样？」——打招呼和问情况两用，美式口语极度高频。</div>
+</div>
+<div class="intent">
+  <h4>🎭 意图/潜台词</h4>
+  <div class="item"><b>Chandler: Yeah, like that thought never entered my mind.</b><br>①乔伊在电话那头压低声音「故意含混」地说了句坏话（大意是怂恿他别错过机会），钱德勒立刻反讽回击。②笑点机制是「反话认罪」：他嘴上说「说得好像我压根没想过似的」，其实等于承认自己早就想歪了；一个反讽句把自己卖了。③中文：「是啊，说得跟我从没动过这念头似的。」</div>
 </div>
 </section>
 
@@ -277,11 +345,28 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Oh, alright. The weirdest place would have to be... (sigh)... oh, the foot of the bed. <button class="sp" onclick="speak(this)" data-t="Oh, alright. The weirdest place would have to be... oh, the foot of the bed.">🔊</button></div><div class="zh">哦，好吧。最奇怪的地方，得算是……（叹气）……哦，床尾。</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Step back. <button class="sp" onclick="speak(this)" data-t="Step back.">🔊</button></div><div class="zh">退后（让我缓一缓）。</div></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>We have a winner! <button class="sp" onclick="speak(this)" data-t="We have a winner!">🔊</button></div><div class="zh">我们有冠军了！</div></div>
+<div class="note">
+  <h4>📌 重点单词（补充）</h4>
+  <div class="item"><b>senior year</b> n.（大学/高中）最高年级 <button class="sp" onclick="speak(this)" data-t="senior year">🔊</button> — 美国四年制里 senior＝大四/高四（毕业班）。<span class="ex">senior year of college</span>＝大学四年级。</div>
+  <div class="item"><b>pool table</b> n. 台球桌 <button class="sp" onclick="speak(this)" data-t="pool table">🔊</button> — pool＝台球、撞球（不是「游泳池」，游泳池是 swimming pool）。</div>
+  <div class="item"><b>Milwaukee</b> <span class="phon">/mɪlˈwɔːki/</span> 密尔沃基（美国威斯康星州城市） <button class="sp" onclick="speak(this)" data-t="Milwaukee">🔊</button> — 菲比只报了个城市名不解释，是「故意让人摸不着头脑」的笑点。</div>
+  <div class="item"><b>Magic Kingdom</b> 魔幻王国 <button class="sp" onclick="speak(this)" data-t="Magic Kingdom">🔊</button> — 迪士尼乐园的核心园区名（奥兰多/东京等地的迪士尼主园都叫这个），此处代指迪士尼。</div>
+</div>
 <div class="phrasebox">
   <h4>💬 词组 / 俚语</h4>
-  <div class="item"><b>would have to be...</b> ＝「（如果非要选）那得算是……」。用于在一串可能里挑出"最典型的那一个"，语气是"要选的话，就这个了"。<span class="ex">My weirdest place would have to be...</span></div>
+  <div class="item"><b>would have to be...</b> ＝「（如果非要选）那得算是……」。用于在一串可能里挑出「最典型的那一个」，语气是「要选的话，就这个了」。<span class="ex">My weirdest place would have to be...</span></div>
   <div class="item"><b>No way!</b> ＝「不会吧！／不可能！」表示极度惊讶或拒绝，是美式口语最高频的反应词之一。<span class="ex">I'll go.</span>＝「我来（打头 / 先说）」。</div>
   <div class="item"><b>the ride broke down</b> ＝ 游乐设施中途故障停住。<b>break down</b> 指机器/车辆抛锚，也指人情绪崩溃或谈判破裂，是万能搭配。</div>
+  <div class="item"><b>Step back.</b> ＝「退后一步（别过来 / 让我缓缓）」。原义是让人往后站；这里罗斯听了妹妹的「床尾」答案，做出「我受够了」的夸张反应。</div>
+</div>
+<div class="culture">
+  <h4>🏛️ 文化解析：停电夜游戏 + 美国人「度假 / 乐园」记忆</h4>
+  这一场是典型的「停电夜行为清单」之一：没有灯、没有电视，就围坐玩「谁做过最出格的事」这类<b>truth-or-dare 式聊天游戏</b>（<span class="ex">my weirdest place would have to be…</span>）。玩的其实是「比谁的糗事更猛」，也是编剧把六个朋友的黑历史一次性抖出来的手法。<br>
+  Ross 的答案是 <b>Disneyland + 《It's a Small World》</b>：那是迪士尼最著名、最「合家欢」的经典游船项目，而他偏偏和当时的女友 Carol 躲在这项目后面亲热，结果被「终身禁止再进魔幻王国」——把最纯真的家庭乐园和最不纯真的行为对撞，是美式喜剧的经典反差笑料。顺带一提，Carol 就是后来公开性向、和罗斯离婚的那个人。
+</div>
+<div class="intent">
+  <h4>🎭 意图/潜台词</h4>
+  <div class="item"><b>Ross: The ride broke down… and we were asked never to return to the Magic Kingdom.</b><br>①表面上他是在玩游戏、坦白糗事，实际是在众人面前立「我也年轻放纵过」的人设——尤其想在瑞秋面前显得不那么书呆子。②笑点机制是「神圣地点 + 世俗行为」的反差：迪士尼最纯洁的合家欢项目后面搞亲热，导致「被迪士尼终身禁入」，把不光彩的事说得像被国家驱逐。③中文：「设施中途停了，我和卡萝就躲到那排会动的荷兰小人偶后面……后来他们修好了，再后来，我们被通知——永远别再回魔幻王国了。」</div>
 </div>
 </section>
 
@@ -311,13 +396,20 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line stage"><span>【罗斯站起身，一脸得意。】</span></div>
 <div class="note">
   <h4>📌 重点单词</h4>
-  <div class="item"><b>overrated</b> <span class="phon">/ˌoʊvərˈreɪtɪd/</span> adj. 被高估的、被吹过头的 <button class="sp" onclick="speak(this)" data-t="overrated">🔊</button> — <span class="ex">way overrated</span>＝「被吹上天了」，<b>way</b> 在这里是副词＝"远远地、大大地"，加强程度。反义 <span class="ex">underrated</span>（被低估的）。</div>
+  <div class="item"><b>overrated</b> <span class="phon">/ˌoʊvərˈreɪtɪd/</span> adj. 被高估的、被吹过头的 <button class="sp" onclick="speak(this)" data-t="overrated">🔊</button> — <span class="ex">way overrated</span>＝「被吹上天了」，<b>way</b> 在这里是副词＝「远远地、大大地」，加强程度。反义 <span class="ex">underrated</span>（被低估的）。</div>
+  <div class="item"><b>miniature golf</b> <span class="phon">/ˈmɪnətʃər ɡɔːlf/</span> n. 迷你高尔夫（推杆小场地） <button class="sp" onclick="speak(this)" data-t="miniature golf">🔊</button> — 美国约会常见项目，Rachel 用它吐槽前未婚夫 Barry 的扫兴。</div>
+  <div class="item"><b>Bermuda</b> <span class="phon">/bərˈmjuːdə/</span> 百慕大（大西洋上的度假胜地） <button class="sp" onclick="speak(this)" data-t="Bermuda">🔊</button> — 场景 21 还会用到：三周百慕大度假 vs 三秒心动。</div>
 </div>
 <div class="phrasebox">
   <h4>💬 词组 / 俚语</h4>
-  <div class="item"><b>burn out</b> ＝ 烧尽、（热情）消退。<span class="ex">Eventually it kind of burns out.</span>＝「最终它会慢慢烧没」。也指人"燃尽、累垮"（<span class="ex">burnout</span> 名词＝职业倦怠）。</div>
+  <div class="item"><b>burn out</b> ＝ 烧尽、（热情）消退。<span class="ex">Eventually it kind of burns out.</span>＝「最终它会慢慢烧没」。也指人「燃尽、累垮」（<span class="ex">burnout</span> 名词＝职业倦怠）。</div>
   <div class="item"><b>miss out on (something)</b> ＝ 错过（本可拥有的东西）。<span class="ex">people who miss out on that passion thing</span>＝「那些错过激情这回事的人」。介词固定用 <b>on</b>。</div>
-  <div class="item"><b>Yeah right.</b> ＝「才怪／得了吧」。表面像"对"，实际是强烈不信，全靠语调（上扬、拖长）。和 <span class="ex">No way!</span> 同为高频反驳用语。</div>
+  <div class="item"><b>Yeah right.</b> ＝「才怪／得了吧」。表面像「对」，实际是强烈不信，全靠语调（上扬、拖长）。和 <span class="ex">No way!</span> 同为高频反驳用语。</div>
+</div>
+<div class="intent">
+  <h4>🎭 意图/潜台词</h4>
+  <div class="item"><b>Ross: (sarcastically) And you didn't marry him because…?</b><br>①瑞秋抱怨 Barry 连迷你高尔夫球场上都不肯亲她，罗斯用一句「那你当初怎么没嫁给他呢……？」接刀。②笑点机制是「明知故问的讽刺」：答案不言而喻——正因为 Barry 这么没情趣才没嫁，罗斯却装出「这难道是缺点吗」的一本正经。③中文：「所以你没嫁给他——就因为（他不肯亲你）这点事儿？」</div>
+  <div class="item"><b>Ross: …what you're left with is trust, and security, and… well, in the case of my ex-wife, lesbianism.</b><br>①罗斯正努力把「激情会被时间烧尽」讲成一段安慰瑞秋的成熟道理，举「信任、安全感」为例时，突然拿自己离婚的伤口开刀。②笑点机制是「情绪上升→自我拆台」：越说越像情感导师，最后三个字（女同性恋）把整段鸡汤当场掀翻，暴露他其实还在痛。③中文：「……最后剩下的是信任、是安全感，还有——就我前妻那种情况来说——是女同性恋。所以你懂的，错过激情的人，也还有别的好东西嘛。」</div>
 </div>
 </section>
 
@@ -341,17 +433,27 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Ahhhh! <button class="sp" onclick="speak(this)" data-t="Ahhhh!">🔊</button></div><div class="zh">啊——！</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>See? <button class="sp" onclick="speak(this)" data-t="See?">🔊</button></div><div class="zh">看到了吧？</div></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Huh. (she agrees, but looks very confused) <button class="sp" onclick="speak(this)" data-t="Huh.">🔊</button></div><div class="zh">嗯。（她嘴上同意，脸上却写满困惑）</div></div>
+<div class="note">
+  <h4>📌 重点单词（补充）</h4>
+  <div class="item"><b>groundwork</b> <span class="phon">/ˈɡraʊndwɜːrk/</span> n. 基础（工作）、铺垫 <button class="sp" onclick="speak(this)" data-t="groundwork">🔊</button> — 常与 <span class="ex">lay</span> 搭配：<span class="ex">lay the groundwork for sth</span>＝为某事打基础。</div>
+  <div class="item"><b>Priesthood</b> <span class="phon">/ˈpriːsthʊd/</span> n. 神职、教士身份 <button class="sp" onclick="speak(this)" data-t="Priesthood">🔊</button> — 指担任神父/牧师的职业身份；神父须守独身，所以「再拖下去就只能去当神父」是个夸张的挖苦。</div>
+</div>
 <div class="phrasebox">
   <h4>💬 词组 / 俚语</h4>
-  <div class="item"><b>make your move</b> ＝ 采取行动（尤指表白、追求、摊牌）。<span class="ex">you waited too long to make your move</span>＝「你拖太久才行动」。棋牌里也是"走一步"的意思。</div>
+  <div class="item"><b>make your move</b> ＝ 采取行动（尤指表白、追求、摊牌）。<span class="ex">you waited too long to make your move</span>＝「你拖太久才行动」。棋牌里也是「走一步」的意思。</div>
   <div class="item"><b>friend zone</b> ＝「朋友区」。指一方想发展恋情，却被对方只当成普通朋友、无法越界的状态。<span class="ex">you're in the friend zone / mayor of the zone</span>（你都成区长/区主席了）是本集最出圈的名句来源。</div>
   <div class="item"><b>lay the groundwork</b> ＝ 打基础、做铺垫。<span class="ex">I'm laying the groundwork.</span>＝「我在铺路/打基础」。原义是盖房前夯地基，引申为为某事提前准备。</div>
   <div class="item"><b>ask her out</b> ＝ 约她出去（正式提出约会）。区别于 <span class="ex">hang out</span>（一起玩，不含约会意味）。</div>
 </div>
 <div class="culture">
   <h4>🏛️ 文化解析：friends zone 与 1990 年代美式恋爱</h4>
-  <b>friend zone（朋友区）</b> 这个词组在 1990 年代随美式情景喜剧（本期《老友记》就是最著名的推广者之一）而走红，专指"你对她有意思，她却只把你当哥们"的困境。乔伊那句 <span class="ex">You're mayor of the zone.</span>（你简直当上了这个区的区长）把它夸张成一个"行政区"，从此成为流行语。<br>
-  顺带一提乔伊的"神父"梗（<span class="ex">Priesthood!</span>）：美国情景喜剧里常用"你是不是准备去当神父（要禁欲一辈子）"来调侃一个人长期单身不动手——因为神父须守独身，所以"再拖下去你就只能去当神父了"是一句夸张的挖苦。这是宗教文化背景撑起来的玩笑。
+  <b>friend zone（朋友区）</b> 这个词组在 1990 年代随美式情景喜剧（本期《老友记》就是最著名的推广者之一）而走红，专指「你对她有意思，她却只把你当哥们」的困境。乔伊那句 <span class="ex">You're mayor of the zone.</span>（你简直当上了这个区的区长）把它夸张成一个「行政区」，从此成为流行语。<br>
+  顺带一提乔伊的「神父」梗（<span class="ex">Priesthood!</span>）：美国情景喜剧里常用「你是不是准备去当神父（要禁欲一辈子）」来调侃一个人长期单身不动手——因为神父须守独身，所以「再拖下去你就只能去当神父了」是一句夸张的挖苦。这是宗教文化背景撑起来的玩笑。
+</div>
+<div class="intent">
+  <h4>🎭 意图/潜台词</h4>
+  <div class="item"><b>Joey: Priesthood! … If you don't ask her out soon you're going to end up stuck in the zone forever.</b><br>①罗斯嘴硬说自己在「慢慢来、打地基、每天都更近一点点」，乔伊抢话补上「（更近一步就是）当神父！」②笑点机制是「拆台式接话」：罗斯把拖延包装成战略，乔伊一句话把它翻译成「你再磨蹭就孤独终老、去当神父（守独身）」，夸张到荒谬。③中文：「（那你离）当神父（就更近一步了）！罗斯你听我说，她压根不知道你在想什么，再不去约她，你就一辈子困在『朋友区』了。」</div>
+  <div class="item"><b>Ross: We're shushing… because… we're trying to hear something. Listen. Don't you hear that?</b><br>①瑞秋撞破他们在背后议论自己，罗斯慌张编瞎话——「我们在听动静」。②笑点机制是「停电夜的完美借口」：全城停电、本来就没声音，他却把「安静」说成「我们在认真聆听」，还硬撑到瑞秋配合地「啊——！」了一声。③中文：「我们嘘……是因为……我们在听点动静。你听——你没听见吗？」</div>
 </div>
 </section>
 
@@ -365,8 +467,18 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Oh, then no thanks. What the hell was that? Mental note: If Jill Goodacre offers you gum, you take it. If she offers you mangled animal carcass, you take it. <button class="sp" onclick="speak(this)" data-t="Oh, then no thanks. What the hell was that? Mental note: If Jill Goodacre offers you gum, you take it. If she offers you mangled animal carcass, you take it.">🔊</button></div><div class="zh">哦，那我不要了，谢谢。我刚才到底在说什么鬼话？记好了：如果吉儿·古达克递给你口香糖，你就接着。就算她递给你的是被啃得稀烂的动物尸体，你也得接着。</div></div>
 <div class="note">
   <h4>📌 重点单词</h4>
-  <div class="item"><b>mangled</b> <span class="phon">/ˈmæŋɡld/</span> adj. 被撕烂/啃得面目全非的 <button class="sp" onclick="speak(this)" data-t="mangled">🔊</button> — 动词 <span class="ex">mangle</span>＝把……撕碎、轧坏。这里形容"烂成一团的"。</div>
-  <div class="item"><b>carcass</b> <span class="phon">/ˈkɑːrkəs/</span> n. （动物的）尸体、残骸 <button class="sp" onclick="speak(this)" data-t="carcass">🔊</button> — 多指大型动物的死尸；口语里有强烈嫌弃的意味。搭配 <span class="ex">mangled animal carcass</span>（被啃烂的动物尸体）＝钱德勒自嘲"就算这么恶心的东西，她给我我也接"。</div>
+  <div class="item"><b>mangled</b> <span class="phon">/ˈmæŋɡld/</span> adj. 被撕烂/啃得面目全非的 <button class="sp" onclick="speak(this)" data-t="mangled">🔊</button> — 动词 <span class="ex">mangle</span>＝把……撕碎、轧坏。这里形容「烂成一团的」。</div>
+  <div class="item"><b>carcass</b> <span class="phon">/ˈkɑːrkəs/</span> n. （动物的）尸体、残骸 <button class="sp" onclick="speak(this)" data-t="carcass">🔊</button> — 多指大型动物的死尸；口语里有强烈嫌弃的意味。搭配 <span class="ex">mangled animal carcass</span>（被啃烂的动物尸体）＝钱德勒自嘲「就算这么恶心的东西，她给我我也接」。</div>
+  <div class="item"><b>sugarless</b> <span class="phon">/ˈʃʊɡərləs/</span> adj. 无糖的 <button class="sp" onclick="speak(this)" data-t="sugarless">🔊</button> — 构词：sugar + -less（无……的）。反义 <span class="ex">sugary</span>（含糖的、甜腻的）。</div>
+</div>
+<div class="phrasebox">
+  <h4>💬 词组 / 俚语</h4>
+  <div class="item"><b>mental note</b> ＝「心里记一下／记在脑子里」的备忘。说 <span class="ex">Mental note: …</span> 就是把接下来的教训当作给自己立的规矩，常用于自律、自嘲。</div>
+  <div class="item"><b>What the hell was that?</b> ＝「我刚才那是什么鬼话／刚才那算什么？」——<b>the hell</b> 加在疑问词后加强语气（不是脏话但很口语），表达强烈的困惑或不满。</div>
+</div>
+<div class="intent">
+  <h4>🎭 意图/潜台词</h4>
+  <div class="item"><b>Chandler: Oh, then no thanks. What the hell was that? Mental note: If Jill Goodacre offers you gum, you take it…</b><br>①他刚因为「不是无糖的」就拒绝了超模递来的口香糖，一秒后当场悔青了肠子。②笑点机制是「自我训话的荒谬升级」：他把教训写进「心里备忘录」，还算上「就算她递给你的是被啃烂的动物尸体，你也得接着」——用极端夸张把「我居然拒绝了梦中情人」的心碎讲成段子。③中文：「哦，那算了，谢谢。——我刚才那是什么鬼话？记好了：古达克递你口香糖，接着；她就算递你一具烂动物尸体，你也得接着。」</div>
 </div>
 </section>
 
@@ -383,6 +495,17 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Good luck, man. <button class="sp" onclick="speak(this)" data-t="Good luck, man.">🔊</button></div><div class="zh">祝你好运，老兄。</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Thanks. (Joey hugs him) OK. <button class="sp" onclick="speak(this)" data-t="Thanks. OK.">🔊</button></div><div class="zh">谢了。（乔伊抱了抱他）好了。</div></div>
 <div class="line stage"><span>【罗斯走到阳台上去找瑞秋说话。】</span></div>
+<div class="note">
+  <h4>📌 重点单词（补充）</h4>
+  <div class="item"><b>dairy</b> <span class="phon">/ˈderi/</span> n. 奶制品（牛奶、奶酪、黄油等） <button class="sp" onclick="speak(this)" data-t="dairy">🔊</button> — 与 <span class="ex">diary</span>（日记 /ˈdaɪəri/）拼写接近但读音不同，别混。</div>
+  <div class="item"><b>sour</b> <span class="phon">/ˈsaʊər/</span> adj. 酸的、（牛奶）变质的 <button class="sp" onclick="speak(this)" data-t="sour">🔊</button> — 本句是菲比民谣的押韵眼：<span class="ex">power / sour</span>、<span class="ex">scary / dairy</span>。</div>
+  <div class="item"><b>here goes</b> <span class="phon">/hɪr ɡoʊz/</span> phr. 「（那就）开始吧／豁出去了」 <button class="sp" onclick="speak(this)" data-t="here goes">🔊</button> — 下决心做一件有点紧张的事（表白、跳伞）前的口头禅。</div>
+  <div class="item"><b>you're a dead man</b> phr. 「你死定了」 <button class="sp" onclick="speak(this)" data-t="you're a dead man">🔊</button> — 半开玩笑的恐吓，常用于朋友间「你敢捣乱我就弄死你」。</div>
+</div>
+<div class="intent">
+  <h4>🎭 意图/潜台词</h4>
+  <div class="item"><b>Phoebe: (singing) New York City has no power, and the milk is getting sour. But to me it is not scary, 'cause I stay away from dairy…</b><br>①全城停电、大家手忙脚乱，菲比却把这件灾难现场改编成一首押韵的小曲，还认真记录歌词。②笑点机制是「与紧张局势完全脱节」：别人在焦头烂额，她在创作；而歌词本身荒诞（停电和「我从不喝牛奶」有什么关系），是她一贯的古怪灵性人设。③中文：「（唱）纽约断了电，牛奶在发酸；可我一点也不怕，因为我不碰奶制品……啦啦啦。」</div>
+</div>
 </section>
 
 <!-- ============ SCENE 13 ============ -->
@@ -411,10 +534,26 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>This is so typical. I'm always the last one to know everything. <button class="sp" onclick="speak(this)" data-t="This is so typical. I'm always the last one to know everything.">🔊</button></div><div class="zh">每次都这样。我总是最后一个知道所有事情的人。</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>No, you are not. We tell you stuff. <button class="sp" onclick="speak(this)" data-t="No, you are not. We tell you stuff.">🔊</button></div><div class="zh">不，你不是。我们什么都告诉你的。</div></div>
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>Yuh-huh! I was the last one to know when Chandler got bitten by the peacock at the zoo. I was the last one to know when you had a crush on Joey when he was moving in. (Monica gestures at Phoebe to shut up; Joey looks surprised but pleased) Looks like I was second to last. <button class="sp" onclick="speak(this)" data-t="Yuh-huh! I was the last one to know when Chandler got bitten by the peacock at the zoo. I was the last one to know when you had a crush on Joey when he was moving in. Looks like I was second to last.">🔊</button></div><div class="zh">才怪！钱德勒在动物园被孔雀咬，我是最后一个知道的。乔伊当初搬进来时你对人家有意思，我也是最后一个知道的。（莫妮卡打手势让菲比闭嘴；乔伊又惊讶又得意）看来我这次是倒数第二。</div></div>
+<div class="note">
+  <h4>📌 重点单词（补充）</h4>
+  <div class="item"><b>peacock</b> <span class="phon">/ˈpiːkɑːk/</span> n. 孔雀 <button class="sp" onclick="speak(this)" data-t="peacock">🔊</button> — 菲比翻出的旧账之一：钱德勒在动物园被孔雀咬（也是本剧后面会回顾的经典梗）。</div>
+  <div class="item"><b>surprise party</b> n. 惊喜派对 <button class="sp" onclick="speak(this)" data-t="surprise party">🔊</button> — 主角事先不知情、推门才被众人吓一跳的庆生形式；因此有「装惊喜」（act surprised）的社交规矩。</div>
+  <div class="item"><b>typical</b> <span class="phon">/ˈtɪpɪkl/</span> adj. 典型的；（反讽）「（某人）一贯如此、毫不意外」 <button class="sp" onclick="speak(this)" data-t="typical">🔊</button></div>
+</div>
 <div class="phrasebox">
   <h4>💬 词组 / 俚语</h4>
-  <div class="item"><b>act surprised</b> ＝ 装出很惊讶的样子。<b>act</b> 这里是"假装、演"，<span class="ex">act surprised / act happy / act like nothing happened</span> 都是高频搭配。乔伊嘱咐莫妮卡别露馅，正呼应了"惊喜派对"（surprise party）要装不知情的规矩。</div>
-  <div class="item"><b>This is so typical.</b> ＝「每次都这样／太典型了」。吐槽某人/某事一贯如此、毫不意外时用。<b>typical</b> 从"典型的"引申为"（差得）一点都不让人意外"。</div>
+  <div class="item"><b>act surprised</b> ＝ 装出很惊讶的样子。<b>act</b> 这里是「假装、演」，<span class="ex">act surprised / act happy / act like nothing happened</span> 都是高频搭配。乔伊嘱咐莫妮卡别露馅，正呼应了「惊喜派对」（surprise party）要装不知情的规矩。</div>
+  <div class="item"><b>This is so typical.</b> ＝「每次都这样／太典型了」。吐槽某人/某事一贯如此、毫不意外时用。<b>typical</b> 从「典型的」引申为「（差得）一点都不让人意外」。</div>
+  <div class="item"><b>have a crush on (someone)</b> ＝ 暗恋某人、对某人有好感。<span class="ex">you had a crush on Joey</span>＝「你对乔伊有意思」。名词 crush＝一时的迷恋对象。</div>
+</div>
+<div class="culture">
+  <h4>🏛️ 文化解析：菲比的「最后一个知道」人设与惊喜派对文化</h4>
+  美式情景喜剧里，每个角色都要有一句「标签台词」「招牌笑点」，菲比的就是 <b>I'm always the last one to know everything</b>（我总是最后一个知道所有事）——编剧靠它制造「她被蒙在鼓里→她突然抖出猛料→全场尴尬」的固定节奏。<br>
+  这场戏还套用了<b>惊喜派对（surprise party）</b>的社交规则：被庆生的人要假装不知情、推门要「哇」一声；所以乔伊才急着嘱咐莫妮卡 <span class="ex">You'd better act surprised</span>。菲比的翻账（孔雀咬人、莫妮卡暗恋乔伊）就是在此规则上「拆台」，把生日小秘密炸成一地鸡毛。
+</div>
+<div class="intent">
+  <h4>🎭 意图/潜台词</h4>
+  <div class="item"><b>Phoebe: …I was the last one to know when you had a crush on Joey… (Monica gestures at Phoebe to shut up) Looks like I was second to last.</b><br>①菲比拿「我总最后一个知道」的旧账反击莫妮卡，顺手抖出「你当年对乔伊有意思」的猛料——而乔伊就站在旁边。②笑点机制是「泄密 + 秒怂」：莫妮卡疯狂打手势让她闭嘴，菲比当场改口自嘲「看来我这次是倒数第二（知道）」，把尴尬圆成一个新笑话。③中文：「……你当年对乔伊有意思那事儿，我也是最后一个知道的。（……）这么看，我这回算倒数第二。」</div>
 </div>
 </section>
 
@@ -432,6 +571,21 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>What? (the cat jumps on his shoulders) Ow! <button class="sp" onclick="speak(this)" data-t="What? Ow!">🔊</button></div><div class="zh">什么？（那猫一下跳到他肩上）哎哟！</div></div>
 <div class="line stage"><span>【切到屋内。莫妮卡、乔伊和菲比在唱歌；屋外，罗斯和瑞秋正努力把猫从罗斯肩上弄下来。】</span></div>
 <div class="line"><div class="en"><span class="spk c-other">Monica, Joey, and Phoebe:</span>(singing) I'm on top of the world, looking down on creation and the only explanation I can find, is the wonders I've found ever since... <button class="sp" onclick="speak(this)" data-t="I'm on top of the world, looking down on creation and the only explanation I can find, is the wonders I've found ever since...">🔊</button></div><div class="zh">（合唱）我站在世界之巅，俯瞰着芸芸众生，而我唯一能找到的解释，就是自……以来我发现的那些奇迹。（《Top of the World》歌词）</div></div>
+<div class="note">
+  <h4>📌 重点单词（补充）</h4>
+  <div class="item"><b>general wondering…ment</b> phr. （罗斯口误造词）「泛泛的……琢磨（-ment）」 <button class="sp" onclick="speak(this)" data-t="a general wondering ment">🔊</button> — 他想说 <span class="ex">a general wondering</span>（一种泛泛的思索），却说成名词又硬加后缀 -ment，暴露他紧张到语无伦次。</div>
+  <div class="item"><b>wondering</b> <span class="phon">/ˈwʌndərɪŋ/</span> v./n. 想知道、好奇；思索 <button class="sp" onclick="speak(this)" data-t="wondering">🔊</button> — <span class="ex">I was wondering…</span> 是委婉引出请求/问题的超常用开头（比 I want to know 含蓄得多）。</div>
+</div>
+<div class="culture">
+  <h4>🏛️ 文化解析：屋里那首《Top of the World》（卡朋特乐队）</h4>
+  停电夜里 Monica、Joey、Phoebe 合唱的，是美国著名兄妹组合<b>卡朋特（The Carpenters）</b>1973 年的金曲 <b>《Top of the World》</b>（<span class="ex">I'm on top of the world, looking down on creation…</span>＝「我站在世界之巅，俯瞰众生……」）。这是 70 年代红遍全美的抒情流行歌，到 90 年代已成「人人会哼的年代金曲」。<br>
+  剧作用它做背景音：屋里三人无忧无虑地唱着老歌，屋外罗斯的表白正被一只野猫打断——「温馨合家欢的歌声」与「男主的心酸」叠在一起，是情景喜剧常用的<b>声画对位（contrast）</b>笑点。
+</div>
+<div class="intent">
+  <h4>🎭 意图/潜台词</h4>
+  <div class="item"><b>Ross: OK, I have a question. Well, actually, it's not so much a question as.. more of a general wondering…ment.</b><br>①罗斯鼓起勇气想在阳台上对瑞秋表白，紧张到连「这算不算个问题」都要纠结半天，还现场造了个词（wondering + -ment）。②笑点机制是「语无伦次的自我加码」：越想把话说得体面，越说得拧巴，正好暴露他心里有多没底。③中文：「好，我有个问题。呃……其实也不算问题，更像是一种泛泛的……琢磨——嗯（-ment）。」</div>
+  <div class="item"><b>Rachel: Ohhh!!!! (看着罗斯身后) / Ross: Yes, yes, that's right…</b><br>①罗斯刚开口表白，瑞秋突然「哦——！」；他以为她在回应自己的告白，连声「对，对，就是这样」。②笑点机制是「自作多情的错位」：她的惊呼其实给了身后的野猫，他却当成爱情的回应，浪漫气氛瞬间被猫跳上肩头（Ow!）砸碎。③中文：「哦——！！！（看猫）」「对、对，就是这样……（咦？）」</div>
+</div>
 </section>
 
 <!-- ============ SCENE 15 ============ -->
@@ -447,7 +601,14 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>(nonchalantly) Yeah? <button class="sp" onclick="speak(this)" data-t="Yeah?">🔊</button></div><div class="zh">（若无其事地）是吗？</div></div>
 <div class="note">
   <h4>📌 重点单词</h4>
-  <div class="item"><b>Bactine</b> <span class="phon">/ˈbæktiːn/</span> n. 百克定（美国常见的外用消毒/止痛喷雾品牌） <button class="sp" onclick="speak(this)" data-t="Bactine">🔊</button> — 1950 年代起在美国药房畅销的居家常备药，此处指莫妮卡拿来给罗斯处理猫抓伤。品牌名已口语化为"那种消毒水"的代称。</div>
+  <div class="item"><b>Bactine</b> <span class="phon">/ˈbæktiːn/</span> n. 百克定（美国常见的外用消毒/止痛喷雾品牌） <button class="sp" onclick="speak(this)" data-t="Bactine">🔊</button> — 1950 年代起在美国药房畅销的居家常备药，此处指莫妮卡拿来给罗斯处理猫抓伤。品牌名已口语化为「那种消毒水」的代称。</div>
+</div>
+<div class="note">
+  <h4>📌 重点单词（补充）</h4>
+  <div class="item"><b>wax</b> <span class="phon">/wæks/</span> n. 蜡；（蜡烛的）蜡油 <button class="sp" onclick="speak(this)" data-t="wax">🔊</button> — 这里乔伊举着点着的烛台照伤口，蜡油滴到罗斯背上，于是「那一滴是蜡」。</div>
+  <div class="item"><b>trample</b> <span class="phon">/ˈtræmpl/</span> v. 踩踏、践踏 <button class="sp" onclick="speak(this)" data-t="trampled">🔊</button> — <span class="ex">get trampled</span>＝被踩。瑞秋说停电时把猫放楼道会被黑灯瞎火的人踩到。</div>
+  <div class="item"><b>scared to death</b> phr. 吓得要死 <button class="sp" onclick="speak(this)" data-t="scared to death">🔊</button> — 口 high 频夸张说法，＝ terrified，此处形容受惊的小猫。</div>
+  <div class="item"><b>nonchalantly</b> <span class="phon">/ˌnɑːnʃəˈlɑːntli/</span> adv. 若无其事地、满不在乎地 <button class="sp" onclick="speak(this)" data-t="nonchalantly">🔊</button> — 罗斯用这个态度回「是吗？」，暴露他其实嫌猫碍事。</div>
 </div>
 </section>
 
@@ -460,10 +621,19 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
   <h4>📌 重点单词</h4>
   <div class="item"><b>loathe</b> <span class="phon">/loʊð/</span> v. 厌恶、憎恨 <button class="sp" onclick="speak(this)" data-t="loathe">🔊</button> — 比 hate 更书面、更强烈。<span class="ex">I loathe myself.</span>＝「我真鄙视我自己」，是本集钱德勒的收尾自嘲。注意拼写和发音：-th 读浊音 /ð/（同 this）。</div>
 </div>
+<div class="note">
+  <h4>📌 重点单词（补充）</h4>
+  <div class="item"><b>perfection</b> <span class="phon">/pərˈfekʃn/</span> n. 完美；完美之物 <button class="sp" onclick="speak(this)" data-t="perfection">🔊</button> — 正式、书面。日常口语一般说 <span class="ex">perfect / great / nice</span>，钱德勒偏要用名词「perfection」，才显得格外做作——这就是本场的笑点来源。</div>
+  <div class="item"><b>a stick of gum</b> n. 一片/一条口香糖 <button class="sp" onclick="speak(this)" data-t="a stick of gum">🔊</button> — 量词用 <b>stick</b>（条、片），不是 piece 更地道的说法之一。</div>
+</div>
 <div class="phrasebox">
   <h4>💬 词组 / 俚语</h4>
   <div class="item"><b>on second thought</b> ＝「再一想、转念一想」（改变主意时用）。<span class="ex">on second thought, gum would be perfection</span>＝「我改主意了，还是来片口香糖吧」。对立说法 <span class="ex">on second thought, never mind</span>。</div>
-  <div class="item"><b>would be perfection</b> ＝「将会是完美的」。钱德勒非要用书面味的 <b>perfection（完美本身）</b> 而不是口语的 <span class="ex">perfect / great</span>，才显得又紧张又做作——这正是全集的喜剧题眼：<b>一句"用词太用力"的话，把自己演成了笑话</b>。后面还有一处回声（场景 20，吉儿反问他 <span class="ex">Perfection?</span>）。</div>
+  <div class="item"><b>would be perfection</b> ＝「将会是完美的」。钱德勒非要用书面味的 <b>perfection（完美本身）</b> 而不是口语的 <span class="ex">perfect / great</span>，才显得又紧张又做作——这正是全集的喜剧题眼：<b>一句「用词太用力」的话，把自己演成了笑话</b>。后面还有一处回声（场景 20，吉儿反问他 <span class="ex">Perfection?</span>）。</div>
+</div>
+<div class="intent">
+  <h4>🎭 意图/潜台词</h4>
+  <div class="item"><b>Chandler: 'Gum would be perfection'? … For me, gum is perfection. I loathe myself.</b><br>①他吞吞吐吐地对超模说「来片口香糖将是『完美』」，话音一落立刻意识到自己的用词有多装，于是当场逐字回放、自我审判。②笑点机制是「过度用词 + 事后羞耻」：他想表现得优雅，却把一件小事说成琼瑶台词；最后一句「我真鄙视我自己」把整段自嘲收口，是钱德勒的招牌式幽默。③中文：「『口香糖简直完美』？……我本来能说『挺好的』，或者『给我来一片』，可我偏不——对我而言，口香糖就是『完美』。我真服了我自己。」</div>
 </div>
 </section>
 
@@ -482,6 +652,17 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-other">Mr. Heckles:</span>Mmm. Bob Buttons. Here, Bob Buttons. <button class="sp" onclick="speak(this)" data-t="Mmm. Bob Buttons. Here, Bob Buttons.">🔊</button></div><div class="zh">嗯。鲍伯·钮扣。过来，鲍伯·钮扣。</div></div>
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>(the cat runs away from her) Oooh! You are a very bad man! <button class="sp" onclick="speak(this)" data-t="Oooh! You are a very bad man!">🔊</button></div><div class="zh">（那猫从她怀里跑掉）哦！你真是个很坏的人！</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Mr. Heckles:</span>(as Phoebe and Rachel leave) You owe me a cat. <button class="sp" onclick="speak(this)" data-t="You owe me a cat.">🔊</button></div><div class="zh">（菲比和瑞秋离开时）你们欠我一只猫。</div></div>
+<div class="note">
+  <h4>📌 重点单词（补充）</h4>
+  <div class="item"><b>Mendels</b> 门德尔夫妇 <button class="sp" onclick="speak(this)" data-t="the Mendels">🔊</button> — 邻居姓氏的复数形式（the + 姓 s＝「某某一家」），英语里指一家人时的固定说法，如 <span class="ex">the Heckles</span>。</div>
+  <div class="item"><b>struggling</b> <span class="phon">/ˈstrʌɡlɪŋ/</span> adj./v. 挣扎的（struggle 的现在分词） <button class="sp" onclick="speak(this)" data-t="struggling">🔊</button> — <span class="ex">the struggling cat</span>＝那只拼命挣扎的猫。</div>
+  <div class="item"><b>You owe me (something)</b> phr. 你欠我…… <button class="sp" onclick="speak(this)" data-t="You owe me a cat">🔊</button> — 既可指欠钱，也可指人情、道德上的「欠」。海克斯用它倒打一耙。</div>
+</div>
+<div class="culture">
+  <h4>🏛️ 文化解析：Mr. Heckles——本剧头号「楼下怪邻居」</h4>
+  <b>海克斯先生（Mr. Heckles）</b>是《老友记》的常驻配角：住在莫妮卡楼下、总来敲门抱怨「你们太吵了」，是典型的「怪脾气邻居」形象。他的功能是当「扫兴担当」——不管朋友们做什么，他都要来搅局，制造生活的真实感与笑料。<br>
+  本场他的作用更妙：他是<b>想抢猫的冒认者</b>。编剧靠「说不出猫的名字」这个细节（他现编「钮扣」，还卡壳 <span class="ex">Ehhhh… B-Buttons</span>）拆穿他，猫也立刻用脚投票跑回菲比怀里——不用一句旁白，观众就全明白了。
+</div>
 </section>
 
 <!-- ============ SCENE 18 ============ -->
@@ -492,6 +673,11 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line stage"><span>【瑞秋盯着地板找猫，一头撞上了一双腿。她慢慢抬起头，看见一个帅气的意大利猛男抱着那只猫。（顺便说一句，你很快就会非常讨厌他——是那个男的，不是猫。）】</span></div>
 <div class="line"><div class="en"><span class="spk c-paul">Paolo:</span>(something Italian) <button class="sp" onclick="speak(this)" data-t="Ciao!">🔊</button></div><div class="zh">（说了一串意大利语）</div></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Wow. (she exhales in amazement, blowing the candle out) <button class="sp" onclick="speak(this)" data-t="Wow.">🔊</button></div><div class="zh">哇。（她惊叹地呼出一口气，把蜡烛吹灭了）</div></div>
+<div class="note">
+  <h4>📌 重点单词（补充）</h4>
+  <div class="item"><b>kitty</b> <span class="phon">/ˈkɪti/</span> n. 咪咪、小猫咪 <button class="sp" onclick="speak(this)" data-t="kitty">🔊</button> — 儿语，唤猫专用。<span class="ex">Here, kitty-kitty.</span>＝「过来，小猫咪」，是英语里逗猫/唤猫的固定口诀。</div>
+  <div class="item"><b>blow out</b> phr. 吹灭（蜡烛） <button class="sp" onclick="speak(this)" data-t="blow out the candle">🔊</button> — 这里瑞秋惊叹地呼出一口气，把蜡烛吹灭了，是「心动到忘我」的喜剧细节。</div>
+</div>
 </section>
 
 <!-- ============ SCENE 19 ============ -->
@@ -523,13 +709,23 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>(smiling) You betcha! <button class="sp" onclick="speak(this)" data-t="You betcha!">🔊</button></div><div class="zh">（微笑）那还用说！</div></div>
 <div class="note">
   <h4>📌 重点单词</h4>
-  <div class="item"><b>Monopoly</b> <span class="phon">/məˈnɑːpəli/</span> n. 大富翁（美国经典地产桌游）<button class="sp" onclick="speak(this)" data-t="Monopoly">🔊</button> — 普通名词义为"垄断"；此处是专有名词，指那款买地、盖房、收租的棋盘游戏。停电之夜全家玩它是美国家庭的典型画面。</div>
+  <div class="item"><b>Monopoly</b> <span class="phon">/məˈnɑːpəli/</span> n. 大富翁（美国经典地产桌游）<button class="sp" onclick="speak(this)" data-t="Monopoly">🔊</button> — 普通名词义为「垄断」；此处是专有名词，指那款买地、盖房、收租的棋盘游戏。停电之夜全家玩它是美国家庭的典型画面。</div>
 </div>
 <div class="phrasebox">
   <h4>💬 词组 / 俚语</h4>
   <div class="item"><b>turn out to be</b> ＝「结果是、原来是」（揭示出人意料的事实）。<span class="ex">The cat turned out to be Paolo's cat!</span>＝「那猫原来是保罗的猫！」和场景 8 的 <span class="ex">it turns out...</span> 同一用法。</div>
   <div class="item"><b>You betcha!</b> ＝「那当然！／必须的！」（= You bet）。美式口语，带点俏皮劲，菲比用得很传神。</div>
-  <div class="item"><b>smitten</b> <span class="phon">/ˈsmɪtn/</span> adj. 一见倾心的、被迷住的（= suddenly in love）。莫妮卡对着保罗连说三声"Hi!"，就是被电到的样子。</div>
+  <div class="item"><b>smitten</b> <span class="phon">/ˈsmɪtn/</span> adj. 一见倾心的、被迷住的（= suddenly in love）。莫妮卡对着保罗连说三声「Hi!」，就是被电到的样子。</div>
+  <div class="item"><b>arm in arm</b> phr. 挽着手臂、臂挽臂 <button class="sp" onclick="speak(this)" data-t="arm in arm">🔊</button> — 舞台提示里瑞秋「挽着保罗」进门的写法，暗示两人已经亲密。</div>
+</div>
+<div class="culture">
+  <h4>🏛️ 文化解析：90 年代美剧的「异国帅哥」梗与语言不通喜剧</h4>
+  让一个「帅到犯规、英语几乎不会说」的意大利男人登场，是 90 年代美式情景喜剧的固定配方：<b>语言不通反而制造笑点</b>——保罗全程只蹦单词（<span class="ex">Monopoly!</span>、<span class="ex">Bella!</span>），瑞秋却一脸陶醉地替他翻译、替他骄傲。<br>
+  剧作功能：保罗的作用是给罗斯制造「情敌」，把「罗斯暗恋瑞秋却不敢表白」的主线矛盾推到明面上。他一登场就抢走瑞秋、还见一个爱一个（对菲比也放电），正是编剧要观众「很快就讨厌他」的原因——本集旁白甚至直接在舞台提示里剧透：<span class="ex">Who, by the way, you'll hate very, very soon.</span>
+</div>
+<div class="intent">
+  <h4>🎭 意图/潜台词</h4>
+  <div class="item"><b>Ross: No, I mean tonight, in the building. Suddenly. Into our lives.</b><br>①罗斯假装随口打听「保罗从哪儿来」，瑞秋答「意大利」，他立刻纠正——他真正想问的根本不是地理，而是「他凭什么突然插进我们的关系里」。②笑点机制是「一顿一顿的酸味台词」：他把一句话拆成三个短句（tonight / in the building / suddenly / into our lives），每个停顿都是咬牙切齿的醋意。③中文：「不，我是说——就今晚，在这栋楼里，突然之间，闯进了『我们』的生活。」</div>
 </div>
 </section>
 
@@ -549,8 +745,20 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-other">Jill:</span>Perfection? <button class="sp" onclick="speak(this)" data-t="Perfection?">🔊</button></div><div class="zh">「完美」？</div></div>
 <div class="note">
   <h4>📌 重点单词</h4>
-  <div class="item"><b>impish</b> <span class="phon">/ˈɪmpɪʃ/</span> adj. 顽皮的、淘气的 <button class="sp" onclick="speak(this)" data-t="impish">🔊</button> — 名词 <span class="ex">imp</span>＝小恶魔、淘气鬼。钱德勒前一秒还用 <span class="ex">it's impish</span> 夸泡泡"顽皮可爱"，后一秒口香糖就飞到墙上，自嘲 <span class="ex">Nice going, imp.</span>（干得漂亮，小淘气）。</div>
+  <div class="item"><b>impish</b> <span class="phon">/ˈɪmpɪʃ/</span> adj. 顽皮的、淘气的 <button class="sp" onclick="speak(this)" data-t="impish">🔊</button> — 名词 <span class="ex">imp</span>＝小恶魔、淘气鬼。钱德勒前一秒还用 <span class="ex">it's impish</span> 夸泡泡「顽皮可爱」，后一秒口香糖就飞到墙上，自嘲 <span class="ex">Nice going, imp.</span>（干得漂亮，小淘气）。</div>
   <div class="item"><b>Heimlich</b> <span class="phon">/ˈhaɪmlɪk/</span> n. 海姆立克急救法 <button class="sp" onclick="speak(this)" data-t="Heimlich">🔊</button> — 全称 <span class="ex">Heimlich maneuver</span>，用腹部冲击把气道里的异物冲出，是美国普及度极高的急救常识（以医生 Henry Heimlich 命名）。</div>
+</div>
+<div class="note">
+  <h4>📌 重点单词（补充）</h4>
+  <div class="item"><b>boyish</b> <span class="phon">/ˈbɔɪɪʃ/</span> adj. 男孩气的、带少年感的 <button class="sp" onclick="speak(this)" data-t="boyish">🔊</button> — 构词：boy + -ish。近义 <span class="ex">boyish charm</span>＝少年气的魅力。</div>
+  <div class="item"><b>choke</b> <span class="phon">/tʃoʊk/</span> v. 噎住、窒息 <button class="sp" onclick="speak(this)" data-t="choking">🔊</button> — 钱德勒被口香糖噎住，是本场「越描越黑」的落点。</div>
+  <div class="item"><b>Good save!</b> phr. 「救得漂亮／化险为夷！」 <button class="sp" onclick="speak(this)" data-t="Good save">🔊</button> — 称赞某人把搞砸的局面及时救回来，常用于体育、游戏、社交场合。</div>
+  <div class="item"><b>back on track</b> phr. 回到正轨 <button class="sp" onclick="speak(this)" data-t="back on track">🔊</button> — 原指火车回到轨道，引申为「局面恢复正常」。</div>
+</div>
+<div class="intent">
+  <h4>🎭 意图/潜台词</h4>
+  <div class="item"><b>Chandler: Nice going, imp.</b><br>①他刚夸自己吹泡泡「有男孩气的顽皮魅力」，下一秒就把口香糖喷到了墙上，只好自嘲收场。②笑点机制是「反语 + 同一个词的回收」：前脚用 <b>impish</b>（顽皮）夸泡泡，后脚用 <b>imp</b>（小淘气）骂自己，同一个词前后照应，嘲笑自己刚才的臭美。③中文：「干得漂亮啊，小淘气（说的就是我自己）。」</div>
+  <div class="item"><b>Jill: Perfection?</b><br>①钱德勒被海姆立克救回一命，喘着气说「那真是……真是……」，吉儿替他补完那个词——「完美（Perfection）？」②笑点机制是「回旋镖式的用词回收」：前面 Chandler 装腔说了 <span class="ex">gum would be perfection</span>，这里吉儿用同一个大词调侃他险些送命的一夜，把「用词过猛」的包袱漂亮地闭环。③中文：「（这一夜也算得上很）『完美』吧？」</div>
 </div>
 </section>
 
@@ -573,12 +781,15 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Y'know, I know it's totally superficial and we have absolutely nothing in common, and we don't even speak the same language but Goooooooddddddd.... <button class="sp" onclick="speak(this)" data-t="Y'know, I know it's totally superficial and we have absolutely nothing in common, and we don't even speak the same language but Goooooooddddddd...">🔊</button></div><div class="zh">你知道，我知道这完全很肤浅，我们俩毫无共同点，甚至说的都不是同一种语言，可是老——天——啊……</div></div>
 <div class="note">
   <h4>📌 重点单词</h4>
-  <div class="item"><b>superficial</b> <span class="phon">/ˌsuːpərˈfɪʃl/</span> adj. 肤浅的、表面的 <button class="sp" onclick="speak(this)" data-t="superficial">🔊</button> — 本义"停留在表面（surface）的"，引申为"只看外表、不够深刻"。反义 <span class="ex">profound</span>（深刻的）。瑞秋承认这段心动"很肤浅"，却说得很诚实。</div>
+  <div class="item"><b>superficial</b> <span class="phon">/ˌsuːpərˈfɪʃl/</span> adj. 肤浅的、表面的 <button class="sp" onclick="speak(this)" data-t="superficial">🔊</button> — 本义「停留在表面（surface）的」，引申为「只看外表、不够深刻」。反义 <span class="ex">profound</span>（深刻的）。瑞秋承认这段心动「很肤浅」，却说得很诚实。</div>
+  <div class="item"><b>mopeds</b> <span class="phon">/ˈmoʊpedz/</span> n. 小型摩托车、助力车 <button class="sp" onclick="speak(this)" data-t="mopeds">🔊</button> — 菲比以为瑞秋在讲「百慕大度假玩了什么」，才问「你们骑小摩托了吗」。</div>
+  <div class="item"><b>classic</b> <span class="phon">/ˈklæsɪk/</span> adj. 经典的；（口语）太典型了、果然如此 <button class="sp" onclick="speak(this)" data-t="classic">🔊</button> — 罗斯说「太经典了」，是在自嘲瑞秋「听不懂也照样心动」这件事的典型程度。</div>
 </div>
 <div class="phrasebox">
   <h4>💬 词组 / 俚语</h4>
   <div class="item"><b>have nothing in common</b> ＝ 毫无共同点。<span class="ex">we have absolutely nothing in common</span>＝「我们俩一点共同之处都没有」。相反 <span class="ex">have a lot in common</span>＝很有共同语言。</div>
-  <div class="item"><b>This is so un-me.</b> ＝「这太不像我了。」<b>un-</b> 是英语里能产的前缀，口语中常临时造词表示"反着来的"，如 <span class="ex">un-cool / un-fun / un-me</span>。</div>
+  <div class="item"><b>This is so un-me.</b> ＝「这太不像我了。」<b>un-</b> 是英语里能产的前缀，口语中常临时造词表示「反着来的」，如 <span class="ex">un-cool / un-fun / un-me</span>。</div>
+  <div class="item"><b>What am I doing?</b> phr. 「我这是在干什么啊？」 <button class="sp" onclick="speak(this)" data-t="What am I doing?">🔊</button> — 自我怀疑、意识到自己在做傻事时的自言自语，连续说两遍加强纠结。</div>
 </div>
 </section>
 
@@ -605,11 +816,21 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-paul">Paolo:</span>No. <button class="sp" onclick="speak(this)" data-t="No.">🔊</button></div><div class="zh">不知道。</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>That's funny, because you know, you are a huge crapweasel! <button class="sp" onclick="speak(this)" data-t="That's funny, because you know, you are a huge crapweasel!">🔊</button></div><div class="zh">那就奇怪了，因为你知道吗，你就是个超级大 crapweasel！（编出来骂人的词）</div></div>
 <div class="line stage"><span>【两人拥抱。】</span></div>
+<div class="note">
+  <h4>📌 重点单词（补充）</h4>
+  <div class="item"><b>technically</b> <span class="phon">/ˈteknɪkli/</span> adv. 严格来说、从技术上讲 <button class="sp" onclick="speak(this)" data-t="technically">🔊</button> — 口语里常用来「较真式地澄清」，罗斯用它给自己挽尊（「严格来说，那个还没发生」）。</div>
+  <div class="item"><b>Poco</b> <span class="phon">/ˈpoʊkoʊ/</span> （意/西语）一点点 <button class="sp" onclick="speak(this)" data-t="Poco">🔊</button> — 保罗说 <span class="ex">Poco… a leetle</span>，前一半意大利语、后一半是「a little」的蹩脚发音，笑点在这句话的混搭。</div>
+  <div class="item"><b>crapweasel</b> <span class="phon">/ˈkræpwiːzl/</span> n.（编剧生造）混蛋、废物 <button class="sp" onclick="speak(this)" data-t="crapweasel">🔊</button> — crap（垃圾）+ weasel（黄鼠狼），词典里查不到，专为罗斯「想骂人又不敢爆粗」而造。</div>
+</div>
 <div class="phrasebox">
   <h4>💬 词组 / 俚语</h4>
   <div class="item"><b>get in the way (of something)</b> ＝ 挡路、妨碍某事。<span class="ex">if you get in the way of us becoming a thing</span>＝「如果你挡了我们成为一对的路」。注意别和 <span class="ex">in the way</span>（挡道）混淆。</div>
-  <div class="item"><b>we're kind of a thing</b> ＝「我们算是在一起的那种关系」。"a thing" 是美式口语里委婉的说法，指"两人之间有点暧昧/半正式的关系"，比 <span class="ex">a couple</span> 更含糊、更心虚。</div>
-  <div class="item"><b>crapweasel</b> — 这是<b>编剧现造的词</b>（crap＝垃圾、胡扯 + weasel＝黄鼠狼），并不存在于常规词典，专为罗斯"想骂人又不敢说粗口"的场面服务。看剧学英语要能分辨：这种生造俚语不要拿来用，能听懂、能 get 到笑点就够了。</div>
+  <div class="item"><b>we're kind of a thing</b> ＝「我们算是在一起的那种关系」。「a thing」是美式口语里委婉的说法，指「两人之间有点暧昧/半正式的关系」，比 <span class="ex">a couple</span> 更含糊、更心虚。</div>
+  <div class="item"><b>crapweasel</b> — 这是<b>编剧现造的词</b>（crap＝垃圾、胡扯 + weasel＝黄鼠狼），并不存在于常规词典，专为罗斯「想骂人又不敢说粗口」的场面服务。看剧学英语要能分辨：这种生造俚语不要拿来用，能听懂、能 get 到笑点就够了。</div>
+</div>
+<div class="intent">
+  <h4>🎭 意图/潜台词</h4>
+  <div class="item"><b>Ross: Do you know the word crapweasel? … you are a huge crapweasel!</b><br>①罗斯想跟情敌保罗「摊牌」、甚至想骂他，却不敢说脏话，于是当场生造了一个词 crapweasel，先问对方「你懂这个词吗」，再补刀「因为你就是个超级大 crapweasel」。②笑点机制是「设套式骂人 + 鸡同鸭讲」：保罗压根听不懂、还笑着跟他拥抱，罗斯一句狠话骂在空气里，全场只有观众 get 到。③中文：「你知道 crapweasel 这词吗？……那就怪了，因为你就是个超级大 crapweasel！」</div>
 </div>
 </section>
 
@@ -623,6 +844,11 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line stage"><span>【钱德勒照着做，结果笔砸到了自己头上。】</span></div>
 <div class="line"><div class="en"><span class="spk c-other">Jill:</span>No, you've got to whip it. <button class="sp" onclick="speak(this)" data-t="No, you've got to whip it.">🔊</button></div><div class="zh">不对，你得用力甩出去。</div></div>
 <div class="line stage"><span>【他使劲一甩，笔又弹了回来，差点再次砸到他。】</span></div>
+<div class="note">
+  <h4>📌 重点单词（补充）</h4>
+  <div class="item"><b>whip</b> <span class="phon">/wɪp/</span> v. 猛甩、抽（鞭子般快速挥动） <button class="sp" onclick="speak(this)" data-t="whip">🔊</button> — 吉儿教钱德勒「你得用力甩」，结果笔弹回来又差点砸到他，是他「在美女面前反复出丑」的笑点。</div>
+  <div class="item"><b>swing</b> <span class="phon">/swɪŋ/</span> v. 摆动、抡动 <button class="sp" onclick="speak(this)" data-t="swings the pen">🔊</button> — 舞台提示里吉儿「让笔绕头转圈」也用的是 swing。</div>
+</div>
 </section>
 
 <!-- ============ SCENE 24 ============ -->
@@ -640,6 +866,18 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Oh.. oh... oh. <button class="sp" onclick="speak(this)" data-t="Oh... oh... oh.">🔊</button></div><div class="zh">哦……哦……哦。</div></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Hey Ross. This probably isn't the best time to bring it up, but you have to throw a party for Monica. <button class="sp" onclick="speak(this)" data-t="Hey Ross. This probably isn't the best time to bring it up, but you have to throw a party for Monica.">🔊</button></div><div class="zh">嘿，罗斯。现在提这事可能不太合适，不过你得给莫妮卡办个派对了。</div></div>
 <div class="line stage"><span>【片尾曲 Closing Credits。】</span></div>
+<div class="note">
+  <h4>📌 重点单词（补充）</h4>
+  <div class="item"><b>spooky</b> <span class="phon">/ˈspuːki/</span> adj. 阴森的、瘆人的 <button class="sp" onclick="speak(this)" data-t="spooky">🔊</button> — 罗斯说「黑灯瞎火还真有点瘆人」，给随后的鬼叫比赛定了调。</div>
+  <div class="item"><b>maniacal</b> <span class="phon">/məˈnaɪəkl/</span> adj. 癫狂的、疯子般的 <button class="sp" onclick="speak(this)" data-t="maniacal">🔊</button> — 形容乔伊那种「魔鬼般的笑」。</div>
+  <div class="item"><b>definitive</b> <span class="phon">/dɪˈfɪnətɪv/</span> adj. 终极的、盖棺定论级的 <button class="sp" onclick="speak(this)" data-t="definitive">🔊</button> — 罗斯不服输，要拿出「绝杀版鬼叫」，这个词自带「终极一版」的夸张感。</div>
+  <div class="item"><b>throw a party</b> phr. 办派对、办聚会 <button class="sp" onclick="speak(this)" data-t="throw a party">🔊</button> — <b>throw</b> 在这里＝举办（活动），<span class="ex">throw a party / throw a dinner</span> 都是地道搭配。</div>
+</div>
+<div class="intent">
+  <h4>🎭 意图/潜台词</h4>
+  <div class="item"><b>Phoebe: …10, 9, 8, 7… (time lapse)… negative 46, negative 47, negative 48….</b><br>①菲比给最后一根蜡烛倒计时，数到 0 之后仍停不下来，一路数到负数。②笑点机制是「把倒计时变成无厘头执念」：本该「烧完就结束」，她却像实验室计数器一样精确地数负数，荒诞到没人阻止她，也没人觉得这算件正事。③中文：「……10、9、8、7……（过了一段时间）……负 46、负 47、负 48……」</div>
+  <div class="item"><b>Joey: Hey Ross. This probably isn't the best time to bring it up, but you have to throw a party for Monica.</b><br>①灯一亮，罗斯眼睁睁看见暗恋的瑞秋正和保罗热烈接吻、心碎捂胸，乔伊偏偏选在这一秒提醒他「你还得给莫妮卡办派对」。②笑点机制是「时机最差的一句正经话」：乔伊甚至明知故犯地先声明「现在提可能不太合适」，然后把刀补上，把悲情瞬间彻底喜剧化。③中文：「嘿罗斯。现在说可能不是时候，但——你得给莫妮卡办个派对了。」</div>
+</div>
 </section>
 
 <!-- ============ SCENE 25 ============ -->
@@ -652,12 +890,22 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line stage"><span>【她走了。钱德勒把脸贴在玻璃门上目送她，深情地摩挲着玻璃窗。然后他转向监控摄像头，对着它说起话来。】</span></div>
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Hi, um, I'm account number 7143457. And, uh, I don't know if you got any of that, but I would really like a copy of the tape. <button class="sp" onclick="speak(this)" data-t="Hi, um, I'm account number 7143457. And, uh, I don't know if you got any of that, but I would really like a copy of the tape.">🔊</button></div><div class="zh">嗨，嗯，我的账号是 7143457。还有，呃，我不知道你有没有拍到刚才那些，不过我真想要一卷那段录像带。</div></div>
 <div class="line stage"><span>【剧终 End。】</span></div>
+<div class="note">
+  <h4>📌 重点单词（补充）</h4>
+  <div class="item"><b>account number</b> n. 账号 <button class="sp" onclick="speak(this)" data-t="account number">🔊</button> — 钱德勒对着银行监控报出账号，是想让对方「定位」到他、把录像调出来。</div>
+  <div class="item"><b>a copy of the tape</b> phr. 一盘（录像）带的拷贝 <button class="sp" onclick="speak(this)" data-t="a copy of the tape">🔊</button> — 90 年代监控还在用磁带（tape）录制，所以他要的是「tape」而不是视频文件，很有年代感。</div>
+  <div class="item"><b>See ya.</b> phr. 回头见（= See you） <button class="sp" onclick="speak(this)" data-t="See ya">🔊</button> — 极简化的口语告别，比 goodbye 更随意亲近。</div>
+</div>
+<div class="intent">
+  <h4>🎭 意图/潜台词</h4>
+  <div class="item"><b>Chandler: Hi, um, I'm account number 7143457… I would really like a copy of the tape.</b><br>①吉儿走后，钱德勒转头对着银行监控摄像头报出自己的账号，讨要「今晚的录像带」。②笑点机制是「把最丢脸的一夜当纪念品收着」：他整晚在对方面前出尽洋相（喷口香糖、被噎、学甩笔），却还想留一份录像永久珍藏——既是爱慕的余韵，也是他自嘲性格的终点。③中文：「嗨，我是账号 7143457。呃，不知道你有没有拍到刚才那些——不过我真的很想要一份录像。」</div>
+</div>
 </section>
 
 <!-- ============ SHADOWING ============ -->
 <section class="shadowbox" id="shadow">
 <h2>🔁 跟读重点句（本集必练 15 句）</h2>
-<p style="margin:4px 0 0;color:#666;font-size:13.5px">方法：先点 🔊 听 2 遍 → 盖住英文跟读 → 切剧集原声对读。每句跟到"不用想就能说出来"为止。一天 5 句，3 天过完一遍。</p>
+<p style="margin:4px 0 0;color:#666;font-size:13.5px">方法：先点 🔊 听 2 遍 → 盖住英文跟读 → 切剧集原声对读。每句跟到「不用想就能说出来」为止。一天 5 句，3 天过完一遍。</p>
 <ol>
 <li><button class="sp" onclick="speak(this)" data-t="I want to start with a song that's about that moment when you suddenly realize what life is all about.">🔊</button> <b>I want to start with a song that's about that moment when you suddenly realize what life is all about.</b><span class="zh-t">我想先唱一首歌，唱的是你突然顿悟人生真谛的那一刻。（长定语从句，一口气读顺；all about 连读）</span></li>
 <li><button class="sp" onclick="speak(this)" data-t="The entire city is blacked out!">🔊</button> <b>The entire city is blacked out!</b><span class="zh-t">整座城市都停电了！（被动语态，重读 entire，情绪拉满）</span></li>
@@ -666,14 +914,14 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <li><button class="sp" onclick="speak(this)" data-t="Happy Chanukah, everyone.">🔊</button> <b>Happy Chanukah, everyone.</b><span class="zh-t">祝大家光明节快乐。（节日贺词模板：Happy + 节日名）</span></li>
 <li><button class="sp" onclick="speak(this)" data-t="Just make contact, smile!">🔊</button> <b>Just make contact, smile!</b><span class="zh-t">先打个照面，笑一个！（命令式短句连读，语速快、像给自己打气）</span></li>
 <li><button class="sp" onclick="speak(this)" data-t="Put Joey on the phone.">🔊</button> <b>Put Joey on the phone.</b><span class="zh-t">叫乔伊听电话。（打电话要人接的固定说法）</span></li>
-<li><button class="sp" onclick="speak(this)" data-t="My weirdest place would have to be...">🔊</button> <b>My weirdest place would have to be...</b><span class="zh-t">我最奇怪的地方，得算是……（would have to be 表示"要选的话就这个"）</span></li>
+<li><button class="sp" onclick="speak(this)" data-t="My weirdest place would have to be...">🔊</button> <b>My weirdest place would have to be...</b><span class="zh-t">我最奇怪的地方，得算是……（would have to be 表示「要选的话就这个」）</span></li>
 <li><button class="sp" onclick="speak(this)" data-t="Passion is way overrated.">🔊</button> <b>Passion is way overrated.</b><span class="zh-t">激情这东西被吹得太神了。（way 加强程度，重读 overrated）</span></li>
 <li><button class="sp" onclick="speak(this)" data-t="Ross, you're mayor of the zone.">🔊</button> <b>Ross, you're mayor of the zone.</b><span class="zh-t">罗斯，你是那个区的区长。（friend zone 梗的名句，语气一本正经地损人）</span></li>
 <li><button class="sp" onclick="speak(this)" data-t="Now you're in the friend zone.">🔊</button> <b>And now you're in the friend zone.</b><span class="zh-t">现在你已经掉进「朋友区」了。（90 年代恋爱文化关键词）</span></li>
 <li><button class="sp" onclick="speak(this)" data-t="Gum would be perfection.">🔊</button> <b>Gum would be perfection.</b><span class="zh-t">口香糖简直是完美的选择。（用词过度正式，是全集的喜剧题眼）</span></li>
 <li><button class="sp" onclick="speak(this)" data-t="It's got a boyish charm, it's impish.">🔊</button> <b>It's got a boyish charm, it's impish.</b><span class="zh-t">它有一种男孩气的魅力，很顽皮。（两个短形容词连贯收尾，可爱又做作）</span></li>
 <li><button class="sp" onclick="speak(this)" data-t="This is so un-me!">🔊</button> <b>This is so un-me!</b><span class="zh-t">这太不像我了！（un- 现场造词，语调：又羞又兴奋）</span></li>
-<li><button class="sp" onclick="speak(this)" data-t="I had a great blackout.">🔊</button> <b>I had a great blackout.</b><span class="zh-t">今晚这场停电我过得很愉快。（把倒霉事说成"过得好"，是全剧的温柔收尾）</span></li>
+<li><button class="sp" onclick="speak(this)" data-t="I had a great blackout.">🔊</button> <b>I had a great blackout.</b><span class="zh-t">今晚这场停电我过得很愉快。（把倒霉事说成「过得好」，是全剧的温柔收尾）</span></li>
 </ol>
 </section>
 

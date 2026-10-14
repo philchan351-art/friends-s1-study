@@ -44,6 +44,8 @@ nav.toc a:hover{text-decoration:underline}
 .culture h4{margin:0 0 6px;font-size:14px;color:#145a32}
 .phrasebox{background:#fdf6ee;border:1px solid #f2ddc0;border-left:5px solid #e67e22;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:14px}
 .phrasebox h4{margin:0 0 6px;font-size:14px;color:#9c4a0a}
+.intent{background:#F5F0FA;border:1px solid #e0d0ee;border-left:5px solid #7D3C98;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:14px}
+.intent h4{margin:0 0 6px;font-size:14px;color:#6C3483}
 .shadowbox{background:#fff;border:2px solid #8e44ad;border-radius:12px;padding:14px 18px;margin:26px 0}
 .shadowbox h2{margin-top:0;color:#6c3483;font-size:18px}
 .shadowbox ol{margin:8px 0 0;padding-left:22px}
@@ -59,7 +61,7 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
   .wrap{max-width:none;padding:0}
   header.hero{padding:16px 10px 12px}
   .scene{margin:14px 0}
-  .line,.note,.culture,.phrasebox,.shadowbox li{page-break-inside:avoid;break-inside:avoid}
+  .line,.note,.culture,.phrasebox,.intent,.shadowbox li{page-break-inside:avoid;break-inside:avoid}
   .scene h2{page-break-after:avoid;break-after:avoid}
   footer{page-break-before:avoid}
 }
@@ -85,7 +87,7 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
     <div class="sub">The One With The Fake Monica · 假莫妮卡</div>
     <div class="tags">
       <span>1994–1995 年首播（第一季）</span><span>美语中级偏上</span><span>左：英文原台词 / 右：中文对照</span>
-      <span>📌 重点单词（音标+意思）</span><span>💬 词组/俚语</span><span>🏛️ 文化解析</span><span>🔊 点按朗读</span>
+      <span>📌 重点单词（音标+意思）</span><span>💬 词组/俚语</span><span>🏛️ 文化解析</span><span>🔊 点按朗读</span><span>🎭 潜台词解析</span>
     </div>
   </div>
 </header>
@@ -101,7 +103,7 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="wrap">
 <div class="guide">
   <b>学习三步法（配合本集使用）</b><br>
-  ① <b>看懂</b>：逐句对照左右两栏，遇到 📌/💬/🏛️ 标注先读解析再往下走；<br>
+  ① <b>看懂</b>：逐句对照左右两栏，遇到 📌/💬/🏛️/🎭 标注先读解析再往下走（🎭 = 潜台词/意图解析——这句话为什么这么说、笑点/讽刺落在哪里）；<br>
   ② <b>听熟</b>：把速度调到 0.5×，点每句 🔊 听 2-3 遍，再切剧集原声听同一段，注意连读、吞音（如 <span class="ex">gonna / wanna / y'know / kinda / whaddya</span>）；<br>
   ③ <b>说出</b>：翻到文末「🔁 跟读重点句」，跟着原声逐句模仿语调和节奏，一天 10 句，重复到脱口而出。
 </div>
@@ -152,6 +154,16 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 ① <b>Wonder Mop</b>：台词里那把 69.95 美元的"神奇拖把"，是 1990 年代美国"电视购物（As Seen on TV / 电视导购广告）"爆款清洁神器的典型代表——靠夸张演示贩卖"一拖就干净"的幻想。笑点在于：盗刷信用卡的人没有去买什么大牌，而是买了一把拖把，所以钱德勒吐槽"真是个奇葩"。<br>
 ② <b>Curious George（好奇乔治）</b>：美国经典儿童绘本里那只名叫"乔治"的调皮小猴子。瑞秋说"我的好奇乔治玩偶不再好奇了"，是委婉的黑色幽默——因为真猴子马修刚刚"侵犯"了她的玩偶。
 </div>
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>hump</b> <span class="phon">/hʌmp/</span> v.（动物发情时）骑跨、抱着……磨蹭 <button class="sp" onclick="speak(this)" data-t="hump">🔊</button> — 台词 <span class="ex">stop humping the lamp</span>＝别再抱着那盏灯蹭了</div>
+<div class="item"><b>yuk</b> <span class="phon">/jʌk/</span> int./n. 恶心！/ 令人作呕的东西 <button class="sp" onclick="speak(this)" data-t="yuk">🔊</button> — <span class="ex">Oh! The yuk!</span>＝哎呀，好恶心！</div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Chandler: Wow, what a geek. They spent $69.95 on a Wonder Mop.</b><br>① 意图：钱德勒嘴上在骂盗刷的人"奇葩"，实际是拿账单当众调侃莫妮卡——那把"神奇拖把"正是她自己买的。② 笑点机制：先甩结论（what a geek／真是个奇葩），再补证据（花 69.95 买拖把），最后 Monica 一句"That's me."把攻击原路弹回，形成"埋雷炸自己人"的反转。③ 中文等价："哟，这人有够奇葩的——花七十块买了把神奇拖把。""……那是我买的。"</div>
+<div class="item"><b>Rachel: Let's just say my Curious George doll is no longer curious.</b><br>① 意图：瑞秋不想直说猴子对玩偶做了什么，用一句委婉到极点的话点到为止。② 笑点/双关：Curious George 本是绘本里那只"好奇的小猴子"，她套用"no longer curious（不再好奇）"暗示玩偶已被"侵犯"，把儿童梗黑化。③ 中文等价："这么说吧，我的'好奇乔治'现在不好奇了。"</div>
+</div>
 </section>
 
 <!-- ============ SCENE 2 ============ -->
@@ -187,6 +199,15 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="culture">
 <h4>🏛️ 文化解析：The New School（新学院）</h4>
 <b>The New School（新学院）</b>是纽约曼哈顿一所真实存在的大学（创立于 1919 年，以艺术、设计、人文社科著称）。莫妮卡用"我在新学院上过课吗？"来自问——在她心里，"上点课、学点艺术"正是她梦寐以求却迟迟没做的"理想生活勋章"。这与她后面"要是我有工具，我可能就是艺术家了"的自我辩白连成一条线：她羡慕的不是钱，而是那个女人"敢去做"。
+</div>
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>New School</b> <span class="phon">/nuː skuːl/</span> n.（专有名词）新学院——纽约曼哈顿一所真实大学，以艺术、设计、人文著称 <button class="sp" onclick="speak(this)" data-t="New School">🔊</button></div>
+<div class="item"><b>horseback riding</b> <span class="phon">/ˈhɔːrsbæk ˈraɪdɪŋ/</span> n. 骑马 <button class="sp" onclick="speak(this)" data-t="horseback riding">🔊</button> — 固定搭配 <span class="ex">go horseback riding</span>（去骑马）</div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Monica: She's got everything I want, and she doesn't have my mother.</b><br>① 意图：前一句还在嫉妒盗刷者"拥有一切"，这一句才是真心话——她真正想摆脱的，是那个让她处处不够好的母亲。② 笑点机制：把"我好羡慕她"急转成"幸好她不用摊上我妈"，用自嘲消解嫉妒，也第一次点出 Monica 的性格底色（好胜、被母亲压迫）。③ 中文等价："她什么都有……还好她没有我妈。"</div>
 </div>
 </section>
 
@@ -226,6 +247,15 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 乔伊想取个"中性"的艺名，钱德勒一路把它带到"乔·斯大林"。<b>约瑟夫·斯大林（Joseph Stalin）</b>是苏联历史上的领导人——这里编剧只把他当成一个"听起来耳熟的著名名字"来玩梗，笑点在于乔伊完全没听出这是谁，还认真记下来当艺名。<br>
 钱德勒随后拿它去搭配两部真实的百老汇音乐剧：<b>《Bye Bye Birdie》（再见，伯蒂，1960）</b>和 <b>《Fiddler on the Roof》（屋顶上的提琴手，1964）</b>——把"海报挂名主演"的荒诞感推到顶点，是典型的 Chandler 式胡诌。
 </div>
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>stage name</b> <span class="phon">/steɪdʒ neɪm/</span> n. 艺名（演员、歌手对外使用的名字） <button class="sp" onclick="speak(this)" data-t="stage name">🔊</button></div>
+<div class="item"><b>Pepponi</b> <span class="phon">/pəˈpoʊni/</span> n.（专有名词）钱德勒随口编的姓，一听就像意大利裔，所以乔伊嫌"太有民族色彩" <button class="sp" onclick="speak(this)" data-t="Pepponi">🔊</button></div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Chandler: Joe...Joe...Joe...Stalin?</b><br>① 意图：钱德勒把一个历史人物的名字当成"中立艺名"抛给乔伊，纯粹是逗他，他清楚乔伊根本听不出来。② 笑点机制：让最迟钝的人煞有介事地把"斯大林"记成艺名——而且是 Chandler 一步步"喂"过去的，荒诞到极点还一脸正经。③ 中文等价："乔……乔……乔……'斯大林'？"</div>
+</div>
 </section>
 
 <!-- ============ SCENE 4 ============ -->
@@ -257,6 +287,14 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="culture">
 <h4>🏛️ 文化解析："去邮局，她的照片肯定贴着"</h4>
 瑞秋说的 <b>"her picture's up at the post office"</b>，指的是美国"<b>邮局里张贴通缉/悬赏海报</b>"的传统印象：美国邮政系统与执法机构会张贴逃犯通缉令（最著名的就是 FBI 的"头号通缉犯 Most Wanted"海报，早年常挂在邮局墙上）。瑞秋是在调侃："你要找她？去邮局看通缉照啊！"——一句玩笑把莫妮卡的执念推到了"追逃犯"的荒诞高度。
+</div>
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>post office</b> <span class="phon">/ˈpoʊst ɔːfɪs/</span> n. 邮局 <button class="sp" onclick="speak(this)" data-t="post office">🔊</button> — 此处指美国邮局张贴通缉/悬赏海报的地方，Rachel 借此调侃去找盗刷者"看通缉照"</div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Rachel: Go to the post office! I'm sure her picture's up!</b><br>① 意图：瑞秋在嘲讽莫妮卡的执念——你想见那个女人？去邮局看通缉照啊。② 笑点机制：把"想认识盗刷者"的荒唐，等同于"去追捕逃犯"，一句玩笑就给莫妮卡的执念定了性。③ 中文等价："去邮局啊，她照片保准贴那儿呢！"</div>
 </div>
 </section>
 
@@ -321,6 +359,15 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <h4>🏛️ 文化解析："Pennsylvania Dutch" 里的 Dutch 其实不是荷兰</h4>
 莫妮卡说自己是 <b>Pennsylvania Dutch（宾夕法尼亚荷兰裔）</b>，假莫妮卡立刻用荷兰语去搭话，结果闹了乌龙——因为这里的 <b>Dutch 源自德语 "Deutsch"（德意志）</b>：它指的是 17–18 世纪移居美国宾夕法尼亚一带的<b>德裔移民及其后裔</b>（包括大家熟悉的 Amish 阿米什人，本集后文会反复拿"阿米什血统"开玩笑）。所以"宾州荷兰人"其实和荷兰没多大关系。这个语言误会，正是莫妮卡和假莫妮卡这段友谊的起点。
 </div>
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>yoghurt</b> <span class="phon">/ˈjoʊɡərt/</span> n. 酸奶（美式常拼 yogurt） <button class="sp" onclick="speak(this)" data-t="yoghurt">🔊</button> — <span class="ex">empty yoghurt containers</span>＝空酸奶盒</div>
+<div class="item"><b>sync</b> <span class="phon">/sɪŋk/</span> n. 同步、一致 <button class="sp" onclick="speak(this)" data-t="sync">🔊</button> — <span class="ex">in perfect sync</span>＝完全踩在一个点上</div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Monica: Oh. Monica! ...Hi. I'm Mo- ...nana.</b><br>① 意图：对方自报"我叫莫妮卡"，莫妮卡情急之下不敢用真名，硬把自己改成了"莫娜娜"。② 笑点机制：结巴的停顿（Mo- ...nana）＋被追问后现编"这是荷兰名"，把一个慌乱的谎话演成本集名场面。③ 中文等价："哦，莫妮卡！……嗨，我是莫……娜娜。"</div>
+</div>
 </section>
 
 <!-- ============ SCENE 6 ============ -->
@@ -355,6 +402,14 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="culture">
 <h4>🏛️ 文化解析：宠物"耻辱圈"（cone of shame）</h4>
 钱德勒说的 <b>"one of those big plastic cones"</b>，就是宠物手术后戴在脖子上的喇叭状塑料圈——英文俗称 <b>cone of shame（耻辱圈）</b>，用来防止动物舔伤口。这个梗常见于欧美宠物文化。他不问"马修是不是生病了"，而问"兽医不会让你也戴那个圈吧"——把主语从猴子偷换成罗斯，是 Chandler 式冷幽默的固定手法。
+</div>
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>cone</b> <span class="phon">/koʊn/</span> n. 圆锥体；此处指兽医给宠物/动物戴上、防止舔伤口的喇叭形塑料圈 <button class="sp" onclick="speak(this)" data-t="cone">🔊</button> — 英文俗称 <span class="ex">cone of shame</span>（耻辱圈）</div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Chandler: She's not gonna make you wear one of those big plastic cones, is she?</b><br>① 意图：罗斯带猴子去看兽医，钱德勒不问马修怎么样，反倒问"她（兽医）不会让你戴那个大塑料圈吧"。② 笑点机制：偷偷把主语从猴子换成罗斯，用"关心你"的口气说出一句荒诞的话，是典型 Chandler 冷面幽默。③ 中文等价："她没让你戴那种大塑料喇叭圈吧？"</div>
 </div>
 </section>
 
@@ -401,6 +456,15 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <h4>🏛️ 文化解析："Popes into a Volkswagen" 与圣地亚哥动物园</h4>
 ① <b>"多少教皇能塞进一辆大众车"</b>：这是美国家喻户晓的"灯泡笑话（lightbulb joke）"式老梗——用"一辆大众甲壳虫里能塞进多少个 ___？"来制造夸张荒诞的答案。钱德勒本想接"怎么把猴子弄进动物园"，结果脑子一抽报了个烂梗，菲比还精准接住，两人靠"共享一个过时笑话"互相拆台。<br>
 ② <b>San Diego Zoo（圣地亚哥动物园）</b>：位于加州圣地亚哥，是全世界最著名的动物园之一。罗斯把它当作"首选"，又因为"跨州"而发愁——一处细节就写活了"把猴子送走"这件事有多难。
+</div>
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>cheerleader</b> <span class="phon">/ˈtʃɪrliːdər/</span> n. 啦啦队员（美式校园文化里最"元气满满"的角色） <button class="sp" onclick="speak(this)" data-t="cheerleader">🔊</button></div>
+<div class="item"><b>stealer</b> <span class="phon">/ˈstiːlər/</span> n. 偷东西的人（steal＋-er 生造出来的名词，罗斯气急时顺口一说） <button class="sp" onclick="speak(this)" data-t="stealer">🔊</button></div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Chandler: I know that one! ...No, that's Popes into a Volkswagen.</b><br>① 意图：乔伊问"怎么把猴子弄进动物园"，钱德勒抢答"这我知道！"，随即发现记错——那是另一则老笑话。② 笑点机制：抢答→自我否定，把"想显摆聪明却当场翻车"演出来；后面菲比还接住这个过时梗，两人靠共享一个烂笑话互相拆台。③ 中文等价："这我知道！……不对，那是'多少教皇能塞进一辆大众车'。"</div>
 </div>
 </section>
 
@@ -449,6 +513,16 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 ② <b>Boston Celtics（波士顿凯尔特人队）</b>：NBA 传统豪门。笑点在于——莫妮卡谎称自己是"冈纳森一家"，却发现整层楼住的全是平均身高惊人的职业篮球运动员，冒充身份瞬间被戳穿。<br>
 ③ <b>《Dead Poets' Society》（死亡诗社，1989）</b>是一部以"抓住今天（Carpe Diem）"激励一代人的励志片；假莫妮卡却偏说自己看得"无聊死了"，还吐槽结尾——这是在故意反着来，用"反经典"凸出她的我行我素。她提到的 <b>《Mrs. Doubtfire》（窈窕奶爸，1993）</b>同样是一部热门暖心电影，莫妮卡一句"那我坚决不推荐它了"，是顺水推舟的冷幽默。
 </div>
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>embassy</b> <span class="phon">/ˈembəsi/</span> n. 大使馆 <button class="sp" onclick="speak(this)" data-t="embassy">🔊</button> — <span class="ex">crash an embassy party</span>＝蹭大使馆的派对</div>
+<div class="item"><b>blow dryer</b> <span class="phon">/ˈbloʊ draɪər/</span> n. 吹风机（美式也叫 hair dryer） <button class="sp" onclick="speak(this)" data-t="blow dryer">🔊</button></div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Rachel: No way. No way did you do this.</b><br>① 意图：瑞秋其实暗佩服假莫妮卡，却用"不可能"来表达"你居然真干得出来"的震惊。② 笑点机制：用否定词（No way）＋倒装强调（No way did you）来"夸人"，比直接说"你真行"更有戏。③ 中文等价："不可能吧！这种事你也真干得出来。"</div>
+<div class="item"><b>Monica: Wow. Then I would definitely not recommend Mrs. Doubtfire.</b><br>① 意图：假莫妮卡说《死亡诗社》让她"觉醒"，莫妮卡便顺口回一句"那我坚决不推荐《窈窕奶爸》了"。② 笑点机制：把对方"电影改变人生"的励志叙事接成反讽——你连《死亡诗社》都嫌浪费时间，那我更不敢给你推荐暖心片。③ 中文等价："那我可不敢给你推荐《窈窕奶爸》了。"</div>
+</div>
 </section>
 
 <!-- ============ SCENE 9 ============ -->
@@ -483,6 +557,10 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <h4>🏛️ 文化解析：Scranton 与"艺名"闹剧收尾</h4>
 <b>Scranton（斯克兰顿）</b>是宾夕法尼亚州的一座城市，剧中把它当成"连狗和牛都收"的最低门槛动物园所在地——一个"保底选项"的代名词（这座城市后来还成了美剧《办公室》的故事发生地，成了美国流行文化里的一个梗）。<br>
 至于"约瑟夫·斯大林"，这里纯粹是乔伊的历史盲区笑话：他给钱德勒当艺名用了半天，才后知后觉这是个真实存在的历史人物名字（此处编剧只当"著名名字"来玩梗，无涉其他）。菲比最终一拍脑袋给出"Flame Boy（火焰男孩）"，把这场艺名闹剧干脆利落地收了个尾。
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Joey: Apparently he was this Russian dictator who slaughtered all these people. You'd think you would've known that!</b><br>① 意图：乔伊把"斯大林是个真实的历史独裁者"当成一条惊天发现告诉钱德勒，还反过来说"你本该知道啊"。② 笑点机制：迟钝的人反过来教育别人——他用了半天这个艺名才后知后觉这是真人名，钱德勒只能干巴巴回"是啊，你大概以为我知道"。③ 中文等价："原来他是个杀了好多人的俄国独裁者。你居然不知道？"</div>
 </div>
 </section>
 
@@ -528,6 +606,15 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <h4>🏛️ 文化解析："互动式野生动物体验"的黑色幽默</h4>
 鲍德哈拉博士一开口就把"动物园"包装成 <b>"an interactive wildlife experience"（互动式野生动物体验）</b>——这是美国商业话术的经典套路：用"experience（体验）"取代直白难听的"cage/zoo"，听着更高级、更值钱。可他转头就问马修会不会用锤子、小刀，还说要让它"对打一只瞎眼兔子、再分你两成收益"，暗示的其实是把动物关起来做<b>斗兽表演/赌博</b>——用最礼貌的措辞掩盖最残忍的生意，这种反差正是这段冷幽默的刀锋所在。
 </div>
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>jungle cat</b> <span class="phon">/ˈdʒʌŋɡl kæt/</span> n. 丛林里的猫科猛兽（狮子、豹等） <button class="sp" onclick="speak(this)" data-t="jungle cat">🔊</button></div>
+<div class="item"><b>horn</b> <span class="phon">/hɔːrn/</span> n.（牛、羊等头上的）角 <button class="sp" onclick="speak(this)" data-t="horn">🔊</button> — <span class="ex">an animal with horns</span>＝头上长角的动物</div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Dr. Baldhara: ...it's more of an interactive wildlife experience.</b><br>① 意图：这位"园长"不肯承认自己开的是动物园，改口叫"互动式野生动物体验"来抬价。② 笑点机制：用高级商业话术包装一件残忍的事——他随后就问猴子会不会用锤子、小刀，还提出让它跟瞎眼兔子"对打"并分账，礼貌措辞与斗兽生意形成反讽落差。③ 中文等价："严格说它不算动物园，是'互动式野生动物体验'。"</div>
+</div>
 </section>
 
 <!-- ============ SCENE 11 ============ -->
@@ -570,6 +657,15 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="culture">
 <h4>🏛️ 文化解析：Big Apple Circus（大苹果马戏团）</h4>
 "<b>Big Apple（大苹果）</b>"是纽约市最著名的绰号（据说最早由 1920 年代的爵士乐手叫响，后经旅游宣传铺开）。<b>Big Apple Circus</b> 则是一家真实存在的纽约马戏团（1977 年创立，以单帐篷、观众能近距离看演出而闻名），常在公园和节庆演出。莫妮卡醉醺醺地说"今天要去大苹果马戏团"，正是"纽约人理想周末清单"里的一项——放在她逃班、宿醉的语境里，反差感十足。
+</div>
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>circus</b> <span class="phon">/ˈsɜːrkəs/</span> n. 马戏团 <button class="sp" onclick="speak(this)" data-t="circus">🔊</button> — <span class="ex">Big Apple Circus</span>＝大苹果马戏团</div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Monica: Water rules!</b><br>① 意图：宿醉的莫妮卡对着水龙头灌完水，兴奋地宣布"水最棒"。② 笑点机制：把最普通的一件事（喝水）用最高级的赞美（rules＝最棒、称王）说出来，醉态溢于言表。③ 中文等价："水——天下第一！"</div>
+<div class="item"><b>Monica: No, it is me! ...I'm Monana!</b><br>① 意图/潜台词：面对"这不像你"的质问，莫妮卡坚称"这就是我"，并给自己起了第二个名字。她不是真想变成别人，而是想摆脱"必须拍枕头、账单一来就缴"的乖女儿人设；"Monana"是她给自己造的"敢撒野"的身份。② 笑点机制：用最醉的姿势说最掏心的话，荒诞与真诚同时在线。③ 中文等价："不，这就是我！我是莫娜娜！"</div>
 </div>
 </section>
 
@@ -614,6 +710,15 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 ① <b>"Fortunately, blue's my colour."</b>：假莫妮卡在拿自己的囚服开玩笑——美国许多监狱的囚服是<b>蓝色或橘色</b>的连体服，"这颜色挺衬我"是把坐牢说成"试色"的黑色幽默。她后面那句"我这一天是当着二十五个女人面尿尿开始的"，指的是监狱里<b>集体如厕、几乎没有隐私</b>的处境——编剧用具体的尴尬消解"蹲监狱"的沉重感。<br>
 ② <b>Winter Garden Theatre（冬园剧院）</b>：纽约百老汇一家真实且著名的剧院，音乐剧《猫》曾长期在此驻演——这正好接上前面"唱《回忆》"的梗，莫妮卡把自己的"高光时刻"记在了一家真正的百老汇剧院名下。
 </div>
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>colour</b> <span class="phon">/ˈkʌlər/</span> n. 颜色（英式拼法；美式写作 color） <button class="sp" onclick="speak(this)" data-t="colour">🔊</button> — <span class="ex">blue's my colour</span>＝蓝色挺衬我</div>
+<div class="item"><b>pee</b> <span class="phon">/piː/</span> v. 尿尿（口语、略显不雅，儿童或随意场合用） <button class="sp" onclick="speak(this)" data-t="pee">🔊</button></div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Fake Monica: I'm not too bad. Fortunately, blue's my colour.</b><br>① 意图：穿着囚服的假莫妮卡拿自己的处境开涮——这颜色还挺衬我。② 笑点机制：用"挑衣服颜色"这种轻松话题消解"坐牢"的沉重，黑色幽默；紧接着一句"我这一天是当着另外二十五个女人的面尿尿开始的"，把监狱里毫无隐私的尴尬具体化。③ 中文等价："还不算太糟，幸好蓝色挺衬我。"</div>
+</div>
 </section>
 
 <!-- ============ SCENE 13 ============ -->
@@ -634,6 +739,10 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="item"><b>In or out?</b> ＝ 进来还是出去？（二选一、干脆利落的命令句）。</div>
 <div class="item"><b>at least</b> ＝ 至少（常用于"退一步说也算……"的安慰）。</div>
 <div class="item"><b>get sth wrong</b> ＝ 把某事做错/弄错（反义：get it right）。</div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Monica: Yeah, but at least I'm doing it!</b><br>① 意图：老师点名批评她"全跳错了"，莫妮卡却理直气壮地回嘴。② 笑点机制/主题句：这是本集的收束——比起过去那个"什么都怕、只敢旁观"的自己，哪怕跳得难看，她也终于站进了队伍里。③ 中文等价："是啊，可至少我在跳！"</div>
 </div>
 </section>
 
@@ -676,6 +785,16 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 美国机场广播有一套固定模板：<b>"This is the final boarding call for flight ___ to ___, boarding at gate ___."</b>（飞往……的……次航班最后一次登机广播，请到……登机口登机。）跟读时注意它的连读与播音腔，是"机场英语"最好用的模板句。<br>
 钱德勒对一只猴子说"there's gonna be a lot of babes in San Diego, but there's also a lot to learn"（那边美女多，但要学的也多）——这是美式"兄弟式送别"套话，把猴子当成要去上大学的哥们。而乔伊憋了半天只挤出一句"Marcel, I'm hungry"，罗斯还认真夸"说得挺好"，是全段最好笑的错位。
 </div>
+<div class="note">
+<h4>📌 重点单词（补充）</h4>
+<div class="item"><b>buddy</b> <span class="phon">/ˈbʌdi/</span> n. 哥们儿、伙计（对好友/宠物的亲昵称呼） <button class="sp" onclick="speak(this)" data-t="buddy">🔊</button> — <span class="ex">Well buddy, this is it.</span>＝伙计，就这么着了。</div>
+<div class="item"><b>cage</b> <span class="phon">/keɪdʒ/</span> n. 笼子 <button class="sp" onclick="speak(this)" data-t="cage">🔊</button></div>
+<div class="item"><b>teddy bear</b> <span class="phon">/ˈtedi ber/</span> n. 泰迪熊（毛绒玩具熊） <button class="sp" onclick="speak(this)" data-t="teddy bear">🔊</button></div>
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Joey: Marcel, I'm hungry.</b><br>① 意图：罗斯让大家"说说感受"，乔伊绞尽脑汁，最后只挤出一句"马修，我饿了"。② 笑点机制：在众人煽情送别的场合，用最不合时宜、最"Joey"的一句话打破氛围；更妙的是罗斯还认真夸"说得挺好"，错位感拉满。③ 中文等价："马修，我饿了。"</div>
+</div>
 </section>
 
 <!-- ============ SCENE 15 ============ -->
@@ -704,6 +823,10 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <h4>🏛️ 文化解析：莎士比亚与"Holden McGroin"</h4>
 ① 那段念白化用自莎士比亚《罗密欧与朱丽叶》第二幕第二场（罗密欧的台词："<span class="ex">Oh, that I were a glove upon that hand, that I might touch that cheek!</span>"），用的是<b>虚拟语气</b>（that I <b>were</b>...）——英语里表达"但愿我是……"的经典书面语法。乔伊要试的"<b>茂丘西奥（Mercutio）</b>"也是该剧中的角色。<br>
 ② <b>"Holden McGroin"</b>：这是个谐音荤笑话——念起来近似 "holdin' my groin"。编剧用"听起来像正经人名、实则是下流谐音"来给全剧埋一个片尾彩蛋：乔伊的艺名之路，从"乔·斯大林"一路走到这里，终于彻底跑偏。
+</div>
+<div class="intent">
+<h4>🎭 意图/潜台词</h4>
+<div class="item"><b>Joey: Holden McGroin.</b><br>① 意图：面试官问姓名，乔伊报上一个"听起来像正经人名"的艺名。② 笑点机制：谐音荤笑话——念起来近似 "holdin' my groin"，编剧借"艺名"这条线，把乔伊的取名闹剧一路推到片尾彩蛋。③ 中文等价："霍尔顿·麦克格罗因。"（谐音梗，懂的人会心一笑）</div>
 </div>
 </section>
 
