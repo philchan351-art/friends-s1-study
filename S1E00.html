@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>老友记 Friends S1E00 世界观手册 · The World of Friends</title>
+<style>
+:root{--ink:#222;--line:#e8e8e8;--accent:#2c3e50}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI","PingFang SC","Microsoft YaHei",system-ui,sans-serif;background:#eef1f5;color:var(--ink);line-height:1.75}
+.wrap{max-width:1120px;margin:0 auto;padding:0 14px 60px}
+header.hero{background:linear-gradient(135deg,#22313f,#4a6572);color:#fff;padding:26px 14px 18px}
+.hero-in{max-width:1120px;margin:0 auto}
+.hero h1{margin:0 0 6px;font-size:25px}
+.hero .sub{opacity:.85;font-size:14px}
+.hero .tags{margin-top:10px}
+.hero .tags span{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:2px 12px;font-size:12.5px;margin:2px 6px 2px 0}
+.speedbar{position:sticky;top:0;z-index:9;background:#fff;border-bottom:1px solid #ddd;padding:8px 14px;display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap}
+.speedbar .lbl{font-size:13.5px;color:#555}
+.speedbar button{border:1px solid #ccc;background:#fff;border-radius:14px;padding:4px 13px;cursor:pointer;font-size:13px}
+.speedbar button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.guide{background:#fff8e6;border:1px solid #f0dca0;border-radius:10px;padding:12px 16px;margin:16px 0;font-size:14px}
+.guide b{color:#8a6d1a}
+nav.toc{background:#fff;border:1px solid #e2e2e2;border-radius:10px;padding:10px 14px;margin:0 0 6px;font-size:13px;line-height:2}
+nav.toc a{color:#2471a3;text-decoration:none;margin-right:10px;white-space:nowrap}
+nav.toc a:hover{text-decoration:underline}
+.scene{margin:26px 0}
+.scene h2{background:var(--accent);color:#fff;padding:9px 14px;border-radius:9px 9px 0 0;font-size:16.5px;margin:0;display:flex;justify-content:space-between;align-items:center}
+.scene h2 .no{opacity:.6;font-size:13px;font-weight:400}
+.line{display:grid;grid-template-columns:1.18fr 1fr;border-bottom:1px solid var(--line);background:#fff}
+.line .en{padding:10px 14px;border-right:2px dashed #c9d4de;font-size:15px}
+.line .zh{padding:10px 14px;background:#f6fafd;font-size:14.5px;color:#333}
+.line.stage{grid-template-columns:1fr;background:#f1f1ee;font-style:italic;color:#777;font-size:13px;padding:6px 14px}
+.spk{font-weight:700;margin-right:6px}
+.c-monica{color:#d35400}.c-ross{color:#2471a3}.c-rachel{color:#c2185b}.c-chandler{color:#7d3c98}.c-joey{color:#1e8449}.c-phoebe{color:#b7950b}.c-paul{color:#6e4a2e}.c-other{color:#888}
+.sp{background:#eef4ff;border:1px solid #bcd4f5;border-radius:50%;width:26px;height:26px;cursor:pointer;font-size:12px;margin-left:6px;vertical-align:middle;padding:0;display:inline-block}
+.sp:hover,.sp.speaking{background:var(--accent);color:#fff;border-color:var(--accent)}
+.note{background:#eef6ff;border:1px solid #cfe3f7;border-left:5px solid #3498db;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:14px}
+.note h4{margin:0 0 6px;font-size:14px;color:#1a5276}
+.note .item{margin:5px 0}
+.phon{color:#8e44ad;font-family:Consolas,"Courier New",monospace;font-size:13.5px}
+.ex{color:#555;font-style:italic}
+.culture{background:#f2f9f2;border:1px solid #cde5cd;border-left:5px solid #27ae60;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:14px}
+.culture h4{margin:0 0 6px;font-size:14px;color:#145a32}
+.phrasebox{background:#fdf6ee;border:1px solid #f2ddc0;border-left:5px solid #e67e22;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:14px}
+.phrasebox h4{margin:0 0 6px;font-size:14px;color:#9c4a0a}
+.intent{background:#F5F0FA;border:1px solid #e0d0ee;border-left:5px solid #7D3C98;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:14px}
+.intent h4{margin:0 0 6px;font-size:14px;color:#6C3483}
+/* 世界观手册主体块：章节内的条目容器 */
+.plotguide{background:#fbfcfe;border:1px solid #dbe4ef;border-left:5px solid #1B4F72;border-radius:8px;padding:13px 17px;margin:14px 0;font-size:14.5px}
+.plotguide h4{margin:0 0 10px;font-size:15.5px;color:#1B4F72;padding-bottom:6px;border-bottom:1px dashed #d5e0ee;letter-spacing:.2px}
+.plotguide .item{margin:9px 0;padding:2px 0 2px 11px;border-left:2px solid #e2eaf4;line-height:1.8}
+.plotguide .item b{color:#1B4F72}
+.plotguide .item .ex{color:#4a6b8a;font-style:italic}
+.shadowbox{background:#fff;border:2px solid #8e44ad;border-radius:12px;padding:14px 18px;margin:26px 0}
+.shadowbox h2{margin-top:0;color:#6c3483;font-size:18px}
+.shadowbox ol{margin:8px 0 0;padding-left:22px}
+.shadowbox li{margin:9px 0;font-size:15px}
+.shadowbox .zh-t{display:block;color:#888;font-size:13px}
+footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height:1.9}
+@media(max-width:760px){.line{grid-template-columns:1fr}.line .en{border-right:none;border-bottom:2px dashed #c9d4de}.scene h2{font-size:15px}}
+@page{size:A4;margin:10mm 9mm}
+@media print{
+  body{background:#fff}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .speedbar,.toc,.sp{display:none !important}
+  .wrap{max-width:none;padding:0}
+  header.hero{padding:16px 10px 12px}
+  .scene{margin:14px 0}
+  .line,.note,.culture,.phrasebox,.plotguide .item,.shadowbox li{page-break-inside:avoid;break-inside:avoid}
+  .plotguide{page-break-inside:auto;break-inside:auto}
+  .scene h2{page-break-after:avoid;break-after:avoid}
+  .plotguide h4{page-break-after:avoid;break-after:avoid}
+  footer{page-break-before:avoid}
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-in">
+    <h1>S1E00 · 世界观手册 The World of Friends</h1>
+    <div class="sub">先读我：人物 / 1994 纽约 / 笑点机制 / 口癖总表</div>
+    <div class="tags">
+      <span>全季 24 集共用前置件</span><span>六位主角声音档案</span><span>1994 纽约速写</span>
+      <span>笑点机制总览</span><span>口癖缩略总表</span><span>建议先读 40 分钟</span>
+    </div>
+  </div>
+</header>
+
+<div class="speedbar">
+  <span class="lbl">🔊 朗读速度：</span>
+  <button data-rate="0.5">0.5× 慢速</button>
+  <button data-rate="0.75" class="on">0.75× 学习速</button>
+  <button data-rate="1">1× 常速</button>
+  <span class="lbl" style="margin-left:10px">用法：本手册没有台词行，速度条不带 🔊；它的设置会沿用到各集文档，配合每句右侧的 🔊 使用</span>
+</div>
+
+<div class="wrap">
+<div class="guide">
+  <b>这本手册是什么（读之前先看这四行）</b><br>
+  ① <b>它不是第 0 集剧本</b>，是第 1—24 集文档的<b>公共前置件</b>：把"人怎么说话、城是什么样、笑点怎么搭、口语怎么缩"一次讲清，后面每集只解决"这一集"。<br>
+  ② <b>读法</b>：第一次花 40 分钟通读第 2、3、6、7 章（人物 + 笑点 + 口癖），第 4、5 章当资料随时回头查；第 1、8 章是使用说明和流程。<br>
+  ③ <b>标注体系与各集一致</b>：📌 重点词 ｜ 💬 短语俚语 ｜ 🏛️ 文化背景 ｜ 🎭 潜台词/笑点 ｜ 📖 剧情导读 ｜ 📍 情境卡 ｜ 🔊 朗读。<br>
+  ④ <b>证据原则</b>：本手册所有"哪一集出场、引用了什么作品、原句怎么说"，都以第一季 24 集英文字幕原文为准；字幕查不到名字的（如 Gunther），就直说"本季字幕未出现"，不凭印象补。
+</div>
+
+<nav class="toc">
+  <b>手册导航：</b>
+  <a href="#ch1">1 怎么用</a><a href="#ch2">2 六位主角档案</a><a href="#ch3">3 常反串与配角</a><a href="#ch4">4 1994 纽约速写</a><a href="#ch5">5 流行文化时刻表</a><a href="#ch6">6 笑点机制总览</a><a href="#ch7">7 口癖与缩略总表</a><a href="#ch8">8 学习流程建议</a>
+</nav>
+
+<!-- ============ CH1 ============ -->
+<section class="scene" id="ch1">
+<h2>第 1 章 · 本手册怎么用 <span class="no">How to Use This Handbook</span></h2>
+
+<div class="plotguide">
+<h4>1.1 为什么要有这本手册</h4>
+<div class="item">单集文档解决的是"这一集讲了什么"：逐句英文、逐句中文、📌 生词、🎭 潜台词。但它解决不了三个反复出现的问题：<b>第一</b>，同一个笑话为什么第二十次出现还是好笑（你不认识这个"梗的家谱"）；<b>第二</b>，这个人为什么用这种方式说话（你不认识这个人的"声音"）；<b>第三</b>，他们生活的那个 1994 年纽约到底长什么样（你不知道"门铃对讲机""小费""付费频道"在当时的份量）。这三件事，全季共用一套答案，所以抽出来单独做成第 0 集。</div>
+<div class="item">换句话说：<b>集文档教你"听懂这一句"，本手册教你"听懂这六个人"。</b>人物声音（第 2 章）是 🎭 解码的钥匙——每集里出现 🎭 时，你要能立刻对上"这是 Chandler 的冷面拐弯"还是"这是 Joey 的字面思维"，笑点才不只是"哦，他在开玩笑"。</div>
+</div>
+
+<div class="plotguide">
+<h4>1.2 和各集文档的配合顺序（固定六步）</h4>
+<div class="item"><b>第 0 步｜读本手册</b>：第 2 章六个人物档案至少读一遍，第 6、7 章（笑点机制 + 口癖表）建议读到能举例。约 40 分钟。这一步做扎实，后面每集能省一半时间。</div>
+<div class="item"><b>第 1 步｜读 📖 剧情导读</b>：每集文档开头都有"本集主线 / 人物关系速览 / 季内位置"三块，先看它，再进台词。目的很单纯——<b>先知道谁为什么做什么</b>，再回头抠词，否则你会在第 30 行还不知道这场戏在吵什么。</div>
+<div class="item"><b>第 2 步｜逐句扫 📌</b>：一行英文一行中文往下走，遇到 📌（超纲词/非常规义项）、💬（短语俚语）、🏛️（文化背景）就停下来读完解析。不要跳，📌 是按"高中课标之外"筛的，跳过去就等于把卡点留到看剧时爆炸。</div>
+<div class="item"><b>第 3 步｜看 🎭 行内解码</b>：🎭 条紧跟在对应台词的中文下面，写的是"真意图 + 机制 + 中文等价"。这一步不要省——老友记的笑点一半靠语气和潜台词，光看字面会以为他们只是在闲聊。</div>
+<div class="item"><b>第 4 步｜听 🔊 反复磨</b>：先用 0.5× 逐句听，再换剧集原声听同一段。目标是听出连读和吞音：<span class="ex">gonna / wanna / gotta / y'know / 'cause</span>。听不懂的词，回到第 2 步查，不要硬猜。</div>
+<div class="item"><b>第 5 步｜页末 shadowbox 跟读</b>：每集最后有 12—15 句"跟读重点句"，跟着原声模仿语调、重音、停顿。一天 10 句，重复到不用想就能说出来。</div>
+</div>
+
+<div class="plotguide">
+<h4>1.3 三种读法，按你的时间选</h4>
+<div class="item"><b>通读型（首次进入本剧，约 40—60 分钟）</b>：第 2 章全读 → 第 6 章全读 → 第 7 章挑前 10 条 → 第 4、5 章各扫一遍。之后每集按六步走。</div>
+<div class="item"><b>查表型（已经在看剧，边看边查）</b>：只记三个入口——"这人是谁"查第 3 章；"这梗哪来的"查第 5、6 章；"这句听不清"查第 7 章。</div>
+<div class="item"><b>复习型（看完一季回头补）</b>：只看第 6、7 章 + 第 2 章的"幽默机制"小节，把笑点类型和口癖形式过一遍，比重新刷剧省时间。</div>
+</div>
+
+<div class="plotguide">
+<h4>1.4 关于"证据"的一句话说明</h4>
+<div class="item">本手册涉及剧集事实的部分（谁在哪一集第一次出现、引用了哪首歌哪部电影、某句台词原文），全部逐条回查第一季 24 集英文字幕。<b>字幕里查不到的，我不写"应该"、不写"我记得"</b>，只写"本季字幕未出现"。所以你会看到一些看起来"反常识"的结论，比如：<span class="ex">Pivot!</span>、<span class="ex">We were on a break</span>、<span class="ex">How you doin'?</span> 这三个最出名的梗，在第一季字幕里<b>一次都没有出现</b>——它们是后面几季才定型的。第 6 章会专门讲这件事，因为它恰好是理解"running gag 是怎么长出来的"最好的例子。</div>
+</div>
+</section>
+
+<!-- ============ CH2 ============ -->
+<section class="scene" id="ch2">
+<h2>第 2 章 · 六位主角档案 <span class="no">Six Voices, Six Ways of Joking</span></h2>
+
+<div class="plotguide">
+<h4>2.0 先看这张"声音速查表"</h4>
+<div class="item"><b>Rachel</b>：用类比讲情绪（"我像一只鞋"）——金句多、逻辑少，笑点在"她把自己的处境讲成一个具体物件"。<b>Monica</b>：用祈使句控场（"Okay, everybody relax."）——笑点在她越控制越失控。<b>Phoebe</b>：把不存在的前提当常识问出来——笑点在"她真诚地不觉得这有什么奇怪"。<b>Joey</b>：把比喻当字面意思——笑点在他认真回答一个没人问的问题。<b>Chandler</b>：前半句正经、后半句拐弯——笑点全在言外之意。<b>Ross</b>：用学术腔说最幼稚的心事——笑点在"博士的严谨"和"小孩的委屈"同时出现。</div>
+<div class="item">读下面六份档案时，请专门留意每个人的<b>"幽默机制"</b>那一条：看剧时听到一句让你愣住的话，先问自己"这是谁的机制"——80% 的 🎭 都能这样对上号。以下所有英文例句都出自第一季字幕原文，句末标注集数。</div>
+</div>
+
+<div class="plotguide">
+<h4>2.1 Rachel Green 瑞秋·格林｜从婚礼上逃出来的富家女</h4>
+<div class="item"><b>一句话定位</b>：一个从小被安排好一生的长岛富家女，在婚礼前半小时突然刹车，搬进高中同学家，从"端咖啡"开始学怎么当一个成年人。全剧的"成长线"由她承载。</div>
+<div class="item"><b>性格关键词</b>：任性但不坏 ｜ 审美与物质敏感 ｜ 情绪外放（高兴就跳、难过就哭） ｜ 靠摔跤学习 ｜ 被父亲宠坏又急于证明自己。</div>
+<div class="item"><b>说话模式</b>：① 最爱用 <span class="ex">It's like...</span> 起头，把抽象情绪翻译成一个<b>具体物件或画面</b>；② <span class="ex">I mean</span> 高频，边说边改口，句子常半途重启；③ 否定用连发（<span class="ex">No. No no no.</span>），求人用拖长音的撒娇（<span class="ex">C'mon Daddy...</span>）；④ 语速快、句尾上扬，情绪一高就变成"汇报式"独白。</div>
+<div class="item"><b>幽默机制</b>：<b>「真诚的自我暴露 + 物质细节」</b>。她不是在讲笑话，是在非常认真地讲一件让她震惊的事，而这件事的细节总是荒唐得刚好（比如她发现自己对一只船形酱汁壶的兴趣超过了对未婚夫的兴趣）。观众笑的是"她居然这么诚实"，不是"她在搞笑"。所以她的 🎭 多数要写成"她在自我审判，不是在逗你"。</div>
+<div class="item"><b>关系网</b>：Monica＝高中同学兼室友（全剧起点）｜Ross＝Monica 的哥哥，暗恋她多年（S1E24 她才知道）｜Barry＝婚礼上被她丢下的未婚夫（E01 提及、E02 正面出场，牙医/正畸医生）｜Paolo＝E07 起交往的意大利男友。</div>
+<div class="item"><b>代表性口癖</b>：<b>Oh my God</b>（震惊/难以置信，全季高频，E19 连用两次以上）；<b>I mean</b>（改口、找补）；<b>It's like...</b>（打比方起手式）。例句：<span class="ex">It's like, all of my life, everyone has always told me, 'You're a shoe!'</span>（E01，她解释为什么逃婚——"大家一直告诉我：你是一只鞋"）。</div>
+</div>
+
+<div class="plotguide">
+<h4>2.2 Monica Geller 莫妮卡·盖勒｜用秩序对抗混乱的"六人之家"</h4>
+<div class="item"><b>一句话定位</b>：六个人里唯一有"稳定工作 + 稳定住处 + 稳定规则"的人，所以自然而然成了房东、妈妈、裁判和清洁工——也所以她的崩溃最好笑。</div>
+<div class="item"><b>性格关键词</b>：洁癖 ｜ 好胜到不讲道理 ｜ 照顾人上瘾 ｜ 焦虑 ｜ 被哥哥的光环压了一辈子（父母偏心的痛点是她的软肋）。</div>
+<div class="item"><b>说话模式</b>：① 用<b>祈使句控场</b>——<span class="ex">Okay, everybody relax.</span>／<span class="ex">All right, listen.</span>；② 说话带清单和规则（"七条规则"式表达），喜欢给事物分类；③ 被戳中时句速突然加快、音量上升、重复关键词；④ 安慰人时用命令句（"坐下、喝水、别动"）。</div>
+<div class="item"><b>幽默机制</b>：<b>「控制狂的失控」</b>。她的笑点几乎都建立在"她刚刚宣布了一条规则，下一秒就被现实打脸"。所以她越严肃越好笑——她的表情是"这件事非常重要"，而观众看到的是"这件事小得可怜"（比如为了一只酱汁壶、一次输赢、一个没擦干净的台面）。写她的 🎭 时要点明：她不是在演喜剧，她是真的在维护世界秩序。</div>
+<div class="item"><b>关系网</b>：Ross＝亲哥（从小被比较）｜Rachel＝室友兼最好的朋友｜Paul（E01 约会对象，酒商）｜Alan（E03 约会对象）｜Fun Bobby（E10 前男友）｜父母 Mr. &amp; Mrs. Geller（E02 首次出场）。</div>
+<div class="item"><b>代表性口癖</b>：<b>Okay</b>（万能开场，既是同意也是"都给我停下"）；<b>I'm sorry</b>（过度道歉，连不是她的错也先道歉）；<b>Honey / Sweetie</b>（照顾人时自动切换的称呼）。例句：<span class="ex">Welcome to the real world! It sucks. You're gonna love it!</span>（E01，对刚剪掉信用卡的 Rachel 说的"欢迎来到现实世界"）。</div>
+</div>
+
+<div class="plotguide">
+<h4>2.3 Phoebe Buffay 菲比·布菲｜运行在另一个操作系统上的人</h4>
+<div class="item"><b>一句话定位</b>：街头长大的按摩师/自创作曲人，有一个死过又"回来"的童年，却长成了六人里最不设防、最护短的那一个。她的作用是把"正常"这个概念整个掀翻。</div>
+<div class="item"><b>性格关键词</b>：天真 ｜ 灵性/因果信仰 ｜ 没有社交过滤器 ｜ 童年创伤 ｜ 对朋友极端忠诚（护短时会突然变狠）。</div>
+<div class="item"><b>说话模式</b>：① <b>跳跃联想</b>：从 A 直接跳到 Z，中间的解释只有她自己有；② 把<b>不存在的前提当常识</b>问出来（<span class="ex">Wait, does he eat chalk?</span>）；③ <span class="ex">Oh!</span> 打断自己，像突然想起什么；④ 讲可怕经历时语气轻快，像在讲别人的事；⑤ 用 <span class="ex">Wait,</span> 起头插入别人的对话。</div>
+<div class="item"><b>幽默机制</b>：<b>「逻辑鬼才 + 反差」</b>。她的笑话几乎从不针对人——这是她和 Chandler 最大的区别：Chandler 的刀是往外飞的，Phoebe 的怪是往内收的。她真诚地相信一套自己的宇宙规则（因果、灵气、前世），然后用这套规则给出一个完全成立的推理，结论荒谬但过程无懈可击。观众笑的是"这套逻辑居然自洽"。</div>
+<div class="item"><b>关系网</b>：Ursula＝双胞胎姐姐（E16 首次出场，在另一家餐厅当服务员）｜David＝科学家男友（E10，要去明斯克做研究）｜与 Joey 有"街头出身同盟"的默契｜祖母（抚养她长大）。</div>
+<div class="item"><b>代表性口癖</b>：<b>Oh!</b>（自我打断）；<b>Wait,</b>（插入对话）；<b>Just 'cause...</b>（because 的口语缩略，讲理由时高频）。例句：<span class="ex">Wait, does he eat chalk?</span>（E01，别人在吐槽 Monica 的新男友，她认真补了一个问题）；<span class="ex">Just 'cause I don't want her to go through what I went through with Carl.</span>（E01，理由完全私人、完全不解释 Carl 是谁）。</div>
+</div>
+
+<div class="plotguide">
+<h4>2.4 Joey Tribbiani 乔伊·崔比昂尼｜用胃和身体理解世界的三线演员</h4>
+<div class="item"><b>一句话定位</b>：意大利裔大家庭出来的演员，试镜屡败屡战，靠"吃、睡、朋友、女人"四件事活着；他是六人里唯一不算计的人，所以也是最容易被骗的人。</div>
+<div class="item"><b>性格关键词</b>：忠诚 ｜ 钝感 ｜ 乐观 ｜ 护食 ｜ 对朋友零条件 ｜ 对"表演"这件事意外地认真。</div>
+<div class="item"><b>说话模式</b>：① <b>极短句</b>，常以问句结尾求确认（<span class="ex">Instead of...?</span>）；② 把抽象概念换成<b>具体需求</b>（"我饿了""我要那个"）；③ 被戳穿时立刻转移话题或装傻；④ 讲道理时用食物或身体做比喻；⑤ 说话带重音、拖长元音，情绪全在音量上。</div>
+<div class="item"><b>幽默机制</b>：<b>「字面思维 + 优先级错位」</b>。别人在谈感情，他在谈吃；别人在暗示，他按字面回答。他的冒犯几乎都不是恶意——他只是没接到那个频道。这一点非常重要：写他的 🎭 时不要写成"他在开黄腔"，要写成"他真的觉得这是最合理的建议"（比如劝失恋的人去脱衣舞俱乐部："你单身了！有点荷尔蒙吧！"）。</div>
+<div class="item"><b>关系网</b>：Chandler＝对门室友兼损友（全剧最稳的一对）｜家里有七个妹妹（他因此很会"像哥哥一样"护人）｜Angela（E05）｜Aurora（E06，有男友的女生）｜Ursula（E17 起交往）｜Joey 与 Rachel 在 S1 只是朋友。</div>
+<div class="item"><b>代表性口癖</b>：<b>C'mon!</b>（催促/不服/邀请，全季高频，E01 起）；<b>What?</b>（没听懂或装没听懂）；<b>I'm an actor.</b>（自我介绍式的身份声明）。例句：<span class="ex">Strip joint! C'mon, you're single! Have some hormones!</span>（E01）；<span class="ex">Instead of...?</span>（E01，Chandler 讲裸体梦，他只想确认"那儿"原本应该是什么）。</div>
+</div>
+
+<div class="plotguide">
+<h4>2.5 Chandler Bing 钱德勒·宾｜把笑话当防弹衣的人</h4>
+<div class="item"><b>一句话定位</b>：做"数据处理"的上班族，工作是全剧最说不清的那个；用自嘲和冷面双关挡住所有亲密，是全剧的"解构者"——任何庄严的场面，他一句话就能拆掉。</div>
+<div class="item"><b>性格关键词</b>：自嘲 ｜ 回避亲密 ｜ 怕承诺 ｜ 戒不掉的烟 ｜ 被父母婚姻吓大 ｜ 在朋友里最会照顾气氛。</div>
+<div class="item"><b>说话模式（重点，这是全剧最值得学的幽默结构）</b>：① <b>铺垫—拐弯</b>：前半句完全正经、甚至在附和，后半句用一个词把方向拐 90 度；② <b>字面延伸</b>：抓住对方话里的某个词，按字面推到底；③ <b>用比较级/最高级做结论</b>（"这大概是我听过最……"）；④ 讲自己的糗事时用<b>讲故事腔</b>（<span class="ex">Alright, so...</span> 起头）；⑤ 说完笑话不等反应，立刻接一句更冷的补刀或干脆闭嘴——<b>deadpan 的核心是"我不笑"</b>。</div>
+<div class="item"><b>幽默机制</b>：<b>「冷面讽刺（deadpan）+ 时机错位」</b>。他的笑点不在内容，而在"这句话出现的时刻"——别人正在最脆弱、最严肃、最需要安慰的那一秒，他给出一句技术上正确、情感上完全不合时宜的实话。所以他的 🎭 要写两层：<b>字面意思</b>是什么，<b>他真正在躲的</b>是什么（通常是"我不知道怎么处理感情，所以我讲个笑话"）。</div>
+<div class="item"><b>关系网</b>：Joey＝室友（他一直在养 Joey）｜Ross＝大学室友，最懂彼此的黑历史｜Janice＝分分合合的女友（E05 首次有台词，E10 新年、E14 情人节再出现）｜母亲 Nora Bing＝写情色小说的作家（E11 出场）。</div>
+<div class="item"><b>代表性口癖</b>：<b>Y'know</b>（填充词，用来拖时间想梗）；<b>All right</b>（准备开讲/准备让步）；<b>So...</b>（讲故事起手式）。例句：<span class="ex">Sounds like a date to me.</span>（E01，Monica 刚声明"这不算约会、而且不上床"，他一句"听起来就是约会啊"）；<span class="ex">Oh, I think this is the episode of Three's Company where there's some kind of misunderstanding.</span>（E02，一边看电视一边给剧情下定义，顺手把整部情景喜剧的套路说穿）。</div>
+<div class="item"><b>提醒一句</b>：很多人以为他的招牌是 <span class="ex">Could I BE...</span>（把重音放在 be 上那种夸张问句）和 <span class="ex">Pivot!</span>。这两个在第一季 24 集字幕里都<b>一次没出现</b>（Pivot! 是后面某季搬沙发那集才有的）。学 S1 的 Chandler，先把"铺垫—拐弯"和 deadpan 练熟，比背口头禅有用得多。</div>
+</div>
+
+<div class="plotguide">
+<h4>2.6 Ross Geller 罗斯·盖勒｜用"正确"来表达感情的古生物学博士</h4>
+<div class="item"><b>一句话定位</b>：博物馆的古生物学博士，刚经历妻子出柜、离婚，是全剧"倒霉"的起点；他极度较真、极度深情，两种特质经常在同一句话里打架。</div>
+<div class="item"><b>性格关键词</b>：学究 ｜ 较真 ｜ 自我中心而不自知 ｜ 深情 ｜ 倒霉 ｜ 大哥式的说教欲。</div>
+<div class="item"><b>说话模式</b>：① <b>术语解释癖</b>：任何话题都能拐进"其实学术界……"；② <span class="ex">Actually</span> 纠正别人，纠正完才发现没人在乎；③ 用<b>数据、年份、文献</b>支撑情绪（"'Billy, don't be a hero' 1974"——他连伤心都要引用年份）；④ 语塞时 <span class="ex">I-I-I</span> 三连，句子反复重启；⑤ 把私人情绪讲成学术陈述，讲到一半自己崩。</div>
+<div class="item"><b>幽默机制</b>：<b>「严肃的错位」</b>。他的笑点来自"博士的严谨"和"小孩的委屈"同框：他用最讲究的措辞，说最不体面的事（被妻子离开、单身恐慌、嫉妒）。加上身体喜剧（伞打不开、动作笨拙），构成"高智商低情商"的完整形象。他的 🎭 要写清：他不是在讲笑话，他是<b>真的认为讲清楚道理就能解决情绪</b>。</div>
+<div class="item"><b>关系网</b>：Carol＝前妻（E01 只被提及，E02 首次正面出场；E23 生下儿子 Ben）｜Susan＝Carol 的伴侣（E02 首次出场）｜Monica＝妹妹｜Rachel＝暗恋多年的对象（E24 她发现）｜Marcel＝E10 开始养的猴子｜父母＝E02 首次出场。</div>
+<div class="item"><b>代表性口癖</b>：<b>Y'know</b>／<b>I mean</b>（边说边找词）；<b>Actually</b>（纠正起手式）；<b>I just...</b>（情绪上来时的重启句）。例句：<span class="ex">I don't want to be single, okay? I just... I just- I just wanna be married again!</span>（E01）；<span class="ex">Grab a spoon. Do you know how long it's been since I've grabbed a spoon? Do the words 'Billy, don't be a hero' 1974 mean anything to you?</span>（E01，全剧最著名的"用一首 1974 年的歌说明自己多久没约会"）。</div>
+<div class="item"><b>提醒一句</b>：<span class="ex">We were on a break!</span> 这句名言同样<b>不在第一季</b>（第一季字幕零命中），它是后面 Ross 与 Rachel 关系真正崩掉之后才成为"梗"的。S1 的 Ross 还处在"我刚刚失去婚姻"的阶段，别提前把后面的怨气套上来。</div>
+</div>
+</section>
+
+<!-- ============ CH3 ============ -->
+<section class="scene" id="ch3">
+<h2>第 3 章 · 常反串与配角 <span class="no">The Supporting Cast, Episode by Episode</span></h2>
+
+<div class="plotguide">
+<h4>3.0 这一章是怎么核出来的（重要，先读）</h4>
+<div class="item">配角表最容易写错，因为"我记得他好像第三集就出现了"。本章的做法是：把第一季 24 集英文字幕逐集抽出<b>说话人标签</b>（剧本里冒号前那个人名），只有当某一集出现该角色的<b>独立台词标签</b>时，才认定"本集正面出场"；如果只在别人的台词里被提到，就写"仅被提及"。</div>
+<div class="item">于是有了一个必须承认的结论：<b>Gunther（中央公园咖啡馆的店员）在第一季 24 集字幕里一次都没有被叫过名字</b>——全季 0 次命中。他在 S1 基本是无声背景，所以本章不给他编集数，只作说明。这不是漏写，这是证据不足。</div>
+<div class="item">另外提醒：本季字幕里的"Carol"共出现在 13 集，但真正有台词的集数是 E02 起；E01 只有一句转述 <span class="ex">Carol moved her stuff out today.</span>——这是全剧第一个信息，也是 Ross 崩溃的起点。</div>
+</div>
+
+<div class="plotguide">
+<h4>3.1 Carol Willick 卡罗尔｜Ross 的前妻，全剧的"起因"</h4>
+<div class="item"><b>首次出场</b>：E01 仅被提及（"Carol 今天把东西搬走了"），<b>E02 首次正面出场并有台词</b>（产检那集）。<b>季内作用</b>：她怀着一个孩子，孩子的父亲是 Ross，伴侣是 Susan——这条线贯穿全季，E23 生产（儿子 Ben）是季终最大事件。她不是反派：剧本把她写成"礼貌、清楚、不残忍"，这反而让 Ross 的痛更难处理。</div>
+</div>
+
+<div class="plotguide">
+<h4>3.2 Susan Bunch 苏珊｜Carol 的伴侣，Ross 的"情敌+队友"</h4>
+<div class="item"><b>首次出场</b>：<b>E02</b>（与 Carol 一起做产检，和 Ross 三人同框）。<b>季内作用</b>：她和 Ross 争夺"谁算家长"的名分，从对立到被迫合作（E16 一起上分娩课）；她的存在让"离婚"这件事不是背景，而是每集都要重新谈一次的现场。</div>
+</div>
+
+<div class="plotguide">
+<h4>3.3 Paul the Wine Guy 卖酒的保罗｜Monica 的第一集约会对象</h4>
+<div class="item"><b>首次出场</b>：<b>E01（本季仅此一集）</b>。<b>季内作用</b>：Monica 对他动心的理由是"他说他两年没有性生活"——她以为自己遇到了一个愿意慢下来的人。真相由同事 Frannie 一句话揭穿：<span class="ex">before me, there was no snap in his turtle for two years</span>（"在我之前，他那儿两年没动静"）。这段的功能是把"约会＝被谎话哄"的基调立起来，也让 Monica 的"我不是那种人"变成全剧最好用的自嘲。</div>
+</div>
+
+<div class="plotguide">
+<h4>3.4 Barry Farber 巴里｜Rachel 逃婚的未婚夫，牙医</h4>
+<div class="item"><b>首次出场</b>：E01 仅被提及（Rachel 打电话道歉），<b>E02 首次正面出场并有台词</b>（诊所得知他和伴娘 Mindy 在一起了）。<b>季内作用</b>：他是 Rachel"上一个人生"的实体；E02 他坦白"我和 Mindy 在一起了"，把 Rachel 的愧疚瞬间变成荒谬；E20（标题就是"邪恶的正畸医生"）他已成全季最不自知的笑料。<b>小知识</b>：字幕里他的姓是 <span class="ex">Dr. Farber</span>，前台喊他时会出现。</div>
+</div>
+
+<div class="plotguide">
+<h4>3.5 Jack &amp; Judy Geller 盖勒夫妇｜Ross 与 Monica 的父母</h4>
+<div class="item"><b>首次出场</b>：<b>E02</b>（说话人标签为 <span class="ex">Mr. Geller</span> / <span class="ex">Mrs. Geller</span>）。<b>季内作用</b>：他们是"偏心"的化身——所有光环给儿子，所有挑剔给女儿；E08（外婆去世）、E09（感恩节）、E23（产房）都有他们。Monica 的控制欲、Ross 的自我中心，答案都在这两个人身上。<b>证据提示</b>：父亲的名字 Jack 要到 E08 才由他自己说出（<span class="ex">Jack Geller, so predictable</span>）；母亲的名字 Judy 在本季字幕里从未被叫过（出现的 "Judy" 只有《杰森一家》的 Judy Jetson 和一句俚语），所以本章只写"Mrs. Geller"。</div>
+</div>
+
+<div class="plotguide">
+<h4>3.6 Janice Litman 珍妮丝｜Chandler 分不掉的那个人</h4>
+<div class="item"><b>首次出场</b>：<b>E05</b>（洗衣店那集，Chandler 想分手）。<b>季内作用</b>：此后 E10（新年）、E14（情人节）反复回来。她的声音（拖长音的 <span class="ex">Ohhh my God</span>）和笑声是全剧最强的"听觉签名"，一出场不用介绍观众就知道"Chandler 又要倒霉了"。她也是全剧少数<b>真心喜欢 Chandler</b> 的人，这让他的刻薄显得更坏一点。</div>
+</div>
+
+<div class="plotguide">
+<h4>3.7 Gunther 冈瑟｜中央公园咖啡馆的店员（本季无名）</h4>
+<div class="item"><b>首次出场</b>：字幕无法认定——<b>第一季全季字幕里 "Gunther" 零命中</b>。他确实在 S1 出现在柜台后面，但没有被叫过名字、也没有独立台词标签。<b>季内作用</b>：（据剧集设定）他暗恋 Rachel，是全剧最长的单箭头。本手册只写能证实的部分：<b>本季请把他当"背景里的固定店员"</b>，等后面季他开口说话再补档案。宁可少写，不写错集数。</div>
+</div>
+
+<div class="plotguide">
+<h4>3.8 Mr. Heckles 赫克斯先生｜楼下的"噪音投诉专业户"</h4>
+<div class="item"><b>首次出场</b>：<b>E07</b>（停电那集，Rachel 和 Phoebe 找猫，敲开他的门，他说猫是他的）。<b>季内作用</b>：E16、E19 再出场。他存在的意义是"这栋破公寓的现实感"——主角们在楼上谈人生，楼下有人在为天花板的声音发疯。他也是全剧最好用的"假死伏笔"式笑料来源。</div>
+</div>
+
+<div class="plotguide">
+<h4>3.9 Paolo 保罗｜Rachel 的意大利男友，全季最帅也最没用</h4>
+<div class="item"><b>首次出场</b>：<b>E07</b>（Rachel 挽着他走进咖啡馆介绍给所有人）。<b>季内作用</b>：E08 从罗马寄东西、E11 出场、E12 出事（他对 Phoebe 动手动脚，Rachel 因此看清他）。他的台词极少、多为意大利语，功能是"让 Rachel 体验一次只看外表的恋爱"，然后自己摔醒。</div>
+</div>
+
+<div class="plotguide">
+<h4>3.10 Marcel 马塞尔｜Ross 的猴子，全季最贵的道具</h4>
+<div class="item"><b>首次出场</b>：<b>E10</b>（Ross 收养它，新年那集）。<b>季内作用</b>：E19 走失（"猴子走失"整集主线）。它承担了大量无台词笑点（抢遥控器、按出西班牙语配音、抱着东西跑），也是 Ross"想要一个家"的替代品——这条线在 E23 有了 Ben 之后闭合。</div>
+</div>
+
+<div class="plotguide">
+<h4>3.11 Ursula Buffay 厄休拉｜Phoebe 的双胞胎姐姐</h4>
+<div class="item"><b>首次出场</b>：<b>E16</b>（在另一家餐厅当服务员，说话方式和 Phoebe 一样飘）。<b>季内作用</b>：E17 起 Joey 和她约会，制造"Joey 分不清姐妹"的笑料。她的功能是给 Phoebe 一个"如果我长歪了会变成什么样"的镜子。</div>
+</div>
+
+<div class="plotguide">
+<h4>3.12 其他值得记住的常客（一句话版）</h4>
+<div class="item"><b>Fun Bobby</b>（E10）：Monica 的前男友，只有在喝酒时才"fun"——这个角色是 90 年代"社交饮酒"最直接的笑料化。<b>David</b>（E10）：Phoebe 的科学家男友，要去明斯克做研究，负责"刚恋爱就分离"的苦味。<b>Nana</b>（E08）：Ross 与 Monica 的外婆，葬礼上"死了两次"（一次是误会），全季最黑色的一段。<b>Ben</b>（E23）：Ross 与 Carol 的儿子，季终出生。<b>Mindy</b>（E02 被提及、E20 正面出场）：Rachel 的伴娘，后来和 Barry 在一起。<b>Alan</b>（E03）：Monica 的约会对象，被全组人讨厌；<b>Aurora</b>（E06）：Joey 交往的女生，比他更"玩家"；<b>Roger</b>（E13）：Phoebe 的心理医生男友，把所有人分析到崩溃。</div>
+</div>
+</section>
+
+<!-- ============ CH4 ============ -->
+<section class="scene" id="ch4">
+<h2>第 4 章 · 1994 年纽约速写 <span class="no">New York, 1994</span></h2>
+
+<div class="plotguide">
+<h4>4.1 Central Perk：为什么一张破沙发能当全剧地标</h4>
+<div class="item"><b>它是什么</b>：一家虚构的街角咖啡馆，名字是 <span class="ex">Central</span>（中央，指中央公园）+ <span class="ex">Perk</span>（双关：percolate 咖啡渗滤 / 让人精神一振）。它在剧中不是"餐厅"，是<b>客厅的延伸</b>：六个人没有一个人真有钱在家里招待朋友，所以公共客厅只能是咖啡馆。</div>
+<div class="item"><b>90 年代语境</b>：1994 年的纽约正处在"连锁咖啡还没铺满每个街角"的窗口期——独立咖啡馆是租金便宜、可以坐一下午、服务员认识你名字的地方。Central Perk 的布景就是这种店的标本：旧沙发、木桌、一个小舞台（Phoebe 在那儿弹吉他）、一块永远擦不干净的黑板菜单。</div>
+<div class="item"><b>中国观众卡在哪</b>：我们熟悉的"咖啡馆"是消费场所（点一杯坐一小时），而 Central Perk 在剧里是<b>半公共空间</b>——可以不消费待着、可以打工换钱、可以把朋友的事当众讨论。理解了这一点，你才会明白为什么全剧 80% 的"重要对话"都发生在一张沙发上，而不是谁家里。</div>
+<div class="item"><b>本季怎么被用</b>：E01 开场就是这里（Monica 的"不算约会"辩论）；Rachel 穿着婚纱冲进来也是这里；她后来在这里当服务员。咖啡馆是"所有人都会出现"的默认地点，所以它承担了情景喜剧最重要的功能：<b>让任何两个人随时能撞上</b>。</div>
+</div>
+
+<div class="plotguide">
+<h4>4.2 格林威治村：他们住的到底是哪种纽约</h4>
+<div class="item"><b>位置与气质</b>：Greenwich Village 在曼哈顿下城，90 年代是"艺术家、学生、老住户混住"的街区——房租相对便宜、街区小、走路能到咖啡馆、楼下有洗衣店。剧里的公寓（Monica 那套带大客厅的两居）就属于这种"租金管制的老公寓"，这解释了两件常被忽略的事：为什么两个打工人能住这么大的房子，以及为什么楼下有那么爱投诉的邻居（Mr. Heckles）。</div>
+<div class="item"><b>字幕证据</b>：E19 Ross 找猴子时说的那句 <span class="ex">he doesn't know the Village</span>（"他不认识这村子"）——"the Village" 就是本地人对格林威治村的叫法。这个词本身就是一枚地域身份证：纽约人不会说 "Greenwich Village" 全称。</div>
+<div class="item"><b>中国观众卡在哪</b>：我们容易把"纽约"想成曼哈顿中城的摩天楼，但这部剧的纽约是<b>步行街区</b>：洗衣店（E05 的 Launderama）、楼下小馆、街角咖啡馆、地铁站（E01 Phoebe 在地铁站唱歌）。场景都小而近，所以人物才会"随时遇到"。</div>
+</div>
+
+<div class="plotguide">
+<h4>4.3 小费文化：为什么"当服务员"是一条正经的生计线</h4>
+<div class="item"><b>是什么</b>：美国餐饮业的底薪极低，服务员收入的大头是客人留下的小费（常态是账单的 15%—20%）。所以"在咖啡馆端盘子"不是丢人的临时工，而是一份能养活自己的生活——这直接支撑了 Rachel 的人设：她从"刷爸爸的卡"变成"靠小费活着"，是本季最重要的成长隐喻。</div>
+<div class="item"><b>为什么听不懂</b>：中文语境里"小费"是可给可不给的礼貌，美国语境里它是<b>工资的一部分</b>，不给等于让对方白干。所以剧里只要出现"服务、买单、找零"，人物的态度就带着钱的分量。看懂小费，你才能看懂 Rachel 第一次拿到自己挣的钱时那种又窘又骄傲的表情。</div>
+<div class="item"><b>配套常识</b>：<span class="ex">check</span>（账单，不是"支票"）、<span class="ex">split the check</span>（AA 制）、<span class="ex">keep the change</span>（不用找了）。这三句在生活场景里出现频率极高，各集文档遇到会单独标。</div>
+</div>
+
+<div class="plotguide">
+<h4>4.4 门铃（buzzer）文化：为什么他们总是在"对着墙说话"</h4>
+<div class="item"><b>是什么</b>：纽约老式公寓楼下没有门房，只有一排门铃 + 对讲机（intercom）。访客在楼下按 <span class="ex">buzzer</span>，楼上的人拿起听筒问"谁？"，再按一下按钮开门（ buzzer 一响，门锁弹开）。所以剧里大量"进门"戏都是这个流程：<b>按铃 → 对讲 → 开门 → 上楼敲门</b>。</div>
+<div class="item"><b>字幕证据</b>：E01 开场 <span class="ex">The door buzzer sounds and Chandler gets it.</span>；同集 Paul 在楼下就是 <span class="ex">over the intercom</span> 报名字（"It's, uh, it's Paul."）；E03 Alan 也是 <span class="ex">on the intercom</span>；E12、E13 反复出现 buzzer。这不是道具细节，是<b>纽约生活的必需动作</b>。</div>
+<div class="item"><b>为什么好笑</b>：对讲机只有声音没有画面，天然适合"认错人/不想见人/假装不在家"这类喜剧。Chandler 在 E16 甚至用嘴模仿 buzzer 的声音回敬同事——这个笑话只有懂"每天被 buzzer 打断几十次"的人才能立刻 get。</div>
+</div>
+
+<div class="plotguide">
+<h4>4.5 前互联网时代：1994 年的"上网"是什么状态</h4>
+<div class="item"><b>先给硬证据</b>：第一季 24 集字幕里，<span class="ex">internet</span>、<span class="ex">email</span>、<span class="ex">cell phone</span> 全部<b>零命中</b>。这不是编剧疏忽，这就是 1994—1995 年的美国：互联网刚进入商用（浏览器才刚让普通人看到"网页"），普通人日常靠的是<b>座机、答录机、传真、寻呼机</b>。</div>
+<div class="item"><b>剧里能查到的"时代器物"</b>：E22 Ross 买了 <span class="ex">beeper</span>（寻呼机，别人呼他，他再找电话回），同集他还有一部 <span class="ex">cellular phone</span>（当时是又大又贵、只有商务人士才用的"砖头机"）；E18 Rachel 说 <span class="ex">I've got resumes to fax</span>（简历要"传真"过去）；E10 David 搬家时抱着一台 <span class="ex">laptop computer</span>，台词是"这个很贵"；E11 Chandler 说某部电影 <span class="ex">is on Showtime, HBO, and Cinemax</span>（付费频道，要看还得另外付钱）。</div>
+<div class="item"><b>中国观众卡在哪</b>：我们用"微信一发就到"的直觉看剧，会觉得"为什么不打个电话/发个消息"很蠢。但在 1994 年：<b>打本地电话也要钱、长途更贵、离家就联系不上、约人只能约"几点在哪见"</b>。所以本季大量笑点建立在"信息传不到"上——留口信、答录机留言、上门找人、错过一班地铁就错过一整晚。看懂这一层，你会突然理解为什么他们那么爱"突然出现在对方家门口"。</div>
+</div>
+
+<div class="plotguide">
+<h4>4.6 1994 年的社会空气（三句话版）</h4>
+<div class="item"><b>① 离婚不再是丑闻，但仍然是伤口</b>：Ross 的离婚、Rachel 的逃婚、Barry 的再选择，全季都在处理"婚姻失败之后怎么继续做人"。这在 90 年代美国是一个刚被公开讨论不久的话题。</div>
+<div class="item"><b>② 二十几岁的人开始"延后成年"</b>：六个人都到了该成家的年纪，却都在合租、换工作、试错。这种"成年延迟"是 90 年代都市青年的共同状态，也是本剧能共鸣的根本原因。</div>
+<div class="item"><b>③ 电视是共同语言</b>：E02 一开场五个人挤在沙发上看《Three's Company》，E10 的新年是"Dick Clark 的节日"。在没有短视频的年代，<b>看同一个节目</b>就是社交本身。这也是为什么本剧的对白里塞满了电视梗——那是当时所有人都能接住的暗号。</div>
+</div>
+</section>
+
+<!-- ============ CH5 ============ -->
+<section class="scene" id="ch5">
+<h2>第 5 章 · 本季流行文化时刻表 <span class="no">Pop Culture, Checked Against 1994</span></h2>
+
+<div class="plotguide">
+<h4>5.0 核对方法（为什么这一章要标年份）</h4>
+<div class="item">流行文化引用是"看剧笑不出来"的最大来源，也是最容易写错的地方：写错年份，读者会被带到一个根本不存在的作品上。本章每条都做两件事：<b>① 回字幕确认它确实出现在哪一集、原句怎么说；② 核对作品年份，判断它在本集播出时（1994—1995）是否已经存在</b>。凡是"年份晚于本集"的，明确标 ⚠ 并说明剧中真正指的是什么。</div>
+<div class="item">判据很简单：第一季 1994 年 9 月首播、1995 年 5 月结束。任何 1996 年之后的作品，<b>不可能</b>是剧中人在 1994 年说的那句话的出处。</div>
+</div>
+
+<div class="plotguide">
+<h4>5.1 歌曲与音乐</h4>
+<div class="item"><b>“Billy, Don't Be a Hero”｜1974 年冠军单曲（Bo Donaldson and the Heywoods 版本在美国走红）｜S1E01</b>。Ross 原话：<span class="ex">Do the words 'Billy, don't be a hero' 1974 mean anything to you?</span>——他连年份都说出来了，用来表达"我很久没约会了"。✓ 与时间线一致；这也是全剧最好用的"用老歌说明孤独"的范例：歌里唱的是送爱人上战场、结果他没回来，Ross 用它自嘲"我的恋爱史就是一首老歌"。</div>
+<div class="item"><b>Madonna《Take a Bow》｜1994 年 12 月发行｜S1E24</b>。季终机场戏，字幕舞台提示：<span class="ex">Madonna's Take A Bow plays in the background</span>。✓ 时间一致（本集 1995 年 5 月播出，歌已发行半年）。用法：一首"告别式情歌"垫在 Rachel 要去机场的场景下，歌词本身就是潜台词。</div>
+<div class="item"><b>Dick Clark｜美国音乐节目主持人，新年直播节目自 1972 年起｜S1E10</b>。Chandler 原话：<span class="ex">I'm sick of being a victim of this Dick Clark holiday.</span>——"Dick Clark 的节日"＝跨年夜。✓ 时间一致。文化点：在美国，跨年夜的电视画面就是 Dick Clark 站在时代广场，这个说法相当于中文里说"春晚式的夜晚"。</div>
+</div>
+
+<div class="plotguide">
+<h4>5.2 影视与动画</h4>
+<div class="item"><b>《Three's Company》｜1977—1984 年情景喜剧｜S1E02</b>。冷开场五个人挤在沙发上看，Chandler 说：<span class="ex">Oh, I think this is the episode of Three's Company where there's some kind of misunderstanding.</span>✓ 时间一致。这句话是"元笑话"：它在吐槽整部剧的套路（每集都靠一个误会推动），而《老友记》自己也在用同一套套路——所以这句笑的是"我们正在看的这种东西"。</div>
+<div class="item"><b>《Pinocchio》匹诺曹｜原著 1883 年（科洛迪）／迪士尼动画 1940 年｜S1E01</b>。Monica 提到 Joey 演过 <span class="ex">the Reruns' production of Pinocchio, at the little theater in the park</span>（公园小剧场的社区剧团版），Chandler 立刻补刀，学台词：<span class="ex">'Look, Gippetto, I'm a real live boy.'</span>（"看，杰佩托，我是个真正的男孩了"）。✓ 时间一致：1940 年电影远早于 1994；剧中引的是<b>童话/舞台剧</b>，不是某部新片。注意 <span class="ex">Gippetto</span> 是字幕里的拼写（正确拼法 Geppetto），听的时候别被拼写带偏。</div>
+<div class="item"><b>《The Hunchback of Notre-Dame》巴黎圣母院／卡西莫多｜雨果原著 1831 年｜S1E01（⚠ 关键提醒）</b>。E01 里 Chandler 问新男友 <span class="ex">does he have a hump and a hairpiece?</span>（驼背吗？戴假发吗？），Phoebe 补一句 <span class="ex">does he eat chalk?</span>——三件套合起来就是"钟楼怪人"的形象。<b>⚠ 迪士尼动画版《钟楼怪人》是 1996 年才上映的，比本集晚两年，所以这里绝不可能是"引用迪士尼电影"</b>，它引的是雨果小说（以及更早的黑白电影）在大众记忆里留下的怪物形象。写这一条时如果把年份写成 1996，读者会完全误解这个笑话的年代感。</div>
+<div class="item"><b>《Underdog》｜1964 年开始播出的动画｜S1E05、S1E09</b>。E05 Monica 讲她小时候在梅西感恩节大游行里当气球牵引员：<span class="ex">Something went wrong with Underdog, and they couldn't get his head to inflate.</span>；E09 整集主线就是这只气球飞走了（Chandler：<span class="ex">Underdog has just gotten away.</span>）。✓ 时间一致。文化点：Underdog 是一只"披斗篷的狗超级英雄"，感恩节大游行的巨型气球是纽约年度仪式，所以"气球跑了"是全城新闻级的笑话。</div>
+<div class="item"><b>《Weekend at Bernie's》老板不是人｜1989 年电影（续集 1993）｜S1E11</b>。Chandler 想转移大家注意力：<span class="ex">Weekend At Bernie's is on Showtime, HBO, and Cinemax.</span> 接着补：<span class="ex">Dead guy getting hit in the groin twenty, thirty times!</span>✓ 时间一致。这部片的笑点是"两个下属拖着老板的尸体假装他还活着"，正好对应 Chandler"用最烂的片逃避现实"的性格。</div>
+<div class="item"><b>《The Flintstones》摩登原始人｜1960—1966 年动画｜S1E18</b>。Chandler 吐槽：<span class="ex">Is this still about her whole 'The Flintstones could've really happened' thing?</span>✓ 时间一致。用法：把"她居然认真论证动画设定"当把柄，一句就交代了对方的怪。</div>
+<div class="item"><b>《The Jetsons》杰森一家／Judy Jetson｜1962—1963 年动画｜S1E16、S1E17</b>。Phoebe 讲姐姐抢她的 <span class="ex">Judy Jetson thermos</span>（杰森一家的保温壶）；E17 Ursula 打开礼物也说同一句。✓ 时间一致。文化点：60 年代美国人想象的"未来家庭"，保温壶是当年的儿童爆款周边——用"童年被抢的周边"来交代姐妹恩怨，比讲十句台词有效。</div>
+<div class="item"><b>《Bugs Bunny》兔八哥｜1938 年成形、1940 年正式定型｜S1E03、S1E17</b>。E03 Ross 形容一个人"什么位置都能打"：<span class="ex">like that Bugs Bunny cartoon where Bugs is playing all the positions</span>；E17 Marcel 按遥控器把频道切到西班牙语配音的兔八哥。✓ 时间一致。</div>
+<div class="item"><b>《Mrs. Doubtfire》窈窕奶爸｜1993 年电影｜S1E21</b>。Monica 说：<span class="ex">Then I would definitely not recommend Mrs. Doubtfire.</span>✓ 时间一致（1993 年上映，1994 年正是全民都看过的片子）。</div>
+<div class="item"><b>《Jeopardy!》危险边缘｜1964 年开播、1984 年重启日播版｜S1E17</b>。Ross 替猴子求情：<span class="ex">He watches Jeopardy!</span>✓ 时间一致。文化点：这档答题节目在美国的地位接近"国民常识考试"，说"他看 Jeopardy"＝"他有文化、他是个人"。</div>
+</div>
+
+<div class="plotguide">
+<h4>5.3 人名、品牌与生活物件</h4>
+<div class="item"><b>George Stephanopoulos｜真实人物，1993—1996 年任白宫高级顾问｜S1E04</b>。整集笑点建立在一个真名上：比萨送错门，Monica 发现"我们拿到了 George Stephanopoulos 的比萨"，全屋人扑到窗边看。✓ 时间一致——1994 年他是电视上天天出现的政治明星，所以"这个名字"本身就是笑点。</div>
+<div class="item"><b>Mr. Potato Head 蛋头先生｜1952 年玩具（Hasbro）｜S1E01</b>。Rachel 说她发现 <span class="ex">how much Barry looks like Mr. Potato Head</span>（未婚夫长得像蛋头先生）。✓ 时间一致。这个比喻的杀伤力在于：蛋头先生可以随便换五官——暗示这个人没个性、可以随便拼。</div>
+<div class="item"><b>Limoges 利摩日瓷｜法国利摩日出产的瓷器｜S1E01</b>。Rachel 对一只 <span class="ex">gorgeous Limoges gravy boat</span>（船形酱汁壶）产生的心动超过未婚夫。✓ 与年代无关（是"老钱审美"符号），但要注意它代表的是"她从小被训练出来的品味"。</div>
+<div class="item"><b>Poconos 波科诺山｜宾州蜜月度假区，60—80 年代以"心形浴缸"闻名｜S1E12</b>。Rachel 教 Paolo 念这个地名：<span class="ex">Poconos, Poconos, it's like Poc-o-nos</span>；Monica 立刻追问 <span class="ex">So, did I hear Poconos?</span>（"蜜月"暗示）。✓ 时间一致。文化点：Poconos 在美国人耳朵里＝ honeymoon，听到这个词就等于听到"我们要去开房"。</div>
+<div class="item"><b>White Zinfandel 白仙粉黛｜1980 年代美国大热的甜桃红葡萄酒｜S1E14</b>。台词：<span class="ex">Will you get me a white Zinfandel, and a glass of red for Janice.</span>✓ 时间一致。文化点：它当年是"不懂酒的人也会点的酒"，点它本身就是一种身份标签。</div>
+<div class="item"><b>IKEA 宜家｜瑞典品牌，1985 年起进入美国市场｜S1E18</b>。Chandler 自嘲：<span class="ex">I get my ya-yas from Ikea. You have to put them together yourself, but they cost a little less.</span>✓ 时间一致。文化点：这句是"平板包装自己组装"的经典自嘲，也是 90 年代年轻人第一次置办家具的共同记忆。</div>
+<div class="item"><b>Knicks / Celtics｜NBA 纽约尼克斯、波士顿凯尔特人｜S1E23</b>。产房外 Joey 在看球：<span class="ex">the Knicks by 10. They suck.</span>✓ 与年代无关，但要注意这是"纽约本地身份"的标记：在纽约说"我们队烂"是一种爱。</div>
+</div>
+
+<div class="plotguide">
+<h4>5.4 一句话总结这一章怎么用</h4>
+<div class="item">看剧遇到听不懂的笑点，先问三个问题：<b>① 这是作品名吗</b>（歌/电影/动画/节目）→ 查本章；<b>② 这是人名吗</b>（真人/角色）→ 查本章；<b>③ 这是年代物吗</b>（玩具/地名/酒/家具）→ 查本章。三条都查不到，再回到当集 🏛️ 文化块。<b>凡是本章标 ⚠ 的，说明"年份对不上"，那不是你听错，是引用指向更早的原著</b>——这一点在第 5.2 的巴黎圣母院条目里最典型。</div>
+</div>
+</section>
+
+<!-- ============ CH6 ============ -->
+<section class="scene" id="ch6">
+<h2>第 6 章 · 情景剧笑点机制总览 <span class="no">How the Jokes Are Built</span></h2>
+
+<div class="plotguide">
+<h4>6.0 先理解"情景喜剧"这个机器</h4>
+<div class="item"><b>三机位 + 现场观众</b>：《老友记》是在有观众的棚里拍的，一场戏连续演，观众笑了演员就停一下。所以它的台词节奏是"<b>铺垫—笑点—等笑声</b>"，平均每 6—8 秒要有一个笑点（laugh beat）。这就是为什么台词听起来那么"密"：不是他们说话快，是每句话都被设计成能接住一个笑。</div>
+<div class="item"><b>笑点必须"一秒懂"</b>：现场观众没有回放，所以机制必须极其清楚——这也是为什么本剧的笑话特别适合学英语：<b>它把语言的机关摆得很明</b>。反过来说，你听不懂，几乎都是因为缺一块文化背景或一个词的多义项，而不是因为你笨。</div>
+</div>
+
+<div class="plotguide">
+<h4>6.1 双关（pun / double entendre）：一个词同时走两条路</h4>
+<div class="item"><b>是什么</b>：同一个词/短语有两层意思，字面层成立，暗示层才是真意。情景喜剧最常用的是"<b>性暗示双关</b>"——因为它天然需要一个"不能明说"的语境。</div>
+<div class="item"><b>S1 真例（E01）</b>：Ross 说 <span class="ex">Grab a spoon.</span>，结尾又说 <span class="ex">I just grabbed a spoon.</span>。<span class="ex">spoon</span> 字面是"勺子"，但 <span class="ex">spooning</span> 在英语里指"两个人贴着睡（汤匙式相拥）"，所以"抓勺子"是一句<b>性暗示</b>。他其实在说"我刚跟人上床了"，而 Monica 完全没听懂。<b>为什么好笑</b>：观众听懂了、在场的人没听懂——<b>信息差</b>就是笑点的引擎。</div>
+<div class="item"><b>还有一类是"名字双关"</b>：<span class="ex">Central Perk</span>＝Central Park（中央公园）+ perk（提神/咖啡渗滤）。这种双关不制造笑点，但会让地名本身带梗，属于"设定层的幽默"。</div>
+<div class="item"><b>怎么练</b>：听到一句"字面也通、但语气不对"的话，先假设它有第二层意思，再查那个词的名词/动词双义项（spoon / nut / screw / jerk 都是高频）。</div>
+</div>
+
+<div class="plotguide">
+<h4>6.2 冷面讽刺（deadpan）：说的人不笑，笑的人是你</h4>
+<div class="item"><b>是什么</b>：用完全平静、就事论事的语气说一句荒谬或刻薄的话，不加重音、不挤眉弄眼、说完就停。<b>关键不是内容，是"不表演好笑"</b>。</div>
+<div class="item"><b>S1 真例（E01）</b>：Monica 一口气声明"这不算约会，就是两个人出去吃顿饭，而且——不上床"，Chandler 只回一句 <span class="ex">Sounds like a date to me.</span>（"听起来就是约会啊"）。他没有笑、没有停顿、没有解释。<b>机制</b>：他把她努力划出来的安全区，用一句"技术上正确"的定义抹掉；越平静，越刻薄。</div>
+<div class="item"><b>S1 真例（E02）</b>：五个人看《Three's Company》，Chandler 说 <span class="ex">Oh, I think this is the episode of Three's Company where there's some kind of misunderstanding.</span>——这句是"每一集都这样"的元吐槽，语气像在陈述节目单。<b>为什么高级</b>：他吐槽的是"靠误会推进剧情"的套路，而此刻他们自己正活在同一个套路里。</div>
+<div class="item"><b>中国观众卡在哪</b>：中文的损友玩笑通常带语气（挑眉、拖长音、笑一下），而 deadpan 是<b>把语气全部抽掉</b>。所以你听不出"他在开玩笑"，只会觉得"他好冷漠"——这正是他要的效果。</div>
+</div>
+
+<div class="plotguide">
+<h4>6.3 callback（回旋镖）：把前面的东西原样捡回来</h4>
+<div class="item"><b>是什么</b>：先埋一个说法，过一会儿（同一集或几集后）用同样的词、同样的句式再说一次，让观众"啊，这个我记得"。<b>callback 不制造新笑点，它把旧笑点兑现</b>。</div>
+<div class="item"><b>S1 真例（E01，同一集内闭环）</b>：Ross 在咖啡馆说 <span class="ex">Grab a spoon. Do you know how long it's been since I've grabbed a spoon?</span>（自嘲很久没约会）；到本集结尾，他敲 Monica 的门，说 <span class="ex">I just grabbed a spoon.</span>——同一句话，第一次是自怜，第二次是炫耀。观众笑的是"<b>他居然真的去做了</b>"。</div>
+<div class="item"><b>为什么有效</b>：它奖励"认真看的人"。情景喜剧的观众是长期的，callback 是给老观众的礼物——这也是为什么本剧适合<b>整季连着看</b>：单集看只能懂 70%，连着看能懂 100%。</div>
+</div>
+
+<div class="plotguide">
+<h4>6.4 running gag（反复梗）：同一个设定，每次换个角度</h4>
+<div class="item"><b>是什么</b>：一个反复出现的固定设定（一句话、一个动作、一个人物反应），每次出现都换场景、换程度。它和 callback 的区别：callback 是"复述"，running gag 是"<b>同一个机器反复运转</b>"。</div>
+<div class="item"><b>S1 的三个真 running gag</b>：<b>① Janice 的 "Ohhh my God"</b>——E05、E10、E14 每次出场都用同一个拖长音，观众一听就知道"Chandler 的灾难来了"。<b>② Ross 的"Carol 离开我"</b>——E05、E10 等集反复被他拿来解释一切（<span class="ex">it's been kinda quiet since Carol left</span>），惨到成了他的口头标签。<b>③ Mr. Heckles 的噪音投诉</b>——E07、E16、E19 他每次出现都在为"楼上的声音"发疯，从不解决、只重复。</div>
+<div class="item"><b>为什么反复出现还觉得好笑（这是本章最该记住的一段）</b>：喜剧理论里叫"<b>预期—违背</b>"。第一次出现是"建立规则"（观众记住：这人一开口就是这个调）；第二次出现是"确认规则"（观众提前知道要发生什么，于是产生优越感和参与感）；第三次开始，笑点转移到"<b>这次他会怎么变</b>"——同一个梗，容器不变、内容必须变。<b>所以 running gag 靠的不是重复，是"重复中的微差"</b>。如果每次完全一样，第三集就死了。</div>
+</div>
+
+<div class="plotguide">
+<h4>6.5 其他四种高频机制（各一句 + 一个真例）</h4>
+<div class="item"><b>反差</b>：身份/语气与内容严重不匹配。例：Monica 对刚逃婚的 Rachel 说 <span class="ex">Welcome to the real world! It sucks. You're gonna love it!</span>（E01）——"欢迎"和"它很烂"同句，祝福与恐吓同时成立。</div>
+<div class="item"><b>逻辑鬼才</b>：推理过程完全成立，前提完全荒谬。例：Phoebe 在众人吐槽新男友时认真补问 <span class="ex">does he eat chalk?</span>（E01）——她自有一套判断"怪人"的标准。</div>
+<div class="item"><b>字面思维</b>：把比喻当事实回答。例：Chandler 讲裸体梦里"那儿"是一部电话，Joey 只问 <span class="ex">Instead of...?</span>（E01）——他需要把画面补完整。</div>
+<div class="item"><b>时机错位</b>：话本身没错，错在说的时间。例：Rachel 刚说完"这不算约会、不上床"，Chandler 那句 <span class="ex">Sounds like a date to me.</span> 就卡在她话音落下的 0.5 秒——<b>同一句话早两秒或晚两秒都不好笑</b>。</div>
+</div>
+
+<div class="plotguide">
+<h4>6.6 特别提醒：三个"最有名"的梗，第一季里根本没有</h4>
+<div class="item">很多入门材料会把 <span class="ex">Pivot!</span>（搬沙发喊的口号）、<span class="ex">How you doin'?</span>（Joey 的搭讪句）、<span class="ex">We were on a break!</span>（Ross 的名言）当成"老友记的招牌"，让人以为第一季就会遇到。<b>核对结果：这三个在第一季 24 集字幕里全部零命中。</b>它们分别属于后面的季。第一季的 Joey 搭讪靠的是别的方式，第一季的 Ross 还在"刚离婚"的阶段。</div>
+<div class="item"><b>这件事本身就是最好的 running gag 教材</b>：一个梗不是编剧一开始就设计好的，是演员的某个说法被观众记住、被反复要求、最后固化成"人设"的。所以你学 S1，不要背"名句"，要学<b>产生名句的那种机制</b>（Chandler 的拐弯、Joey 的字面、Phoebe 的鬼才）——机制在，名句迟早会来。</div>
+</div>
+</section>
+
+<!-- ============ CH7 ============ -->
+<section class="scene" id="ch7">
+<h2>第 7 章 · 高频口癖与缩略总表 <span class="no">Contractions &amp; Verbal Tics</span></h2>
+
+<div class="plotguide">
+<h4>7.0 先懂三条规律，比背 20 条更有用</h4>
+<div class="item"><b>规律一：省掉"to / of / be"这类虚词</b>。going to → gonna，want to → wanna，got to → gotta，kind of → kinda，sort of → sorta，out of → outta。规律是<b>两个词挤成一个音节</b>，重音落在第一个音节上。</div>
+<div class="item"><b>规律二：省掉词首的弱读音</b>。about → 'bout，because → 'cause，excuse me → 'scuse me，them → 'em，you → ya。规律是<b>开头那个轻读的音直接不发音</b>，所以听起来像"吞掉了第一个字"。</div>
+<div class="item"><b>规律三：句尾的 t / d 常常不爆破</b>。don't know → dunno，what are you → whaddya，get out → gedout。这类是"连读+浊化"，不是新词，必须靠耳朵磨出来，光看拼写没用。</div>
+<div class="item"><b>使用提醒</b>：这些形式<b>只用于口语和非正式书写</b>（短信、歌词、剧本对白）。写作文、写邮件、考试作文里用 gonna，会直接被判口语化错误。学它们是<b>为了听懂</b>，不是为了写。</div>
+</div>
+
+<div class="plotguide">
+<h4>7.1 核心缩略十连（gonna / wanna / gotta 家族）</h4>
+<div class="item"><b>gonna</b> <span class="ex">/ˈɡʌnə/</span>＝going to，表示"将要"或"打算"。场景：预告自己的行动、警告别人。例句（E01）：<span class="ex">You're gonna love it!</span>（你会爱上它的）。听力提示：它几乎从不重读，永远轻轻带过，所以最容易被漏听。</div>
+<div class="item"><b>wanna</b> <span class="ex">/ˈwɑːnə/</span>＝want to，表示"想要"。场景：提要求、表达欲望、反问。例句（E01）：<span class="ex">I just wanna be married again!</span>（我只想再结一次婚）。注意：<span class="ex">I wanna go</span> 可以，但 <span class="ex">I wanna a coffee</span> 是错的——wanna 后面只能接动词，不能接名词。</div>
+<div class="item"><b>gotta</b> <span class="ex">/ˈɡɑːtə/</span>＝got to，两个意思：① have to（必须）② 推测"肯定是"。场景：解释不得已、下判断。例句（E01）：<span class="ex">There's gotta be something wrong with him!</span>（他肯定有毛病）——这里是第 ② 种，不是"必须"。</div>
+<div class="item"><b>got to</b>（完整形式）：当它出现在句子里时，往往不是"必须"而是"有机会、得以"。例句（E07）：<span class="ex">You've just got to go up to her and say...</span>（你就得走过去跟她说）；E06：<span class="ex">at least you got to see my head</span>（至少你看到我的头了）——这里 got to＝"得以"。</div>
+<div class="item"><b>gonna be</b>：gonna + be 是高频组合，表示"将会是/将会成为"。例句（E02）：<span class="ex">I'm still gonna be a father.</span>（我还是会当爸爸）。</div>
+</div>
+
+<div class="plotguide">
+<h4>7.2 语篇填充词（决定你"像不像美国人说话"）</h4>
+<div class="item"><b>y'know</b> <span class="ex">/jə noʊ/</span>＝you know。三个功能：① 拖时间想词 ② 求认同（"你懂吧"）③ 引出一句实话。例句（E10）：<span class="ex">Y'know, I was hoping for a little more enthusiasm.</span>（我还指望你们热情点呢）。全季出现 150 次以上，是出现频率最高的一个。</div>
+<div class="item"><b>I mean</b>：不是"我的意思是"，更多是"我是说……"的<b>自我修正</b>，等于中文"就是说、呃不对"。例句（E01 附近高频）：说话人常在一句夸张的话后面用 I mean 拉回来。</div>
+<div class="item"><b>'cause / just 'cause</b>＝because。场景：给理由，而且常常是"我不想多解释"的理由。例句（E01）：<span class="ex">Just 'cause I don't want her to go through what I went through with Carl.</span></div>
+<div class="item"><b>So...</b>：句首的 so 不是"所以"，是"<b>那么、话说</b>"，用来开启一个新话题或一个故事。例句（E01）：<span class="ex">So does he have a hump and a hairpiece?</span>（那么，他驼背吗？戴假发吗？）</div>
+<div class="item"><b>Okay</b>：全剧出现最多的词之一。功能包括：同意、打断、控场、让步、准备开始。例句（E01）：<span class="ex">Okay, everybody relax.</span></div>
+</div>
+
+<div class="plotguide">
+<h4>7.3 情绪与反应（笑点最常长在这些词上）</h4>
+<div class="item"><b>c'mon</b> <span class="ex">/kəˈmɑːn/</span>＝come on。四个意思：① 快点 ② 别这样（不信/不满）③ 来吧（鼓励）④ 少来（拆穿）。例句（E01）：<span class="ex">C'mon, you're single! Have some hormones!</span>（少来，你单身！有点荷尔蒙吧！）</div>
+<div class="item"><b>Oh my God</b> 家族：<span class="ex">Oh my God / Oh God / Oh my god</span>。功能：震惊、难以置信、兴奋、抱怨。全季 24 集每集都有，E19 一集出现 7 次。<b>语气决定意思</b>：升调＝惊讶，平调＝无语，拖长＝崩溃。例句（E19）：<span class="ex">Oh my God! Oh my God, it's Barry and Mindy!</span></div>
+<div class="item"><b>what the hell</b>：表强烈不解或不在乎，"搞什么/管他呢"。例句（E22）：<span class="ex">What the hell does a paleontologist need a beeper for?</span>（一个古生物学家要寻呼机干嘛？）</div>
+<div class="item"><b>Whaddyou</b>＝what do you。极度口语，听起来像"哇啾"。例句（E19，Mr. Heckles 开门）：<span class="ex">Whaddyou want?</span>（你要干嘛？）——三个词挤成一个，是"不耐烦"的语音签名。</div>
+<div class="item"><b>'scuse me</b>＝excuse me。场景：打断、插话、轻微冒犯前的缓冲。例句（E05）：<span class="ex">Oh, 'scuse me. I was kinda using that machine.</span>（不好意思，我在用那台机器）——注意这句的礼貌是"表面礼貌"，实际是在抢回洗衣机。</div>
+</div>
+
+<div class="plotguide">
+<h4>7.4 程度与模糊（让语气变柔和的装置）</h4>
+<div class="item"><b>kinda</b> <span class="ex">/ˈkaɪndə/</span>＝kind of，"有点、算是"。作用：<b>降低断言强度</b>，避免把话说死。例句（E05）：<span class="ex">I was kinda using that machine.</span>（我算是正在用那台机器）。中文对应"算是吧、有点儿"。</div>
+<div class="item"><b>sorta</b> <span class="ex">/ˈsɔːrtə/</span>＝sort of，与 kinda 近义，更偏"某种程度上的"。例句（E10）：<span class="ex">I think you are a sweeping sorta fella.</span>（我觉得你是那种会扫地的人）——这句本身就是笑点：用 sorta 把"会扫地"说成一种人格类型。</div>
+<div class="item"><b>'bout</b>＝about，几乎只出现在 <span class="ex">How 'bout...?</span>（……怎么样？）里。例句（E23）：<span class="ex">How 'bout Ben?</span>（叫 Ben 怎么样？）——这是给孩子取名的场景，短到不能再短。</div>
+</div>
+
+<div class="plotguide">
+<h4>7.5 三个"要有，但第一季没有"的形式（诚实标注）</h4>
+<div class="item"><b>ain't</b>＝am not / is not / are not / has not。口语里极常见，但<b>第一季 24 集字幕零命中</b>。原因很实际：本剧主角是都市中产青年，ain't 带明显口音/阶级标记，编剧基本不给他们用。你在别的美剧里会大量遇到，先认识、别急着用。</div>
+<div class="item"><b>doncha</b>＝don't you。同样<b>本季零命中</b>。它多见于老片、歌曲、模仿口音，属于"听得懂但不属于这六个人"的形式。</div>
+<div class="item"><b>lemme / gimme</b>：这两个<b>本季有</b>，但用法要注意——lemme 是 let me（让我），gimme 是 give me（给我），都只在祈使句里。例句（E01）：<span class="ex">Lemme tell you something, Ross.</span>（我跟你说啊，Ross）；例句（E19）：<span class="ex">C'mere, gimme the rice.</span>（过来，把米饭给我）。</div>
+</div>
+
+<div class="plotguide">
+<h4>7.6 一张"听力检查表"（听完一段后自测）</h4>
+<div class="item">① 你听到的是 <span class="ex">going to</span> 还是 <span class="ex">gonna</span>？（听到 gonna 却按 going to 理解，句子会变慢半拍）② 句首那个含糊的音是 <span class="ex">y'know</span> 还是 <span class="ex">you know</span>？③ 句尾的 t 有没有发出来？（<span class="ex">don't know</span> → <span class="ex">dunno</span>）④ 那个"唔"的音是 <span class="ex">'em</span>（them）还是 <span class="ex">him</span>？⑤ <span class="ex">kinda / sorta</span> 有没有被误听成"kind of a / sort of a"两个词？<b>五项全过，说明这一段你是真听懂了，不是猜懂的。</b></div>
+</div>
+</section>
+
+<!-- ============ CH8 ============ -->
+<section class="scene" id="ch8">
+<h2>第 8 章 · 学习流程建议 <span class="no">Your Six-Step Workflow</span></h2>
+
+<div class="plotguide">
+<h4>8.1 六步流程（每集照做，顺序不要换）</h4>
+<div class="item"><b>① 先读本手册（一次性）</b>：第 2 章人物声音 + 第 6 章笑点机制 + 第 7 章口癖表。目的是把"解码器"装进脑子，之后每集都靠它。约 40 分钟，别看一遍就丢。</div>
+<div class="item"><b>② 每集先读 📖 剧情导读</b>：2 分钟。看完你应该能一句话说出"这集三条线分别是什么、谁和谁在冲突"。如果说不出来，回去再读一遍——<b>带着剧情看台词，效率是盲看的三倍</b>。</div>
+<div class="item"><b>③ 逐句扫 📌</b>：按行往下走，遇到 📌/💬/🏛️ 停下来读解析。这一步最花时间（一集 25—40 分钟），但它是唯一能真正扩词汇的步骤。目标不是"背下来"，是"下次见到能认出来"。</div>
+<div class="item"><b>④ 看 🎭 行内解码</b>：🎭 条就贴在那句台词下面，读到就顺带看。这一步的目标是<b>建立"这句话为什么这么说"的反射</b>——尤其是 Chandler 的拐弯、Joey 的字面、Phoebe 的鬼才，看多了你会预判笑点。</div>
+<div class="item"><b>⑤ 听 🔊 反复磨</b>：先用 0.5× 把整集逐句点一遍（只听不跟），再用 0.75× 听第二遍（这次跟着默读），最后用 1× 对着剧集原声听同一段。<b>同一段听三遍，比听三段各一遍有效得多。</b></div>
+<div class="item"><b>⑥ 页末 shadowbox 跟读</b>：12—15 句"跟读重点句"，每句先听原声、再模仿、再录下来对比。重点不是"读对每个音"，是<b>模仿语调曲线</b>（哪里升、哪里停、哪里重读）。一天 10 句，一周就能明显感到嘴巴变顺。</div>
+</div>
+
+<div class="plotguide">
+<h4>8.2 速度条与 🔊 的正确用法（别小看这两个按钮）</h4>
+<div class="item"><b>0.5× 慢速</b>：用于"拆音"。这时你能听清每个音节、每个吞掉的 t/d，适合第一遍和纠音。缺点：语调会变形，不要拿它模仿语气。</div>
+<div class="item"><b>0.75× 学习速（默认）</b>：用于"跟读"。这是最接近"能跟上又不至于听不清"的速度，适合第二遍和 shadowing 的初期。</div>
+<div class="item"><b>1× 常速</b>：用于"验收"。能在这个速度下听懂 80% 以上，才算这段过了。真正的验收标准是<b>剧集原声</b>——机器朗读没有连读，原声才有。</div>
+<div class="item"><b>🔊 按钮</b>：点一句读一句，读的是<b>英文原句</b>，用浏览器语音合成。它的价值是"随时可重复、不会不耐烦"，适合练单句；<b>但它不替代原声</b>，因为真人演员的重音和情绪是演出来的。正确顺序：🔊 拆句 → 原声对语调 → 🔇 自己说。</div>
+</div>
+
+<div class="plotguide">
+<h4>8.3 时间预算与三种节奏</h4>
+<div class="item"><b>精学（每集 60—90 分钟）</b>：六步全做 + 手写生词本。适合 S1E01—E05，把地基打牢。</div>
+<div class="item"><b>常速（每集 35—45 分钟）</b>：②③④⑤ 做，shadowbox 只挑 5 句。适合 E06—E18，保持推进。</div>
+<div class="item"><b>复看（每集 15 分钟）</b>：只看 📖 导读 + 🎭 + 页末重点句。适合第二遍复习，或者只想"看懂剧情"的时候。</div>
+<div class="item"><b>建议总时长</b>：一季 24 集，精学 5 集 + 常速 15 集 + 复看 4 集 ≈ 22 小时。按每天 40 分钟算，约 5 周。</div>
+</div>
+
+<div class="plotguide">
+<h4>8.4 四个常见误区（提前避坑）</h4>
+<div class="item"><b>误区一：先看剧再读文档</b>。先看剧会让你"以为自己懂了"（因为有画面和字幕），实际是把生词蒙过去了。正确顺序是<b>先读导读 → 再读台词 → 最后看剧验收</b>。</div>
+<div class="item"><b>误区二：只背单词不记句子</b>。本剧的价值在"整句的口语模板"（<span class="ex">There's gotta be...</span>／<span class="ex">Sounds like...</span>／<span class="ex">I was kinda...</span>）。背单词只能读懂，背句型才能说出来。</div>
+<div class="item"><b>误区三：跳过 🎭</b>。跳过 🎭 的后果是"每个词都认识，但不知道他们在笑什么"，然后你会得出"美式幽默不好笑"的错误结论。🎭 才是这套文档和普通字幕的区别。</div>
+<div class="item"><b>误区四：追求"一遍全懂"</b>。第一遍能懂 60% 就是正常水平。这套文档的设计就是<b>允许你反复回来</b>：📌 查词、🏛️ 查背景、🎭 查笑点、本手册查人和梗。用得越久，回头的次数越少。</div>
+</div>
+</section>
+
+<footer>
+  《老友记》第一季 · 第 0 集 世界观手册 ｜ 六位主角档案 + 常反串配角 + 1994 纽约 + 流行文化时刻表 + 笑点机制 + 口癖总表<br>
+  剧集事实（出场集数 / 引用的作品 / 台词原句）均以第一季 24 集英文字幕逐条核对；字幕无法证明的，已在正文明确标注"本季字幕未出现"。<br>
+  本手册与 S1E01—S1E24 学习文档配套使用：先读本手册，再读每集 📖 剧情导读。
+</footer>
+</div>
+
+<script>
+(function(){
+  var rate = 0.75;
+  var voice = null;
+  function pickVoice(){
+    if(!('speechSynthesis' in window)) return;
+    var vs = speechSynthesis.getVoices();
+    voice = vs.filter(function(v){return v.lang==='en-US';})
+              .filter(function(v){return /Google US English|Samantha|Aria|Jenny|Zira|Libby|Google/i.test(v.name);})[0]
+          || vs.filter(function(v){return v.lang==='en-US';})[0]
+          || vs.filter(function(v){return v.lang && v.lang.indexOf('en')===0;})[0]
+          || null;
+  }
+  if('speechSynthesis' in window){
+    pickVoice();
+    speechSynthesis.onvoiceschanged = pickVoice;
+  }
+  window.speak = function(btn){
+    if(!('speechSynthesis' in window)){ alert('当前浏览器不支持语音朗读，请用 Chrome 或 Edge 打开本文件'); return; }
+    var text = btn.getAttribute('data-t');
+    var prev = document.querySelector('.sp.speaking');
+    if(prev && prev!==btn) prev.classList.remove('speaking');
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = 'en-US';
+    if(voice) u.voice = voice;
+    u.rate = rate;
+    u.onstart = function(){ btn.classList.add('speaking'); };
+    u.onend = function(){ btn.classList.remove('speaking'); };
+    u.onerror = function(){ btn.classList.remove('speaking'); };
+    speechSynthesis.speak(u);
+  };
+  var btns = document.querySelectorAll('.speedbar button[data-rate]');
+  for(var i=0;i<btns.length;i++){
+    btns[i].addEventListener('click', function(){
+      rate = parseFloat(this.getAttribute('data-rate'));
+      for(var j=0;j<btns.length;j++) btns[j].classList.remove('on');
+      this.classList.add('on');
+    });
+  }
+})();
+</script>
+</body>
+</html>

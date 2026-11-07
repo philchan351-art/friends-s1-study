@@ -7,7 +7,7 @@
 <style>
 :root{--ink:#222;--line:#e8e8e8;--accent:#2c3e50}
 *{box-sizing:border-box}
-body{margin:0;font-family:"Segoe UI","PingFang SC","Microsoft YaHei",system-ui,sans-serif;background:#eef1f5;color:var(--ink);line-height:1.65}
+body{margin:0;font-family:"Segoe UI","PingFang SC","Microsoft YaHei","Segoe UI Emoji","Segoe UI Symbol","Apple Color Emoji",system-ui,sans-serif;background:#eef1f5;color:var(--ink);line-height:1.65}
 .wrap{max-width:1120px;margin:0 auto;padding:0 14px 60px}
 header.hero{background:linear-gradient(135deg,#22313f,#4a6572);color:#fff;padding:26px 14px 18px}
 .hero-in{max-width:1120px;margin:0 auto}
@@ -52,6 +52,15 @@ nav.toc a:hover{text-decoration:underline}
 .shadowbox li{margin:9px 0;font-size:15px}
 .shadowbox .zh-t{display:block;color:#888;font-size:13px}
 footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height:1.9}
+.line.intentline{grid-template-columns:1fr;border-left:3px solid #7D3C98;border-bottom:none;background:#F5F0FA;border-radius:6px;margin:2px 0 10px}
+.line.intentline .en,.line.intentline .zh{background:transparent;color:#5b2c6f}
+.line.intentline .en{border-right:none;font-size:13.5px;padding:6px 12px 0}
+.line.intentline .zh{border-right:none;font-size:12.5px;padding:2px 12px 8px;line-height:1.7}
+.plotguide{background:#E8F0FE;border-left:4px solid #2E86C1;padding:14px 16px;border-radius:0 8px 8px 0;margin:14px 0}
+.plotguide h2{font-size:15px;color:#1B4F72;margin:0 0 8px}
+.plotguide .item{font-size:13.5px;color:#1B4F72;line-height:1.8;margin-bottom:6px}
+.plotguide .item b{color:#154360}
+@media print{.line.intentline{page-break-inside:avoid;break-inside:avoid}}
 @media(max-width:760px){.line{grid-template-columns:1fr}.line .en{border-right:none;border-bottom:2px dashed #c9d4de}}
 @page{size:A4;margin:10mm 9mm}
 @media print{
@@ -61,10 +70,24 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
   .wrap{max-width:none;padding:0}
   header.hero{padding:16px 10px 12px}
   .scene{margin:14px 0}
-  .line,.note,.culture,.phrasebox,.intent,.shadowbox li{page-break-inside:avoid;break-inside:avoid}
+  .line,.note,.culture,.phrasebox,.shadowbox li{page-break-inside:avoid;break-inside:avoid}
   .scene h2{page-break-after:avoid;break-after:avoid}
   footer{page-break-before:avoid}
 }
+
+.gw{color:#c0392b;font-weight:700;border-bottom:1.5px dotted rgba(192,57,43,.55)}
+.gwp{color:#1e8463;font-weight:700;border-bottom:1.5px dotted rgba(30,132,99,.55)}
+.gi{color:#8a6f63;font-size:11.5px;font-weight:400;background:#faf1ec;padding:0 4px;border-radius:3px;margin-left:3px;letter-spacing:0}
+.line.intentline.pattach{border-left-color:#1e8463;background:#eaf6f1}
+.line.intentline.pattach .en,.line.intentline.pattach .zh{color:#145A32;background:transparent}
+@media print{.gi{background:#f5efea}}
+
+.gw{color:#c0392b;font-weight:700;border-bottom:1.5px dotted rgba(192,57,43,.55)}
+.gwp{color:#1e8463;font-weight:700;border-bottom:1.5px dotted rgba(30,132,99,.55)}
+.gi{color:#8a6f63;font-size:11.5px;font-weight:400;background:#faf1ec;padding:0 4px;border-radius:3px;margin-left:3px;letter-spacing:0}
+.line.intentline.pattach{border-left-color:#1e8463;background:#eaf6f1}
+.line.intentline.pattach .en,.line.intentline.pattach .zh{color:#145A32;background:transparent}
+@media print{.gi{background:#f5efea}}
 </style>
 </head>
 <body>
@@ -85,15 +108,13 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
   </div>
 </div>
 <script>(function(){var B='RkxKODg2UUs=';function b64(s){try{return btoa(s)}catch(e){return ''}}function unlock(){var g=document.getElementById('paygate');if(g&&g.parentNode)g.parentNode.removeChild(g);try{localStorage.setItem('flj_s1_ok','1')}catch(e){}}try{if(localStorage.getItem('flj_s1_ok')==='1'){unlock();return}}catch(e){}window.pgCheck=function(){var v=document.getElementById('pg-pwd').value;if(v&&b64(v)===B){unlock()}else{var e=document.getElementById('pg-err');e.style.display='block'}}})();</script>
-
-
 <header class="hero">
   <div class="hero-in">
-    <h1>老友记 Friends · 第一季第 9 集（The One Where Underdog Gets Away 气球狗飞了）</h1>
-    <div class="sub">The One Where Underdog Gets Away · 那年感恩节，气球狗飞了</div>
+    <h1>老友记 Friends · 第一季第 9 集（感恩节特集）</h1>
+    <div class="sub">The One Where Underdog Gets Away · 气球狗飞走了</div>
     <div class="tags">
       <span>1994 年首播</span><span>美语中级偏上</span><span>左：英文原台词 / 右：中文对照</span>
-      <span>📌 重点单词（音标+意思）</span><span>💬 词组/俚语</span><span>🏛️ 文化解析</span><span>🔊 点按朗读</span><span>🎭 潜台词解析</span>
+      <span>📌 重点单词（音标+意思）</span><span>💬 词组/俚语</span><span>🏛️ 文化解析</span><span>🔊 点按朗读</span><span>🎭 笑点/潜台词（行内）</span><span>📖 剧情导读</span><span>📍 幕情境</span>
     </div>
   </div>
 </header>
@@ -108,10 +129,28 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 
 <div class="wrap">
 <div class="guide">
-  <b>学习三步法（配合本集使用）</b><br>
-  ① <b>看懂</b>：逐句对照左右两栏，遇到 📌/💬/🏛️/🎭 标注先读解析再往下走（🎭 = 潜台词/意图解析——为什么这么说、笑点在哪）；<br>
-  ② <b>听熟</b>：把速度调到 0.5×，点每句 🔊 听 2-3 遍，再切剧集原声听同一段，注意连读、吞音（如 <span class="ex">gonna / wanna / y'know / kinda / 'cause</span>）；<br>
-  ③ <b>说出</b>：翻到文末「🔁 跟读重点句」，跟着原声逐句模仿语调和节奏，一天 10 句，重复到脱口而出。
+  <b>本页怎么读（图例）</b><br>
+  📖 = 剧情导读（集首，先读它再看台词）　📍 = 幕情境（每幕开头：谁在哪、刚发生什么、这幕要干什么）<br>
+  📌 = 超纲词 / 非常规用法（高中课标外必标，含音标＋课标义→本句义）　💬 = 短语、俚语、口语缩读　🏛️ = 文化背景（专名、年代物、美式制度）<br>
+  🎭 = 笑点 / 潜台词（<b>行内浅紫条</b>，紧跟那句台词：类型标签＋真意图＋机制＋中文等价）　🔊 = 点按朗读该句<br>
+  <b>学习三步法</b>：① <b>看懂</b>——先读📖剧情导读，再逐句对照，遇到 📌/💬/🏛️ 先读解析，遇到 🎭 立刻看它为什么好笑；② <b>听熟</b>——速度调 0.5×，每句点 🔊 听 2-3 遍，再切剧集原声对听连读吞音（gonna / wanna / gotta / y'know）；③ <b>说出</b>——翻到文末「🔁 跟读重点句」，一天 10 句，跟到脱口而出。
+</div>
+
+<div class="plotguide" id="plot">
+<h2>📖 剧情导读</h2>
+<div class="item"><b>【A 线 · 感恩节大餐保卫战】</b>Monica 今年第一次当家做主厨，要做一整套传统感恩节大餐（火鸡、山药、填料、南瓜派、热苹果酒）。Rachel 原计划跟家里人去 Vail 滑雪，可她已经"独立"了——父亲不再给她买机票，她连 100 块都拿不出来（向老板 Terry 预支薪水被当面拒绝）。Monica 于是把 Rachel 收进这桌饭。Chandler 则公开宣布抵制一切"清教徒节日"，因为他童年最惨的记忆就发生在感恩节餐桌上。</div>
+<div class="item"><b>【B 线 · 气球狗飞走了】</b>Joey 感恩节去打零工——在梅西感恩节大游行里当工作人员（他同时还在当"演员兼模特"，拍了一张性病防治公益海报，脸贴满全城地铁）。游行途中，80 英尺高的 Underdog 充气狗挣脱缆绳飞过曼哈顿上空。六个人冲上天台看热闹，风一吹，公寓门锁上了：火鸡在烤箱里烤成焦炭，大餐全毁，一群人被关在走廊里靠翻钥匙救场。</div>
+<div class="item"><b>【C 线 · Ross 抢当爸爸】</b>Ross 去 Carol 与 Susan 家取自己借出的头骨标本，发现自己在那对伴侣口中的代号是"Bobo the Sperm Guy（提供精子的波波）"。Susan 每天对着 Carol 的肚子念书给胎儿听，Ross 又酸又不服，硬要争一份"belly time（肚子对话时间）"：把头埋进生火鸡里做"传声实验"失败后，他最终蹲在肚子前笨拙地说话、最后唱起了自己编的歌——"我是你爸爸，就是那个没有乳房的人"。</div>
+<div class="item"><b>【人物关系速览】</b>Ross–Carol/Susan：离婚夫妻＋妻子的同性伴侣，三人共同迎接这个孩子，Ross 始终在争"父亲的存在感"；Monica–Rachel：室友，Monica 当主厨、Rachel 当"帮倒忙的帮手"；Joey–Chandler：对门室友兼损友，互相拆台又一起倒霉；Phoebe：玄学担当，负责把每件倒霉事说成"有道理的"；六人 vs Ugly Naked Guy：对楼那位全剧常驻的裸体邻居，本集唯一"过得比他们好"的人。</div>
+<div class="item"><b>【季内位置】</b>本集是 S1 的感恩节特集：Carol 怀孕线正式推进（E10-E12 里 Ben 出生），Rachel 的"独立"从 E01 的剪信用卡走到"连回家机票都买不起"，是她与家庭真正割裂的一步；Chandler 对感恩节的抗拒第一次给出理由（父母在餐桌上宣布离婚），为他整季的家庭创伤线打底；"Ugly Naked Guy""Joey 的广告海报"都是后续反复回扣的梗。</div>
+</div>
+
+<div class="culture">
+<h4>🏛️ 本集时代背景：1994 年的感恩节、纽约与"前互联网"生活</h4>
+<b>① 是什么：</b>1994 年 11 月的纽约。感恩节（11 月第四个星期四）是全家团聚的头号节日：火鸡、填料、山药、南瓜派、看橄榄球、看梅西百货大游行——本集几乎把这份"节日清单"当剧本用。<br>
+<b>② 90 年代语境：</b>那时没有手机、没有外卖 App、没有网购：订机票要找旅行社或打航空公司电话，查钥匙只能一把一把试，找人只能打家里座机（所以 Ross 一听父母要去波多黎各，第一反应是"我打给妈"）。电视只有三大网＋几个有线台，一部剧的"特别篇"是全家人守着看的大事，所以 Chandler 一句"今晚，敬请收看《花开时节》特别辛酸篇"能全场爆笑。<br>
+<b>③ 中国观众卡在哪：</b>① 感恩节对中国观众没有情感重量，看不出"一家人必须一起吃火鸡"是多强的社会压力，也就体会不到 Chandler 的抗拒、Monica 的执念、Ross 的失落；② 梅西大游行的巨型充气气球是美国独有景观，"气球挣脱飞走"在当年是真实新闻级别的荒唐事；③ 90 年代美国人把公益广告、性病防治当公开话题，Joey 拍性病海报被全家误会，笑的正是这种"公开处刑"的尴尬。<br>
+<b>④ 本集怎么用：</b>整集结构就是"节日清单逐项崩塌"：火鸡烤糊、钥匙找不到、气球飞走、亲戚不在——最后六个人在走廊里吃烤奶酪三明治，Chandler 举杯说"我特别感激你们的感恩节全都搞砸了"，这才是本集的题眼：节日不是清单，是这群人。
 </div>
 
 <nav class="toc">
@@ -122,131 +161,112 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <!-- ============ SCENE 1 ============ -->
 <section class="scene" id="s1">
 <h2>场景 1 · 中央公园咖啡馆（Central Perk） <span class="no">瑞秋向老板预支薪水</span></h2>
+<div class="line stage"><span>📍 情境：Central Perk 的下午，Rachel 鼓起勇气找老板 Terry 预支 100 块薪水——她想回 Vail 跟家人滑雪过节，可她刚开始"独立"，爸爸不再给她买机票。这一幕的功能：用一次当面被否的加薪谈判，交代 Rachel 的经济窘境，并把"感恩节在哪儿过"这个全集发动机点火。</span></div>
 <div class="line stage"><span>【场景：中央公园咖啡馆。瑞秋正在向她的老板特里开口。】</span></div>
-<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Terry, I, I, I know that I haven't worked here very long, but I was wondering, do you think it would be possible if I got a $100 advance in my salary? <button class="sp" onclick="speak(this)" data-t="Terry, I, I, I know that I haven't worked here very long, but I was wondering, do you think it would be possible if I got a $100 advance in my salary?">🔊</button></div><div class="zh">特里，我、我、我知道我在这儿干得还不算久，不过我想问一下，您觉得有没有可能让我预支 100 块薪水？</div></div>
+<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Terry, I, I, I know that I haven't worked here very long, but I was wondering, do you think it would be possible if I got a $100 <b class="gwp">advance</b><span class="gi">〔预支（的钱）；an <b class="gw">advance</b><span class="gi">〔/ədˈvæns/ n. 预支（款）；预付〕</span> on my <b class="gw">salary</b><span class="gi">〔/ˈsæləri/ n. 薪水、工资（按月发放的固定报酬；课标里多是 pay/wage…〕</span>＝预支薪水。日常也可说 get…〕</span> in my salary? <button class="sp" onclick="speak(this)" data-t="Terry, I, I, I know that I haven't worked here very long, but I was wondering, do you think it would be possible if I got a $100 advance in my salary?">🔊</button></div><div class="zh">特里，我、我、我知道我在这儿干得还不算久，不过我想问一下，您觉得有没有可能让我预支 100 块薪水？</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Terry:</span>An advance? <button class="sp" onclick="speak(this)" data-t="An advance?">🔊</button></div><div class="zh">预支？</div></div>
-<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>It's so that I can spend Thanksgiving with my family. See, every year we go skiing in Vail, and normally my father pays for my ticket, but I sort of started the whole independence thing, you know, which is actually why I took this job. <button class="sp" onclick="speak(this)" data-t="It's so that I can spend Thanksgiving with my family. See, every year we go skiing in Vail, and normally my father pays for my ticket, but I sort of started the whole independence thing, you know, which is actually why I took this job.">🔊</button></div><div class="zh">这样我才能和家人一起过感恩节。你想，我们每年都去韦尔滑雪，平时都是我爸爸给我买票；可我最近开始琢磨着要独立，这也正是我出来找这份工作的原因。</div></div>
-<div class="line"><div class="en"><span class="spk c-other">Terry:</span>Rachel, Rachel, sweetheart. You're a terrible, terrible waitress. Really, really awful. <button class="sp" onclick="speak(this)" data-t="Rachel, Rachel, sweetheart. You're a terrible, terrible waitress. Really, really awful.">🔊</button></div><div class="zh">瑞秋，瑞秋，亲爱的。你是个糟透了、糟透了的服务员。真的，真的太糟糕了。</div></div>
-<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Ok, I, I hear what you're sayin'. I'm with you. Um, but I, but I'm trying really hard. And I think I'm doing better. I really do. Does anybody need coffee? (everyone in the place raises their hand) Oh, look at that. <button class="sp" onclick="speak(this)" data-t="Ok, I, I hear what you're saying. I'm with you. Um, but I, but I'm trying really hard. And I think I'm doing better. I really do. Does anybody need coffee? Oh, look at that.">🔊</button></div><div class="zh">好吧，我、我明白您的意思，我同意您说的。呃，可是我真的在很努力了，我觉得自己有进步，真的。有人要咖啡吗？（店里所有人都举起了手）哦，你瞧瞧。</div></div>
-<div class="phrasebox">
-<h4>💬 词组 / 俚语</h4>
-<div class="item"><b>advance</b> ＝ 预支（的钱）；<span class="ex">an advance on my salary</span>＝预支薪水。日常也可说 <span class="ex">get paid in advance</span>（预付）。</div>
-<div class="item"><b>sort of</b> ＝ 有点、算是（口语里弱化成 /ˈsɔːrtə/，用来把话说得含糊、谦虚）。<span class="ex">I sort of started the whole independence thing</span>＝我算是开始搞"独立"这一套了。</div>
-<div class="item"><b>I hear what you're sayin'</b> ＝"我懂你的意思"（先接住对方批评，再说自己的诉求的谈判开场）。sayin' 是 saying 的口语吞音写法。</div>
-</div>
-<div class="note">
-<h4>📌 重点单词</h4>
-<div class="item"><b>advance</b> <span class="phon">/ədˈvæns/</span> n. 预支（款）；预付 <button class="sp" onclick="speak(this)" data-t="advance">🔊</button> — 搭配 <span class="ex">a $100 advance in my salary</span>（预支 100 块薪水）</div>
-<div class="item"><b>waitress</b> <span class="phon">/ˈweɪtrəs/</span> n. 女服务员（男性为 waiter） <button class="sp" onclick="speak(this)" data-t="waitress">🔊</button> — <span class="ex">a terrible waitress</span>（一个糟糕的服务员）</div>
-<div class="item"><b>independence</b> <span class="phon">/ˌɪndɪˈpendəns/</span> n. 独立、自立 <button class="sp" onclick="speak(this)" data-t="independence">🔊</button> — <span class="ex">start the whole independence thing</span>（开始学着自己独立）</div>
-</div>
-<div class="intent">
-<h4>🎭 意图/潜台词</h4>
-<div class="item"><b>Terry: Rachel, Rachel, sweetheart. You're a terrible, terrible waitress.</b><br>①老板先连喊两次名字、再叫一声"亲爱的（sweetheart）"，看似亲昵，其实是"打一巴掌前先塞颗糖"——用亲热称呼把最狠的评价说得像关心。②笑点在反差：瑞秋鼓足勇气想预支 100 块薪水，老板却当面把她的业务能力否到底，叠词（terrible, terrible / really, really）一层层加重。③中文等价："瑞秋呀瑞秋，宝贝儿，你这个服务员当得……真是差到姥姥家了。"</div>
-<div class="item"><b>Rachel: Does anybody need coffee? (everyone raises their hand) Oh, look at that.</b><br>①刚被否定，她立刻当众喊"有人要咖啡吗"，用满屋子举手的画面向老板证明"我很忙、我有用"，潜台词是"你看我多重要，还不给我钱？"②笑点在时机：话音刚落全店齐刷刷举手，把她的"自证"变成一场独角戏式的尴尬。③中文等价："谁要咖啡？（全场举手）诶，你瞅瞅。"</div>
-</div>
+<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>It's so that I can spend Thanksgiving with my family. See, every year we go skiing in <b class="gw">Vail</b><span class="gi">〔/veɪl/ n. 韦尔（科罗拉多州著名滑雪胜地，美国富裕家庭过冬/过节首选） — we go…〕</span>, and normally my father pays for my ticket, but I <b class="gwp">sort of</b><span class="gi">〔有点、算是（口语里弱化成 /ˈsɔːrtə/，用来把话说得含糊、谦虚）。I sort of…〕</span> started the whole <b class="gw">independence</b><span class="gi">〔/ˌɪndɪˈpendəns/ n. 独立、自立 — start the whole…〕</span> thing, you know, which is actually why I took this job. <button class="sp" onclick="speak(this)" data-t="It's so that I can spend Thanksgiving with my family. See, every year we go skiing in Vail, and normally my father pays for my ticket, but I sort of started the whole independence thing, you know, which is actually why I took this job.">🔊</button></div><div class="zh">这样我才能和家人一起过感恩节。你想，我们每年都去韦尔滑雪，平时都是我爸爸给我买票；可我最近开始琢磨着要独立，这也正是我出来找这份工作的原因。</div></div>
+<div class="line"><div class="en"><span class="spk c-other">Terry:</span>Rachel, Rachel, <b class="gw">sweetheart</b><span class="gi">〔/ˈswiːthɑːrt/ n. 亲爱的（称呼语）。课标义"心上人" →…〕</span>. You're a terrible, terrible <b class="gw">waitress</b><span class="gi">〔/ˈweɪtrəs/ n. 女服务员（男性为 waiter） — a terrible…〕</span>. Really, really awful. <button class="sp" onclick="speak(this)" data-t="Rachel, Rachel, sweetheart. You're a terrible, terrible waitress. Really, really awful.">🔊</button></div><div class="zh">瑞秋，瑞秋，宝贝儿。你这服务员当得——糟透了，真的，糟透了。烂到没边儿。 †</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [反差]</b> <b>真意图</b>：老板先连喊两次名字、再叫一声"亲爱的（sweetheart）"，看似亲昵，其实是"打一巴掌前先塞颗糖"——用亲热称呼把最狠的评价说得像关心。</div><div class="zh"><b>机制</b>：瑞秋鼓足勇气想预支 100 块薪水，老板却当面把她的业务能力否到底，叠词（terrible, terrible / really, really）一层层加重。 <b>中文等价</b>："瑞秋呀瑞秋，宝贝儿，你这个服务员当得……真是差到姥姥家了。"</div></div>
+<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Ok, I, <b class="gwp">I hear what you're sayin'</b><span class="gi">〔"我懂你的意思"（先接住对方批评，再说自己的诉求的谈判开场）。sayin' 是 saying…〕</span>. I'm with you. Um, but I, but I'm trying really hard. And I think I'm doing better. I really do. Does anybody need coffee? (everyone in the place raises their hand) Oh, look at that. <button class="sp" onclick="speak(this)" data-t="Ok, I, I hear what you're saying. I'm with you. Um, but I, but I'm trying really hard. And I think I'm doing better. I really do. Does anybody need coffee? Oh, look at that.">🔊</button></div><div class="zh">好吧，我、我明白您的意思，我同意您说的。呃，可是我真的在很努力了，我觉得自己有进步，真的。有人要咖啡吗？（店里所有人都举起了手）哦，你瞧瞧。</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [时机]</b> <b>真意图</b>：刚被否定，她立刻当众喊"有人要咖啡吗"，用满屋子举手的画面向老板证明"我很忙、我有用"，潜台词是"你看我多重要，还不给我钱？"</div><div class="zh"><b>机制</b>：话音刚落全店齐刷刷举手，把她的"自证"变成一场独角戏式的尴尬。 <b>中文等价</b>："谁要咖啡？（全场举手）诶，你瞅瞅。"</div></div>
+
+
+
 </section>
 
 <!-- ============ SCENE 2 ============ -->
 <section class="scene" id="s2">
 <h2>场景 2 · 咖啡馆（续） <span class="no">瑞秋找顾客预支小费 / 爸妈要去波多黎各</span></h2>
+<div class="line stage"><span>📍 情境：还是咖啡馆。Rachel 换了个方向——找熟客预支小费（失败），顺手捡起客人留下的 98 块 5 毛。同时 Monica 带来消息：爸妈今年感恩节要去波多黎各，不来纽约了。这一幕的功能：让 Rachel 彻底没有"家"可回，也让 Ross 第一次情绪失控（他立刻打电话给妈确认）。</span></div>
 <div class="line stage"><span>【场景：中央公园咖啡馆。瑞秋走向一位顾客。】</span></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Excuse me, sir. Hi, you come in here all time. I was just wondering, do you think there's a possibility that you could give me an advance on my tips? <button class="sp" onclick="speak(this)" data-t="Excuse me, sir. Hi, you come in here all the time. I was just wondering, do you think there's a possibility that you could give me an advance on my tips?">🔊</button></div><div class="zh">打扰一下，先生。嗨，您是这儿的常客了。我想问问，您觉得有没有可能，先预支一点小费给我？</div></div>
-<div class="line"><div class="en"><span class="spk c-other">Guy:</span>Huh? <button class="sp" onclick="speak(this)" data-t="Huh?">🔊</button></div><div class="zh">啊？</div></div>
-<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Ok, ok, that's fine. Fine. Hey, I'm sorry about that spill before. (picks up the tip he leaves) Only $98.50 to go. <button class="sp" onclick="speak(this)" data-t="Ok, ok, that's fine. Fine. Hey, I'm sorry about that spill before. Only $98.50 to go.">🔊</button></div><div class="zh">好、好，算了，没事。对了，之前洒出来那事儿真是抱歉。（捡起他留下的小费）还差 98 块 5。</div></div>
+<div class="line"><div class="en"><span class="spk c-other">Guy:</span><b class="gwp">Huh?</b><span class="gi">〔/hʌ/ ＝ 没听清/没明白时的一声"啊？"，语气随意，正式场合用 I beg your…〕</span> <button class="sp" onclick="speak(this)" data-t="Huh?">🔊</button></div><div class="zh">啊？</div></div>
+<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Ok, ok, that's fine. Fine. Hey, I'm sorry about that <b class="gw">spill</b><span class="gi">〔/spɪl/ v. 洒出、泼出；n. 洒出来的东西 — I'm sorry about…〕</span> before. (picks up the tip he leaves) Only $98.50 to go. <button class="sp" onclick="speak(this)" data-t="Ok, ok, that's fine. Fine. Hey, I'm sorry about that spill before. Only $98.50 to go.">🔊</button></div><div class="zh">好、好，算了，没事。对了，之前洒出来那事儿真是抱歉。（捡起他留下的小费）还差 98 块 5。</div></div>
 <div class="line stage"><span>【莫妮卡走进来。】</span></div>
-<div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Hey. Ross, did you know Mom and Dad are going to Puerto Rico for Thanksgiving? <button class="sp" onclick="speak(this)" data-t="Hey. Ross, did you know Mom and Dad are going to Puerto Rico for Thanksgiving?">🔊</button></div><div class="zh">嘿。罗斯，你知道爸妈要去波多黎各过感恩节吗？</div></div>
-<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>No, they're not. <button class="sp" onclick="speak(this)" data-t="No, they're not.">🔊</button></div><div class="zh">不，他们不会去的。</div></div>
+<div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Hey. Ross, did you know Mom and Dad are going to <b class="gwp">Puerto Rico</b><span class="gi">〔/ˌpwertoʊ ˈriːkoʊ/ n. 波多黎各（美国海外属地，加勒比海岛屿…〕</span> for Thanksgiving? <button class="sp" onclick="speak(this)" data-t="Hey. Ross, did you know Mom and Dad are going to Puerto Rico for Thanksgiving?">🔊</button></div><div class="zh">嘿。罗斯，你知道爸妈要去波多黎各过感恩节吗？</div></div>
+<div class="line"><div class="en"><span class="spk c-ross">Ross:</span><b class="gwp">No, they're not.</b><span class="gi">〔vs Yes, they are. ＝ 对前面陈述做"简短回应"（avoid…〕</span> <button class="sp" onclick="speak(this)" data-t="No, they're not.">🔊</button></div><div class="zh">不，他们不会去的。</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Yes, they are. The Blymens invited them. <button class="sp" onclick="speak(this)" data-t="Yes, they are. The Blymens invited them.">🔊</button></div><div class="zh">他们会去。布莱曼家邀请了他们。</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>You're wrong. <button class="sp" onclick="speak(this)" data-t="You're wrong.">🔊</button></div><div class="zh">你搞错了。</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>I am not wrong. <button class="sp" onclick="speak(this)" data-t="I am not wrong.">🔊</button></div><div class="zh">我没搞错。</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>You're wrong. <button class="sp" onclick="speak(this)" data-t="You're wrong.">🔊</button></div><div class="zh">你就是搞错了。</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>No, I just talked to them. <button class="sp" onclick="speak(this)" data-t="No, I just talked to them.">🔊</button></div><div class="zh">不会，我刚跟他们通过电话。</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>(getting up, upset) I'm calling Mom. <button class="sp" onclick="speak(this)" data-t="I'm calling Mom.">🔊</button></div><div class="zh">（起身，很恼火）我去打给妈。</div></div>
-<div class="phrasebox">
-<h4>💬 词组 / 俚语</h4>
-<div class="item"><b>all the time</b> ＝ 一直、总是。<span class="ex">you come in here all the time</span>＝你是这儿的常客。注意别和 <span class="ex">all time</span>（"史上最……"，如 <span class="ex">all-time favorite</span>）混。</div>
-<div class="item"><b>Huh?</b> /hʌ/ ＝ 没听清/没明白时的一声"啊？"，语气随意，正式场合用 <span class="ex">I beg your pardon?</span> 更礼貌。</div>
-<div class="item"><b>No, they're not.</b> vs <b>Yes, they are.</b> ＝ 对前面陈述做"简短回应"（avoid repetition）：肯定用 <span class="ex">Yes, + 主语 + do/be</span>，否定用 <span class="ex">No, + 主语 + 助动词 + not</span>。</div>
-</div>
-<div class="note">
-<h4>📌 重点单词（补充）</h4>
-<div class="item"><b>spill</b> <span class="phon">/spɪl/</span> v. 洒出、泼出；n. 洒出来的东西 <button class="sp" onclick="speak(this)" data-t="spill">🔊</button> — <span class="ex">I'm sorry about that spill before.</span>（之前洒出来的事真抱歉）</div>
+<div class="line intentline"><div class="en"><b>🎭 [反差]</b> <b>真意图</b>：三十岁的 Ross 一听说爸妈改了感恩节计划，第一反应不是接受，而是"我打电话给我妈"——像小孩告状。</div><div class="zh"><b>机制</b>：反差来自年龄与行为的错位：他是博物馆的古生物学博士、刚离婚的成年人，此刻却要立刻找妈妈核实。中文观众若不知道"成年子女跟父母保持距离"是美国社会的默认值，就看不出这一句有多"退行"。 <b>中文等价</b>："我给我妈打电话去。"（那种被抢了糖就找家长的语气）</div></div>
+
+
+
+<div class="culture">
+<h4>🏛️ 文化解析：Vail 滑雪与"退休去波多黎各"——90 年代美国中产的两种冬天</h4>
+<b>① 是什么：</b><b>Vail</b>（韦尔）是科罗拉多州最著名的滑雪度假地之一，也是美国富裕家庭"圣诞/感恩节去滑雪"的经典目的地；<b>Puerto Rico</b>（波多黎各）是美国的海外属地（公民持美国护照），气候温暖、生活成本低，是东岸退休人群过冬的首选。<br>
+<b>② 90 年代语境：</b>这两处地名合起来就是一份"阶层说明书"：Rachel 家每年感恩节去 Vail 滑雪，说明她是上东区富家女；Ross 的父母退休后飞去波多黎各，说明他们是典型的中产犹太家庭（剧里暗示是"雪鸟"式过冬）。<br>
+<b>③ 中国观众卡在哪：</b>中国观众容易把这两个地名当"随便一个外国地名"滑过去，于是看不出 Rachel 的"穷"是相对的（她穷到要向老板借 100 块，却是从小在滑雪场长大的人），也看不出 Ross 的失落有一半来自"爸妈不来了"这件事本身。<br>
+<b>④ 本集怎么用：</b>Rachel 想回 Vail 却买不起机票、Ross 的父母飞去了波多黎各——两条线一起把"感恩节要回父母身边"这件事变成全集的情感前提：他们最后只能回到彼此身边。
 </div>
 </section>
 
 <!-- ============ SCENE 3 ============ -->
 <section class="scene" id="s3">
 <h2>场景 3 · 咖啡馆（续） <span class="no">乔伊：演员兼模特 / 计划感恩节晚餐</span></h2>
+<div class="line stage"><span>📍 情境：咖啡馆，六人凑齐。Joey 顶着一脸浓妆进门——他正式成为"演员兼模特"（其实是给性病防治诊所拍公益海报）。大家顺势排起感恩节的安排：Monica 要做大餐，Ross 要去 Carol 家。这一幕的功能：把六个人的节日计划摆上桌，为后文"全部落空、只剩彼此"做铺垫。</span></div>
 <div class="line stage"><span>【场景：乔伊走进来，脸上带着不正常的浓妆艳抹。】</span></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Hey, hey. <button class="sp" onclick="speak(this)" data-t="Hey, hey.">🔊</button></div><div class="zh">嘿，嘿。</div></div>
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Hey. <button class="sp" onclick="speak(this)" data-t="Hey.">🔊</button></div><div class="zh">嘿。</div></div>
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>Hey. <button class="sp" onclick="speak(this)" data-t="Hey.">🔊</button></div><div class="zh">嘿。</div></div>
-<div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>And this from the cry-for-help department. Are you wearing makeup? <button class="sp" onclick="speak(this)" data-t="And this from the cry-for-help department. Are you wearing makeup?">🔊</button></div><div class="zh">这又是来自"紧急求救部"的杰作。你化妆了？</div></div>
-<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Yes, I am. As of today, I am officially Joey Tribbiani, actor slash model. <button class="sp" onclick="speak(this)" data-t="Yes, I am. As of today, I am officially Joey Tribbiani, actor slash model.">🔊</button></div><div class="zh">是啊，化了。从今天起，我的正式身份就是乔伊·崔比安尼——演员兼模特。</div></div>
+<div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>And this from the cry-for-help department. Are you wearing <b class="gw">makeup</b><span class="gi">〔/ˈmeɪkʌp/ n. 化妆品；化妆。注意与动词短语 make up（组成／编造／和好）分开…〕</span>? <button class="sp" onclick="speak(this)" data-t="And this from the cry-for-help department. Are you wearing makeup?">🔊</button></div><div class="zh">这又是来自"紧急求救部"的杰作。你化妆了？</div></div>
+<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Yes, I am. <b class="gwp">As of today</b><span class="gi">〔从今天起（= starting today），强调某个新状态从此刻生效。〕</span>, I am officially Joey <b class="gw">Tribbiani</b><span class="gi">〔/trɪbiˈɑːni/ n. 崔比昂尼（Joey 的姓，意大利裔姓氏…〕</span>, <b class="gwp">actor slash model</b><span class="gi">〔"演员兼模特"。口语里用 slash / 斜杠表示"兼、以及"（书面写作…〕</span>. <button class="sp" onclick="speak(this)" data-t="Yes, I am. As of today, I am officially Joey Tribbiani, actor slash model.">🔊</button></div><div class="zh">是啊，化了。从今天起，我的正式身份就是乔伊·崔比安尼——演员兼模特。</div></div>
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>That's so funny, 'cause I was thinking you look more like Joey Tribbiani, man slash woman. <button class="sp" onclick="speak(this)" data-t="That's so funny, 'cause I was thinking you look more like Joey Tribbiani, man slash woman.">🔊</button></div><div class="zh">真好笑，因为我正想说，你看起来更像"乔伊·崔比安尼——男人兼女人"。</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [双关]</b> <b>真意图</b>：Chandler 用 Joey 自己的句法回敬他："演员／模特"被改写成"男人／女人"，等于当面说"你今天看着像个女的"。</div><div class="zh"><b>机制</b>：slash 是英文里念"斜杠"的读法（actor slash model＝演员兼模特，履历写法）。Chandler 只替换斜杠两边的词、保留格式，属于"格式仿写式双关"——中国观众卡在不知道 slash 是口语里真会念出来的词。 <b>中文等价</b>："我还以为你叫「乔伊·崔比昂尼，男／女」呢。"</div></div>
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>What were you modeling for? <button class="sp" onclick="speak(this)" data-t="What were you modeling for?">🔊</button></div><div class="zh">你给什么当模特？</div></div>
-<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>You know those posters for the city free clinic? <button class="sp" onclick="speak(this)" data-t="You know those posters for the city free clinic?">🔊</button></div><div class="zh">你知道市里免费诊所的那些海报吧？</div></div>
+<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>You know those <b class="gw">poster</b><span class="gi">〔/ˈpoʊstər/ n. 海报。课标词 post"邮寄" →…〕</span>s for the city free clinic? <button class="sp" onclick="speak(this)" data-t="You know those posters for the city free clinic?">🔊</button></div><div class="zh">你知道市里免费诊所的那些海报吧？</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Oh, wow, so you're gonna be one of those "healthy, healthy, healthy guys"? <button class="sp" onclick="speak(this)" data-t="Oh, wow, so you're gonna be one of those healthy, healthy, healthy guys?">🔊</button></div><div class="zh">哦哇，那你就要成为那种"好健康、好健康、好健康"的家伙之一了？</div></div>
-<div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>You know, the asthma guy was really cute. <button class="sp" onclick="speak(this)" data-t="You know, the asthma guy was really cute.">🔊</button></div><div class="zh">说真的，那个哮喘广告里的男模特还挺帅的。</div></div>
+<div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>You know, the <b class="gw">asthma</b><span class="gi">〔/ˈæzmə/ n. 哮喘 — the asthma guy（哮喘广告里那个男模特）〕</span> guy was really cute. <button class="sp" onclick="speak(this)" data-t="You know, the asthma guy was really cute.">🔊</button></div><div class="zh">说真的，那个哮喘广告里的男模特还挺帅的。</div></div>
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Do you know which one you're gonna be? <button class="sp" onclick="speak(this)" data-t="Do you know which one you're gonna be?">🔊</button></div><div class="zh">你知道自己会演哪一个吗？</div></div>
-<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>No, but I hear lyme disease is open, so... (crosses fingers) <button class="sp" onclick="speak(this)" data-t="No, but I hear lyme disease is open, so...">🔊</button></div><div class="zh">不知道，不过我听说莱姆病那个位置还空着，所以……（交叉手指求好运）</div></div>
+<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>No, but I hear lyme <b class="gw">disease</b><span class="gi">〔/dɪˈziːz/ n. 疾病。课标词，但本集专指性病（VD），是 90…〕</span> is open, so... (crosses fingers) <button class="sp" onclick="speak(this)" data-t="No, but I hear lyme disease is open, so...">🔊</button></div><div class="zh">不知道，不过我听说莱姆病那个位置还空着，所以……（交叉手指求好运）</div></div>
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Good luck, man. I hope you get it. <button class="sp" onclick="speak(this)" data-t="Good luck, man. I hope you get it.">🔊</button></div><div class="zh">祝你好运，老兄。希望你能拿下。</div></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Thanks. <button class="sp" onclick="speak(this)" data-t="Thanks.">🔊</button></div><div class="zh">谢了。</div></div>
 <div class="line stage"><span>【罗斯走回沙发。】</span></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>(to Monica) Well, you were right. How can they do this to us, huh? It's Thanksgiving. <button class="sp" onclick="speak(this)" data-t="Well, you were right. How can they do this to us, huh? It's Thanksgiving.">🔊</button></div><div class="zh">（对莫妮卡）好吧，你说对了。他们怎么能这么对我们？啊？这可是感恩节。</div></div>
-<div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Ok, I'll tell you what. How about I cook dinner at my place? I'll make it just like Mom's. <button class="sp" onclick="speak(this)" data-t="Ok, I'll tell you what. How about I cook dinner at my place? I'll make it just like Mom's.">🔊</button></div><div class="zh">行，这样吧。不如我在我那儿做一顿晚饭？我做得跟妈妈的味道一模一样。</div></div>
-<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Will you make the mashed potatoes with the lumps? <button class="sp" onclick="speak(this)" data-t="Will you make the mashed potatoes with the lumps?">🔊</button></div><div class="zh">你会做那种带块的土豆泥吗？</div></div>
+<div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Ok, <b class="gwp">I'll tell you what.</b><span class="gi">〔"这样吧 / 我跟你说"——提出一个建议前的口头语。〕</span> How about I cook dinner at my place? I'll make it just like Mom's. <button class="sp" onclick="speak(this)" data-t="Ok, I'll tell you what. How about I cook dinner at my place? I'll make it just like Mom's.">🔊</button></div><div class="zh">行，这样吧。不如我在我那儿做一顿晚饭？我做得跟妈妈的味道一模一样。</div></div>
+<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Will you make the mashed potatoes with the <b class="gw">lumps</b><span class="gi">〔/lʌmps/ n. 块、疙瘩（lump 的复数）；土豆泥里的"没打散的块儿"…〕</span>? <button class="sp" onclick="speak(this)" data-t="Will you make the mashed potatoes with the lumps?">🔊</button></div><div class="zh">你会做那种带块的土豆泥吗？</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>You know, they're not actually supposed to have... (Ross looks at her sheepishly) I'll work on the lumps. Joey, you're going home, right? <button class="sp" onclick="speak(this)" data-t="You know, they're not actually supposed to have... I'll work on the lumps. Joey, you're going home, right?">🔊</button></div><div class="zh">你要知道，土豆泥其实不该有那种……（罗斯心虚地看着她）我会想办法弄出块来。乔伊，你要回家的，对吧？</div></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Yeah. <button class="sp" onclick="speak(this)" data-t="Yeah.">🔊</button></div><div class="zh">对。</div></div>
-<div class="line"><div class="en"><span class="spk c-monica">Monica:</span>And I assume, Chandler, you are still boycotting all the pilgrim holidays. <button class="sp" onclick="speak(this)" data-t="And I assume, Chandler, you are still boycotting all the pilgrim holidays.">🔊</button></div><div class="zh">那我猜，钱德勒，你还在抵制所有清教徒节日吧。</div></div>
+<div class="line"><div class="en"><span class="spk c-monica">Monica:</span>And I assume, Chandler, you are still <b class="gw">boycott</b><span class="gi">〔/ˈbɔɪkɑːt/ v. 抵制、联合拒绝（购买/参加）〕</span>ing all the pilgrim holidays. <button class="sp" onclick="speak(this)" data-t="And I assume, Chandler, you are still boycotting all the pilgrim holidays.">🔊</button></div><div class="zh">那我猜，钱德勒，你还在抵制所有清教徒节日吧。</div></div>
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Yes, every single one of them. <button class="sp" onclick="speak(this)" data-t="Yes, every single one of them.">🔊</button></div><div class="zh">没错，一个都不放过。</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Phoebe, you're gonna be with your grandma? <button class="sp" onclick="speak(this)" data-t="Phoebe, you're gonna be with your grandma?">🔊</button></div><div class="zh">菲比，你要和你奶奶一起过？</div></div>
-<div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>Yes, and her boyfriend. But we're celebrating Thanksgiving in December 'cause he is lunar. <button class="sp" onclick="speak(this)" data-t="Yes, and her boyfriend. But we're celebrating Thanksgiving in December 'cause he is lunar.">🔊</button></div><div class="zh">是的，还有她男朋友。不过我们会在十二月过感恩节，因为他是"月历"的。</div></div>
+<div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>Yes, and her boyfriend. But we're celebrating Thanksgiving in December 'cause he is <b class="gw">lunar</b><span class="gi">〔/ˈluːnər/ adj. 月亮的、阴历的 — the lunar…〕</span>. <button class="sp" onclick="speak(this)" data-t="Yes, and her boyfriend. But we're celebrating Thanksgiving in December 'cause he is lunar.">🔊</button></div><div class="zh">是的，还有她男朋友。不过我们会在十二月过感恩节，因为他是"月历"的。</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>So you're free Thursday, then. <button class="sp" onclick="speak(this)" data-t="So you're free Thursday, then.">🔊</button></div><div class="zh">那么，你周四就有空了。</div></div>
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>Yeah. Oh, can I come? <button class="sp" onclick="speak(this)" data-t="Yeah. Oh, can I come?">🔊</button></div><div class="zh">是啊。哦，我能来吗？</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Yeah. Rach, are you thinking you're gonna make it to Vail? <button class="sp" onclick="speak(this)" data-t="Yeah. Rach, are you thinking you're gonna make it to Vail?">🔊</button></div><div class="zh">当然。瑞秋，你觉得你能去成韦尔吗？</div></div>
-<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Absolutely. Shoop, shoop, shoop. Only a hundred and two dollars to go. <button class="sp" onclick="speak(this)" data-t="Absolutely. Shoop, shoop, shoop. Only a hundred and two dollars to go.">🔊</button></div><div class="zh">当然能。"咻、咻、咻"（滑雪声）。还差一百零两块就凑齐了。</div></div>
+<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Absolutely. <b class="gw">Shoop</b><span class="gi">〔/ʃuːp/ int. 拟声词，模仿老歌里的和声"咻噗"；本集是众人哼唱的节日小调 —…〕</span>, shoop, shoop. Only a hundred and two dollars to go. <button class="sp" onclick="speak(this)" data-t="Absolutely. Shoop, shoop, shoop. Only a hundred and two dollars to go.">🔊</button></div><div class="zh">当然能。"咻、咻、咻"（滑雪声）。还差一百零两块就凑齐了。</div></div>
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>I thought it was $98.50. <button class="sp" onclick="speak(this)" data-t="I thought it was $98.50.">🔊</button></div><div class="zh">我记得刚才还是 98 块 5 吧。</div></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Yeah, well it was. I, I broke a cup. <button class="sp" onclick="speak(this)" data-t="Yeah, well it was. I, I broke a cup.">🔊</button></div><div class="zh">是啊，本来是。我、我打碎了一个杯子。</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Well, I'm off to Carol's. <button class="sp" onclick="speak(this)" data-t="Well, I'm off to Carol's.">🔊</button></div><div class="zh">那好，我去卡萝那儿一趟。</div></div>
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>Ooh, ooh! Why don't we invite her? <button class="sp" onclick="speak(this)" data-t="Ooh, ooh! Why don't we invite her?">🔊</button></div><div class="zh">哦，哦！我们干嘛不请她一起来？</div></div>
-<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>(mimicking) Ooh, ooh. Because she's my ex-wife, and will probably want to bring her, ooh, ooh, lesbian life partner. <button class="sp" onclick="speak(this)" data-t="Ooh, ooh. Because she's my ex-wife, and will probably want to bring her, ooh, ooh, lesbian life partner.">🔊</button></div><div class="zh">（学她的腔调）哦，哦。因为她是我的前妻，而且她多半还想带上她那——哦，哦——女同性恋伴侣。</div></div>
-<div class="phrasebox">
-<h4>💬 词组 / 俚语</h4>
-<div class="item"><b>actor slash model</b> ＝"演员兼模特"。口语里用 slash / 斜杠表示"兼、以及"（书面写作 actor/model），念的时候直接读 slash，是很有画面感的说法。</div>
-<div class="item"><b>As of today</b> ＝ 从今天起（= starting today），强调某个新状态从此刻生效。</div>
-<div class="item"><b>I'll tell you what.</b> ＝"这样吧 / 我跟你说"——提出一个建议前的口头语。</div>
-<div class="item"><b>cross one's fingers</b> ＝ 交叉手指"求好运 / 但愿如此"。乔伊一边说一边比这个手势，是英语里最常见的祈福动作。</div>
-</div>
-<div class="note">
-<h4>📌 重点单词</h4>
-<div class="item"><b>boycott</b> <span class="phon">/ˈbɔɪkɑːt/</span> v. 抵制、联合拒绝（购买/参加） <button class="sp" onclick="speak(this)" data-t="boycott">🔊</button> — 搭配 <span class="ex">boycott the pilgrim holidays</span>（抵制这帮清教徒节日）</div>
-<div class="item"><b>lunar</b> <span class="phon">/ˈluːnər/</span> adj. 月亮的、阴历的 <button class="sp" onclick="speak(this)" data-t="lunar">🔊</button> — <span class="ex">the lunar calendar</span>（阴历）。菲比说男友"is lunar"是他按月亮算日子，编剧的荒诞设定。</div>
-</div>
-<div class="note">
-<h4>📌 重点单词（补充）</h4>
-<div class="item"><b>asthma</b> <span class="phon">/ˈæzmə/</span> n. 哮喘 <button class="sp" onclick="speak(this)" data-t="asthma">🔊</button> — <span class="ex">the asthma guy</span>（哮喘广告里那个男模特）</div>
-</div>
+<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>(mimicking) Ooh, ooh. Because she's my ex-wife, and will probably want to bring her, ooh, ooh, <b class="gw">lesbian</b><span class="gi">〔/ˈlezbiən/ n. 女同性恋者；adj. 女同性恋的 — a lesbian life…〕</span> life partner. <button class="sp" onclick="speak(this)" data-t="Ooh, ooh. Because she's my ex-wife, and will probably want to bring her, ooh, ooh, lesbian life partner.">🔊</button></div><div class="zh">（学她的腔调）哦，哦。因为她是我的前妻，而且她多半还想带上她那——哦，哦——女同性恋伴侣。</div></div>
+
+
+
+
 <div class="culture">
 <h4>🏛️ 文化解析：感恩节与"清教徒节日（pilgrim holidays）"</h4>
 感恩节（Thanksgiving）是美国 11 月第四个星期四的全国性节日，源起于 1621 年清教徒（<b>Pilgrims</b>，1620 年乘"五月花号"抵达北美）与原住民共庆丰收的传说，是美国人心中"一家人团聚"的头号节日。<br>
-莫妮卡问钱德勒是不是还在"boycotting all the pilgrim holidays"（抵制所有清教徒节日），"pilgrim holidays"就是感恩节这类带清教徒渊源的节日的戏称。传统意象一整套：火鸡（turkey）、南瓜派（pumpkin pie）、蔓越莓酱（cranberry sauce）、土豆泥（mashed potatoes）、看橄榄球，还有梅西感恩节大游行（见场景 9）。这一集就从"感恩节怎么过"铺开；钱德勒的"抵制"也为后文他的童年阴影（父母在感恩节宣布离婚）埋了伏笔。
-</div>
+莫妮卡问钱德勒是不是还在"boycotting all the pilgrim holidays"（抵制所有清教徒节日），"pilgrim holidays"就是感恩节这类带清教徒渊源的节日的戏称。传统意象一整套：火鸡（turkey）、南瓜派（pumpkin pie）、蔓越莓酱（cranberry sauce）、土豆泥（mashed potatoes）、看橄榄球，还有梅西感恩节大游行（见场景 9）。这一集就从"感恩节怎么过"铺开；钱德勒的"抵制"也为后文他的童年阴影（父母在感恩节宣布离婚）埋了伏笔。</div>
 </section>
 
 <!-- ============ SCENE 4 ============ -->
 <section class="scene" id="s4">
 <h2>场景 4 · 卡萝与苏珊的公寓 <span class="no">取头骨 / Bobo the Sperm Guy</span></h2>
+<div class="line stage"><span>📍 情境：Carol 与 Susan 的公寓。Ross 来取自己借出的头骨标本，却撞上 Susan 的"准妈妈日常"：她正给胎儿念书。这一幕的功能：用"Bobo the Sperm Guy"这个外号把 Ross 的尴尬推到顶点，再用"念书给没出生的宝宝听"引出他接下来的较劲。</span></div>
 <div class="line stage"><span>【场景：卡萝和苏珊的公寓，苏珊在。罗斯走进来。】</span></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Hi, is uh, is Carol here? <button class="sp" onclick="speak(this)" data-t="Hi, is uh, is Carol here?">🔊</button></div><div class="zh">嗨，呃，卡萝在吗？</div></div>
-<div class="line"><div class="en"><span class="spk c-other">Susan:</span>No, she's at a faculty meeting. <button class="sp" onclick="speak(this)" data-t="No, she's at a faculty meeting.">🔊</button></div><div class="zh">不在，她去开教职员工会议了。</div></div>
-<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Oh, I uh, just came by to pick up my skull. Well, not mine, but... <button class="sp" onclick="speak(this)" data-t="Oh, I uh, just came by to pick up my skull. Well, not mine, but...">🔊</button></div><div class="zh">哦，我、我过来是想取回我的头骨。呃，不是我的（头骨），是……</div></div>
+<div class="line"><div class="en"><span class="spk c-other">Susan:</span>No, she's at a <b class="gw">faculty</b><span class="gi">〔/ˈfækəlti/ n. （大学的）全体教职员 — a faculty…〕</span> meeting. <button class="sp" onclick="speak(this)" data-t="No, she's at a faculty meeting.">🔊</button></div><div class="zh">不在，她去开教职员工会议了。</div></div>
+<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Oh, I uh, just <b class="gwp">came by</b><span class="gi">〔（顺路）来一趟、串个门。I just came by to pick up my…〕</span> to pick up my <b class="gw">skull</b><span class="gi">〔/skʌl/ n. 头骨、颅骨 — pick up my skull（取回我的头骨…〕</span>. Well, not mine, but... <button class="sp" onclick="speak(this)" data-t="Oh, I uh, just came by to pick up my skull. Well, not mine, but...">🔊</button></div><div class="zh">哦，我、我过来是想取回我的头骨。呃，不是我的（头骨），是……</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Susan:</span>Come in. <button class="sp" onclick="speak(this)" data-t="Come in.">🔊</button></div><div class="zh">进来吧。</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Thanks. Yeah, Carol borrowed it for a class, and I have to get it back to the museum. <button class="sp" onclick="speak(this)" data-t="Thanks. Yeah, Carol borrowed it for a class, and I have to get it back to the museum.">🔊</button></div><div class="zh">谢谢。对，卡萝借去上课用，我得把它还回博物馆。</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Susan:</span>What's it look like? <button class="sp" onclick="speak(this)" data-t="What's it look like?">🔊</button></div><div class="zh">它长什么样？</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Kinda like a big face without skin. <button class="sp" onclick="speak(this)" data-t="Kinda like a big face without skin.">🔊</button></div><div class="zh">有点像一张没有皮的大脸。</div></div>
-<div class="line"><div class="en"><span class="spk c-other">Susan:</span>Yes, I'm familiar with the concept. We can just look for it. <button class="sp" onclick="speak(this)" data-t="Yes, I'm familiar with the concept. We can just look for it.">🔊</button></div><div class="zh">嗯，这概念我熟。我们找找看吧。</div></div>
+<div class="line"><div class="en"><span class="spk c-other">Susan:</span>Yes, I'm <b class="gwp">familiar with</b><span class="gi">〔对……很熟悉、了解。I'm familiar with the…〕</span> the concept. We can just look for it. <button class="sp" onclick="speak(this)" data-t="Yes, I'm familiar with the concept. We can just look for it.">🔊</button></div><div class="zh">嗯，这概念我熟。我们找找看吧。</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Ok. (browsing the apartment) Wow, you guys sure have a lot of books about bein' a lesbian. <button class="sp" onclick="speak(this)" data-t="Ok. Wow, you guys sure have a lot of books about being a lesbian.">🔊</button></div><div class="zh">好。（在公寓里四处打量）哇，你们这儿讲"如何做女同性恋"的书可真多。</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Susan:</span>Well, you know, you have to take a course. Otherwise, they don't let you do it. <button class="sp" onclick="speak(this)" data-t="Well, you know, you have to take a course. Otherwise, they don't let you do it.">🔊</button></div><div class="zh">这个嘛，你得先修一门课。不然的话，他们不让你当。</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>(picking up a book) Hey, hey, Yertle the Turtle. A classic. <button class="sp" onclick="speak(this)" data-t="Hey, hey, Yertle the Turtle. A classic.">🔊</button></div><div class="zh">（拿起一本书）嘿，嘿，《Yertle the Turtle》，经典之作。</div></div>
@@ -254,45 +274,36 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>The uh, the baby that hasn't been born yet? Wouldn't that mean you're... crazy? <button class="sp" onclick="speak(this)" data-t="The uh, the baby that hasn't been born yet? Wouldn't that mean you're... crazy?">🔊</button></div><div class="zh">那个……那个还没出生的宝宝？那不就意味着你……疯了吗？</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Susan:</span>What, you don't think they can hear sounds in there? <button class="sp" onclick="speak(this)" data-t="What, you don't think they can hear sounds in there?">🔊</button></div><div class="zh">怎么，你觉得宝宝在里面听不见声音吗？</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>You're not serious, I mean, you really... you really talk to it? <button class="sp" onclick="speak(this)" data-t="You're not serious, I mean, you really... you really talk to it?">🔊</button></div><div class="zh">你不是认真的吧，我是说，你真的……真的在跟它说话？</div></div>
-<div class="line"><div class="en"><span class="spk c-other">Susan:</span>Yeah, all the time. I want the baby to know my voice. <button class="sp" onclick="speak(this)" data-t="Yeah, all the time. I want the baby to know my voice.">🔊</button></div><div class="zh">是啊，一直说。我想让宝宝认得我的声音。</div></div>
+<div class="line"><div class="en"><span class="spk c-other">Susan:</span>Yeah, <b class="gwp">all the time</b><span class="gi">〔一直、总是。you come in here all the…〕</span>. I want the baby to know my voice. <button class="sp" onclick="speak(this)" data-t="Yeah, all the time. I want the baby to know my voice.">🔊</button></div><div class="zh">是啊，一直说。我想让宝宝认得我的声音。</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Do you uh, do you talk about me? <button class="sp" onclick="speak(this)" data-t="Do you uh, do you talk about me?">🔊</button></div><div class="zh">那，你们……你们会提到我吗？</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Susan:</span>Yeah, yeah, all the time. <button class="sp" onclick="speak(this)" data-t="Yeah, yeah, all the time.">🔊</button></div><div class="zh">会啊，会啊，一直提。</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Really? <button class="sp" onclick="speak(this)" data-t="Really?">🔊</button></div><div class="zh">真的吗？</div></div>
-<div class="line"><div class="en"><span class="spk c-other">Susan:</span>But um, we just refer to you as Bobo the Sperm Guy. <button class="sp" onclick="speak(this)" data-t="But um, we just refer to you as Bobo the Sperm Guy.">🔊</button></div><div class="zh">不过呢，我们只是管你叫"提供精子的波波"。</div></div>
+<div class="line"><div class="en"><span class="spk c-other">Susan:</span>But um, we just refer to you as Bobo the <b class="gw">Sperm</b><span class="gi">〔/spɜːrm/ n. 精子 — Bobo the Sperm Guy（"提供精子的波波"）〕</span> Guy. <button class="sp" onclick="speak(this)" data-t="But um, we just refer to you as Bobo the Sperm Guy.">🔊</button></div><div class="zh">管你叫"精子先生波波"。 †</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [讽刺]</b> <b>真意图</b>：Susan 平静地告诉 Ross：我们提到你时，管你叫"提供精子的波波"——她不是骂他，而是把他在这段关系里的功能说穿了。</div><div class="zh"><b>机制</b>：讽刺的冷：Ross 想争的是"丈夫/父亲"的身份，Susan 一句代号把他压缩成一份生理贡献。笑点在 Susan 的语气完全不带恶意。 <b>中文等价</b>："我们私下管你叫「精子先生波波」。"</div></div>
+
+
 <div class="culture">
 <h4>🏛️ 文化解析：Yertle the Turtle（苏斯博士经典绘本）</h4>
 《<b>Yertle the Turtle</b>》（乌龟大王亚特尔）是美国儿童文学大师 <b>Dr. Seuss（苏斯博士）</b> 1958 年的经典绘本，讲一只自封"池塘之王"的乌龟踩着别的乌龟往上爬、最后摔下来的故事，讽刺权力与贪婪。<br>
-这个梗的笑点在于：罗斯本来是古生物学家，一进门就被学术味儿的书名吸引，脱口而出"A classic."（经典），结果苏珊一句"I'm reading it to the baby"——把"童书"和"给没出生的胎儿做胎教"缝在一起，制造冷幽默。苏斯博士的书是美国人家家户户的"童年必读"，相当于给孩子做语言启蒙的标配，所以这里也暗指"苏珊已经进入当妈的准备状态"。
-</div>
-<div class="phrasebox">
-<h4>💬 词组 / 俚语（补充）</h4>
-<div class="item"><b>come by</b> ＝（顺路）来一趟、串个门。<span class="ex">I just came by to pick up my skull.</span>＝我过来一趟，想取回我的头骨。</div>
-<div class="item"><b>be familiar with</b> ＝ 对……很熟悉、了解。<span class="ex">I'm familiar with the concept.</span>＝这概念我熟。比 know 更书面，常用于"你别跟我解释，我懂"。</div>
-</div>
-<div class="note">
-<h4>📌 重点单词（补充）</h4>
-<div class="item"><b>skull</b> <span class="phon">/skʌl/</span> n. 头骨、颅骨 <button class="sp" onclick="speak(this)" data-t="skull">🔊</button> — <span class="ex">pick up my skull</span>（取回我的头骨；其实是博物馆的标本）</div>
-<div class="item"><b>faculty</b> <span class="phon">/ˈfækəlti/</span> n. （大学的）全体教职员 <button class="sp" onclick="speak(this)" data-t="faculty">🔊</button> — <span class="ex">a faculty meeting</span>（教职员工会议）</div>
-<div class="item"><b>sperm</b> <span class="phon">/spɜːrm/</span> n. 精子 <button class="sp" onclick="speak(this)" data-t="sperm">🔊</button> — <span class="ex">Bobo the Sperm Guy</span>（"提供精子的波波"）</div>
-<div class="item"><b>lesbian</b> <span class="phon">/ˈlezbiən/</span> n. 女同性恋者；adj. 女同性恋的 <button class="sp" onclick="speak(this)" data-t="lesbian">🔊</button> — <span class="ex">a lesbian life partner</span>（女同性恋伴侣）</div>
-</div>
+这个梗的笑点在于：罗斯本来是古生物学家，一进门就被学术味儿的书名吸引，脱口而出"A classic."（经典），结果苏珊一句"I'm reading it to the baby"——把"童书"和"给没出生的胎儿做胎教"缝在一起，制造冷幽默。苏斯博士的书是美国人家家户户的"童年必读"，相当于给孩子做语言启蒙的标配，所以这里也暗指"苏珊已经进入当妈的准备状态"。</div>
 <div class="culture">
 <h4>🏛️ 文化解析：对着肚子（胎教）说话，是苏珊的"准妈妈宣言"</h4>
 苏珊说 "I'm reading it to the baby / I want the baby to know my voice"（念书给胎儿听、要让宝宝认得我的声音），对应美国流行的<b>胎教（prenatal bonding）</b>：孕期父母会对着肚子说话、唱歌、放音乐，认为胎儿能记住熟悉的声音。<br>
-罗斯却一脸匪夷所思："The baby that hasn't been born yet? Wouldn't that mean you're... crazy?"（还没出生的宝宝？那你不是……疯了？）——他的震惊与苏珊的一本正经，构成了这一段全部的笑点：<b>他既不服气"苏珊已经开始当妈了"，又暗暗羡慕自己还没挤进这个"父母俱乐部"，所以才要争一个"belly time"（肚子对话时间）</b>。
-</div>
+罗斯却一脸匪夷所思："The baby that hasn't been born yet? Wouldn't that mean you're... crazy?"（还没出生的宝宝？那你不是……疯了？）——他的震惊与苏珊的一本正经，构成了这一段全部的笑点：<b>他既不服气"苏珊已经开始当妈了"，又暗暗羡慕自己还没挤进这个"父母俱乐部"，所以才要争一个"belly time"（肚子对话时间）</b>。</div>
 </section>
 
 <!-- ============ SCENE 5 ============ -->
 <section class="scene" id="s5">
 <h2>场景 5 · 莫妮卡和瑞秋的公寓 <span class="no">火鸡头实验 / 大家一起凑钱</span></h2>
+<div class="line stage"><span>📍 情境：Monica 和 Rachel 的公寓。Ross 宣布他也要"肚子对话时间"；Phoebe 提议做个实验——把头塞进生火鸡里，看声音能不能传到肚子里。这一幕的功能：一次集体胡闹，外加 Chandler 讲出他抵制感恩节的真正原因（父母在餐桌上宣布离婚）。</span></div>
 <div class="line stage"><span>【场景：莫妮卡和瑞秋的公寓，除了瑞秋大家都在。】</span></div>
-<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Look, if she's talking to it, I just think that I should get some belly time too. Not that I believe any of this. <button class="sp" onclick="speak(this)" data-t="Look, if she's talking to it, I just think that I should get some belly time too. Not that I believe any of this.">🔊</button></div><div class="zh">听着，既然她在跟宝宝说话，那我觉得我也该有点"肚子对话时间"。倒不是说我相信这一套。</div></div>
+<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Look, if she's talking to it, I just think that I should get some <b class="gw">belly</b><span class="gi">〔/ˈbeli/ n. 肚子、腹部 — I should get some belly time…〕</span> time too. Not that I believe any of this. <button class="sp" onclick="speak(this)" data-t="Look, if she's talking to it, I just think that I should get some belly time too. Not that I believe any of this.">🔊</button></div><div class="zh">听着，既然她在跟宝宝说话，那我觉得我也该有点"肚子对话时间"。倒不是说我相信这一套。</div></div>
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>Oh, I believe it. I think the baby can totally hear everything. I can show you. Look, this will seem a little weird, but you put your head inside this turkey, and then we'll all talk, and you'll hear everything we say. <button class="sp" onclick="speak(this)" data-t="Oh, I believe it. I think the baby can totally hear everything. I can show you. Look, this will seem a little weird, but you put your head inside this turkey, and then we'll all talk, and you'll hear everything we say.">🔊</button></div><div class="zh">哦，我信。我觉得宝宝什么都能听见。我可以给你示范。看，这听起来有点怪，但你把这颗火鸡（的肚子）套在头上，然后我们大家说话，你就会听见我们说的每一句。</div></div>
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>I'd just like to say that I'm totally behind this experiment. In fact, I'd very much like to butter your head. <button class="sp" onclick="speak(this)" data-t="I'd just like to say that I'm totally behind this experiment. In fact, I'd very much like to butter your head.">🔊</button></div><div class="zh">我想表个态：我百分之百支持这个实验。事实上，我还特别想把你的脑袋抹上黄油。</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [反差]</b> <b>真意图</b>：前半句"我百分之百支持这个实验"是假支持，后半句"我还特别想把你的脑袋抹上黄油"才是真心话——因为罗斯要把头套进生火鸡里，而抹黄油正是烤火鸡的常规步骤。</div><div class="zh"><b>机制</b>：用最一本正经的语气，把朋友当成一道菜来"料理"。 <b>中文等价</b>："这实验我举双手赞成——顺便，我真的很想给你的脑袋刷层黄油。"</div></div>
 <div class="line stage"><span>【瑞秋走进来。】</span></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Hey, Rach, did you make your money? <button class="sp" onclick="speak(this)" data-t="Hey, Rach, did you make your money?">🔊</button></div><div class="zh">嘿，瑞秋，钱凑够了吗？</div></div>
-<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>No, not even close. Forget Vail, forget seeing my family, forget shoop, shoop, shoop. <button class="sp" onclick="speak(this)" data-t="No, not even close. Forget Vail, forget seeing my family, forget shoop, shoop, shoop.">🔊</button></div><div class="zh">没有，差得远呢。别想韦尔了，别想见家人了，别想"咻、咻、咻"了。</div></div>
+<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>No, <b class="gwp">not even close</b><span class="gi">〔"差得远呢 / 差远了"，比 just no 更有画面感的否定。〕</span>. Forget Vail, forget seeing my family, forget shoop, shoop, shoop. <button class="sp" onclick="speak(this)" data-t="No, not even close. Forget Vail, forget seeing my family, forget shoop, shoop, shoop.">🔊</button></div><div class="zh">没有，差得远呢。别想韦尔了，别想见家人了，别想"咻、咻、咻"了。</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Rach, here's your mail. <button class="sp" onclick="speak(this)" data-t="Rach, here's your mail.">🔊</button></div><div class="zh">瑞秋，你的信。</div></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Thanks, you can just put it on the table. <button class="sp" onclick="speak(this)" data-t="Thanks, you can just put it on the table.">🔊</button></div><div class="zh">谢谢，放桌上就行。</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>(insistently) No, here's your mail. <button class="sp" onclick="speak(this)" data-t="No, here's your mail.">🔊</button></div><div class="zh">（坚持地）不，这是你的信。</div></div>
@@ -305,169 +316,116 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>(to Joey) You owe me 20 bucks. <button class="sp" onclick="speak(this)" data-t="You owe me 20 bucks.">🔊</button></div><div class="zh">（对乔伊）你欠我 20 块。</div></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Thank you. Thank you so much! <button class="sp" onclick="speak(this)" data-t="Thank you. Thank you so much!">🔊</button></div><div class="zh">谢谢你们。太谢谢了！</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>(hands Chandler a bag) Chandler, here you go, got your traditional Thanksgiving feast, you got your tomato soup, your grilled cheese fixin's, and your family size bag of Funyuns. <button class="sp" onclick="speak(this)" data-t="Chandler, here you go, got your traditional Thanksgiving feast, you got your tomato soup, your grilled cheese fixings, and your family size bag of Funyuns.">🔊</button></div><div class="zh">（递给钱德勒一个袋子）钱德勒，给，你的传统感恩节大餐——你的番茄汤、你做烤奶酪的配料，还有你的家庭装洋葱圈。</div></div>
-<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Wait, wait, Chandler, this is what you're havin' for Thanksgiving dinner? What, what, what is it with you and this holiday? <button class="sp" onclick="speak(this)" data-t="Wait, wait, Chandler, this is what you're having for Thanksgiving dinner? What, what, what is it with you and this holiday?">🔊</button></div><div class="zh">等等，等等，钱德勒，你感恩节晚餐就吃这个？你、你、你到底跟这个节日有什么过不去？</div></div>
+<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Wait, wait, Chandler, this is what you're havin' for Thanksgiving dinner? What, what, what is it with you and this holiday? <button class="sp" onclick="speak(this)" data-t="Wait, wait, Chandler, this is what you're having for Thanksgiving dinner? What, what, what is it with you and this holiday?">🔊</button></div><div class="zh">等等，等等，钱德勒，你感恩节晚餐就吃这个？你、你、你到底跟这个节日有什么过不去？</div></div><div class="line intentline pattach"><div class="en"><b>💬 What is it with you and ?</b></div><div class="zh">"你（和某事物）到底怎么回事？"——表示对某人某习气的困惑不解，非常地道。</div></div>
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>All right, I'm nine years old. <button class="sp" onclick="speak(this)" data-t="All right, I'm nine years old.">🔊</button></div><div class="zh">好吧，我那年九岁。</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Oh, I hate this story. <button class="sp" onclick="speak(this)" data-t="Oh, I hate this story.">🔊</button></div><div class="zh">哦，我讨厌这个故事。</div></div>
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>We just finished this magnificent Thanksgiving dinner. I have--and I remember this part vividly--a mouthful of pumpkin pie, and this is the moment my parents choose to tell me they're getting divorced. <button class="sp" onclick="speak(this)" data-t="We just finished this magnificent Thanksgiving dinner. I have--and I remember this part vividly--a mouthful of pumpkin pie, and this is the moment my parents choose to tell me they're getting divorced.">🔊</button></div><div class="zh">我们刚吃完一顿超丰盛的感恩节大餐。我——这一段我记得特别清楚——嘴里还塞着一口南瓜派，我父母就偏偏挑这一刻告诉我，他们要离婚了。</div></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Oh my god. <button class="sp" onclick="speak(this)" data-t="Oh my god.">🔊</button></div><div class="zh">哦我的天。</div></div>
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Yes. It's very difficult to appreciate a Thanksgiving dinner once you've seen it in reverse. <button class="sp" onclick="speak(this)" data-t="Yes. It's very difficult to appreciate a Thanksgiving dinner once you've seen it in reverse.">🔊</button></div><div class="zh">是的。一旦你"倒着"见过一顿感恩节大餐，就很难再对它有什么好感了。</div></div>
-<div class="phrasebox">
-<h4>💬 词组 / 俚语</h4>
-<div class="item"><b>chip in</b> ＝ 大家凑钱、一起出份子。<span class="ex">We all chipped in.</span>＝我们一起凑的（钱）。名词形式 a chip-in 也指"集体凑的钱"。</div>
-<div class="item"><b>not even close</b> ＝"差得远呢 / 差远了"，比 just no 更有画面感的否定。</div>
-<div class="item"><b>What is it with you and...?</b> ＝"你（和某事物）到底怎么回事？"——表示对某人某习气的困惑不解，非常地道。</div>
-<div class="item"><b>see it in reverse</b> ＝"倒着/反着看"，这里指钱德勒是"先吃到一半、再被离婚"——把美好的节日和坏消息焊在一起，反着理解。</div>
-</div>
-<div class="note">
-<h4>📌 重点单词（补充）</h4>
-<div class="item"><b>belly</b> <span class="phon">/ˈbeli/</span> n. 肚子、腹部 <button class="sp" onclick="speak(this)" data-t="belly">🔊</button> — <span class="ex">I should get some belly time too</span>（我也该有点"肚子对话时间"）</div>
-</div>
-<div class="intent">
-<h4>🎭 意图/潜台词</h4>
-<div class="item"><b>Chandler: I'm totally behind this experiment. In fact, I'd very much like to butter your head.</b><br>①前半句"我百分之百支持这个实验"是假支持，后半句"我还特别想把你的脑袋抹上黄油"才是真心话——因为罗斯要把头套进生火鸡里，而抹黄油正是烤火鸡的常规步骤。②笑点：用最一本正经的语气，把朋友当成一道菜来"料理"。③中文等价："这实验我举双手赞成——顺便，我真的很想给你的脑袋刷层黄油。"</div>
-<div class="item"><b>Chandler: It's very difficult to appreciate a Thanksgiving dinner once you've seen it in reverse.</b><br>①他刚讲完童年阴影（吃到一半，父母宣布离婚），"seen it in reverse"（倒着看过）既指"吃进去又原样反上来"的恶心感，也指"本该美好的节日被坏消息毁掉"。②笑点：用含蓄到近乎优雅的说法，包装一段很惨的回忆，是钱德勒式的自嘲。③中文等价："一旦你亲眼看感恩节大餐'倒着重放'过，就很难再对它有什么胃口了。"</div>
-</div>
+<div class="line intentline"><div class="en"><b>🎭 [逻辑]</b> <b>真意图</b>：他刚讲完童年阴影（吃到一半，父母宣布离婚），"seen it in reverse"（倒着看过）既指"吃进去又原样反上来"的恶心感，也指"本该美好的节日被坏消息毁掉"。</div><div class="zh"><b>机制</b>：用含蓄到近乎优雅的说法，包装一段很惨的回忆，是钱德勒式的自嘲。 <b>中文等价</b>："一旦你亲眼看感恩节大餐'倒着重放'过，就很难再对它有什么胃口了。"</div></div>
+
+
 </section>
 
 <!-- ============ SCENE 6 ============ -->
 <section class="scene" id="s6">
 <h2>场景 6 · 地铁 <span class="no">乔伊搭讪"迷幻女郎"</span></h2>
+<div class="line stage"><span>📍 情境：地铁车厢。Joey 盯上了对面一位女孩，上前搭讪，谎称"我们在梅西百货一起卖过香水"。这一幕的功能：展示 Joey 的搭讪话术，并用一个"她突然起身走人"的悬念收尾——观众直到下一幕才知道她看见了什么。</span></div>
 <div class="line stage"><span>【场景：地铁里，乔伊看见一位漂亮女子在等车，便走上前去。】</span></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Uh, hi. We uh, we used to work together. <button class="sp" onclick="speak(this)" data-t="Uh, hi. We uh, we used to work together.">🔊</button></div><div class="zh">呃，嗨。我们——我们以前一起工作过。</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [引用]</b> <b>真意图</b>：乔伊的搭讪策略：先假装"我们认识"（降低对方戒备），再夸对方"是这行最棒的"，用"共同经历"制造亲近感——典型的 Joey 式自来熟话术。</div><div class="zh"><b>机制</b>：他一边说一边假装喷香水"自证身份"（Aramis? Aramis?），认真到滑稽。 <b>中文等价</b>："咱们以前是同事啊……你不就是那个'迷幻'香水女郎吗？我是卖阿拉米的那位。"</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Girl:</span>We did? <button class="sp" onclick="speak(this)" data-t="We did?">🔊</button></div><div class="zh">我们有过吗？</div></div>
-<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Yeah, at Macy's. You were the Obsession girl, right? I was the Aramis guy. (pretends to spray cologne) Aramis? Aramis? <button class="sp" onclick="speak(this)" data-t="Yeah, at Macy's. You were the Obsession girl, right? I was the Aramis guy. Aramis? Aramis?">🔊</button></div><div class="zh">是啊，在梅西百货。你是那个"迷幻"（Obsession）香水女郎，对吧？我是卖"Aramis"的那位。（假装喷香水）Aramis？Aramis？</div></div>
+<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Yeah, at Macy's. You were the Obsession girl, right? I was the Aramis guy. (pretends to spray <b class="gw">cologne</b><span class="gi">〔/kəˈloʊn/ n. 古龙水、香水 — pretends to spray…〕</span>) Aramis? Aramis? <button class="sp" onclick="speak(this)" data-t="Yeah, at Macy's. You were the Obsession girl, right? I was the Aramis guy. Aramis? Aramis?">🔊</button></div><div class="zh">是啊，在梅西百货。你是那个"迷幻"（Obsession）香水女郎，对吧？我是卖"Aramis"的那位。（假装喷香水）Aramis？Aramis？</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Girl:</span>Yeah, right. <button class="sp" onclick="speak(this)" data-t="Yeah, right.">🔊</button></div><div class="zh">哦，是啊。（半信半疑）</div></div>
-<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>I gotta tell you. You're the best in the business. <button class="sp" onclick="speak(this)" data-t="I gotta tell you. You're the best in the business.">🔊</button></div><div class="zh">我得跟你说，你是这行里最棒的。</div></div>
-<div class="line"><div class="en"><span class="spk c-other">Girl:</span>Get out. <button class="sp" onclick="speak(this)" data-t="Get out.">🔊</button></div><div class="zh">少来了（别逗我）。</div></div>
-<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>I'm serious. You're amazing. You know when to spritz, when to lay back. <button class="sp" onclick="speak(this)" data-t="I'm serious. You're amazing. You know when to spritz, when to lay back.">🔊</button></div><div class="zh">我是认真的。你太厉害了，你懂得什么时候该喷、什么时候该收。</div></div>
-<div class="line"><div class="en"><span class="spk c-other">Girl:</span>Really? You don't know what that means to me. <button class="sp" onclick="speak(this)" data-t="Really? You don't know what that means to me.">🔊</button></div><div class="zh">真的吗？你都不知道这话对我有多重要。</div></div>
+<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>I <b class="gw">gotta</b><span class="gi">〔/ˈɡɑːtə/ v. ＝got to 的口语缩读，"必须、得"；口语里比 have to…〕</span> tell you. You're <b class="gwp">the best in the business</b><span class="gi">〔"这一行里最棒的"。in the business＝"在这一行、在业内"…〕</span>. <button class="sp" onclick="speak(this)" data-t="I gotta tell you. You're the best in the business.">🔊</button></div><div class="zh">我得跟你说，你是这行里最棒的。</div></div>
+<div class="line"><div class="en"><span class="spk c-other">Girl:</span><b class="gwp">Get out.</b><span class="gi">〔口语里除了"出去"，还常表示"少来了 / 别逗了 / 你开玩笑吧"，是不相信对方话时的一声惊叹…〕</span> <button class="sp" onclick="speak(this)" data-t="Get out.">🔊</button></div><div class="zh">少来了（别逗我）。</div></div>
+<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>I'm serious. You're amazing. You know when to <b class="gw">spritz</b><span class="gi">〔/sprɪts/ v. 喷（香水、水雾） — spritz on some…〕</span>, when to <b class="gwp">lay back</b><span class="gi">〔"收着点、放轻松、别使劲"。这里和 spritz（喷香水）对举——"知道什么时候猛喷…〕</span>. <button class="sp" onclick="speak(this)" data-t="I'm serious. You're amazing. You know when to spritz, when to lay back.">🔊</button></div><div class="zh">我是认真的。你太厉害了，你懂得什么时候该喷、什么时候该收。</div></div>
+<div class="line"><div class="en"><span class="spk c-other">Girl:</span>Really? You don't know what that means to me. <button class="sp" onclick="speak(this)" data-t="Really? You don't know what that means to me.">🔊</button></div><div class="zh">真的吗？你都不知道这话对我有多重要。</div></div><div class="line intentline pattach"><div class="en"><b>💬 You don't know what that means to me.</b></div><div class="zh">"你不知道那对我意味着什么（= 对我太重要了）"，表达被深深打动的固定句式。</div></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Ooh, you smell great tonight. What're you wearing? <button class="sp" onclick="speak(this)" data-t="Ooh, you smell great tonight. What're you wearing?">🔊</button></div><div class="zh">哦，你今晚闻起来真香。你身上是什么？</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Girl:</span>(provocatively) Nothing. <button class="sp" onclick="speak(this)" data-t="Nothing.">🔊</button></div><div class="zh">（挑逗地）什么都没穿。</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [性暗示]</b> <b>真意图</b>：乔伊问"你今晚喷了什么香水"，她答 "Nothing."，表面是"什么都没喷"，实为挑逗性的双关——"（我身上）什么都没穿"。</div><div class="zh"><b>机制</b>：乔伊以为在聊香水，对方直接把话题拉到性暗示，反被他撩。 <b>中文等价</b>："什么都没用。"（言下之意：我可什么都没穿。）</div></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Listen, uh, you wanna go get a drink or something? <button class="sp" onclick="speak(this)" data-t="Listen, uh, you wanna go get a drink or something?">🔊</button></div><div class="zh">听着，呃，想不想去喝一杯什么的？</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Girl:</span>Yeah. (she gets up, notices something behind Joey) Oh. <button class="sp" onclick="speak(this)" data-t="Yeah.">🔊</button></div><div class="zh">好啊。（她起身，注意到乔伊身后有什么）哦。</div></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>What's wrong? <button class="sp" onclick="speak(this)" data-t="What's wrong?">🔊</button></div><div class="zh">怎么了？</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Girl:</span>I just remembered, I have to do something. <button class="sp" onclick="speak(this)" data-t="I just remembered, I have to do something.">🔊</button></div><div class="zh">我刚想起来，我有件事得去做。</div></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Oh. What? <button class="sp" onclick="speak(this)" data-t="Oh. What?">🔊</button></div><div class="zh">哦。什么事？</div></div>
-<div class="line"><div class="en"><span class="spk c-other">Girl:</span>Um, leave. <button class="sp" onclick="speak(this)" data-t="Um, leave.">🔊</button></div><div class="zh">呃，走人。</div></div>
+<div class="line"><div class="en"><span class="spk c-other">Girl:</span>Um, leave. <button class="sp" onclick="speak(this)" data-t="Um, leave.">🔊</button></div><div class="zh">呃……撤。 †</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [时机]</b> <b>真意图</b>：乔伊追问"你要去做什么事"，她瞥见他身后墙上的性病海报（脸就是乔伊本人），于是答"呃，走人"。</div><div class="zh"><b>机制</b>：前面还在暧昧调情，她突然"翻脸逃离"，观众直到镜头移到海报才反应过来。 <b>中文等价</b>："……就是，撤。"</div></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Wait, wait, wait! <button class="sp" onclick="speak(this)" data-t="Wait, wait, wait!">🔊</button></div><div class="zh">等等，等等，等等！</div></div>
 <div class="line stage"><span>【乔伊转过身，看见自己的脸出现在地铁墙上的一张海报上。海报上写着："马里奥没告诉你的事……性病，你永远不知道谁会有。"这张海报贴满了整个纽约市的大街小巷。】</span></div>
-<div class="phrasebox">
-<h4>💬 词组 / 俚语</h4>
-<div class="item"><b>the best in the business</b> ＝"这一行里最棒的"。in the business＝"在这一行、在业内"，是夸奖别人专业水平的高级说法。</div>
-<div class="item"><b>Get out.</b> ＝ 口语里除了"出去"，还常表示"少来了 / 别逗了 / 你开玩笑吧"，是不相信对方话时的一声惊叹，语调要上扬。</div>
-<div class="item"><b>lay back</b> ＝"收着点、放轻松、别使劲"。这里和 spritz（喷香水）对举——"知道什么时候猛喷，什么时候收手"。</div>
-<div class="item"><b>You don't know what that means to me.</b> ＝"你不知道那对我意味着什么（= 对我太重要了）"，表达被深深打动的固定句式。</div>
-</div>
-<div class="note">
-<h4>📌 重点单词</h4>
-<div class="item"><b>spritz</b> <span class="phon">/sprɪts/</span> v. 喷（香水、水雾） <button class="sp" onclick="speak(this)" data-t="spritz">🔊</button> — <span class="ex">spritz on some cologne</span>（喷点古龙水）</div>
-</div>
-<div class="note">
-<h4>📌 重点单词（补充）</h4>
-<div class="item"><b>cologne</b> <span class="phon">/kəˈloʊn/</span> n. 古龙水、香水 <button class="sp" onclick="speak(this)" data-t="cologne">🔊</button> — <span class="ex">pretends to spray cologne</span>（假装喷香水）</div>
-</div>
+
+
+
 <div class="culture">
 <h4>🏛️ 文化解析：百货公司的"喷雾女郎"与 90 年代香水</h4>
 90 年代美国百货公司（台词里的 <b>Macy's 梅西百货</b>）一楼化妆品柜台，最标志性的场景就是<b>香水推销员（fragrance model / spritzer）</b>：端着试香纸、看见顾客就"pssst… Aramis? Aramis?"地往人身上喷香。<br>
-台词里的 <b>Obsession</b>（CK 1985 年推出的经典香水）与 <b>Aramis</b>（雅男士，1964 年的老牌男香）都是 80–90 年代美国商场柜台的常客。乔伊编造"我们在梅西一起卖香水"来搭讪——<b>这既投射了他的演员梦（"我可是专业模特"），也暴露他其实只做过跟表演沾边的零工</b>。女孩一句 "Get out."（少来了）正是识破他半真半假的招牌回应。
-</div>
-<div class="intent">
-<h4>🎭 意图/潜台词</h4>
-<div class="item"><b>Joey: We uh, we used to work together. ... You were the Obsession girl, right? I was the Aramis guy.</b><br>①乔伊的搭讪策略：先假装"我们认识"（降低对方戒备），再夸对方"是这行最棒的"，用"共同经历"制造亲近感——典型的 Joey 式自来熟话术。②笑点：他一边说一边假装喷香水"自证身份"（Aramis? Aramis?），认真到滑稽。③中文等价："咱们以前是同事啊……你不就是那个'迷幻'香水女郎吗？我是卖阿拉米的那位。"</div>
-<div class="item"><b>Girl: Nothing.</b><br>①乔伊问"你今晚喷了什么香水"，她答 "Nothing."，表面是"什么都没喷"，实为挑逗性的双关——"（我身上）什么都没穿"。②笑点：乔伊以为在聊香水，对方直接把话题拉到性暗示，反被他撩。③中文等价："什么都没用。"（言下之意：我可什么都没穿。）</div>
-<div class="item"><b>Girl: Um, leave.</b><br>①乔伊追问"你要去做什么事"，她瞥见他身后墙上的性病海报（脸就是乔伊本人），于是答"呃，走人"。②笑点：前面还在暧昧调情，她突然"翻脸逃离"，观众直到镜头移到海报才反应过来。③中文等价："……就是，撤。"</div>
-</div>
+台词里的 <b>Obsession</b>（CK 1985 年推出的经典香水）与 <b>Aramis</b>（雅男士，1964 年的老牌男香）都是 80–90 年代美国商场柜台的常客。乔伊编造"我们在梅西一起卖香水"来搭讪——<b>这既投射了他的演员梦（"我可是专业模特"），也暴露他其实只做过跟表演沾边的零工</b>。女孩一句 "Get out."（少来了）正是识破他半真半假的招牌回应。</div>
 </section>
 
 <!-- ============ SCENE 7 ============ -->
 <section class="scene" id="s7">
 <h2>场景 7 · 咖啡馆 / 公寓 <span class="no">性病海报事件</span></h2>
+<div class="line stage"><span>📍 情境：咖啡馆与公寓。所有人都在笑——笑的是地铁里贴满的公益海报，海报上的脸就是 Joey。这一幕的功能：揭晓上一幕的包袱，并把"Joey 的脸＝性病广告"变成整集最响的一个 running joke。</span></div>
 <div class="line stage"><span>【场景：中央公园咖啡馆，乔伊走进来，大家憋着笑。】</span></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>So I guess you all saw it. <button class="sp" onclick="speak(this)" data-t="So I guess you all saw it.">🔊</button></div><div class="zh">所以，我猜你们都看见了。</div></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Saw what? <button class="sp" onclick="speak(this)" data-t="Saw what?">🔊</button></div><div class="zh">看见什么？</div></div>
-<div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>No, we were just laughing. You know, how laughter can be infectious. <button class="sp" onclick="speak(this)" data-t="No, we were just laughing. You know, how laughter can be infectious.">🔊</button></div><div class="zh">没有啊，我们只是在笑而已。你知道的，笑是会传染的嘛。</div></div>
+<div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>No, we were just laughing. You know, how <b class="gwp">laughter can be infectious</b><span class="gi">〔"笑是会传染的"。<b class="gw">infectious</b><span class="gi">〔/ɪnˈfekʃəs/ adj. 传染的；（情绪）有感染力的 — an infectious…〕</span> 本义"传染性的（病）"，引申为"有感染力的（情绪）"…〕</span>. <button class="sp" onclick="speak(this)" data-t="No, we were just laughing. You know, how laughter can be infectious.">🔊</button></div><div class="zh">没有啊，我们只是在笑而已。你知道的，笑是会传染的嘛。</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [双关]</b> <b>真意图</b>：乔伊明知大家笑的是他的海报，菲比却硬解释"笑是会传染的（infectious）"——用"传染病"的词来解释"我们没在笑你"，恰好踩在"性病"的梗上。</div><div class="zh"><b>机制</b>：越是欲盖弥彰，越坐实"我们就是在笑你"。 <b>中文等价</b>："没有啦，我们就是随便笑笑，笑嘛，会传染的。"</div></div>
 <div class="line stage"><span>【场景：莫妮卡和瑞秋的公寓，乔伊沮丧地走进来。】</span></div>
-<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Set another place for Thanksgiving. My entire family thinks I have VD. <button class="sp" onclick="speak(this)" data-t="Set another place for Thanksgiving. My entire family thinks I have VD.">🔊</button></div><div class="zh">感恩节多摆一副餐具吧。我全家都以为我有性病。</div></div>
+<div class="line"><div class="en"><span class="spk c-joey">Joey:</span><b class="gwp">Set another place</b><span class="gi">〔"多摆一副餐具 / 多添一个座位"。place 在这里指餐桌上为某人摆好的那一套餐具…〕</span> for Thanksgiving. My entire family thinks I have VD. <button class="sp" onclick="speak(this)" data-t="Set another place for Thanksgiving. My entire family thinks I have VD.">🔊</button></div><div class="zh">我全家现在都认定我有性病。 †</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [逻辑]</b> <b>真意图</b>：Joey 的意思是：全家人看到地铁海报上他的脸，直接推断他得了性病——他成了全家人的"病情通报"。</div><div class="zh"><b>机制</b>：逻辑跳跃：海报上写"我做了检查"，家人只看见"他"＋"性病广告"，直接得出结论。中文等价里也有这种"上了电视就是犯了事"的荒诞推理。 <b>中文等价</b>："我全家现在都认定我有性病。"</div></div>
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Tonight, on a very special Blossom. <button class="sp" onclick="speak(this)" data-t="Tonight, on a very special Blossom.">🔊</button></div><div class="zh">今晚，敬请收看《花开时节》特别辛酸篇。</div></div>
+
+
+
+
 <div class="culture">
 <h4>🏛️ 文化解析："a very special Blossom"（90 年代美剧的"特别篇"梗）</h4>
 《<b>Blossom</b>》（《花开时节》，1990–1995 年 NBC 的情景喜剧）是 90 年代美国很火的一部家庭剧，以频繁推出"<b>a very special episode</b>（特别篇）"著称——这类特别篇通常忽然变得严肃，用来教育青少年远离毒品、酗酒、早孕、性病等社会问题，常配有公益说教意味。<br>
-钱德勒这句"Tonight, on a very special Blossom."是<b>旁白腔的元梗</b>：他模仿电视台给特别篇配的预告语，把乔伊"被全城当成得了性病"的倒霉事调侃成"今晚这集特别节目"。看懂这个梗，才知道为什么钱德勒一句反讽就把整桌人逗乐了。
-</div>
-<div class="phrasebox">
-<h4>💬 词组 / 俚语</h4>
-<div class="item"><b>Set another place.</b> ＝"多摆一副餐具 / 多添一个座位"。place 在这里指餐桌上为某人摆好的那一套餐具，家庭聚餐常用。</div>
-<div class="item"><b>laughter can be infectious</b> ＝"笑是会传染的"。infectious 本义"传染性的（病）"，引申为"有感染力的（情绪）"，菲比在这里是明知故问的双关。</div>
-</div>
-<div class="note">
-<h4>📌 重点单词</h4>
-<div class="item"><b>infectious</b> <span class="phon">/ɪnˈfekʃəs/</span> adj. 传染的；（情绪）有感染力的 <button class="sp" onclick="speak(this)" data-t="infectious">🔊</button> — <span class="ex">an infectious laugh</span>（有感染力的笑声）</div>
-</div>
-<div class="note">
-<h4>📌 重点单词（补充）</h4>
-<div class="item"><b>snicker</b> <span class="phon">/ˈsnɪkər/</span> v./n. 窃笑、憋着笑 <button class="sp" onclick="speak(this)" data-t="snicker">🔊</button> — <span class="ex">amongst snickers from the gang</span>（在伙伴们的窃笑中进场）</div>
-</div>
-<div class="intent">
-<h4>🎭 意图/潜台词</h4>
-<div class="item"><b>Phoebe: No, we were just laughing. You know, how laughter can be infectious.</b><br>①乔伊明知大家笑的是他的海报，菲比却硬解释"笑是会传染的（infectious）"——用"传染病"的词来解释"我们没在笑你"，恰好踩在"性病"的梗上。②笑点：越是欲盖弥彰，越坐实"我们就是在笑你"。③中文等价："没有啦，我们就是随便笑笑，笑嘛，会传染的。"</div>
-</div>
+钱德勒这句"Tonight, on a very special Blossom."是<b>旁白腔的元梗</b>：他模仿电视台给特别篇配的预告语，把乔伊"被全城当成得了性病"的倒霉事调侃成"今晚这集特别节目"。看懂这个梗，才知道为什么钱德勒一句反讽就把整桌人逗乐了。</div>
 </section>
 
 <!-- ============ SCENE 8 ============ -->
 <section class="scene" id="s8">
 <h2>场景 8 · 莫妮卡和瑞秋的公寓 <span class="no">备餐 / 钱德勒"安全距离"</span></h2>
+<div class="line stage"><span>📍 情境：Monica 家的厨房，备餐进行中。Monica 一边念叨"火鸡在烤着、山药在焖着"，一边把挡路的 Ross 赶开；Chandler 站在门口拒绝进门。这一幕的功能：把"节日气氛"与"节日创伤"放进同一个画面里对撞。</span></div>
 <div class="line stage"><span>【场景：莫妮卡和瑞秋的公寓，莫妮卡在做感恩节晚餐。钱德勒站在门口，不想参与这场欢庆。】</span></div>
-<div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Mmm, looking good. Ok, cider's mulling, turkey's turking, yams are yamming. (notices Ross is depressed) What? <button class="sp" onclick="speak(this)" data-t="Mmm, looking good. Ok, cider's mulling, turkey's turking, yams are yamming. What?">🔊</button></div><div class="zh">嗯，看着不错。好，热苹果酒在煮着，火鸡在烤着，山药在焖着。（发现罗斯闷闷不乐）怎么了？</div></div>
-<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>I don't know. It's just not the same without Mom in the kitchen. <button class="sp" onclick="speak(this)" data-t="I don't know. It's just not the same without Mom in the kitchen.">🔊</button></div><div class="zh">我也不知道。就是觉得妈妈不在厨房里，味道就不一样了。</div></div>
-<div class="line"><div class="en"><span class="spk c-monica">Monica:</span>All right, that's it. You know what? Just get out of my way and stop moping. <button class="sp" onclick="speak(this)" data-t="All right, that's it. You know what? Just get out of my way and stop moping.">🔊</button></div><div class="zh">行了，够了。这样吧，你给我让开，别在这儿垂头丧气的。</div></div>
+<div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Mmm, looking good. Ok, <b class="gw">cider</b><span class="gi">〔/ˈsaɪdər/ n. 苹果酒；美式指未过滤的苹果汁，节日要喝热的"mulled…〕</span>'s <b class="gw">mull</b><span class="gi">〔/mʌl/ v. （加糖和香料）把酒/果汁加热 — cider's…〕</span>ing, turkey's turking, <b class="gw">yam</b><span class="gi">〔/jæm/ n. 山药；美国南部常指红薯 — yams are…〕</span>s are yamming. (notices Ross is depressed) What? <button class="sp" onclick="speak(this)" data-t="Mmm, looking good. Ok, cider's mulling, turkey's turking, yams are yamming. What?">🔊</button></div><div class="zh">嗯，看着不错。好，热苹果酒在煮着，火鸡在烤着，山药在焖着。（发现罗斯闷闷不乐）怎么了？</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [双关]</b> <b>真意图</b>：Monica 报告进度："热苹果酒在煮、火鸡在烤、山药在焖"——她把名词当动词用，说得像咒语。</div><div class="zh"><b>机制</b>：名词动用（verbing）：turkey→is turking，yam→are yamming。英语里这种"把厨房动作拟人化"的造词极口语，中国学生按词典查不到 turkey 作动词，就整句卡住。 <b>中文等价</b>："火鸡在火鸡着，山药在山药着。"（中文只能用"在烤着/在焖着"，笑点会掉，得靠解释）</div></div>
+<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>I don't know. It's just not the same without Mom in the kitchen. <button class="sp" onclick="speak(this)" data-t="I don't know. It's just not the same without Mom in the kitchen.">🔊</button></div><div class="zh">就是……妈不在厨房里，这节就过不出那个味儿。 †</div></div>
+<div class="line"><div class="en"><span class="spk c-monica">Monica:</span>All right, <b class="gwp">that's it</b><span class="gi">〔"够了 / 到此为止"，用来终止某事。All right, that's it.＝行，够了。〕</span>. You know what? Just <b class="gwp">get out of my way</b><span class="gi">〔"别挡道、让开"，口语里也引申为"别碍事、别添乱"。〕</span> and stop <b class="gw">moping</b><span class="gi">〔/moʊp/ v. 闷闷不乐、无精打采地晃着 — stop moping…〕</span>. <button class="sp" onclick="speak(this)" data-t="All right, that's it. You know what? Just get out of my way and stop moping.">🔊</button></div><div class="zh">行了，够了。这样吧，你给我让开，别在这儿垂头丧气的。</div></div><div class="line intentline pattach"><div class="en"><b>💬 that's it / Enough with</b></div><div class="zh">"够了 / ……到此为止"。Phoebe 用 Enough with the keys. 叫停全屋人反复念叨"keys"。</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>That's closer. <button class="sp" onclick="speak(this)" data-t="That's closer.">🔊</button></div><div class="zh">这还像点样子。</div></div>
 <div class="line stage"><span>【瑞秋兴奋地走进来。】</span></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>I got the tickets! I got the tickets! Five hours from now, shoop, shoop, shoop. <button class="sp" onclick="speak(this)" data-t="I got the tickets! I got the tickets! Five hours from now, shoop, shoop, shoop.">🔊</button></div><div class="zh">我买到票了！我买到票了！再过五个小时，"咻、咻、咻"（去滑雪）！</div></div>
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Oh, you must stop shooping. <button class="sp" onclick="speak(this)" data-t="Oh, you must stop shooping.">🔊</button></div><div class="zh">哦，你必须停止"咻咻咻"了。</div></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Ok, I'm gonna get my stuff. <button class="sp" onclick="speak(this)" data-t="Ok, I'm gonna get my stuff.">🔊</button></div><div class="zh">好，我去收拾东西。</div></div>
-<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Chandler, will you just come in already? <button class="sp" onclick="speak(this)" data-t="Chandler, will you just come in already?">🔊</button></div><div class="zh">钱德勒，你到底进不进来啊？</div></div>
-<div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>No, I prefer to keep a safe distance from all this merriment. <button class="sp" onclick="speak(this)" data-t="No, I prefer to keep a safe distance from all this merriment.">🔊</button></div><div class="zh">不，我比较喜欢跟这些欢乐气氛保持安全距离。</div></div>
+<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Chandler, will you just <b class="gwp">come in already</b><span class="gi">〔"到底进来啊"。already 放在句尾表示不耐烦、催促，是美式口语特色。〕</span>? <button class="sp" onclick="speak(this)" data-t="Chandler, will you just come in already?">🔊</button></div><div class="zh">钱德勒，你到底进不进来啊？</div></div>
+<div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>No, I prefer to <b class="gwp">keep a safe distance from</b><span class="gi">〔"和……保持安全距离"，本可用于防疫、开车，这里钱德勒拿来调侃"欢乐太多，我怕被波及"。〕</span> all this <b class="gw">merriment</b><span class="gi">〔/ˈmerimənt/ n. 欢闹、欢乐的气氛 — all this…〕</span>. <button class="sp" onclick="speak(this)" data-t="No, I prefer to keep a safe distance from all this merriment.">🔊</button></div><div class="zh">不了，这种热闹，我还是离远点儿比较安全。 †</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [讽刺]</b> <b>真意图</b>：莫妮卡招呼他进屋过节，钱德勒偏说"我要和这份欢乐保持安全距离"——把"防疫、防传染"的话术搬来形容"我怕被节日的热闹波及"。</div><div class="zh"><b>机制</b>：用冷静疏离的书面腔，掩饰他其实是在逃避感恩节的创伤记忆（下一段就揭晓）。 <b>中文等价</b>："不了，这种热闹，我还是离远点比较安全。"</div></div>
 <div class="line stage"><span>【菲比拿起一片南瓜派，在钱德勒面前晃来晃去。】</span></div>
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>Look out, incoming pumpkin pie! <button class="sp" onclick="speak(this)" data-t="Look out, incoming pumpkin pie!">🔊</button></div><div class="zh">小心，南瓜派来袭！</div></div>
-<div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Ok, we all laughed when you did it with the stuffing, but that's not funny anymore. <button class="sp" onclick="speak(this)" data-t="Ok, we all laughed when you did it with the stuffing, but that's not funny anymore.">🔊</button></div><div class="zh">好吧，你拿填料（塞火鸡的料）那么玩的时候我们都笑了，但这招已经不好笑了。</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [时机]</b> <b>真意图</b>：菲比知道钱德勒抗拒节日，偏偏拿着南瓜派在他面前晃，还喊"小心，南瓜派来袭！"——像空袭警报一样把食物"武器化"。</div><div class="zh"><b>机制</b>：用警报腔调捉弄一个"怕过节"的人，是典型的菲比式"温柔的捣蛋"。 <b>中文等价</b>："注意隐蔽——南瓜派来啦！"</div></div>
+<div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Ok, we all laughed when you did it with the <b class="gw">stuffing</b><span class="gi">〔/ˈstʌfɪŋ/ n. （塞进火鸡肚子里的）填料 — you did it with the…〕</span>, but that's not funny anymore. <button class="sp" onclick="speak(this)" data-t="Ok, we all laughed when you did it with the stuffing, but that's not funny anymore.">🔊</button></div><div class="zh">好吧，你拿填料（塞火鸡的料）那么玩的时候我们都笑了，但这招已经不好笑了。</div></div>
 <div class="line stage"><span>【钱德勒离开。】</span></div>
-<div class="phrasebox">
-<h4>💬 词组 / 俚语</h4>
-<div class="item"><b>that's it</b> ＝"够了 / 到此为止"，用来终止某事。<span class="ex">All right, that's it.</span>＝行，够了。</div>
-<div class="item"><b>get out of my way</b> ＝"别挡道、让开"，口语里也引申为"别碍事、别添乱"。</div>
-<div class="item"><b>keep a safe distance from</b> ＝"和……保持安全距离"，本可用于防疫、开车，这里钱德勒拿来调侃"欢乐太多，我怕被波及"。</div>
-<div class="item"><b>come in already</b> ＝"到底进来啊"。already 放在句尾表示不耐烦、催促，是美式口语特色。</div>
-</div>
-<div class="note">
-<h4>📌 重点单词</h4>
-<div class="item"><b>mope</b> <span class="phon">/moʊp/</span> v. 闷闷不乐、无精打采地晃着 <button class="sp" onclick="speak(this)" data-t="mope">🔊</button> — <span class="ex">stop moping around</span>（别在那儿闷闷不乐）</div>
-<div class="item"><b>merriment</b> <span class="phon">/ˈmerimənt/</span> n. 欢闹、欢乐的气氛 <button class="sp" onclick="speak(this)" data-t="merriment">🔊</button> — <span class="ex">all this merriment</span>（这一屋子热闹）</div>
-</div>
-<div class="note">
-<h4>📌 重点单词（补充）</h4>
-<div class="item"><b>mull</b> <span class="phon">/mʌl/</span> v. （加糖和香料）把酒/果汁加热 <button class="sp" onclick="speak(this)" data-t="mull">🔊</button> — <span class="ex">cider's mulling</span>（苹果酒在煮着）</div>
-<div class="item"><b>yam</b> <span class="phon">/jæm/</span> n. 山药；美国南部常指红薯 <button class="sp" onclick="speak(this)" data-t="yam">🔊</button> — <span class="ex">yams are yamming</span>（山药在焖着）。感恩节餐桌的传统配菜。</div>
-<div class="item"><b>stuffing</b> <span class="phon">/ˈstʌfɪŋ/</span> n. （塞进火鸡肚子里的）填料 <button class="sp" onclick="speak(this)" data-t="stuffing">🔊</button> — <span class="ex">you did it with the stuffing</span>（你拿填料那么玩）</div>
-</div>
+
+
+
+
 <div class="culture">
 <h4>🏛️ 文化解析："turkey's turking, yams are yamming"——名词转动词的文字游戏</h4>
 莫妮卡一口气报菜名："cider's mulling, turkey's turking, yams are yamming"——把名词直接当动词用（turkey → be turking，yam → be yamming），意思是"火鸡在火鸡着、山药在山药着"，用<b>英语里灵活的"名词转动词"（verbing）</b>造出忙忙碌碌又俏皮的效果。<br>
 这种玩法在美式喜剧和广告文案里很常见（如 "Let's do lunch""I'll facebook you"）。跟读时注意三个 <i>-ing</i> 的节奏：<b>mulling / turking / yamming</b>，读得越一本正经越好笑。<br>
-顺带记住感恩节标配菜单：turkey（火鸡）、stuffing（填料）、gravy（肉汁）、mashed potatoes（土豆泥）、cranberry sauce（蔓越莓酱）、pumpkin pie（南瓜派）、cider（热苹果酒）。
-</div>
-<div class="intent">
-<h4>🎭 意图/潜台词</h4>
-<div class="item"><b>Chandler: No, I prefer to keep a safe distance from all this merriment.</b><br>①莫妮卡招呼他进屋过节，钱德勒偏说"我要和这份欢乐保持安全距离"——把"防疫、防传染"的话术搬来形容"我怕被节日的热闹波及"。②笑点：用冷静疏离的书面腔，掩饰他其实是在逃避感恩节的创伤记忆（下一段就揭晓）。③中文等价："不了，这种热闹，我还是离远点比较安全。"</div>
-<div class="item"><b>Phoebe: Look out, incoming pumpkin pie!</b><br>①菲比知道钱德勒抗拒节日，偏偏拿着南瓜派在他面前晃，还喊"小心，南瓜派来袭！"——像空袭警报一样把食物"武器化"。②笑点：用警报腔调捉弄一个"怕过节"的人，是典型的菲比式"温柔的捣蛋"。③中文等价："注意隐蔽——南瓜派来啦！"</div>
-</div>
+顺带记住感恩节标配菜单：turkey（火鸡）、stuffing（填料）、gravy（肉汁）、mashed potatoes（土豆泥）、cranberry sauce（蔓越莓酱）、pumpkin pie（南瓜派）、cider（热苹果酒）。</div>
 </section>
 
 <!-- ============ SCENE 9 ============ -->
 <section class="scene" id="s9">
 <h2>场景 9 · 莫妮卡和瑞秋的公寓 <span class="no">土豆泥之争 / 气球狗飞了</span></h2>
-<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Hey, Monica, I got a question. I don't see any tater tots. <button class="sp" onclick="speak(this)" data-t="Hey, Monica, I got a question. I don't see any tater tots.">🔊</button></div><div class="zh">嘿，莫妮卡，我有个问题。我怎么没看见土豆球？</div></div>
+<div class="line stage"><span>📍 情境：厨房，开饭前的最后冲刺。Joey 因为没吃到土豆球（tater tots）跟 Monica 吵起来；就在这时窗外传来巨响——游行的巨型气球挣脱了。这一幕的功能：全集最大的转折点，一句"Got the keys?"埋下后面二十分钟的钥匙灾难。</span></div>
+<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Hey, Monica, I got a question. I don't see any <b class="gwp"><b class="gwp">tater tots</b><span class="gi">〔土豆球（把土豆泥搓成小圆柱油炸，美国孩子最爱的配菜）；口语里常简称…〕</span></b><span class="gi">〔/ˈteɪtər tɑːts/ n. 土豆球（美国学校食堂/冷冻食品经典配菜，小孩最爱） —…〕</span>. <button class="sp" onclick="speak(this)" data-t="Hey, Monica, I got a question. I don't see any tater tots.">🔊</button></div><div class="zh">嘿，莫妮卡，我有个问题。我怎么没看见土豆球？</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>That's not a question. <button class="sp" onclick="speak(this)" data-t="That's not a question.">🔊</button></div><div class="zh">这根本不算个问题。</div></div>
-<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>But my mom always makes them. It's like a tradition. You get a little piece of turkey on your fork, a little cranberry sauce, and a tot! It's bad enough I can't be with my family because of my disease. <button class="sp" onclick="speak(this)" data-t="But my mom always makes them. It's like a tradition. You get a little piece of turkey on your fork, a little cranberry sauce, and a tot! It's bad enough I can't be with my family because of my disease.">🔊</button></div><div class="zh">可我妈每次都做这个，就像个传统。你叉子上插一小块火鸡、来点蔓越莓酱、再配个土豆球！我已经够惨了，因为这"病"都没法跟家人团聚。</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [逻辑]</b> <b>真意图</b>：Joey 说"我没看见土豆球"，Monica 反驳"这根本不算个问题"——她按字面判定他刚才那句不是疑问句。</div><div class="zh"><b>机制</b>：逻辑鬼才式的字面主义：Monica 把"抱怨"降级成"语法错误"，一句话既挡回了要求，又保住了自己主厨的权威。 <b>中文等价</b>："你那不叫提问，那叫挑刺。"</div></div>
+<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>But my mom always makes them. It's like a tradition. You get a little piece of turkey on your fork, a little <b class="gw">cranberry</b><span class="gi">〔/ˈkrænberi/ n. 蔓越莓（感恩节火鸡的灵魂配酱） — a little…〕</span> sauce, and a tot! It's bad enough I can't be with my family because of my disease. <button class="sp" onclick="speak(this)" data-t="But my mom always makes them. It's like a tradition. You get a little piece of turkey on your fork, a little cranberry sauce, and a tot! It's bad enough I can't be with my family because of my disease.">🔊</button></div><div class="zh">可我妈每次都做这个，就像个传统。你叉子上插一小块火鸡、来点蔓越莓酱、再配个土豆球！我已经够惨了，因为这"病"都没法跟家人团聚。</div></div><div class="line intentline pattach"><div class="en"><b>💬 It's bad enough that</b></div><div class="zh">"……已经够糟了（，后面还……）"。用来层层加码地抱怨。It's bad enough I can't be with my family...＝我没法和家人团聚已经够惨了。</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>All right, fine. Tonight's potatoes will be both mashed with lumps, and in the form of tots. <button class="sp" onclick="speak(this)" data-t="All right, fine. Tonight's potatoes will be both mashed with lumps, and in the form of tots.">🔊</button></div><div class="zh">行吧，好吧。今晚的土豆既做成带块的土豆泥，也做成土豆球。</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Ok, I'm off to talk to my unborn child. <button class="sp" onclick="speak(this)" data-t="Ok, I'm off to talk to my unborn child.">🔊</button></div><div class="zh">好，我去跟我那还没出生的孩子说说话。</div></div>
 <div class="line stage"><span>【罗斯伸手去拿吃的，莫妮卡一巴掌把他的手打开。】</span></div>
@@ -483,100 +441,80 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Ok, good-bye you guys. Thanks for everything. (she starts to leave, and hits everyone with her skis) Oh, sorry! Oh, sorry! <button class="sp" onclick="speak(this)" data-t="Ok, good-bye you guys. Thanks for everything. Oh, sorry! Oh, sorry!">🔊</button></div><div class="zh">好了，大家再见。谢谢你们做的一切。（她往外走，拿滑雪板扫到了每个人）哦，抱歉！哦，抱歉！</div></div>
 <div class="line stage"><span>【钱德勒跑进来。】</span></div>
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>The most unbelievable thing has happened. Underdog has just gotten away. <button class="sp" onclick="speak(this)" data-t="The most unbelievable thing has happened. Underdog has just gotten away.">🔊</button></div><div class="zh">最难以置信的事发生了。"超狗"刚刚跑掉了。</div></div>
-<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>The balloon? <button class="sp" onclick="speak(this)" data-t="The balloon?">🔊</button></div><div class="zh">那个气球吗？</div></div>
+<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>The <b class="gw">balloon</b><span class="gi">〔/bəˈluːn/ n. 气球；本集特指游行用的巨型充气气球（几十米高，需几十人拉缆绳） —…〕</span>? <button class="sp" onclick="speak(this)" data-t="The balloon?">🔊</button></div><div class="zh">那个气球吗？</div></div>
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>No, no, the actual cartoon character. Of course the balloon. It's all over the news. Right before he reached Macy's, he broke free and was spotted flying over Washington Square Park. I'm goin' to the roof, who's with me? <button class="sp" onclick="speak(this)" data-t="No, no, the actual cartoon character. Of course the balloon. It's all over the news. Right before he reached Macy's, he broke free and was spotted flying over Washington Square Park. I'm going to the roof, who's with me?">🔊</button></div><div class="zh">不、不，是那个卡通人物本人。当然是那个气球！新闻都在报呢。就在快到梅西百货的时候，它挣脱了，后来有人看见它飞过华盛顿广场公园。我要上屋顶去看，谁跟我一起？</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [逻辑]</b> <b>真意图</b>：乔伊问"（跑掉的）是那个气球吗？"，钱德勒先一本正经地字面反驳"不，是真的卡通人物（Underdog 本人）"，停顿半拍后又自己推翻"——当然是那个气球啦"。</div><div class="zh"><b>机制</b>：就在这个"假正经→自我拆台"的延迟节奏（delayed punchline）。 <b>中文等价</b>："不不不，是那个卡通人物本尊跑了。……废话，当然是气球！"</div></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>I can't, I gotta go. <button class="sp" onclick="speak(this)" data-t="I can't, I gotta go.">🔊</button></div><div class="zh">我不行，我得走了。</div></div>
-<div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Come on. An 80-foot inflatable dog let loose over the city. How often does that happen? <button class="sp" onclick="speak(this)" data-t="Come on. An 80-foot inflatable dog let loose over the city. How often does that happen?">🔊</button></div><div class="zh">来吧。一只 80 英尺的充气狗在城里到处乱飞，这种事能有几回？</div></div>
+<div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Come on. An 80-foot <b class="gw">inflatable</b><span class="gi">〔/ɪnˈfleɪtəbl/ adj. 可充气的 — an 80-foot inflatable…〕</span> dog <b class="gwp">let loose</b><span class="gi">〔放出来、放任自由。an inflatable dog let loose over the…〕</span> over the city. How often does that happen? <button class="sp" onclick="speak(this)" data-t="Come on. An 80-foot inflatable dog let loose over the city. How often does that happen?">🔊</button></div><div class="zh">来吧。一只 80 英尺的充气狗在城里到处乱飞，这种事能有几回？</div></div>
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>Almost never. <button class="sp" onclick="speak(this)" data-t="Almost never.">🔊</button></div><div class="zh">几乎从来没有过。</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Got the keys? or Got the keys! <button class="sp" onclick="speak(this)" data-t="Got the keys? Or got the keys!">🔊</button></div><div class="zh">"拿钥匙了吗？"还是"拿上钥匙吧！"</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [双关]</b> <b>真意图</b>：出门前莫妮卡含糊地嘟囔了一句"拿钥匙……"，语气到底是在问"拿钥匙了吗？"还是在下令"拿上钥匙！"，她自己也说不清——这句是全集的"伏笔双关"，后面一整段"谁拿了钥匙"的吵架都源于此。</div><div class="zh"><b>机制</b>：同一句话，标点（疑问/感叹）不同，意思天差地别。 <b>中文等价</b>："'钥匙拿了吗？'……还是'拿钥匙！'？"</div></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Ok. <button class="sp" onclick="speak(this)" data-t="Ok.">🔊</button></div><div class="zh">好。</div></div>
 <div class="line stage"><span>【大家离开公寓。】</span></div>
+
+
+
 <div class="culture">
 <h4>🏛️ 文化解析：Underdog 与"梅西感恩节大游行"的巨型气球</h4>
 <b>Underdog（超狗）</b> 是美国 1964 年开播的经典动画角色：一只平时怯懦、一吃"超能力药丸"就变身飞天英雄的狗，口头禅是"<b>There's no need to fear, Underdog is here!</b>"（不必害怕，超狗在此！）。它当年是美国家喻户晓的卡通形象。<br>
-剧里说的"气球"，指的是纽约<b>梅西感恩节大游行（Macy's Thanksgiving Day Parade）</b>——每年 11 月感恩节当天，梅西百货会放出一大串巨型充气卡通角色气球在曼哈顿大街上"飘"。这些气球由人牵绳操控，<b>偶尔的确会被大风吹跑、脱离队伍</b>，所以钱德勒才会说"新闻都在报、它飞过华盛顿广场公园"。这一幕把"感恩节当天全城狂欢"的真实背景直接写进了台词，是本集最出名的桥段（剧名 The One Where Underdog Gets Away 也由此而来）。
-</div>
-<div class="phrasebox">
-<h4>💬 词组 / 俚语</h4>
-<div class="item"><b>tater tots</b> ＝ 土豆球（把土豆泥搓成小圆柱油炸，美国孩子最爱的配菜）；口语里常简称 tots。这是乔伊"妈妈的味道"。</div>
-<div class="item"><b>It's bad enough that...</b> ＝"……已经够糟了（，后面还……）"。用来层层加码地抱怨。<span class="ex">It's bad enough I can't be with my family...</span>＝我没法和家人团聚已经够惨了。</div>
-<div class="item"><b>let loose</b> ＝ 放出来、放任自由。<span class="ex">an inflatable dog let loose over the city</span>＝一只被放出来、满城乱飞的充气狗。</div>
-</div>
-<div class="note">
-<h4>📌 重点单词（补充）</h4>
-<div class="item"><b>inflatable</b> <span class="phon">/ɪnˈfleɪtəbl/</span> adj. 可充气的 <button class="sp" onclick="speak(this)" data-t="inflatable">🔊</button> — <span class="ex">an 80-foot inflatable dog</span>（一只 80 英尺的充气狗）</div>
-<div class="item"><b>cranberry</b> <span class="phon">/ˈkrænberi/</span> n. 蔓越莓（感恩节火鸡的灵魂配酱） <button class="sp" onclick="speak(this)" data-t="cranberry">🔊</button> — <span class="ex">a little cranberry sauce</span>（来点蔓越莓酱）</div>
-</div>
-<div class="intent">
-<h4>🎭 意图/潜台词</h4>
-<div class="item"><b>Chandler: No, no, the actual cartoon character. Of course the balloon.</b><br>①乔伊问"（跑掉的）是那个气球吗？"，钱德勒先一本正经地字面反驳"不，是真的卡通人物（Underdog 本人）"，停顿半拍后又自己推翻"——当然是那个气球啦"。②笑点就在这个"假正经→自我拆台"的延迟节奏（delayed punchline）。③中文等价："不不不，是那个卡通人物本尊跑了。……废话，当然是气球！"</div>
-<div class="item"><b>Monica: Got the keys? or Got the keys!</b><br>①出门前莫妮卡含糊地嘟囔了一句"拿钥匙……"，语气到底是在问"拿钥匙了吗？"还是在下令"拿上钥匙！"，她自己也说不清——这句是全集的"伏笔双关"，后面一整段"谁拿了钥匙"的吵架都源于此。②笑点：同一句话，标点（疑问/感叹）不同，意思天差地别。③中文等价："'钥匙拿了吗？'……还是'拿钥匙！'？"</div>
+剧里说的"气球"，指的是纽约<b>梅西感恩节大游行（Macy's Thanksgiving Day Parade）</b>——每年 11 月感恩节当天，梅西百货会放出一大串巨型充气卡通角色气球在曼哈顿大街上"飘"。这些气球由人牵绳操控，<b>偶尔的确会被大风吹跑、脱离队伍</b>，所以钱德勒才会说"新闻都在报、它飞过华盛顿广场公园"。这一幕把"感恩节当天全城狂欢"的真实背景直接写进了台词，是本集最出名的桥段（剧名 The One Where Underdog Gets Away 也由此而来）。</div>
+<div class="culture">
+<h4>🏛️ 文化解析：Macy's 感恩节大游行与"气球跑了"为什么是大事</h4>
+<b>① 是什么：</b>梅西感恩节大游行（Macy's Thanksgiving Day Parade）1924 年开办，每年感恩节上午在曼哈顿从中央公园西侧一路往南，压轴是几十个巨型充气卡通气球（Underdog、Snoopy、Superman 等），由几十个工作人员用缆绳拉着走。<br>
+<b>② 90 年代语境：</b>那是全美直播的"国家级节目"，也是纽约人"节日开始了"的信号。气球挣脱缆绳是真实发生过的新闻级事故（强风、操控失手），所以本集这个设定并不夸张。<br>
+<b>③ 中国观众卡在哪：</b>中国没有同等量级的"全民节日游行＋巨型卡通气球"，观众不知道那些气球有几十米高、要几十个人拉，也不知道它们飞走有多荒唐，于是"六个人冲上天台看"这个反应的强度就传不过来；更看不出这是本集把"节日崩塌"推到极致的机关。<br>
+<b>④ 本集怎么用：</b>Joey 在游行里打工（他因此才拍到那张海报、才有地铁搭讪），气球飞走直接导致六人出门看热闹→门锁上→火鸡烤糊，是全集的"因果发动机"。
 </div>
 </section>
 
 <!-- ============ SCENE 10 ============ -->
 <section class="scene" id="s10">
 <h2>场景 10 · 卡萝与苏珊的公寓 <span class="no">罗斯对着肚子说话</span></h2>
+<div class="line stage"><span>📍 情境：Carol 家。Carol 让 Ross 随时可以跟宝宝说话。这一幕的功能：让一个不擅长表达感情的男人，在"对着肚子说话"这件荒唐事上暴露全部笨拙与真心。</span></div>
 <div class="line stage"><span>【场景：卡萝和苏珊家，罗斯准备对着她的肚子说话。】</span></div>
 <div class="line"><div class="en"><span class="spk c-other">Carol:</span>Anytime you're ready. <button class="sp" onclick="speak(this)" data-t="Anytime you're ready.">🔊</button></div><div class="zh">你准备好了随时开始。</div></div>
-<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Ok, ok, here we go. (he crouches down near her stomach) Ok, where am I talking to, here? I mean, uh, well, there is one way that seems to offer a certain acoustical advantage, but... <button class="sp" onclick="speak(this)" data-t="Ok, ok, here we go. Ok, where am I talking to, here? I mean, uh, well, there is one way that seems to offer a certain acoustical advantage, but...">🔊</button></div><div class="zh">好，好，来吧。（他蹲到她肚子旁）好，我这是该对着哪儿说啊？我是说，呃，好吧，有一种方式好像能获得某种声学上的优势，不过……</div></div>
-<div class="line"><div class="en"><span class="spk c-other">Carol:</span>Just aim for the bump. <button class="sp" onclick="speak(this)" data-t="Just aim for the bump.">🔊</button></div><div class="zh">冲着鼓起来的地方说就行。</div></div>
-<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Ok, ok, ok, ok, here goes. You know, I, you know, can't do this. Uh, this is too weird. I feel stupid. <button class="sp" onclick="speak(this)" data-t="Ok, ok, ok, ok, here goes. You know, I, you know, can't do this. Uh, this is too weird. I feel stupid.">🔊</button></div><div class="zh">好，好，好，好，开始了。你知道，我……你知道，我做不来。呃，这太奇怪了。我觉得自己好傻。</div></div>
+<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Ok, ok, here we go. (he crouches down near her stomach) Ok, where am I talking to, here? I mean, uh, well, there is one way that seems to offer a certain <b class="gw">acoustical</b><span class="gi">〔/əˈkuːstɪkl/ adj. 声学的、听觉的 — a certain…〕</span> advantage, but... <button class="sp" onclick="speak(this)" data-t="Ok, ok, here we go. Ok, where am I talking to, here? I mean, uh, well, there is one way that seems to offer a certain acoustical advantage, but...">🔊</button></div><div class="zh">好，好，来吧。（他蹲到她肚子旁）好，我这是该对着哪儿说啊？我是说，呃，好吧，有一种方式好像能获得某种声学上的优势，不过……</div></div>
+<div class="line"><div class="en"><span class="spk c-other">Carol:</span>Just <b class="gwp">aim for</b><span class="gi">〔朝着……瞄准、对准……。Just aim for the <b class="gw">bump</b><span class="gi">〔/bʌmp/ n. 鼓包、隆起 — the bump（这里指驼起来的孕肚）〕</span>.＝冲着鼓起来的地方说就行。〕</span> the bump. <button class="sp" onclick="speak(this)" data-t="Just aim for the bump.">🔊</button></div><div class="zh">冲着鼓起来的地方说就行。</div></div>
+<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Ok, ok, ok, ok, <b class="gwp">here goes</b><span class="gi">〔"（就要开始了）来吧、豁出去了"，做一件有点勉强或紧张的事之前的口头语。Ok, ok, ok,…〕</span>. You know, I, you know, can't do this. Uh, this is too weird. I feel stupid. <button class="sp" onclick="speak(this)" data-t="Ok, ok, ok, ok, here goes. You know, I, you know, can't do this. Uh, this is too weird. I feel stupid.">🔊</button></div><div class="zh">好，好，好，好，开始了。你知道，我……你知道，我做不来。呃，这太奇怪了。我觉得自己好傻。</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Carol:</span>So don't do it, it's fine. You don't have to do it just because Susan does it. <button class="sp" onclick="speak(this)" data-t="So don't do it, it's fine. You don't have to do it just because Susan does it.">🔊</button></div><div class="zh">那就别做了，没事。你没必要因为苏珊做，你就非得做。</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>(quickly talking) Hello, baby. Hello, hello. <button class="sp" onclick="speak(this)" data-t="Hello, baby. Hello, hello.">🔊</button></div><div class="zh">（飞快地说）你好，宝宝。你好，你好。</div></div>
-<div class="phrasebox">
-<h4>💬 词组 / 俚语（补充）</h4>
-<div class="item"><b>here goes</b> ＝"（就要开始了）来吧、豁出去了"，做一件有点勉强或紧张的事之前的口头语。<span class="ex">Ok, ok, ok, ok, here goes.</span>＝好、好、好，来吧。</div>
-<div class="item"><b>aim for</b> ＝ 朝着……瞄准、对准……。<span class="ex">Just aim for the bump.</span>＝冲着鼓起来的地方说就行。</div>
-</div>
-<div class="note">
-<h4>📌 重点单词（补充）</h4>
-<div class="item"><b>acoustical</b> <span class="phon">/əˈkuːstɪkl/</span> adj. 声学的、听觉的 <button class="sp" onclick="speak(this)" data-t="acoustical">🔊</button> — <span class="ex">a certain acoustical advantage</span>（某种声学上的优势）</div>
-<div class="item"><b>bump</b> <span class="phon">/bʌmp/</span> n. 鼓包、隆起 <button class="sp" onclick="speak(this)" data-t="bump">🔊</button> — <span class="ex">the bump</span>（这里指驼起来的孕肚）</div>
-</div>
+
+
 </section>
 
 <!-- ============ SCENE 11 ============ -->
 <section class="scene" id="s11">
 <h2>场景 11 · 莫妮卡和瑞秋的公寓门口 <span class="no">"你拿钥匙了"之争</span></h2>
+<div class="line stage"><span>📍 情境：Monica 家门口的走廊。六个人看完气球回来，发现门锁上了——因为出门时谁也没确认钥匙。这一幕的功能：开始"谁拿了钥匙"的互相指责，Joey 用两句台词完成一次"坐地起价"。</span></div>
 <div class="line stage"><span>【场景：莫妮卡和瑞秋的公寓，一行人从屋顶回来了。】</span></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>I loved the moment when you first saw the giant dog shadow all over the park. <button class="sp" onclick="speak(this)" data-t="I loved the moment when you first saw the giant dog shadow all over the park.">🔊</button></div><div class="zh">我最喜欢你第一眼看到那只大狗影子铺满整个公园的那一刻。</div></div>
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>Yeah, but did they have to shoot him down? I mean, that was just mean. <button class="sp" onclick="speak(this)" data-t="Yeah, but did they have to shoot him down? I mean, that was just mean.">🔊</button></div><div class="zh">是啊，可他们非得把它打下来吗？我是说，那也太狠了。</div></div>
-<div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Ok, right about now the turkey should be crispy on the outside, juicy on the inside. Why are we standing here? <button class="sp" onclick="speak(this)" data-t="Ok, right about now the turkey should be crispy on the outside, juicy on the inside. Why are we standing here?">🔊</button></div><div class="zh">好了，这会儿火鸡应该外皮酥脆、里面多汁了。我们站在这儿干嘛？</div></div>
+<div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Ok, right about now the turkey should be <b class="gw">crispy</b><span class="gi">〔/ˈkrɪspi/ adj. 外皮酥脆的（形容烤火鸡表皮） — the turkey…〕</span> on the outside, <b class="gw">juicy</b><span class="gi">〔/ˈdʒuːsi/ adj. 多汁的（肉嫩）；引申"有料、刺激" — juicy on the…〕</span> on the inside. Why are we standing here? <button class="sp" onclick="speak(this)" data-t="Ok, right about now the turkey should be crispy on the outside, juicy on the inside. Why are we standing here?">🔊</button></div><div class="zh">好了，这会儿火鸡应该外皮酥脆、里面多汁了。我们站在这儿干嘛？</div></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>We're waiting for you to open the door. You got the keys. <button class="sp" onclick="speak(this)" data-t="We're waiting for you to open the door. You got the keys.">🔊</button></div><div class="zh">我们在等你开门啊。钥匙在你那儿。</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>No I don't. <button class="sp" onclick="speak(this)" data-t="No I don't.">🔊</button></div><div class="zh">我没有。</div></div>
-<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Yes, you do. When we left, you said, "got the keys." <button class="sp" onclick="speak(this)" data-t="Yes, you do. When we left, you said, got the keys.">🔊</button></div><div class="zh">你有。我们出门的时候，你说"拿了钥匙"。</div></div>
+<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Yes, you do. When we left, you said, "got the keys." <button class="sp" onclick="speak(this)" data-t="Yes, you do. When we left, you said, got the keys.">🔊</button></div><div class="zh">你有。我们出门的时候，你说"拿了钥匙"。</div></div><div class="line intentline pattach"><div class="en"><b>💬 You said / I asked</b></div><div class="zh">罗生门式的"你说 vs 我问"。原文用标点/重音（Got the keys? 疑问 vs Got the keys. 陈述）制造整段笑点——同一句话，语气不同，甩锅方向就不同。</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>No I didn't. I asked, "got the ke-eys?" <button class="sp" onclick="speak(this)" data-t="No I didn't. I asked, got the keys?">🔊</button></div><div class="zh">我没有。我问的是"钥匙——拿到了吗？"</div></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>No, no, no, you said, "got the keys". <button class="sp" onclick="speak(this)" data-t="No, no, no, you said, got the keys.">🔊</button></div><div class="zh">不不不，你说的是"拿了钥匙"。</div></div>
-<div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Do either of you have the keys? <button class="sp" onclick="speak(this)" data-t="Do either of you have the keys?">🔊</button></div><div class="zh">你们俩到底谁有钥匙？</div></div>
+<div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Do <b class="gwp">either of you</b><span class="gi">〔"你们俩任意一个"。either 用于两者，提问时配单数名词。〕</span> have the keys? <button class="sp" onclick="speak(this)" data-t="Do either of you have the keys?">🔊</button></div><div class="zh">你们俩到底谁有钥匙？</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>(panicked) The oven is on. <button class="sp" onclick="speak(this)" data-t="The oven is on.">🔊</button></div><div class="zh">（惊慌）烤箱还开着呢。</div></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Oh, I gotta get my ticket! <button class="sp" onclick="speak(this)" data-t="Oh, I gotta get my ticket!">🔊</button></div><div class="zh">哦，我还得去拿我的机票！</div></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Wait, wait, we have a copy of your key. <button class="sp" onclick="speak(this)" data-t="Wait, wait, we have a copy of your key.">🔊</button></div><div class="zh">等等，等等，我们有一把你们的备用钥匙。</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Well then get it, get it! <button class="sp" onclick="speak(this)" data-t="Well then get it, get it!">🔊</button></div><div class="zh">那就去拿啊，快去！</div></div>
-<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>That tone will not make me go any faster. <button class="sp" onclick="speak(this)" data-t="That tone will not make me go any faster.">🔊</button></div><div class="zh">你这种语气可不会让我动作变快。</div></div>
+<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>That <b class="gw">tone</b><span class="gi">〔/toʊn/ n. 语气、口吻 — That tone will not make me go…〕</span> will not make me go any faster. <button class="sp" onclick="speak(this)" data-t="That tone will not make me go any faster.">🔊</button></div><div class="zh">你这语气，可催不动我。 †</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [反差]</b> <b>真意图</b>：莫妮卡催他"快去拿备用钥匙"，乔伊偏要拿捏她："你这种语气可不行。"等莫妮卡吼一声"Joey!"——"这种语气就行。"</div><div class="zh"><b>机制</b>：他其实早想去拿，非要先讨一个"态度"，用两句话完成"坐地起价→立刻照办"的喜剧反转。 <b>中文等价</b>："（平淡）你这语气催不动我。……（吼）行，这就去。"</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>(angry) Joey! <button class="sp" onclick="speak(this)" data-t="Joey!">🔊</button></div><div class="zh">（生气地）乔伊！</div></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>That one will. <button class="sp" onclick="speak(this)" data-t="That one will.">🔊</button></div><div class="zh">这种语气就管用。</div></div>
 <div class="line stage"><span>【乔伊离开去取备用钥匙。】</span></div>
-<div class="phrasebox">
-<h4>💬 词组 / 俚语</h4>
-<div class="item"><b>You said / I asked</b> ＝ 罗生门式的"你说 vs 我问"。原文用标点/重音（<span class="ex">Got the keys?</span> 疑问 vs <span class="ex">Got the keys.</span> 陈述）制造整段笑点——同一句话，语气不同，甩锅方向就不同。</div>
-<div class="item"><b>either of you</b> ＝"你们俩任意一个"。either 用于两者，提问时配单数名词。</div>
-</div>
-<div class="note">
-<h4>📌 重点单词（补充）</h4>
-<div class="item"><b>tone</b> <span class="phon">/toʊn/</span> n. 语气、口吻 <button class="sp" onclick="speak(this)" data-t="tone">🔊</button> — <span class="ex">That tone will not make me go any faster.</span>（你这种语气可不会让我快起来）</div>
-</div>
-<div class="intent">
-<h4>🎭 意图/潜台词</h4>
-<div class="item"><b>Joey: That tone will not make me go any faster. ... That one will.</b><br>①莫妮卡催他"快去拿备用钥匙"，乔伊偏要拿捏她："你这种语气可不行。"等莫妮卡吼一声"Joey!"——"这种语气就行。"②笑点：他其实早想去拿，非要先讨一个"态度"，用两句话完成"坐地起价→立刻照办"的喜剧反转。③中文等价："（平淡）你这语气催不动我。……（吼）行，这就去。"</div>
-</div>
+
+
 </section>
 
 <!-- ============ SCENE 12 ============ -->
 <section class="scene" id="s12">
 <h2>场景 12 · 卡萝与苏珊的公寓 <span class="no">罗斯给宝宝唱歌</span></h2>
+<div class="line stage"><span>📍 情境：Carol 家。Ross 从"说话"退到"唱歌"，最后唱出一首自己现编的歌。这一幕的功能：全集最温柔的一段——他用最笨的方式完成了"当爸爸"的第一次宣言。</span></div>
 <div class="line stage"><span>【场景：卡萝和苏珊家，卡萝在看书，罗斯对着她的肚子说话。】</span></div>
-<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>And everyone's telling me, you gotta pick a major, you gotta pick a major. So, on a dare, I picked paleontology. And you have no idea what I'm saying, because, let's face it, you're a fetus. You're just happy you don't have gills anymore. <button class="sp" onclick="speak(this)" data-t="And everyone's telling me, you gotta pick a major, you gotta pick a major. So, on a dare, I picked paleontology. And you have no idea what I'm saying, because, let's face it, you're a fetus. You're just happy you don't have gills anymore.">🔊</button></div><div class="zh">大家都跟我说，你得选个专业、你得选个专业。于是，我一赌气，就选了古生物学。可你根本不知道我在说什么，因为——面对现实吧——你还是个胎儿。你只是庆幸自己终于不长鳃了而已。</div></div>
+<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>And everyone's telling me, you gotta pick a major, you gotta pick a major. So, <b class="gwp">on a dare</b><span class="gi">〔"因为跟人打赌（才去做）"。on a dare, I picked…〕</span>, I picked <b class="gw">paleontology</b><span class="gi">〔/ˌpeɪliɑːnˈtɑːlədʒi/ n. 古生物学（罗斯的职业，研究化石与史前生物）〕</span>. And you have no idea what I'm saying, because, <b class="gwp">let's face it</b><span class="gi">〔"面对现实吧 / 说白了"，引出虽不好听但必须承认的事实。〕</span>, you're a <b class="gw">fetus</b><span class="gi">〔/ˈfiːtəs/ n. 胎儿 — a 3-month-old fetus（三个月大的胎儿）〕</span>. You're just happy you don't have <b class="gw">gill</b><span class="gi">〔/ɡɪl/ n. （鱼的）鳃 — you don't have gills…〕</span>s anymore. <button class="sp" onclick="speak(this)" data-t="And everyone's telling me, you gotta pick a major, you gotta pick a major. So, on a dare, I picked paleontology. And you have no idea what I'm saying, because, let's face it, you're a fetus. You're just happy you don't have gills anymore.">🔊</button></div><div class="zh">大家都跟我说，你得选个专业、你得选个专业。于是，我一赌气，就选了古生物学。可你根本不知道我在说什么，因为——面对现实吧——你还是个胎儿。你只是庆幸自己终于不长鳃了而已。</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Carol:</span>Look, you don't have to talk to it. You can sing to it if you want. <button class="sp" onclick="speak(this)" data-t="Look, you don't have to talk to it. You can sing to it if you want.">🔊</button></div><div class="zh">听着，你不一定非得跟它说话。你要是愿意，可以唱给它听。</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Oh, please. I am not singing to your stomach, ok? <button class="sp" onclick="speak(this)" data-t="Oh, please. I am not singing to your stomach, ok?">🔊</button></div><div class="zh">哦，得了吧。我才不会对着你的肚子唱歌，行吗？</div></div>
 <div class="line stage"><span>【苏珊走进来。】</span></div>
@@ -586,48 +524,39 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>Does it always, uh--? <button class="sp" onclick="speak(this)" data-t="Does it always, uh--?">🔊</button></div><div class="zh">它总是这样，呃——？</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Carol:</span>No, no that was the first. <button class="sp" onclick="speak(this)" data-t="No, no that was the first.">🔊</button></div><div class="zh">不、不，那是第一次。</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Susan:</span>Keep singing! Keep singing! <button class="sp" onclick="speak(this)" data-t="Keep singing! Keep singing!">🔊</button></div><div class="zh">接着唱！接着唱！</div></div>
-<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>(singing) Hey, hey, you're my baby, and I can't wait to meet you. When you come out I'll buy you a bagel, and then we'll go to the zoo. <button class="sp" onclick="speak(this)" data-t="Hey, hey, you're my baby, and I can't wait to meet you. When you come out I'll buy you a bagel, and then we'll go to the zoo.">🔊</button></div><div class="zh">（唱）嘿，嘿，你是我的宝宝，我已经等不及想见你。等你出来，我给你买个百吉饼，然后带你上动物园。</div></div>
+<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>(singing) Hey, hey, you're my baby, and I can't wait to meet you. When you come out I'll buy you a <b class="gw">bagel</b><span class="gi">〔/ˈbeɪɡl/ n. 百吉饼（纽约经典早餐面包） — I'll buy you a…〕</span>, and then we'll go to the zoo. <button class="sp" onclick="speak(this)" data-t="Hey, hey, you're my baby, and I can't wait to meet you. When you come out I'll buy you a bagel, and then we'll go to the zoo.">🔊</button></div><div class="zh">（唱）嘿，嘿，你是我的宝宝，我已经等不及想见你。等你出来，我给你买个百吉饼，然后带你上动物园。</div></div><div class="line intentline pattach"><div class="en"><b>💬 I can't wait to</b></div><div class="zh">"我迫不及待想……"。比较级形式 can't wait 表示强烈期待。</div></div>
 <div class="line"><div class="en"><span class="spk c-other">Susan:</span>I felt it! <button class="sp" onclick="speak(this)" data-t="I felt it!">🔊</button></div><div class="zh">我感觉到了！</div></div>
-<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>(singin) Hey, hey, I'm your daddy. I'm the one without any breasts. <button class="sp" onclick="speak(this)" data-t="Hey, hey, I'm your daddy. I'm the one without any breasts.">🔊</button></div><div class="zh">（唱）嘿，嘿，我是你爸爸。就是那个没有乳房的人。</div></div>
-<div class="phrasebox">
-<h4>💬 词组 / 俚语</h4>
-<div class="item"><b>on a dare</b> ＝"因为跟人打赌（才去做）"。<span class="ex">on a dare, I picked paleontology</span>＝我一赌气就选了古生物学。dare＝激将、敢不敢。</div>
-<div class="item"><b>let's face it</b> ＝"面对现实吧 / 说白了"，引出虽不好听但必须承认的事实。</div>
-<div class="item"><b>I can't wait to...</b> ＝"我迫不及待想……"。比较级形式 can't wait 表示强烈期待。</div>
-</div>
-<div class="note">
-<h4>📌 重点单词</h4>
-<div class="item"><b>paleontology</b> <span class="phon">/ˌpeɪliɑːnˈtɑːlədʒi/</span> n. 古生物学（罗斯的职业，研究化石与史前生物） <button class="sp" onclick="speak(this)" data-t="paleontology">🔊</button></div>
-<div class="item"><b>fetus</b> <span class="phon">/ˈfiːtəs/</span> n. 胎儿 <button class="sp" onclick="speak(this)" data-t="fetus">🔊</button> — <span class="ex">a 3-month-old fetus</span>（三个月大的胎儿）</div>
-</div>
-<div class="note">
-<h4>📌 重点单词（补充）</h4>
-<div class="item"><b>gill</b> <span class="phon">/ɡɪl/</span> n. （鱼的）鳃 <button class="sp" onclick="speak(this)" data-t="gills">🔊</button> — <span class="ex">you don't have gills anymore</span>（你终于不长鳃了）。罗斯用进化调侃胎儿"庆幸自己不再是鱼"。</div>
-<div class="item"><b>bagel</b> <span class="phon">/ˈbeɪɡl/</span> n. 百吉饼（纽约经典早餐面包） <button class="sp" onclick="speak(this)" data-t="bagel">🔊</button> — <span class="ex">I'll buy you a bagel</span>（我给你买个百吉饼）</div>
-</div>
+<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>(singin) Hey, hey, I'm your daddy. I'm the one without any breasts. <button class="sp" onclick="speak(this)" data-t="Hey, hey, I'm your daddy. I'm the one without any breasts.">🔊</button></div><div class="zh">就是那个没长乳房的人。 †</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [反差]</b> <b>真意图</b>：Ross 现编的歌里自我介绍："我是你爸爸，就是那个没长乳房的人"——用最生理的方式把自己和 Susan 区分开。</div><div class="zh"><b>机制</b>：反差在于他把"爸爸"这个抽象身份，硬解释成一个"没有乳房"的物理特征；也是他心里那点酸：喂奶、念书、唱歌这些"当妈的事"他一样都插不上。 <b>中文等价</b>："我是你爸——就那个没奶的。"</div></div>
+
+
+
+
 <div class="culture">
 <h4>🏛️ 文化解析：罗斯随口唱的是《The Monkees》主题曲</h4>
 罗斯对着卡萝的肚子唱 "Here we come, walkin' down the street, get the funniest looks from everyone we meet. Hey, hey!" 出自 1960 年代美国流行乐队 <b>The Monkees（门基乐队）</b>的电视节目主题曲 <b>《(Theme From) The Monkees》</b>（副歌正是 "Hey, hey, we're the Monkees!"）。<br>
-编剧让他即兴套用一首年代感十足的欢快老歌来"唱给宝宝听"，还临场改词（"you're my baby… I'm the one without any breasts"）——<b>把一首 60 年代的流行金曲，硬拗成笨拙的"爸爸之歌"</b>，既好笑又温情，也呼应了这一集"罗斯努力想参与孩子成长"的主题。
-</div>
+编剧让他即兴套用一首年代感十足的欢快老歌来"唱给宝宝听"，还临场改词（"you're my baby… I'm the one without any breasts"）——<b>把一首 60 年代的流行金曲，硬拗成笨拙的"爸爸之歌"</b>，既好笑又温情，也呼应了这一集"罗斯努力想参与孩子成长"的主题。</div>
 </section>
 
 <!-- ============ SCENE 13 ============ -->
 <section class="scene" id="s13">
 <h2>场景 13 · 走廊 <span class="no">上千把钥匙 / 莫妮卡崩溃</span></h2>
+<div class="line stage"><span>📍 情境：走廊。Joey 端着一整盘钥匙一把一把试锁孔，Monica 在旁边崩溃，Rachel 把火气全撒在偷笑的钱德勒身上。这一幕的功能：把"节日崩塌"推到最高点——火鸡在屋里烤糊，六个人在门外吵架，谁都进不去。</span></div>
 <div class="line stage"><span>【场景：走廊，乔伊拿着一大盘钥匙，正一把一把地试着开锁。】</span></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Nope, not that one. <button class="sp" onclick="speak(this)" data-t="Nope, not that one.">🔊</button></div><div class="zh">不对，不是这把。</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Can you go any faster with that? <button class="sp" onclick="speak(this)" data-t="Can you go any faster with that?">🔊</button></div><div class="zh">你能不能快点弄那个？</div></div>
-<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Hey, I got one keyhole and about a zillion keys. You do the math. <button class="sp" onclick="speak(this)" data-t="Hey, I got one keyhole and about a zillion keys. You do the math.">🔊</button></div><div class="zh">嘿，我就一个锁孔，却有大概几亿把钥匙。你自己算算。</div></div>
+<div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Hey, I got one <b class="gw">keyhole</b><span class="gi">〔/ˈkiːhoʊl/ n. 锁孔、钥匙孔 — I got one keyhole and…〕</span> and about a <b class="gw">zillion</b><span class="gi">〔/ˈzɪljən/ n. （口）极大的数目、数不清 — a zillion…〕</span> keys. <b class="gwp">You do the math.</b><span class="gi">〔"你自己算算吧 / 这还用我说吗"。用算术比喻"结论显而易见"，很地道的一句甩锅式回答。〕</span> <button class="sp" onclick="speak(this)" data-t="Hey, I got one keyhole and about a zillion keys. You do the math.">🔊</button></div><div class="zh">自己算算这笔账。 †</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Why do you guys have so many keys in there anyway? <button class="sp" onclick="speak(this)" data-t="Why do you guys have so many keys in there anyway?">🔊</button></div><div class="zh">话说回来，你们干嘛在那儿攒那么多钥匙？</div></div>
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>(sarcastic) For an emergency just like this. <button class="sp" onclick="speak(this)" data-t="For an emergency just like this.">🔊</button></div><div class="zh">（讽刺地）就是为了应付像现在这样的紧急情况啊。</div></div>
-<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>(grabs Chandler by the shirt) All right, listen, smirky. If it wasn't for you and your stupid balloon, I would be on a plane watching a woman do this (makes a gesture like a stewardess pointing out exits) right now. But I'm not. <button class="sp" onclick="speak(this)" data-t="All right, listen, smirky. If it wasn't for you and your stupid balloon, I would be on a plane watching a woman do this right now. But I'm not.">🔊</button></div><div class="zh">（一把揪住钱德勒的衬衫）行了，你给我听着，贱笑的家伙。要不是你和那破气球，我现在正坐在飞机上，看着一个空姐做这个动作（比了个空姐指示安全出口的手势），可是我没有。</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [讽刺]</b> <b>真意图</b>：莫妮卡问"你们干嘛攒这么多钥匙"，钱德勒一本正经地答"就是为了应付像现在这种紧急情况啊"——可满盘钥匙其实毫无用处（鬼知道哪把是哪把）。</div><div class="zh"><b>机制</b>：讽刺式的"事后诸葛亮"，把一场低级混乱说成"早有预案"。 <b>中文等价</b>："（冷笑）就是为了应付今天这种'紧急情况'呗。"</div></div>
+<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>(grabs Chandler by the shirt) All right, listen, <b class="gw">smirky</b><span class="gi">〔/ˈsmɜːrki/ adj. 得意窃笑的、贱兮兮的 — listen,…〕</span>. If it wasn't for you and your stupid balloon, I would be on a plane watching a woman do this (makes a gesture like a stewardess pointing out exits) right now. But I'm not. <button class="sp" onclick="speak(this)" data-t="All right, listen, smirky. If it wasn't for you and your stupid balloon, I would be on a plane watching a woman do this right now. But I'm not.">🔊</button></div><div class="zh">（一把揪住钱德勒的衬衫）行了，你给我听着，贱笑的家伙。要不是你和那破气球，我现在正坐在飞机上，看着一个空姐做这个动作（比了个空姐指示安全出口的手势），可是我没有。</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [反差]</b> <b>真意图</b>：瑞秋揪住钱德勒的衬衫迁怒："要不是你和那破气球，我早坐上飞机了。"真正的火气是"错过飞机+被锁门外"，但她需要一个发泄对象，恰好钱德勒在偷笑。</div><div class="zh"><b>机制</b>：她一边骂，一边还比了个空姐指示安全出口的手势，把怒火演成了小品。 <b>中文等价</b>："你给我听着，贱笑的——要不是你那破气球，我现在都在飞机上了！"</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>I swear you said you had the keys. <button class="sp" onclick="speak(this)" data-t="I swear you said you had the keys.">🔊</button></div><div class="zh">我发誓你说过你拿了钥匙。</div></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>No, I didn't. I wouldn't say I had the keys unless I had the keys, and I obviously didn't have the keys. <button class="sp" onclick="speak(this)" data-t="No, I didn't. I wouldn't say I had the keys unless I had the keys, and I obviously didn't have the keys.">🔊</button></div><div class="zh">不，我没说过。我要真有钥匙，我才会说我有钥匙；而显然我并没有钥匙。</div></div>
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>Ooh, ok, that's it. Enough with the keys. No one say keys. <button class="sp" onclick="speak(this)" data-t="Ooh, ok, that's it. Enough with the keys. No one say keys.">🔊</button></div><div class="zh">哦，行了，够了。钥匙这事儿到此为止。谁都别再提钥匙了。</div></div>
 <div class="line stage"><span>【短暂的沉默。】</span></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Why would I have the keys? <button class="sp" onclick="speak(this)" data-t="Why would I have the keys?">🔊</button></div><div class="zh">（又开口）凭什么是我拿钥匙？</div></div>
-<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Aside from the fact that you said you had them? <button class="sp" onclick="speak(this)" data-t="Aside from the fact that you said you had them?">🔊</button></div><div class="zh">除了你刚说过你拿着，还能凭什么？</div></div>
+<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Aside from the fact that you said you had them? <button class="sp" onclick="speak(this)" data-t="Aside from the fact that you said you had them?">🔊</button></div><div class="zh">除了你刚说过你拿着，还能凭什么？</div></div><div class="line intentline pattach"><div class="en"><b>💬 Aside from the fact that</b></div><div class="zh">"撇开……不说、除了……这一点"。先承认一个前提，再反问，辩论味十足。</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>But I didn't. <button class="sp" onclick="speak(this)" data-t="But I didn't.">🔊</button></div><div class="zh">可我没有。</div></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Well, you should have. <button class="sp" onclick="speak(this)" data-t="Well, you should have.">🔊</button></div><div class="zh">那你就应该拿。</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Why? <button class="sp" onclick="speak(this)" data-t="Why?">🔊</button></div><div class="zh">为什么？</div></div>
@@ -636,6 +565,7 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Because! <button class="sp" onclick="speak(this)" data-t="Because!">🔊</button></div><div class="zh">就因为！</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Why? Because everything is my responsibility? Isn't it enough that I'm making Thanksgiving dinner for everyone? You know, everyone wants a different kind of potatoes, so I'm making different kinds of potatoes. Does anybody care what kind of potatoes I want? Nooooo, no, no! (starting to cry) Just as long as Phoebe gets her peas and onions, and Mario gets his tots, and it's my first Thanksgiving, and it's all burned, and, and I... I... <button class="sp" onclick="speak(this)" data-t="Why? Because everything is my responsibility? Isn't it enough that I'm making Thanksgiving dinner for everyone? You know, everyone wants a different kind of potatoes, so I'm making different kinds of potatoes. Does anybody care what kind of potatoes I want? Nooooo, no, no! Just as long as Phoebe gets her peas and onions, and Mario gets his tots, and it's my first Thanksgiving, and it's all burned, and, and I... I...">🔊</button></div><div class="zh">为什么？就因为一切都该由我负责？我给大家做感恩节晚餐还不够吗？你知道，每个人想要的土豆做法都不一样，所以我得做各种不同的土豆。可有谁在乎过我想要哪种土豆吗？没有——没有，没有！（开始哭）只要菲比能吃到她的豌豆洋葱、只要"马里奥"能吃到他的土豆球就行，可这是我第一次做感恩节大餐啊，全烧糊了，而且、而且我……我……</div></div>
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Ok, Monica, only dogs can hear you now, so, look, the door's open. Here we go. <button class="sp" onclick="speak(this)" data-t="Ok, Monica, only dogs can hear you now, so, look, the door's open. Here we go.">🔊</button></div><div class="zh">好了，莫妮卡，现在只有狗能听见你说话了，所以——看，门开了。走吧。</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [逻辑]</b> <b>真意图</b>：莫妮卡哭喊着抱怨、音调越来越高，钱德勒吐槽"现在只有狗能听见你了"（只有狗能听到那么高的频率）。</div><div class="zh"><b>机制</b>：用"人耳听不见高频"的物理梗，既化解（又添柴）了莫妮卡的崩溃，还顺势宣布"门开了"，把情绪拉回现实。 <b>中文等价</b>："行了莫妮卡，你这调门儿只有狗听得见了——喏，门开了。"</div></div>
 <div class="line stage"><span>【他们走进去。公寓里满是烟。】</span></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Well, the turkey's burnt. (checking pots) Potatoes are ruined, potatoes are ruined, potatoes are ruined. <button class="sp" onclick="speak(this)" data-t="Well, the turkey's burnt. Potatoes are ruined, potatoes are ruined, potatoes are ruined.">🔊</button></div><div class="zh">好吧，火鸡烤焦了。（挨个查看锅）土豆毁了，土豆毁了，土豆毁了。</div></div>
 <div class="line stage"><span>【罗斯唱着歌走进来。】</span></div>
@@ -643,38 +573,21 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>No, it doesn't, does it? But you wanted lumps, Ross? (picks up the pan of badly burnt potatoes) Well, here you go, buddy, ya got one. <button class="sp" onclick="speak(this)" data-t="No, it doesn't, does it? But you wanted lumps, Ross? Well, here you go, buddy, you got one.">🔊</button></div><div class="zh">是啊，不像，对吧？可你不是要"带块的"吗，罗斯？（端起一整盘烧得惨不忍睹的土豆）喏，给你，老兄，块管够。</div></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>Oh, god, this is great! The plane is gone, so it looks like I'm stuck here with you guys. <button class="sp" onclick="speak(this)" data-t="Oh, god, this is great! The plane is gone, so it looks like I'm stuck here with you guys.">🔊</button></div><div class="zh">哦，天哪，这下可好了！飞机飞走了，看来我只能跟你们几个困在这儿了。</div></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>Hey, we all had better plans. This was nobody's first choice. <button class="sp" onclick="speak(this)" data-t="Hey, we all had better plans. This was nobody's first choice.">🔊</button></div><div class="zh">嘿，我们本来都有更好的安排。这可不是谁的首选。</div></div>
-<div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Oh, really? So why was I busting my ass to make this delicious Thanksgiving dinner? <button class="sp" onclick="speak(this)" data-t="Oh, really? So why was I busting my ass to make this delicious Thanksgiving dinner?">🔊</button></div><div class="zh">哦，是吗？那我干嘛拼死拼活要做这顿"美味"的感恩节大餐？</div></div>
+<div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Oh, really? So why was I <b class="gwp">busting my ass</b><span class="gi">〔（＝bust one's ass）＝ 拼死拼活、玩命干。粗俗但极常见的口语，表"极其卖力"。〕</span> to make this delicious Thanksgiving dinner? <button class="sp" onclick="speak(this)" data-t="Oh, really? So why was I busting my ass to make this delicious Thanksgiving dinner?">🔊</button></div><div class="zh">哦，是吗？那我干嘛拼死拼活要做这顿"美味"的感恩节大餐？</div></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>You call that delicious? <button class="sp" onclick="speak(this)" data-t="You call that delicious?">🔊</button></div><div class="zh">你管这叫美味？</div></div>
 <div class="line stage"><span>【大家齐声吵嚷起来。】</span></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Stop it, stop it, stop it! <button class="sp" onclick="speak(this)" data-t="Stop it, stop it, stop it!">🔊</button></div><div class="zh">别吵了，别吵了，别吵了！</div></div>
-<div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Now this feels like Thanksgiving. <button class="sp" onclick="speak(this)" data-t="Now this feels like Thanksgiving.">🔊</button></div><div class="zh">现在这才有点感恩节的样子了。</div></div>
-<div class="phrasebox">
-<h4>💬 词组 / 俚语</h4>
-<div class="item"><b>You do the math.</b> ＝"你自己算算吧 / 这还用我说吗"。用算术比喻"结论显而易见"，很地道的一句甩锅式回答。</div>
-<div class="item"><b>bust my ass</b>（＝bust one's ass）＝ 拼死拼活、玩命干。粗俗但极常见的口语，表"极其卖力"。</div>
-<div class="item"><b>Aside from the fact that...</b> ＝"撇开……不说、除了……这一点"。先承认一个前提，再反问，辩论味十足。</div>
-<div class="item"><b>that's it / Enough with...</b> ＝"够了 / ……到此为止"。Phoebe 用 <span class="ex">Enough with the keys.</span> 叫停全屋人反复念叨"keys"。</div>
-</div>
-<div class="note">
-<h4>📌 重点单词</h4>
-<div class="item"><b>zillion</b> <span class="phon">/ˈzɪljən/</span> n. （口）极大的数目、数不清 <button class="sp" onclick="speak(this)" data-t="zillion">🔊</button> — <span class="ex">a zillion keys</span>（多到数不清的钥匙）</div>
-</div>
-<div class="note">
-<h4>📌 重点单词（补充）</h4>
-<div class="item"><b>keyhole</b> <span class="phon">/ˈkiːhoʊl/</span> n. 锁孔、钥匙孔 <button class="sp" onclick="speak(this)" data-t="keyhole">🔊</button> — <span class="ex">I got one keyhole and about a zillion keys</span>（我一个锁孔，却有数不清的钥匙）</div>
-<div class="item"><b>smirky</b> <span class="phon">/ˈsmɜːrki/</span> adj. 得意窃笑的、贱兮兮的 <button class="sp" onclick="speak(this)" data-t="smirky">🔊</button> — <span class="ex">listen, smirky</span>（你给我听着，贱笑的家伙）。由动词 smirk（得意地笑）临时变成的称呼。</div>
-</div>
-<div class="intent">
-<h4>🎭 意图/潜台词</h4>
-<div class="item"><b>Chandler: (sarcastic) For an emergency just like this.</b><br>①莫妮卡问"你们干嘛攒这么多钥匙"，钱德勒一本正经地答"就是为了应付像现在这种紧急情况啊"——可满盘钥匙其实毫无用处（鬼知道哪把是哪把）。②笑点：讽刺式的"事后诸葛亮"，把一场低级混乱说成"早有预案"。③中文等价："（冷笑）就是为了应付今天这种'紧急情况'呗。"</div>
-<div class="item"><b>Rachel: All right, listen, smirky. If it wasn't for you and your stupid balloon, I would be on a plane...</b><br>①瑞秋揪住钱德勒的衬衫迁怒："要不是你和那破气球，我早坐上飞机了。"真正的火气是"错过飞机+被锁门外"，但她需要一个发泄对象，恰好钱德勒在偷笑。②笑点：她一边骂，一边还比了个空姐指示安全出口的手势，把怒火演成了小品。③中文等价："你给我听着，贱笑的——要不是你那破气球，我现在都在飞机上了！"</div>
-<div class="item"><b>Chandler: Ok, Monica, only dogs can hear you now, so, look, the door's open.</b><br>①莫妮卡哭喊着抱怨、音调越来越高，钱德勒吐槽"现在只有狗能听见你了"（只有狗能听到那么高的频率）。②笑点：用"人耳听不见高频"的物理梗，既化解（又添柴）了莫妮卡的崩溃，还顺势宣布"门开了"，把情绪拉回现实。③中文等价："行了莫妮卡，你这调门儿只有狗听得见了——喏，门开了。"</div>
-</div>
+<div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Now this feels like Thanksgiving. <button class="sp" onclick="speak(this)" data-t="Now this feels like Thanksgiving.">🔊</button></div><div class="zh">这下总算是有点感恩节的样子了。 †</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [讽刺]</b> <b>真意图</b>：六个人被锁在走廊、火鸡在屋里烤糊、彼此大吼——Chandler 说"现在这才像感恩节"，意思是"这才是我记忆里的节日"。</div><div class="zh"><b>机制</b>：讽刺的双层：字面是赞叹节日气氛，实际指他童年的感恩节就是吵架、灾难、呕吐。只有知道他家庭背景的观众才听得出这句话是苦的。 <b>中文等价</b>："嗯，这才叫过节嘛。"（阴阳到极致）</div></div>
+
+
+
 </section>
 
 <!-- ============ SCENE 14 ============ -->
 <section class="scene" id="s14">
 <h2>场景 14 · 莫妮卡和瑞秋的公寓 <span class="no">丑陋裸男 / 烤奶酪三明治 / 祝酒</span></h2>
+<div class="line stage"><span>📍 情境：终于进了门。一桌大餐全毁，只能吃烤奶酪三明治；Phoebe 却在对楼窗口看见了本集唯一的"赢家"——丑陋裸男也在过节，而且不是一个人。这一幕的功能：以一场自嘲式祝酒收尾，把"节日失败"翻译成"我们还在一起"。</span></div>
 <div class="line stage"><span>【时间流逝。大家彼此都憋着一肚子气。菲比在窗边。】</span></div>
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>Ooh. <button class="sp" onclick="speak(this)" data-t="Ooh.">🔊</button></div><div class="zh">哦——。</div></div>
 <div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>What? <button class="sp" onclick="speak(this)" data-t="What?">🔊</button></div><div class="zh">什么？</div></div>
@@ -684,8 +597,8 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Ooh, Ugly Naked Dancing! <button class="sp" onclick="speak(this)" data-t="Ooh, Ugly Naked Dancing!">🔊</button></div><div class="zh">哦，丑陋裸体舞表演！</div></div>
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>It's nice that he has someone. <button class="sp" onclick="speak(this)" data-t="It's nice that he has someone.">🔊</button></div><div class="zh">他身边有人陪着，挺好的。</div></div>
 <div class="line stage"><span>【时间流逝。大家围在桌边，吃着烤奶酪三明治。】</span></div>
-<div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Shall I carve? <button class="sp" onclick="speak(this)" data-t="Shall I carve?">🔊</button></div><div class="zh">我来切（肉）吗？</div></div>
-<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>By all means. <button class="sp" onclick="speak(this)" data-t="By all means.">🔊</button></div><div class="zh">请便。</div></div>
+<div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Shall I <b class="gw">carve</b><span class="gi">〔/kɑːrv/ v. 切（熟肉）、把肉切成片 — Shall I…〕</span>? <button class="sp" onclick="speak(this)" data-t="Shall I carve?">🔊</button></div><div class="zh">我来切（肉）吗？</div></div>
+<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span><b class="gwp">By all means.</b><span class="gi">〔"当然可以 / 请便"，比 sure / of course 更正式、更客气的一种"答应"。〕</span> <button class="sp" onclick="speak(this)" data-t="By all means.">🔊</button></div><div class="zh">请便。</div></div>
 <div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Ok, who wants light cheese, and who wants dark cheese? <button class="sp" onclick="speak(this)" data-t="Ok, who wants light cheese, and who wants dark cheese?">🔊</button></div><div class="zh">好，谁要浅色的奶酪，谁要深色的奶酪？</div></div>
 <div class="line"><div class="en"><span class="spk c-ross">Ross:</span>I don't even wanna know about the dark cheese. <button class="sp" onclick="speak(this)" data-t="I don't even wanna know about the dark cheese.">🔊</button></div><div class="zh">深色奶酪是怎么回事，我连知道都不想知道。</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>(holding sandwich) Does anybody wanna split this with me? <button class="sp" onclick="speak(this)" data-t="Does anybody wanna split this with me?">🔊</button></div><div class="zh">（举着三明治）有人想跟我分一半吗？</div></div>
@@ -693,66 +606,44 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>Ooh, you guys have to make a wish. <button class="sp" onclick="speak(this)" data-t="Ooh, you guys have to make a wish.">🔊</button></div><div class="zh">哦，你们俩得许个愿。</div></div>
 <div class="line"><div class="en"><span class="spk c-monica">Monica:</span>Make a wish? <button class="sp" onclick="speak(this)" data-t="Make a wish?">🔊</button></div><div class="zh">许愿？</div></div>
 <div class="line"><div class="en"><span class="spk c-phoebe">Phoebe:</span>Come on, you know, Thanksgiving. Ooh, you got the bigger half. What'd you wish for? <button class="sp" onclick="speak(this)" data-t="Come on, you know, Thanksgiving. Ooh, you got the bigger half. What'd you wish for?">🔊</button></div><div class="zh">来嘛，你知道的，感恩节啊。（看乔伊）哦，你拿到了大的一半。你许了什么愿？</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [逻辑]</b> <b>真意图</b>：菲比坚持分三明治时要"许个愿"，还特意指出乔伊拿到了"大的一半"，问他许了什么愿。乔伊答："（我许的愿就是）拿到大的一半。"</div><div class="zh"><b>机制</b>：他把"许愿"这种浪漫仪式，直接理解成"能多分到吃的"——用最务实的答案戳破节日仪式感，是 Joey 的招牌憨萌。 <b>中文等价</b>："（许的愿？）分到大块的那半。"</div></div>
 <div class="line"><div class="en"><span class="spk c-joey">Joey:</span>The bigger half. <button class="sp" onclick="speak(this)" data-t="The bigger half.">🔊</button></div><div class="zh">大的一半。</div></div>
-<div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>I'd like to propose a toast. Little toast here, ding ding. I know this isn't the kind of Thanksgiving that all of you all planned, but for me, this has been really great, you know, I think because it didn't involve divorce or projectile vomiting. Anyway, I was just thinking, I mean, if you'd gone to Vail, and if you guys'd been with your family, if you didn't have syphilis and stuff, we wouldn't be all together, you know? So I guess what I'm trying to say is that I'm very thankful that all of your Thanksgivings sucked. <button class="sp" onclick="speak(this)" data-t="I'd like to propose a toast. Little toast here, ding ding. I know this isn't the kind of Thanksgiving that all of you all planned, but for me, this has been really great, you know, I think because it didn't involve divorce or projectile vomiting. Anyway, I was just thinking, I mean, if you'd gone to Vail, and if you guys'd been with your family, if you didn't have syphilis and stuff, we wouldn't be all together, you know? So I guess what I'm trying to say is that I'm very thankful that all of your Thanksgivings sucked.">🔊</button></div><div class="zh">我想敬大家一杯。小小一杯，叮叮。我知道这不是你们大家原本计划的那种感恩节，但对我来说，这真的特别棒。你知道，我想大概是因为它没牵扯到离婚，也没牵扯到喷射式呕吐。不管怎样，我刚在想，我是说，如果你去了韦尔、如果你们各自跟家人在一起、如果你们没得梅毒那些毛病，我们就不会像现在这样全聚在一起了，对吧？所以我想说的是：我特别感激——你们的感恩节全都搞砸了。</div></div>
+<div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>I'd like to <b class="gwp">propose a toast</b><span class="gi">〔"提议敬酒"；<b class="gw">toast</b><span class="gi">〔/toʊst/ n./v. 祝酒、敬酒。课标义"吐司面包" → 本句 propose a…〕</span> 在此是"敬酒"不是"吐司"。Chandler 先说 propose…〕</span>. Little toast here, ding ding. I know this isn't the kind of Thanksgiving that all of you all planned, but for me, this has been really great, you know, I think because it didn't involve divorce or projectile vomiting. Anyway, I was just thinking, I mean, if you'd gone to Vail, and if you guys'd been with your family, if you didn't have <b class="gw">syphilis</b><span class="gi">〔/ˈsɪfɪlɪs/ n. 梅毒 — if you didn't have syphilis…〕</span> and stuff, we wouldn't be all together, you know? So I guess what I'm trying to say is that I'm very thankful that all of your Thanksgivings sucked. <button class="sp" onclick="speak(this)" data-t="I'd like to propose a toast. Little toast here, ding ding. I know this isn't the kind of Thanksgiving that all of you all planned, but for me, this has been really great, you know, I think because it didn't involve divorce or projectile vomiting. Anyway, I was just thinking, I mean, if you'd gone to Vail, and if you guys'd been with your family, if you didn't have syphilis and stuff, we wouldn't be all together, you know? So I guess what I'm trying to say is that I'm very thankful that all of your Thanksgivings sucked.">🔊</button></div><div class="zh">我想敬大家一杯。小小一杯，叮叮。我知道这不是你们大家原本计划的那种感恩节，但对我来说，这真的特别棒。你知道，我想大概是因为它没牵扯到离婚，也没牵扯到喷射式呕吐。不管怎样，我刚在想，我是说，如果你去了韦尔、如果你们各自跟家人在一起、如果你们没得梅毒那些毛病，我们就不会像现在这样全聚在一起了，对吧？所以我想说的是：我特别感激——你们的感恩节全都搞砸了。</div></div>
+<div class="line intentline"><div class="en"><b>🎭 [反差]</b> <b>真意图</b>：钱德勒的祝酒词前面铺垫了一大段真诚（"这顿对我真的很棒，因为它没牵扯到离婚和呕吐"），最后一句突然反转成"我特别感激——你们的感恩节全都搞砸了"。</div><div class="zh"><b>机制</b>：先给足温情，再一刀切开——正因为他童年的感恩节是场灾难，他才真心觉得"大家都倒霉"的这一顿最像家、最温暖。 <b>中文等价</b>："所以我想说的是……谢谢你们，感恩节都过砸了（这样我们才聚到一起）。"</div></div>
 <div class="line"><div class="en"><span class="spk c-other">All:</span>That's so sweet. <button class="sp" onclick="speak(this)" data-t="That's so sweet.">🔊</button></div><div class="zh">（众人）好暖心啊。</div></div>
-<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>And hey, here's to a lousy Christmas. <button class="sp" onclick="speak(this)" data-t="And hey, here's to a lousy Christmas.">🔊</button></div><div class="zh">嘿，也为一个糟糕透顶的圣诞节干杯。</div></div>
-<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>And a crappy New Year. <button class="sp" onclick="speak(this)" data-t="And a crappy New Year.">🔊</button></div><div class="zh">还有一个烂透的新年。</div></div>
-<div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span>Here, here! <button class="sp" onclick="speak(this)" data-t="Here, here!">🔊</button></div><div class="zh">干！干！（赞同）</div></div>
+<div class="line"><div class="en"><span class="spk c-ross">Ross:</span>And hey, here's to a <b class="gw">lousy</b><span class="gi">〔/ˈlaʊzi/ adj. 糟糕的、差劲的 — a lousy…〕</span> Christmas. <button class="sp" onclick="speak(this)" data-t="And hey, here's to a lousy Christmas.">🔊</button></div><div class="zh">嘿，也为一个糟糕透顶的圣诞节干杯。</div></div><div class="line intentline pattach"><div class="en"><b>💬 Here's to</b></div><div class="zh">"为……干杯"。敬酒固定句式：Here's to a lousy Christmas.＝为糟糕的圣诞节干杯。</div></div>
+<div class="line"><div class="en"><span class="spk c-rachel">Rachel:</span>And a <b class="gw">crappy</b><span class="gi">〔/ˈkræpi/ adj. （粗）破烂的、烂透的 — a crappy New…〕</span> New Year. <button class="sp" onclick="speak(this)" data-t="And a crappy New Year.">🔊</button></div><div class="zh">还有一个烂透的新年。</div></div>
+<div class="line"><div class="en"><span class="spk c-chandler">Chandler:</span><b class="gwp">Here, here!</b><span class="gi">〔"说得对！赞成！"——表达认同的呼喊（常见写法 hear, hear!）。〕</span> <button class="sp" onclick="speak(this)" data-t="Here, here!">🔊</button></div><div class="zh">干！干！（赞同）</div></div>
+
+
+
+
 <div class="culture">
 <h4>🏛️ 文化解析：感恩节"许愿骨"与"分一半"</h4>
 菲比坚持让莫妮卡和乔伊在分三明治时许愿，调侃的是西方感恩节的<b>许愿骨（wishbone）</b>习俗：火鸡胸口有根"V"形的叉骨，晾干后由两个人各执一端、拉断，<b>谁掰到大的那一截，谁许的愿就会实现</b>——所以菲比一看到乔伊拿到"大的一半"（the bigger half）就追问"你许了什么愿"。<br>
-类似的"许愿"场景在美国节日文化里到处都是（吹生日蜡烛、拔许愿骨、许愿池投币），编剧把这份"节日仪式感"嫁接到一个寒酸的烤奶酪三明治上，反差笑点就出来了：他们过的不是感恩节，而是"感恩节的形状"。
-</div>
-<div class="phrasebox">
-<h4>💬 词组 / 俚语</h4>
-<div class="item"><b>By all means.</b> ＝"当然可以 / 请便"，比 sure / of course 更正式、更客气的一种"答应"。</div>
-<div class="item"><b>Here's to...</b> ＝"为……干杯"。敬酒固定句式：<span class="ex">Here's to a lousy Christmas.</span>＝为糟糕的圣诞节干杯。</div>
-<div class="item"><b>Here, here!</b> ＝"说得对！赞成！"——表达认同的呼喊（常见写法 hear, hear!）。</div>
-<div class="item"><b>propose a toast</b> ＝"提议敬酒"；toast 在此是"敬酒"不是"吐司"。Chandler 先说 propose a toast，再自嘲"little toast here"，把庄重和寒酸并置。</div>
-</div>
-<div class="note">
-<h4>📌 重点单词</h4>
-<div class="item"><b>lousy</b> <span class="phon">/ˈlaʊzi/</span> adj. 糟糕的、差劲的 <button class="sp" onclick="speak(this)" data-t="lousy">🔊</button> — <span class="ex">a lousy Christmas</span>（糟心的圣诞节）</div>
-<div class="item"><b>crappy</b> <span class="phon">/ˈkræpi/</span> adj. （粗）破烂的、烂透的 <button class="sp" onclick="speak(this)" data-t="crappy">🔊</button> — <span class="ex">a crappy New Year</span>（烂透了的新年）</div>
-</div>
-<div class="note">
-<h4>📌 重点单词（补充）</h4>
-<div class="item"><b>carve</b> <span class="phon">/kɑːrv/</span> v. 切（熟肉）、把肉切成片 <button class="sp" onclick="speak(this)" data-t="carve">🔊</button> — <span class="ex">Shall I carve?</span>（要我来切肉吗？）。感恩节由"主厨/家长"操刀切火鸡是一种仪式感。</div>
-<div class="item"><b>syphilis</b> <span class="phon">/ˈsɪfɪlɪs/</span> n. 梅毒 <button class="sp" onclick="speak(this)" data-t="syphilis">🔊</button> — <span class="ex">if you didn't have syphilis and stuff</span>（如果你们没得梅毒那些毛病）。钱德勒拿乔伊被误认的"性病"开涮。</div>
-</div>
+类似的"许愿"场景在美国节日文化里到处都是（吹生日蜡烛、拔许愿骨、许愿池投币），编剧把这份"节日仪式感"嫁接到一个寒酸的烤奶酪三明治上，反差笑点就出来了：他们过的不是感恩节，而是"感恩节的形状"。</div>
 <div class="culture">
 <h4>🏛️ 文化解析：Ugly Naked Guy（丑陋裸男）——全剧常驻配角</h4>
 <b>Ugly Naked Guy（缩写 UNG）</b>是《老友记》里一个从未正面登场、却反复出现的"邻居"：住在莫妮卡对面楼，常年不穿衣服在屋里晃，六个人没事就趴在窗边"围观"他，是贯穿全剧的<b>固定视觉笑点</b>（第 4 季后他搬走，乔伊还念念不忘）。<br>
-这一集里，菲比像播报新闻一样直播："Ugly Naked Guy's taking his turkey out of the oven... He's not alone... having Thanksgiving dinner with Ugly Naked Gal."——<b>把"围观邻居的裸体日常"当成节日节目</b>，正是这群人"再惨也能自娱自乐"的写照：火鸡糊了、飞机飞了，但楼下还有"裸体感恩节"可看。
-</div>
-<div class="intent">
-<h4>🎭 意图/潜台词</h4>
-<div class="item"><b>Chandler: ...I'm very thankful that all of your Thanksgivings sucked.</b><br>①钱德勒的祝酒词前面铺垫了一大段真诚（"这顿对我真的很棒，因为它没牵扯到离婚和呕吐"），最后一句突然反转成"我特别感激——你们的感恩节全都搞砸了"。②笑点：先给足温情，再一刀切开——正因为他童年的感恩节是场灾难，他才真心觉得"大家都倒霉"的这一顿最像家、最温暖。③中文等价："所以我想说的是……谢谢你们，感恩节都过砸了（这样我们才聚到一起）。"</div>
-<div class="item"><b>Joey: The bigger half.</b><br>①菲比坚持分三明治时要"许个愿"，还特意指出乔伊拿到了"大的一半"，问他许了什么愿。乔伊答："（我许的愿就是）拿到大的一半。"②笑点：他把"许愿"这种浪漫仪式，直接理解成"能多分到吃的"——用最务实的答案戳破节日仪式感，是 Joey 的招牌憨萌。③中文等价："（许的愿？）分到大块的那半。"</div>
-</div>
+这一集里，菲比像播报新闻一样直播："Ugly Naked Guy's taking his turkey out of the oven... He's not alone... having Thanksgiving dinner with Ugly Naked Gal."——<b>把"围观邻居的裸体日常"当成节日节目</b>，正是这群人"再惨也能自娱自乐"的写照：火鸡糊了、飞机飞了，但楼下还有"裸体感恩节"可看。</div>
 </section>
 
 <!-- ============ SCENE 15 ============ -->
 <section class="scene" id="s15">
 <h2>场景 15 · 地铁（片尾） <span class="no">海报一层又一层</span></h2>
+<div class="line stage"><span>📍 情境：片尾，地铁站。Joey 发现自己那张公益海报被人一层又一层地贴上了别的海报——他的"演员兼模特"生涯以一种非常纽约的方式结束了。这一幕的功能：用一个小笑话收尾，同时回扣全集所有倒霉事。</span></div>
 <div class="line stage"><span>【片尾·场景：地铁。乔伊看见自己的海报，伸手把上面那行广告词撕下来，露出下面一层又一层别的海报。】</span></div>
 <div class="line stage"><span>【依次露出的广告词：Bladder Control Problem（小便失禁）／ Stop Wife Beating（停止家暴）／ Hemorrhoids?（有痔疮吗？）／ Winner of 3 Tony Awards...（三座托尼奖得主……）。乔伊总算对最后一条满意了，转身走开。】</span></div>
-<div class="note">
-<h4>📌 重点单词</h4>
-<div class="item"><b>bladder</b> <span class="phon">/ˈblædər/</span> n. 膀胱 <button class="sp" onclick="speak(this)" data-t="bladder">🔊</button> — <span class="ex">bladder control problem</span>（膀胱控不住，即小便失禁）。这里一并认认 <span class="ex">hemorrhoids</span> /ˈhemərɔɪdz/（痔疮）、<span class="ex">wife beating</span>（家暴）、<span class="ex">Tony Awards</span>（托尼奖，戏剧界最高奖）这几个片尾海报上的词。</div>
-</div>
+
+
 <div class="culture">
 <h4>🏛️ 文化解析：纽约地铁里的公益广告（PSA）文化</h4>
 片尾乔伊一层层撕开自己的海报，露出下面一叠公益广告："Bladder Control Problem（小便失禁）/ Stop Wife Beating（停止家暴）/ Hemorrhoids?（有痔疮吗？）"——这就是美国城市地铁里最常见的 <b>PSA（Public Service Announcement，公益广告）</b>：由市政、医院或公益组织投放，主题集中在性病防治、成瘾、家暴、慢性病等公共健康与社会议题，常年霸占地铁灯箱，密度高到常被吐槽。<br>
-笑点在于：<b>乔伊一心想撕掉"性病"那层最丢人的海报，结果每撕一层露出来的都更尴尬</b>，直到最后露出"Winner of 3 Tony Awards（三座托尼奖得主）"——他才终于满意地走开。这层层"更惨 vs 体面"的反差，就是整段的喜剧结构。
-</div>
+笑点在于：<b>乔伊一心想撕掉"性病"那层最丢人的海报，结果每撕一层露出来的都更尴尬</b>，直到最后露出"Winner of 3 Tony Awards（三座托尼奖得主）"——他才终于满意地走开。这层层"更惨 vs 体面"的反差，就是整段的喜剧结构。</div>
 </section>
 
-<!-- ============ SHADOWING ============ -->
-<section class="shadowbox" id="shadow">
+<div class="shadowbox">
 <h2>🔁 跟读重点句（本集必练 15 句）</h2>
-<p style="margin:4px 0 0;color:#666;font-size:13.5px">方法：先点 🔊 听 2 遍 → 盖住英文跟读 → 切剧集原声对读。每句跟到"不用想就能说出来"为止。一天 5 句，3 天过完一遍。</p>
 <ol>
 <li><button class="sp" onclick="speak(this)" data-t="Terry, I, I, I know that I haven't worked here very long, but I was wondering, do you think it would be possible if I got a $100 advance in my salary?">🔊</button> <b>Terry, I know that I haven't worked here very long, but I was wondering, do you think it would be possible if I got a $100 advance in my salary?</b><span class="zh-t">特里，我知道我在这儿干得还不算久，不过我想问，您觉得我能不能预支 100 块薪水？（语气：小心翼翼、带点讨好地试探）</span></li>
 <li><button class="sp" onclick="speak(this)" data-t="You're a terrible, terrible waitress. Really, really awful.">🔊</button> <b>You're a terrible, terrible waitress. Really, really awful.</b><span class="zh-t">你是个糟透了、糟透了的服务员。真的，真的太糟糕了。（重复叠词加强，越说越无奈）</span></li>
@@ -770,15 +661,15 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
 <li><button class="sp" onclick="speak(this)" data-t="We all chipped in.">🔊</button> <b>We all chipped in.</b><span class="zh-t">大家一起凑的。（一句话道尽六人友情，短促、温暖）</span></li>
 <li><button class="sp" onclick="speak(this)" data-t="An 80-foot inflatable dog let loose over the city. How often does that happen?">🔊</button> <b>An 80-foot inflatable dog let loose over the city. How often does that happen?</b><span class="zh-t">一只 80 英尺的充气狗满城乱飞，这种事能有几回？（先抛画面、再用反问收尾，钱德勒式煽动）</span></li>
 </ol>
-</section>
-
-<footer>
-老友记 Friends · S1E9 学习文档 · 台词来源：用户提供的第 9 集字幕文档 · 中文为简体对照译（基于原字幕改写润色）<br>
-朗读使用浏览器内置语音（Web Speech API）· 跟读请配合剧集原声 · 建议浏览器：Chrome / Edge（英文语音效果最佳）<br>
-下一步：确认样式与深度后，继续制作 S1E10-E24
-</footer>
+</div>
 </div>
 
+<footer>
+老友记 Friends · S1E9 学习文档（v3）· 台词来源：用户提供的第 9 集字幕文档 · 中文为简体对照译（基于原字幕改写润色）<br>
+† = 对原字幕翻译的优化重译（口语化、补语气、纠错）<br>
+朗读使用浏览器内置语音（Web Speech API）· 跟读请配合剧集原声 · 建议浏览器：Chrome / Edge（英文语音效果最佳）<br>
+结构：📖 剧情导读 → 📍 每幕情境 → 台词 + 🎭 行内笑点 → 幕末 📌/💬/🏛️ 块
+</footer>
 <script>
 (function(){
   var rate = 0.75;
@@ -821,5 +712,7 @@ footer{color:#888;font-size:12.5px;text-align:center;margin-top:30px;line-height
   }
 })();
 </script>
+
+<section class="scene" id="gloss-appendix"><h2>📎 附录 · 零散词汇（句中未能定位）<span class="loc">Appendix</span></h2><div class="note"><h4>📌 词条</h4><div class="item"><b>cross one's fingers</b> 交叉手指"求好运 / 但愿如此"。乔伊一边说一边比这个手势，是英语里最常见的祈福动作。</div><div class="item"><b>chip in</b> 大家凑钱、一起出份子。We all chipped in.＝我们一起凑的（钱）。名词形式 a…</div><div class="item"><b>see it in reverse</b> "倒着/反着看"，这里指钱德勒是"先吃到一半、再被离婚"——把美好的节日和坏消息焊在一起…</div><div class="item"><b>pre-</b> /ˌpriː/ prefix 前缀"预先"：pre-approved / pre-paid /…</div><div class="item"><b>snicker</b> /ˈsnɪkər/ v./n. 窃笑、憋着笑 — amongst snickers from…</div><div class="item"><b>bladder</b> /ˈblædər/ n. 膀胱 — bladder control problem（膀胱控不住…</div></div></section>
 </body>
 </html>
